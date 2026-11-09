@@ -1,1 +1,108 @@
-{"schemaVersion":1,"mode":"constructed","card":{"id":"UNG_800","dbfId":41304,"name":"공포비늘 추적자","type":"MINION","cardClass":"HUNTER","rarity":"RARE","collectible":true,"cost":2,"text":"<b>전투의 함성:</b> 아군 하수인의 <b>죽음의 메아리</b> 능력을 발동시킵니다.","attack":2,"health":3,"durability":0,"armor":0,"flavor":"죽을만큼 공포에 질리게 하여 능력을 발동시킵니다.","spellSchool":"","portrait":"HS10-195_D.psd:d76b8eb273d08c34398739d4ee0863bc","set":"UNGORO","nativeTags":[{"id":45,"name":"생명력","value":3},{"id":47,"name":"공격력","value":2},{"id":48,"name":"마나 비용","value":2},{"id":199,"name":"직업","value":3},{"id":201,"name":"진영","value":3},{"id":202,"name":"카드 유형","value":4},{"id":203,"name":"희귀도","value":3},{"id":217,"name":"죽음의 메아리","value":1},{"id":218,"name":"전투의 함성","value":1},{"id":321,"name":"수집 가능","value":1}],"races":[],"race":"","classes":[],"art":"art/UNG_800.png"},"artworkProvenance":{"source":"installed Hearthstone native assets","portrait":"HS10-195_D.psd:d76b8eb273d08c34398739d4ee0863bc","goldenMaterial":"UNG_800_PremiumCard.mat:3c8b604b891543847b43707a4eda8c11","goldenAnimation":""}}
+{
+  "schemaVersion": 1,
+  "mode": "constructed",
+  "englishName": "Terrorscale Stalker",
+  "card": {
+    "id": "UNG_800",
+    "dbfId": 41304,
+    "name": "공포비늘 추적자",
+    "text": "<b>전투의 함성:</b> 아군 하수인의 <b>죽음의 메아리</b> 능력을 발동시킵니다.",
+    "type": "MINION",
+    "cardClass": "HUNTER",
+    "classes": [],
+    "nativeSetId": 27,
+    "set": "UNGORO",
+    "rarity": "RARE",
+    "race": "",
+    "races": [],
+    "spellSchool": "",
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "armor": 0,
+    "durability": 0,
+    "collectible": true,
+    "chooseOne": false,
+    "installed": true,
+    "portrait": "HS10-195_D.psd:d76b8eb273d08c34398739d4ee0863bc",
+    "flavor": "죽을만큼 공포에 질리게 하여 능력을 발동시킵니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 3
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 2
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 2
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 3
+      },
+      {
+        "id": 201,
+        "name": "진영",
+        "value": 3
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 3
+      },
+      {
+        "id": 217,
+        "name": "죽음의 메아리",
+        "value": 1
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>전투의 함성:</b> 아군 하수인의 <b>죽음의 메아리</b> 능력을 발동시킵니다.",
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified",
+    "patches": [],
+    "initialSpecStatus": "unverified",
+    "patchSources": {}
+  },
+  "root": true,
+  "relatedIds": [],
+  "expansion": {
+    "id": 27,
+    "slug": "journey-to-ungoro",
+    "name": "운고로를 향한 여정",
+    "type": "expansion",
+    "englishName": "Journey To Ungoro"
+  },
+  "setOrder": 34,
+  "formats": [
+    "wild"
+  ],
+  "provenance": {
+    "source": "Installed Hearthstone dbf.unity3d",
+    "gameVersion": "6000.3.11.3145967",
+    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+    "locale": "koKR"
+  }
+}

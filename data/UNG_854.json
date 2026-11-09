@@ -1,1 +1,108 @@
-{"schemaVersion":1,"mode":"constructed","card":{"id":"UNG_854","dbfId":42009,"name":"호박석 속의 괴수","type":"SPELL","cardClass":"PRIEST","rarity":"RARE","collectible":true,"cost":7,"text":"비용이 (8) 이상인\n하수인을 <b>발견</b>하여 소환합니다.","attack":0,"health":0,"durability":0,"armor":0,"flavor":"짜잔! 하수인 DNA!","spellSchool":"","portrait":"HS10-125_D.psd:61adff1bb4e162e40874f1f2a1ce203c","set":"UNGORO","nativeTags":[{"id":48,"name":"마나 비용","value":7},{"id":199,"name":"직업","value":6},{"id":201,"name":"진영","value":3},{"id":202,"name":"카드 유형","value":5},{"id":203,"name":"희귀도","value":3},{"id":251,"name":"게임 태그 251","value":4},{"id":268,"name":"게임 태그 268","value":2},{"id":321,"name":"수집 가능","value":1},{"id":415,"name":"발견","value":1},{"id":1342,"name":"발견 시각 효과","value":1}],"races":[],"race":"","classes":[],"art":"art/UNG_854.png"},"artworkProvenance":{"source":"installed Hearthstone native assets","portrait":"HS10-125_D.psd:61adff1bb4e162e40874f1f2a1ce203c","goldenMaterial":"UNG_854_PremiumCard.mat:cda4b22a86ceb97478e5fa6617c0f194","goldenAnimation":""}}
+{
+  "schemaVersion": 1,
+  "mode": "constructed",
+  "englishName": "Free From Amber",
+  "card": {
+    "id": "UNG_854",
+    "dbfId": 42009,
+    "name": "호박석 속의 괴수",
+    "text": "비용이 (8) 이상인\n하수인을 <b>발견</b>하여 소환합니다.",
+    "type": "SPELL",
+    "cardClass": "PRIEST",
+    "classes": [],
+    "nativeSetId": 27,
+    "set": "UNGORO",
+    "rarity": "RARE",
+    "race": "",
+    "races": [],
+    "spellSchool": "",
+    "cost": 7,
+    "attack": 0,
+    "health": 0,
+    "armor": 0,
+    "durability": 0,
+    "collectible": true,
+    "chooseOne": false,
+    "installed": true,
+    "portrait": "HS10-125_D.psd:61adff1bb4e162e40874f1f2a1ce203c",
+    "flavor": "짜잔! 하수인 DNA!",
+    "nativeTags": [
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 7
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 6
+      },
+      {
+        "id": 201,
+        "name": "진영",
+        "value": 3
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 5
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 3
+      },
+      {
+        "id": 251,
+        "name": "게임 태그 251",
+        "value": 4
+      },
+      {
+        "id": 268,
+        "name": "게임 태그 268",
+        "value": 2
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      },
+      {
+        "id": 415,
+        "name": "발견",
+        "value": 1
+      },
+      {
+        "id": 1342,
+        "name": "발견 시각 효과",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "비용이 (8) 이상인\n하수인을 <b>발견</b>하여 소환합니다.",
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified",
+    "patches": [],
+    "initialSpecStatus": "unverified",
+    "patchSources": {}
+  },
+  "root": true,
+  "relatedIds": [],
+  "expansion": {
+    "id": 27,
+    "slug": "journey-to-ungoro",
+    "name": "운고로를 향한 여정",
+    "type": "expansion",
+    "englishName": "Journey To Ungoro"
+  },
+  "setOrder": 34,
+  "formats": [
+    "wild"
+  ],
+  "provenance": {
+    "source": "Installed Hearthstone dbf.unity3d",
+    "gameVersion": "6000.3.11.3145967",
+    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+    "locale": "koKR"
+  }
+}

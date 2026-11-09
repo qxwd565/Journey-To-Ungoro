@@ -1,1 +1,97 @@
-{"schemaVersion":1,"mode":"constructed","card":{"id":"UNG_832","dbfId":41872,"name":"핏빛꽃","type":"SPELL","cardClass":"WARLOCK","rarity":"EPIC","collectible":true,"cost":4,"text":"이번 턴에 내가 시전하는 다음 주문은 마나 대신 생명력을 비용으로 사용합니다.","attack":0,"health":0,"durability":0,"armor":0,"flavor":"마나가 여러분의 도움을 필요로 합니다! 오늘 바로 헌혈하세요!","spellSchool":"SHADOW","portrait":"HS10-127_D.psd:415669b6b5f0f5447808e47f8c60adb8","set":"UNGORO","nativeTags":[{"id":48,"name":"마나 비용","value":4},{"id":199,"name":"직업","value":9},{"id":202,"name":"카드 유형","value":5},{"id":203,"name":"희귀도","value":4},{"id":321,"name":"수집 가능","value":1},{"id":1635,"name":"주문 속성","value":6}],"races":[],"race":"","classes":[],"art":"art/UNG_832.png"},"artworkProvenance":{"source":"installed Hearthstone native assets","portrait":"HS10-127_D.psd:415669b6b5f0f5447808e47f8c60adb8","goldenMaterial":"UNG_832_PremiumCard.mat:630940bf46353474f8bf3f0aff6b3dad","goldenAnimation":""}}
+{
+  "schemaVersion": 1,
+  "mode": "constructed",
+  "englishName": "Bloodbloom",
+  "card": {
+    "id": "UNG_832",
+    "dbfId": 41872,
+    "name": "핏빛꽃",
+    "text": "이번 턴에 내가 시전하는 다음 주문은 마나 대신 생명력을 비용으로 사용합니다.",
+    "type": "SPELL",
+    "cardClass": "WARLOCK",
+    "classes": [],
+    "nativeSetId": 27,
+    "set": "UNGORO",
+    "rarity": "EPIC",
+    "race": "",
+    "races": [],
+    "spellSchool": "",
+    "cost": 4,
+    "attack": 0,
+    "health": 0,
+    "armor": 0,
+    "durability": 0,
+    "collectible": true,
+    "chooseOne": false,
+    "installed": true,
+    "portrait": "HS10-127_D.psd:415669b6b5f0f5447808e47f8c60adb8",
+    "flavor": "마나가 여러분의 도움을 필요로 합니다! 오늘 바로 헌혈하세요!",
+    "nativeTags": [
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 4
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 9
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 5
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 4
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      },
+      {
+        "id": 1635,
+        "name": "주문 속성",
+        "value": 6
+      }
+    ],
+    "nativeRawText": "이번 턴에 내가 시전하는 다음 주문은 마나 대신 생명력을 비용으로 사용합니다.",
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified",
+    "patches": [
+      {
+        "date": "2021-03-26",
+        "changes": {
+          "spellSchool": "SHADOW"
+        }
+      }
+    ],
+    "initialSpecStatus": "unverified",
+    "patchSources": {
+      "2021-03-26": "taxonomy introduction"
+    }
+  },
+  "root": true,
+  "relatedIds": [],
+  "expansion": {
+    "id": 27,
+    "slug": "journey-to-ungoro",
+    "name": "운고로를 향한 여정",
+    "type": "expansion",
+    "englishName": "Journey To Ungoro"
+  },
+  "setOrder": 34,
+  "formats": [
+    "wild"
+  ],
+  "provenance": {
+    "source": "Installed Hearthstone dbf.unity3d",
+    "gameVersion": "6000.3.11.3145967",
+    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+    "locale": "koKR"
+  }
+}

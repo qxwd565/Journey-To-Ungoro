@@ -1,1 +1,131 @@
-{"schemaVersion":1,"mode":"constructed","card":{"id":"UNG_954","dbfId":41868,"name":"마지막 칼라이도사우루스","type":"SPELL","cardClass":"PALADIN","rarity":"LEGENDARY","collectible":true,"cost":1,"text":"<b>퀘스트:</b>\n내 하수인에게 주문을 5회 시전해야 합니다.\n<b>보상:</b> 갈바돈","attack":0,"health":0,"durability":0,"armor":0,"flavor":"\"말도 안 돼!\" 은빛 성기사단 신병이 외쳤습니다. 그의 눈에는 공포가 서려 있었습니다. 우서는 고개를 젓고는 수정을 살펴보며 말했습니다. \"생명은 길을 찾기 마련이지.\"","spellSchool":"","portrait":"HS10-185_D_New.psd:e9a769f53daf13049bce6d097b76225a","set":"UNGORO","nativeTags":[{"id":48,"name":"마나 비용","value":1},{"id":114,"name":"전설 속성","value":1},{"id":199,"name":"직업","value":5},{"id":202,"name":"카드 유형","value":5},{"id":203,"name":"희귀도","value":5},{"id":321,"name":"수집 가능","value":1},{"id":462,"name":"퀘스트","value":1},{"id":535,"name":"퀘스트 완료 조건","value":5},{"id":676,"name":"무작위 선택 제외","value":1},{"id":839,"name":"게임 태그 839","value":1},{"id":1089,"name":"퀘스트 보상 데이터베이스 ID","value":41946},{"id":4297,"name":"게임 태그 4297","value":1}],"races":[],"race":"","classes":[],"art":"art/UNG_954.png"},"artworkProvenance":{"source":"installed Hearthstone native assets","portrait":"HS10-185_D_New.psd:e9a769f53daf13049bce6d097b76225a","goldenMaterial":"UNG_954_PremiumCard.mat:f833b7d2a2cfb5141897d6a41485208e","goldenAnimation":""}}
+{
+  "schemaVersion": 1,
+  "mode": "constructed",
+  "englishName": "The Last Kaleidosaur",
+  "card": {
+    "id": "UNG_954",
+    "dbfId": 41868,
+    "name": "마지막 칼라이도사우루스",
+    "text": "<b>퀘스트:</b>\n내 하수인에게 주문을 5회 시전해야 합니다.\n<b>보상:</b> 갈바돈",
+    "type": "SPELL",
+    "cardClass": "PALADIN",
+    "classes": [],
+    "nativeSetId": 27,
+    "set": "UNGORO",
+    "rarity": "LEGENDARY",
+    "race": "",
+    "races": [],
+    "spellSchool": "",
+    "cost": 1,
+    "attack": 0,
+    "health": 0,
+    "armor": 0,
+    "durability": 0,
+    "collectible": true,
+    "chooseOne": false,
+    "installed": true,
+    "portrait": "HS10-185_D_New.psd:e9a769f53daf13049bce6d097b76225a",
+    "flavor": "\"말도 안 돼!\" 은빛 성기사단 신병이 외쳤습니다. 그의 눈에는 공포가 서려 있었습니다. 우서는 고개를 젓고는 수정을 살펴보며 말했습니다. \"생명은 길을 찾기 마련이지.\"",
+    "nativeTags": [
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 1
+      },
+      {
+        "id": 114,
+        "name": "전설 속성",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 5
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 5
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 5
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      },
+      {
+        "id": 462,
+        "name": "퀘스트",
+        "value": 1
+      },
+      {
+        "id": 535,
+        "name": "퀘스트 완료 조건",
+        "value": 5
+      },
+      {
+        "id": 676,
+        "name": "무작위 선택 제외",
+        "value": 1
+      },
+      {
+        "id": 839,
+        "name": "게임 태그 839",
+        "value": 1
+      },
+      {
+        "id": 1089,
+        "name": "퀘스트 보상 데이터베이스 ID",
+        "value": 41946
+      },
+      {
+        "id": 4297,
+        "name": "게임 태그 4297",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>퀘스트:</b>\n내 하수인에게 주문을 5회 시전해야 합니다.\n<b>보상:</b> 갈바돈",
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified",
+    "patches": [],
+    "initialSpecStatus": "unverified",
+    "patchSources": {}
+  },
+  "root": true,
+  "relatedIds": [
+    41946,
+    41058,
+    41059,
+    41691,
+    41061,
+    41063,
+    41062,
+    41211,
+    41060,
+    41054,
+    41057,
+    41067
+  ],
+  "expansion": {
+    "id": 27,
+    "slug": "journey-to-ungoro",
+    "name": "운고로를 향한 여정",
+    "type": "expansion",
+    "englishName": "Journey To Ungoro"
+  },
+  "setOrder": 34,
+  "formats": [
+    "wild"
+  ],
+  "provenance": {
+    "source": "Installed Hearthstone dbf.unity3d",
+    "gameVersion": "6000.3.11.3145967",
+    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+    "locale": "koKR"
+  }
+}

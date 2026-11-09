@@ -1,1 +1,97 @@
-{"schemaVersion":1,"mode":"constructed","card":{"id":"UNG_955","dbfId":41878,"name":"유성","type":"SPELL","cardClass":"MAGE","rarity":"EPIC","collectible":true,"cost":6,"text":"하수인에게\n피해를 $15 주고\n그 양옆의 하수인들에게\n피해를 $4 줍니다.","attack":0,"health":0,"durability":0,"armor":0,"flavor":"공룡들을 반드시, 완벽하게 모조리 다 죽여야 할 때 사용합니다.","spellSchool":"FIRE","portrait":"HS10-034_S.psd:68cc3b5a102d32c4da1eb67a6988d043","set":"UNGORO","nativeTags":[{"id":48,"name":"마나 비용","value":6},{"id":199,"name":"직업","value":4},{"id":202,"name":"카드 유형","value":5},{"id":203,"name":"희귀도","value":4},{"id":321,"name":"수집 가능","value":1},{"id":1635,"name":"주문 속성","value":2}],"races":[],"race":"","classes":[],"art":"art/UNG_955.png"},"artworkProvenance":{"source":"installed Hearthstone native assets","portrait":"HS10-034_S.psd:68cc3b5a102d32c4da1eb67a6988d043","goldenMaterial":"UNG_955_PremiumCard.mat:5d523f4b4b457c4438383d37de062530","goldenAnimation":""}}
+{
+  "schemaVersion": 1,
+  "mode": "constructed",
+  "englishName": "Meteor",
+  "card": {
+    "id": "UNG_955",
+    "dbfId": 41878,
+    "name": "유성",
+    "text": "하수인에게\n피해를 $15 주고\n그 양옆의 하수인들에게\n피해를 $4 줍니다.",
+    "type": "SPELL",
+    "cardClass": "MAGE",
+    "classes": [],
+    "nativeSetId": 27,
+    "set": "UNGORO",
+    "rarity": "EPIC",
+    "race": "",
+    "races": [],
+    "spellSchool": "",
+    "cost": 6,
+    "attack": 0,
+    "health": 0,
+    "armor": 0,
+    "durability": 0,
+    "collectible": true,
+    "chooseOne": false,
+    "installed": true,
+    "portrait": "HS10-034_S.psd:68cc3b5a102d32c4da1eb67a6988d043",
+    "flavor": "공룡들을 반드시, 완벽하게 모조리 다 죽여야 할 때 사용합니다.",
+    "nativeTags": [
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 6
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 4
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 5
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 4
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      },
+      {
+        "id": 1635,
+        "name": "주문 속성",
+        "value": 2
+      }
+    ],
+    "nativeRawText": "하수인에게\n피해를 $15 주고\n그 양옆의 하수인들에게\n피해를 $4 줍니다.",
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified",
+    "patches": [
+      {
+        "date": "2021-03-26",
+        "changes": {
+          "spellSchool": "FIRE"
+        }
+      }
+    ],
+    "initialSpecStatus": "unverified",
+    "patchSources": {
+      "2021-03-26": "taxonomy introduction"
+    }
+  },
+  "root": true,
+  "relatedIds": [],
+  "expansion": {
+    "id": 27,
+    "slug": "journey-to-ungoro",
+    "name": "운고로를 향한 여정",
+    "type": "expansion",
+    "englishName": "Journey To Ungoro"
+  },
+  "setOrder": 34,
+  "formats": [
+    "wild"
+  ],
+  "provenance": {
+    "source": "Installed Hearthstone dbf.unity3d",
+    "gameVersion": "6000.3.11.3145967",
+    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+    "locale": "koKR"
+  }
+}

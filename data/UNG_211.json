@@ -1,1 +1,116 @@
-{"schemaVersion":1,"mode":"constructed","card":{"id":"UNG_211","dbfId":41331,"name":"원시 군주 칼리모스","type":"MINION","cardClass":"SHAMAN","rarity":"LEGENDARY","collectible":true,"cost":7,"text":"<b>전투의 함성:</b> 내가 이전 턴에 정령을 냈다면, 원소의 기원을 시전합니다.","attack":7,"health":7,"durability":0,"armor":0,"flavor":"마음의 기원만 있으면 되겠군요.","spellSchool":"","portrait":"HS10-093_D.psd:e76ef7f3e818ce64695cc885cfad25e8","set":"UNGORO","nativeTags":[{"id":45,"name":"생명력","value":7},{"id":47,"name":"공격력","value":7},{"id":48,"name":"마나 비용","value":7},{"id":114,"name":"전설 속성","value":1},{"id":199,"name":"직업","value":8},{"id":200,"name":"종족","value":18},{"id":202,"name":"카드 유형","value":4},{"id":203,"name":"희귀도","value":5},{"id":218,"name":"전투의 함성","value":1},{"id":321,"name":"수집 가능","value":1}],"races":["ELEMENTAL"],"race":"정령","classes":[],"art":"art/UNG_211.png"},"artworkProvenance":{"source":"installed Hearthstone native assets","portrait":"HS10-093_D.psd:e76ef7f3e818ce64695cc885cfad25e8","goldenMaterial":"UNG_211_PremiumCard.mat:ace4ad4cdb6877a4888e233c681f310d","goldenAnimation":"UNG_211_PremiumCard.asset:eaa2b0fb9ea035e4fb4ee3988ae4c97b"}}
+{
+  "schemaVersion": 1,
+  "mode": "constructed",
+  "englishName": "Kalimos, Primal Lord",
+  "card": {
+    "id": "UNG_211",
+    "dbfId": 41331,
+    "name": "원시 군주 칼리모스",
+    "text": "<b>전투의 함성:</b> 내가 이전 턴에 정령을 냈다면, 원소의 기원을 시전합니다.",
+    "type": "MINION",
+    "cardClass": "SHAMAN",
+    "classes": [],
+    "nativeSetId": 27,
+    "set": "UNGORO",
+    "rarity": "LEGENDARY",
+    "race": "정령",
+    "races": [
+      "ELEMENTAL"
+    ],
+    "spellSchool": "",
+    "cost": 7,
+    "attack": 7,
+    "health": 7,
+    "armor": 0,
+    "durability": 0,
+    "collectible": true,
+    "chooseOne": false,
+    "installed": true,
+    "portrait": "HS10-093_D.psd:e76ef7f3e818ce64695cc885cfad25e8",
+    "flavor": "마음의 기원만 있으면 되겠군요.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 7
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 7
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 7
+      },
+      {
+        "id": 114,
+        "name": "전설 속성",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 8
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 18
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 5
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>전투의 함성:</b> 내가 이전 턴에 정령을 냈다면, 원소의 기원을 시전합니다.",
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified",
+    "patches": [],
+    "initialSpecStatus": "unverified",
+    "patchSources": {}
+  },
+  "root": true,
+  "relatedIds": [
+    41330,
+    41335,
+    41334,
+    41336,
+    41329
+  ],
+  "expansion": {
+    "id": 27,
+    "slug": "journey-to-ungoro",
+    "name": "운고로를 향한 여정",
+    "type": "expansion",
+    "englishName": "Journey To Ungoro"
+  },
+  "setOrder": 34,
+  "formats": [
+    "wild"
+  ],
+  "provenance": {
+    "source": "Installed Hearthstone dbf.unity3d",
+    "gameVersion": "6000.3.11.3145967",
+    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+    "locale": "koKR"
+  }
+}

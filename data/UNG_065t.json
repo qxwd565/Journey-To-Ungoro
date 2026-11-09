@@ -1,1 +1,107 @@
-{"schemaVersion":1,"mode":"constructed","card":{"id":"UNG_065t","dbfId":42796,"name":"셰라진의 씨앗","type":"MINION","cardClass":"ROGUE","collectible":false,"cost":11,"text":"<b>휴면</b>, 한 턴에 카드를\n4장 이상 내면, 되살아납니다.","attack":0,"health":1,"durability":0,"armor":0,"flavor":"","spellSchool":"","portrait":"HS10-198_M.psd:90ddcf31c5fe9764f802af08f0519021","set":"UNGORO","nativeTags":[{"id":45,"name":"생명력","value":1},{"id":48,"name":"마나 비용","value":11},{"id":199,"name":"직업","value":7},{"id":202,"name":"카드 유형","value":4},{"id":402,"name":"능력치 숨김","value":1},{"id":448,"name":"대상 지정 불가","value":1},{"id":1090,"name":"휴면 시각 효과","value":1},{"id":1142,"name":"마우스 카드 표시 방식","value":4},{"id":1518,"name":"휴면","value":1},{"id":1519,"name":"휴면 해제 조건 효과","value":1}],"races":[],"race":"","classes":[],"art":"art/UNG_065t.png"},"artworkProvenance":{"source":"installed Hearthstone native assets","portrait":"HS10-198_M.psd:90ddcf31c5fe9764f802af08f0519021","goldenMaterial":"UNG_065t_PremiumCard.mat:d5ffe9276df13744aa3d18a758a2ce62","goldenAnimation":""}}
+{
+  "schemaVersion": 1,
+  "mode": "constructed",
+  "englishName": "Sherazin, Seed",
+  "card": {
+    "id": "UNG_065t",
+    "dbfId": 42796,
+    "name": "셰라진의 씨앗",
+    "text": "<b>휴면</b>, 한 턴에 카드를\n4장 이상 내면, 되살아납니다.",
+    "type": "MINION",
+    "cardClass": "ROGUE",
+    "classes": [],
+    "nativeSetId": 27,
+    "set": "UNGORO",
+    "race": "",
+    "races": [],
+    "spellSchool": "",
+    "cost": 11,
+    "attack": 0,
+    "health": 1,
+    "armor": 0,
+    "durability": 0,
+    "collectible": false,
+    "chooseOne": false,
+    "installed": true,
+    "portrait": "HS10-198_M.psd:90ddcf31c5fe9764f802af08f0519021",
+    "flavor": "",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 1
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 11
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 7
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 402,
+        "name": "능력치 숨김",
+        "value": 1
+      },
+      {
+        "id": 448,
+        "name": "대상 지정 불가",
+        "value": 1
+      },
+      {
+        "id": 1090,
+        "name": "휴면 시각 효과",
+        "value": 1
+      },
+      {
+        "id": 1142,
+        "name": "마우스 카드 표시 방식",
+        "value": 4
+      },
+      {
+        "id": 1518,
+        "name": "휴면",
+        "value": 1
+      },
+      {
+        "id": 1519,
+        "name": "휴면 해제 조건 효과",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>휴면</b>, 한 턴에 카드를\n4장 이상 내면, 되살아납니다.",
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified",
+    "patches": [],
+    "initialSpecStatus": "unverified",
+    "patchSources": {}
+  },
+  "root": false,
+  "relatedIds": [],
+  "expansion": {
+    "id": 27,
+    "slug": "journey-to-ungoro",
+    "name": "운고로를 향한 여정",
+    "type": "expansion",
+    "englishName": "Journey To Ungoro"
+  },
+  "setOrder": 34,
+  "formats": [
+    "wild"
+  ],
+  "provenance": {
+    "source": "Installed Hearthstone dbf.unity3d",
+    "gameVersion": "6000.3.11.3145967",
+    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+    "locale": "koKR"
+  }
+}

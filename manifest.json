@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "set": "Journey To Ungoro",
+  "repository": "qxwd565/Journey-To-Ungoro",
+  "sourceRecords": 185,
+  "sourceVariants": 0,
+  "totalSourceJSON": 185,
+  "collectible": 135,
+  "uncollectible": 50,
+  "pendingReleaseIds": [],
+  "patchVerifiedIds": [
+    "UNG_067t1",
+    "UNG_067"
+  ],
+  "patchVerifiedCardCount": 2,
+  "patchEvents": 4,
+  "excludedDifferentNativeSet": [],
+  "historicalAccuracy": "Historical initial snapshots are provisional, except fields directly reconstructed from cited patches; no exhaustive patch verification claimed",
+  "existingArtworkAndGoldenPreserved": true,
+  "committedPatchEvents": 28,
+  "skippedUnconfirmedFields": 1
+}

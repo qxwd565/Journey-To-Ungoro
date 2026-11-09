@@ -1,1 +1,72 @@
-{"schemaVersion":1,"mode":"constructed","card":{"id":"UNG_851t1","dbfId":41491,"name":"운고로 팩","type":"SPELL","cardClass":"NEUTRAL","collectible":false,"cost":2,"text":"<b>운고로를 향한 여정</b> 카드 5장을\n내 손으로 가져옵니다.","attack":0,"health":0,"durability":0,"armor":0,"flavor":"","spellSchool":"","portrait":"UNG_Pack_S.psd:fa5186281bd11d34a80e5284e2981a5f","set":"UNGORO","nativeTags":[{"id":48,"name":"마나 비용","value":2},{"id":199,"name":"직업","value":12},{"id":202,"name":"카드 유형","value":5}],"races":[],"race":"","classes":[],"art":"art/UNG_851t1.png"},"artworkProvenance":{"source":"installed Hearthstone native assets","portrait":"UNG_Pack_S.psd:fa5186281bd11d34a80e5284e2981a5f","goldenMaterial":"UNG_851t1_PremiumCard.mat:9cfe830766e816d4aa43728b0e6840c2","goldenAnimation":"UNG_851t1_PremiumCard.asset:594e37d22403b4741ab24830fd026583"}}
+{
+  "schemaVersion": 1,
+  "mode": "constructed",
+  "englishName": "Un'Goro Pack",
+  "card": {
+    "id": "UNG_851t1",
+    "dbfId": 41491,
+    "name": "운고로 팩",
+    "text": "<b>운고로를 향한 여정</b> 카드 5장을\n내 손으로 가져옵니다.",
+    "type": "SPELL",
+    "cardClass": "NEUTRAL",
+    "classes": [],
+    "nativeSetId": 27,
+    "set": "UNGORO",
+    "race": "",
+    "races": [],
+    "spellSchool": "",
+    "cost": 2,
+    "attack": 0,
+    "health": 0,
+    "armor": 0,
+    "durability": 0,
+    "collectible": false,
+    "chooseOne": false,
+    "installed": true,
+    "portrait": "UNG_Pack_S.psd:fa5186281bd11d34a80e5284e2981a5f",
+    "flavor": "",
+    "nativeTags": [
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 2
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 5
+      }
+    ],
+    "nativeRawText": "<b>운고로를 향한 여정</b> 카드 5장을\n내 손으로 가져옵니다.",
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified",
+    "patches": [],
+    "initialSpecStatus": "unverified",
+    "patchSources": {}
+  },
+  "root": false,
+  "relatedIds": [],
+  "expansion": {
+    "id": 27,
+    "slug": "journey-to-ungoro",
+    "name": "운고로를 향한 여정",
+    "type": "expansion",
+    "englishName": "Journey To Ungoro"
+  },
+  "setOrder": 34,
+  "formats": [
+    "wild"
+  ],
+  "provenance": {
+    "source": "Installed Hearthstone dbf.unity3d",
+    "gameVersion": "6000.3.11.3145967",
+    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+    "locale": "koKR"
+  }
+}
