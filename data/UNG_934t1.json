@@ -64,8 +64,8 @@
     ],
     "nativeRawText": "<b>전투의 함성:</b>\n내 영웅_능력이 '무작위 적에게 피해를 8 줍니다.'로 바뀝니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [],
     "initialSpecStatus": "unverified",
     "patchSources": {}
