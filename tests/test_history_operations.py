@@ -10,7 +10,7 @@ SPEC.loader.exec_module(BUILD)
 
 class HistoryOperationsTest(unittest.TestCase):
     def test_missing_key_inherits(self):
-        card = {"releasedAt": "2017-04-07", "cost": 3, "patches": [
+        card = {"releasedAt": "2017-04-07", "cost": 3, "attack": 1, "patches": [
             {"date": "2020-01-01", "changes": {"attack": 4}}
         ]}
         current = {}
