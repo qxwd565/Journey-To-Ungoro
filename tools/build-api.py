@@ -35,8 +35,10 @@ DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 SPEC_FIELDS = (
     "name", "type", "cardClass", "classes", "rarity", "collectible",
     "cost", "attack", "health", "durability", "armor", "text",
-    "races", "race", "spellSchool", "mechanics", "nativeTags", "nativeRawText",
+    "races", "race", "spellSchool", "mechanics", "nativeTags",
 )
+HISTORY_ONLY_FIELDS = ("nativeRawText",)
+PATCH_FIELDS = set(SPEC_FIELDS) | set(HISTORY_ONLY_FIELDS)
 TAXONOMY_RULE = "taxonomy-introduction"
 RACE_KOREAN = {
     "BEAST": "야수", "DEMON": "악마", "DRAGON": "용족", "MURLOC": "멀록",
@@ -263,7 +265,7 @@ def read_patches(card: dict, name: str) -> list[dict]:
             raise ValueError(f"{name}: overlapping/unsorted patch dates {prev}, {day}")
         if not changes and not remove:
             raise ValueError(f"{name}: empty operation on {day}")
-        if (set(changes) | set(remove)) - (set(SPEC_FIELDS) | {"legacyArt"}):
+        if (set(changes) | set(remove)) - (PATCH_FIELDS | {"legacyArt"}):
             raise ValueError(f"{name}: unknown gameplay patch field")
         prev = day
     return patches
@@ -272,7 +274,7 @@ def read_patches(card: dict, name: str) -> list[dict]:
 def publish_forward_card(card: dict, current: dict, name: str):
     """Compute latest cache and a disjoint reverse-override history for old clients."""
     patches = read_patches(card, name)
-    base = {field: copy.deepcopy(card[field]) for field in SPEC_FIELDS if field in card}
+    base = {field: copy.deepcopy(card[field]) for field in PATCH_FIELDS if field in card}
     if "legacyArt" in card:
         base["legacyArt"] = card["legacyArt"]
     states = [base]
@@ -304,7 +306,7 @@ def publish_forward_card(card: dict, current: dict, name: str):
             compatibility_blocked.append({"date": event["date"], "fields": introduced})
             continue
         differences = {field: copy.deepcopy(value) for field, value in old.items()
-                       if field in latest and value != latest[field]}
+                       if value != latest.get(field)}
         if not differences:
             continue
         start = card.get("releasedAt") if i == 0 else patches[i - 1]["date"]
