@@ -54,8 +54,8 @@
     ],
     "nativeRawText": "[x]모든 적 하수인에게\n피해를 3 줍니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [],
     "initialSpecStatus": "unverified",
     "patchSources": {}
