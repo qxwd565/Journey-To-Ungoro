@@ -106,6 +106,14 @@
     "nativeRawTextPreserved": true,
     "buildExecution": "GitHub Actions workflow executed; 9 tests passed; two consecutive post-build no-change checks passed.",
     "rawInitialTagReconciliation": "pending: the 100 source rows are not converted into dated balance events; original/current tag timing needs a separate evidence-backed baseline reconciliation.",
-    "pendingRawInitialTagRows": 100
+    "pendingRawInitialTagRows": 100,
+    "defaultPatchConfidence": "high",
+    "patchConfidenceOverrides": {
+      "UNG_111t1@2023-04-05": "medium-high"
+    },
+    "heldCases": [
+      "UNG_852: 27.6 metadata 311/332 disappearance not accepted as a confirmed gameplay protection-loss event",
+      "UNG_111t1: auxiliary Int tag not treated as a playable race"
+    ]
   }
 }
