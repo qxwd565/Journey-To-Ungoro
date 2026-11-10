@@ -1,33 +1,136 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Air Elemental",
-  "card": {
-    "id": "UNG_019",
-    "dbfId": 41152,
+  "schemaVersion": 2,
+  "id": "UNG_019",
+  "dbfId": 41152,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "바람 정령",
-    "text": "<b>모면</b>",
     "type": "MINION",
     "cardClass": "SHAMAN",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "COMMON",
-    "race": "정령",
-    "races": [
-      "ELEMENTAL"
-    ],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 1,
     "attack": 2,
     "health": 1,
-    "armor": 0,
-    "durability": 0,
+    "races": [
+      "ELEMENTAL"
+    ],
+    "race": "정령",
+    "text": "이 하수인은 주문이나 영웅 능력의 대상으로 지정되지 않습니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 1
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 2
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 8
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 18
+      },
+      {
+        "id": 201,
+        "name": "진영",
+        "value": 1
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 1
+      },
+      {
+        "id": 251,
+        "name": "게임 태그 251",
+        "value": 1
+      },
+      {
+        "id": 268,
+        "name": "게임 태그 268",
+        "value": 2
+      },
+      {
+        "id": 311,
+        "name": "CANT_BE_TARGETED_BY_SPELLS",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      },
+      {
+        "id": 332,
+        "name": "CANT_BE_TARGETED_BY_HERO_POWERS",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "이 하수인은 주문이나 영웅 능력의 대상으로 지정되지 않습니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-c451-4d65-9727-d495e8b1dfeb"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "화를 내면 몸을 부풀립니다. 귀엽습니다."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-c451-4d65-9727-d495e8b1dfeb"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "바람 정령",
+    "type": "MINION",
+    "cardClass": "SHAMAN",
+    "classes": [],
+    "rarity": "COMMON",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-011_M.psd:18a8d0eb7ae2a884ba869d17a13fcf2d",
-    "flavor": "화를 내면 몸을 부풀립니다. 귀엽습니다.",
+    "cost": 1,
+    "attack": 3,
+    "health": 1,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>모면</b>",
+    "races": [
+      "ELEMENTAL"
+    ],
+    "race": "정령",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -90,40 +193,103 @@
         "value": 1
       }
     ],
-    "nativeRawText": "<b>모면</b>",
-    "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [
+    "nativeRawText": "<b>모면</b>",
+    "nativeTextBuilder": 0
+  },
+  "2024-03-29": {
+    "attack": 3,
+    "nativeTags": [
       {
-        "date": "2024-03-29",
-        "changes": {
-          "attack": 3
-        }
+        "id": 45,
+        "name": "생명력",
+        "value": 1
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 3
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 8
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 18
+      },
+      {
+        "id": 201,
+        "name": "진영",
+        "value": 1
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 1
+      },
+      {
+        "id": 251,
+        "name": "게임 태그 251",
+        "value": 1
+      },
+      {
+        "id": 268,
+        "name": "게임 태그 268",
+        "value": 2
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      },
+      {
+        "id": 1211,
+        "name": "모면",
+        "value": 1
       }
     ],
-    "initialSpecStatus": "unverified",
-    "patchSources": {
-      "2024-03-29": "https://hearthstone.blizzard.com/ko-kr/news/24064739"
-    }
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+    "confidence": "high",
+    "note": "29.0.3 한국 적용일. 공격력 2→3. TAG311/332에서 TAG1211로 보이는 원시 태그 표현 차이는 대상 지정 방지 능력 상실 사건으로 해석하지 않음."
   },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "nativeTagsTimelineStatus": "complete",
+  "historyIncompleteFields": [
+    "text"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  }
+  "historyKnownFields": [
+    "nativeTags"
+  ],
+  "unresolvedSourceFields": [
+    {
+      "field": "text",
+      "reason": "현재 모면 문구의 도입일은 미확정. 최초 대상 지정 방지 원문을 유지."
+    },
+    {
+      "field": "nativeTags[311,332,1211]",
+      "reason": "원시 태그 표현 차이를 게임 내 보호 능력 상실로 해석하지 않음."
+    }
+  ],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }

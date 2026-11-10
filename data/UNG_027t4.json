@@ -1,33 +1,105 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Pyros",
-  "card": {
-    "id": "UNG_027t4",
-    "dbfId": 41166,
+  "schemaVersion": 2,
+  "id": "UNG_027t4",
+  "dbfId": 41166,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-04": {
     "name": "불사조 파이로스",
-    "text": "",
     "type": "MINION",
     "cardClass": "MAGE",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "LEGENDARY",
-    "race": "정령",
-    "races": [
-      "ELEMENTAL"
-    ],
-    "spellSchool": "",
     "cost": 10,
     "attack": 10,
     "health": 10,
-    "armor": 0,
-    "durability": 0,
+    "races": [
+      "ELEMENTAL"
+    ],
+    "race": "정령",
+    "text": "",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 10
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 10
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 10
+      },
+      {
+        "id": 114,
+        "name": "전설 속성",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 4
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 18
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 5
+      }
+    ],
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "불사조 파이로스",
+    "type": "MINION",
+    "cardClass": "MAGE",
+    "classes": [],
+    "rarity": "LEGENDARY",
     "collectible": false,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-192_D.psd:d757342b66a558747acb1279055506ba",
-    "flavor": "",
+    "cost": 8,
+    "attack": 10,
+    "health": 10,
+    "durability": 0,
+    "armor": 0,
+    "text": "",
+    "races": [
+      "ELEMENTAL",
+      "BEAST"
+    ],
+    "race": "정령, 야수",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -75,51 +147,134 @@
         "value": 1
       }
     ],
-    "nativeRawText": "",
-    "nativeTextBuilder": 0,
     "releasedAt": null,
     "releaseStatus": "pending",
-    "patches": [
+    "nativeRawText": "",
+    "nativeTextBuilder": 0
+  },
+  "2022-11-30": {
+    "race": "정령, 야수",
+    "races": [
+      "ELEMENTAL",
+      "BEAST"
+    ],
+    "nativeTags": [
       {
-        "date": "2022-11-30",
-        "changes": {
-          "races": [
-            "ELEMENTAL",
-            "BEAST"
-          ],
-          "race": "정령, 야수"
-        }
+        "id": 45,
+        "name": "생명력",
+        "value": 10
       },
       {
-        "date": "2023-10-18",
-        "changes": {
-          "cost": 8
-        }
+        "id": 47,
+        "name": "공격력",
+        "value": 10
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 10
+      },
+      {
+        "id": 114,
+        "name": "전설 속성",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 4
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 18
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 5
+      },
+      {
+        "id": 2542,
+        "name": "게임 태그 2542",
+        "value": 1
       }
     ],
-    "initialSpecStatus": "unverified",
-    "patchSources": {
-      "2022-11-30": "https://hearthstone.blizzard.com/ko-kr/news/23882860/25-0-patch-notes",
-      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
-    }
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23882860/25-0-patch-notes",
+    "confidence": "high",
+    "note": "25.0 한국 적용일. 기본 CARDRACE=정령 유지, RaceTagMap 추가 야수 TAG2542=1을 추가."
   },
-  "root": false,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
+  "2023-10-18": {
+    "cost": 8,
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 10
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 10
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 8
+      },
+      {
+        "id": 114,
+        "name": "전설 속성",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 4
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 18
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 5
+      },
+      {
+        "id": 2542,
+        "name": "게임 태그 2542",
+        "value": 1
+      }
+    ],
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+    "confidence": "high",
+    "note": "27.6 한국 적용일. 비용 10→8. 생성 카드 최초 사용일은 pending 유지."
   },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "nativeTagsTimelineStatus": "complete",
+  "historyIncompleteFields": [],
+  "unresolvedSourceFields": [],
+  "historyKnownFields": [
+    "nativeTags"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  }
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }

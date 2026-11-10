@@ -1,31 +1,107 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Tol'vir Stoneshaper",
-  "card": {
-    "id": "UNG_070",
-    "dbfId": 41241,
+  "schemaVersion": 2,
+  "id": "UNG_070",
+  "dbfId": 41241,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "톨비르 바위세공사",
-    "text": "<b>전투의 함성:</b> 내가 이전 턴에 정령을 냈다면, <b>도발</b>과 <b>천상의 보호막</b>을 얻습니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "RARE",
-    "race": "",
-    "races": [],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 4,
     "attack": 3,
     "health": 5,
-    "armor": 0,
-    "durability": 0,
+    "text": "<b>전투의 함성:</b> 내가 이전 턴에 정령을 냈다면, <b>도발</b>과 <b>천상의 보호막</b>을 얻습니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 5
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 3
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 4
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 3
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>전투의 함성:</b> 내가 이전 턴에 정령을 냈다면, <b>도발</b>과 <b>천상의 보호막</b>을 얻습니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "2458883b-28ab-4bca-8d4b-debb2ab1780b",
+        "94d5782b-162d-4e2f-8bf2-065a079e30cf"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "부업으로 애완용 돌 미용사를 하고 있습니다."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "2458883b-28ab-4bca-8d4b-debb2ab1780b",
+        "94d5782b-162d-4e2f-8bf2-065a079e30cf"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "톨비르 바위세공사",
+    "type": "MINION",
+    "cardClass": "NEUTRAL",
+    "classes": [],
+    "rarity": "RARE",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-013_M_New.psd:ddce49b11fb04c44c9fd053b8e6d6d06",
-    "flavor": "부업으로 애완용 돌 미용사를 하고 있습니다.",
+    "cost": 4,
+    "attack": 3,
+    "health": 6,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>전투의 함성:</b> 내가 이전 턴에 정령을 냈다면, <b>도발</b>과 <b>천상의 보호막</b>을 얻습니다.",
+    "races": [],
+    "race": "",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -78,40 +154,79 @@
         "value": 1
       }
     ],
-    "nativeRawText": "<b>전투의 함성:</b> 내가 이전 턴에 정령을 냈다면, <b>도발</b>과 <b>천상의 보호막</b>을 얻습니다.",
-    "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [
+    "nativeRawText": "<b>전투의 함성:</b> 내가 이전 턴에 정령을 냈다면, <b>도발</b>과 <b>천상의 보호막</b>을 얻습니다.",
+    "nativeTextBuilder": 0
+  },
+  "2023-10-18": {
+    "health": 6,
+    "nativeTags": [
       {
-        "date": "2023-10-18",
-        "changes": {
-          "health": 6
-        }
+        "id": 45,
+        "name": "생명력",
+        "value": 6
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 3
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 4
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 3
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
       }
     ],
-    "initialSpecStatus": "unverified",
-    "patchSources": {
-      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
-    }
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+    "confidence": "high",
+    "note": "27.6 한국 적용일. 생명력 5→6 및 자체 TAG 45 동기화. 현재 TAG190/194는 조건부 능력 표시로, 출시부터 소급하거나 2023년 실제 도발 부여 사건으로 해석하지 않음."
   },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "nativeTagsTimelineStatus": "partial",
+  "historyIncompleteFields": [
+    "nativeTags"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  }
+  "unresolvedSourceFields": [
+    {
+      "field": "nativeTags[190,194]",
+      "reason": "조건부 전투의 함성 결과 표시와 관련된 현재 태그. 실제 태그 도입·부여 시점은 미확정이므로 2023-10-18 이력에 추가하지 않음."
+    }
+  ],
+  "historyKnownFields": [
+    "nativeTags"
+  ],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }

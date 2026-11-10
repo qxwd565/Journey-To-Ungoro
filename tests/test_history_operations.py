@@ -448,6 +448,123 @@ class HistoryOperationsTest(unittest.TestCase):
         self.assertEqual(by_id["UNG_955"]["text"], cards["cards"][card_index]["text"])
 
 
+    def test_next_sixteen_ungoro_cards_have_exact_dated_states_and_native_tags(self):
+        catalogue = BUILD.load(ROOT / "cards.json")
+        records = {card["id"]: card for card in catalogue["cards"]}
+        expected_dates = {
+            "UNG_002": ["2017-04-05", "2022-11-30", "2023-10-18"],
+            "UNG_010": ["2017-04-07", "2023-10-18"],
+            "UNG_019": ["2017-04-07", "2024-03-29"],
+            "UNG_027": ["2017-04-07", "2022-11-30", "2023-10-18"],
+            "UNG_027t2": ["2017-04-04", "2022-11-30", "2023-10-18"],
+            "UNG_027t4": ["2017-04-04", "2022-11-30", "2023-10-18"],
+            "UNG_032": ["2017-04-07", "2023-10-18"],
+            "UNG_035": ["2017-04-07", "2023-10-18"],
+            "UNG_037": ["2017-04-07", "2023-10-18"],
+            "UNG_047": ["2017-04-07", "2023-10-18"],
+            "UNG_063": ["2017-04-07", "2023-10-18"],
+            "UNG_065": ["2017-04-07", "2023-10-18"],
+            "UNG_070": ["2017-04-07", "2023-10-18"],
+            "UNG_071": ["2017-04-07", "2023-10-18"],
+            "UNG_072": ["2017-04-07", "2023-10-18"],
+            "UNG_079": ["2017-04-07", "2023-10-18"],
+        }
+        self.assertEqual(len(expected_dates), 16)
+        for cid, dates in expected_dates.items():
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            self.assertEqual(source["schemaVersion"], 2, cid)
+            self.assertEqual(source["dbfId"], records[cid]["dbfId"], cid)
+            self.assertEqual(sorted(k for k in source if BUILD.DATE_RE.fullmatch(k)), dates, cid)
+            self.assertEqual(source["sourceBaseline"]["commitDate"], "2017-04-04", cid)
+            self.assertEqual(source["sourceBaseline"]["build"], 18336, cid)
+            self.assertEqual(source["current"]["nativeTags"], records[cid]["nativeTags"], cid)
+
+        volcano = BUILD.load(ROOT / "data" / "UNG_002.json")
+        self.assertEqual(volcano["2017-04-05"]["race"], "야수")
+        self.assertEqual(BUILD.native_tag_values(volcano["2017-04-05"])[200], 20)
+        self.assertEqual(volcano["2022-11-30"]["races"], ["ELEMENTAL", "BEAST"])
+        self.assertEqual(BUILD.native_tag_values(volcano["2022-11-30"])[2540], 1)
+        self.assertEqual((volcano["2017-04-05"]["cost"], volcano["2023-10-18"]["cost"]), (7, 6))
+        self.assertEqual(BUILD.native_tag_values(volcano["2023-10-18"])[48], 6)
+
+        for cid in ("UNG_027", "UNG_027t2", "UNG_027t4"):
+            pyros = BUILD.load(ROOT / "data" / (cid + ".json"))
+            initial_day = "2017-04-04" if cid.endswith(("t2", "t4")) else "2017-04-07"
+            self.assertEqual(BUILD.native_tag_values(pyros[initial_day])[200], 18)
+            self.assertNotIn(2542, BUILD.native_tag_values(pyros[initial_day]))
+            self.assertEqual(pyros["2022-11-30"]["races"], ["ELEMENTAL", "BEAST"])
+            self.assertEqual(BUILD.native_tag_values(pyros["2022-11-30"])[2542], 1)
+        p2 = BUILD.load(ROOT / "data" / "UNG_027t2.json")
+        p4 = BUILD.load(ROOT / "data" / "UNG_027t4.json")
+        self.assertIsNone(p2["current"]["releasedAt"])
+        self.assertEqual(p2["current"]["releaseStatus"], "pending")
+        self.assertIsNone(p4["current"]["releasedAt"])
+        self.assertEqual(p4["current"]["releaseStatus"], "pending")
+        self.assertEqual((p2["2017-04-04"]["cost"], p2["2023-10-18"]["cost"]), (6, 4))
+        self.assertEqual(BUILD.native_tag_values(p2["2023-10-18"])[48], 4)
+        self.assertEqual((p4["2017-04-04"]["cost"], p4["2023-10-18"]["cost"]), (10, 8))
+        self.assertEqual(BUILD.native_tag_values(p4["2023-10-18"])[48], 8)
+        p1 = BUILD.load(ROOT / "data" / "UNG_027.json")
+        self.assertIn("[x]", p1["2017-04-07"]["nativeRawText"])
+        self.assertIn("(6)", p1["2017-04-07"]["nativeRawText"])
+        self.assertIn("(4)", p1["2023-10-18"]["nativeRawText"])
+
+        trex = BUILD.load(ROOT / "data" / "UNG_010.json")
+        self.assertEqual(trex["2017-04-07"]["health"], 7)
+        self.assertNotIn(190, BUILD.native_tag_values(trex["2017-04-07"]))
+        self.assertEqual(trex["2023-10-18"]["health"], 8)
+        self.assertEqual(BUILD.native_tag_values(trex["2023-10-18"])[190], 1)
+        self.assertIn("\\n", trex["2023-10-18"]["nativeRawText"])
+        self.assertEqual(trex["current"]["text"], records["UNG_010"]["text"])
+
+        wind = BUILD.load(ROOT / "data" / "UNG_019.json")
+        old_wind_tags = BUILD.native_tag_values(wind["2017-04-07"])
+        new_wind_tags = BUILD.native_tag_values(wind["2024-03-29"])
+        self.assertEqual((old_wind_tags[311], old_wind_tags[332]), (1, 1))
+        self.assertNotIn(1211, old_wind_tags)
+        self.assertEqual(wind["2024-03-29"]["attack"], 3)
+        self.assertEqual(new_wind_tags[1211], 1)
+        self.assertIn("상실 사건으로 해석하지 않음", wind["2024-03-29"]["note"])
+
+        stat_changes = {
+            "UNG_032": (("health", 1), ("health", 2), 45, 2),
+            "UNG_035": (("health", 3), ("health", 4), 45, 4),
+            "UNG_037": (("cost", 4), ("cost", 3), 48, 3),
+            "UNG_047": (("cost", 4), ("cost", 3), 48, 3),
+            "UNG_063": (("health", 1), ("health", 2), 45, 2),
+            "UNG_065": (("attack", 5), ("attack", 6), 47, 6),
+            "UNG_070": (("health", 5), ("health", 6), 45, 6),
+            "UNG_071": (("health", 10), ("health", 12), 45, 12),
+            "UNG_072": (("health", 4), ("health", 5), 45, 5),
+            "UNG_079": (("cost", 6), ("cost", 5), 48, 5),
+        }
+        for cid, (old_pair, new_pair, tag_id, tag_value) in stat_changes.items():
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            initial_day = "2017-04-07"
+            self.assertEqual(source[initial_day][old_pair[0]], old_pair[1], cid)
+            self.assertEqual(source["2023-10-18"][new_pair[0]], new_pair[1], cid)
+            self.assertEqual(BUILD.native_tag_values(source["2023-10-18"])[tag_id], tag_value, cid)
+
+        grammar = BUILD.load(ROOT / "data" / "UNG_063.json")
+        self.assertIn("+1/+1를", grammar["2017-04-07"]["nativeRawText"])
+        self.assertIn("+1/+1을", grammar["current"]["text"])
+        self.assertIn("+1/+1를", grammar["current"]["nativeRawText"])
+
+
+    def test_ungoro_conditional_taunt_and_partial_tags_do_not_invent_events(self):
+        stone = BUILD.load(ROOT / "data" / "UNG_070.json")
+        self.assertNotIn(190, BUILD.native_tag_values(stone["2017-04-07"]))
+        self.assertNotIn(190, BUILD.native_tag_values(stone["2023-10-18"]))
+        self.assertEqual(BUILD.native_tag_values(stone["current"])[190], 1)
+        self.assertIn("nativeTags", stone["historyIncompleteFields"])
+        trex = BUILD.load(ROOT / "data" / "UNG_010.json")
+        self.assertEqual(BUILD.native_tag_values(trex["2023-10-18"])[190], 1)
+        wind = BUILD.load(ROOT / "data" / "UNG_019.json")
+        self.assertIn("text", wind["historyIncompleteFields"])
+        self.assertEqual(wind["2017-04-07"]["text"],
+                         "이 하수인은 주문이나 영웅 능력의 대상으로 지정되지 않습니다.")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
 

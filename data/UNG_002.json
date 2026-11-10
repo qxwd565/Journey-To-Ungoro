@@ -1,33 +1,117 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Volcanosaur",
-  "card": {
-    "id": "UNG_002",
-    "dbfId": 41120,
+  "schemaVersion": 2,
+  "id": "UNG_002",
+  "dbfId": 41120,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-05": {
     "name": "화산사우루스",
-    "text": "<b>전투의 함성:</b> <b>적응</b>한 후, 다시 <b>적응</b>합니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "RARE",
-    "race": "야수",
-    "races": [
-      "BEAST"
-    ],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 7,
     "attack": 5,
     "health": 6,
-    "armor": 0,
-    "durability": 0,
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "text": "<b>전투의 함성:</b> <b>적응</b>한 후, 다시 <b>적응</b>합니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 6
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 5
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 7
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 20
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 3
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>전투의 함성:</b> <b>적응</b>한 후, 다시 <b>적응</b>합니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "cb2847bc-fe84-4e29-957a-1e31dea76d59"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "뼈다귀사우루스가 살아 있을 때 이랬을까요?"
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "cb2847bc-fe84-4e29-957a-1e31dea76d59"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "화산사우루스",
+    "type": "MINION",
+    "cardClass": "NEUTRAL",
+    "classes": [],
+    "rarity": "RARE",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-065_M.psd:9911cd62bdaf7884fba357641502b7bb",
-    "flavor": "뼈다귀사우루스가 살아 있을 때 이랬을까요?",
+    "cost": 6,
+    "attack": 5,
+    "health": 6,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>전투의 함성:</b> <b>적응</b>한 후, 다시 <b>적응</b>합니다.",
+    "races": [
+      "ELEMENTAL",
+      "BEAST"
+    ],
+    "race": "정령, 야수",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -85,63 +169,151 @@
         "value": 1
       }
     ],
-    "nativeRawText": "<b>전투의 함성:</b> <b>적응</b>한 후, 다시 <b>적응</b>합니다.",
-    "nativeTextBuilder": 0,
     "releasedAt": "2017-04-05",
     "releaseStatus": "verified",
-    "patches": [
+    "nativeRawText": "<b>전투의 함성:</b> <b>적응</b>한 후, 다시 <b>적응</b>합니다.",
+    "nativeTextBuilder": 0
+  },
+  "2022-11-30": {
+    "race": "정령, 야수",
+    "races": [
+      "ELEMENTAL",
+      "BEAST"
+    ],
+    "nativeTags": [
       {
-        "date": "2022-11-30",
-        "changes": {
-          "races": [
-            "ELEMENTAL",
-            "BEAST"
-          ],
-          "race": "정령, 야수"
-        }
+        "id": 45,
+        "name": "생명력",
+        "value": 6
       },
       {
-        "date": "2023-10-18",
-        "changes": {
-          "cost": 6
-        }
+        "id": 47,
+        "name": "공격력",
+        "value": 5
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 7
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 20
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 3
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      },
+      {
+        "id": 2540,
+        "name": "게임 태그 2540",
+        "value": 1
       }
     ],
-    "initialSpecStatus": "unverified",
-    "patchSources": {
-      "2022-11-30": "https://hearthstone.blizzard.com/ko-kr/news/23882860/25-0-patch-notes",
-      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23882860/25-0-patch-notes",
+    "confidence": "high",
+    "note": "25.0 한국 적용일. 기본 CARDRACE=야수 유지, RaceTagMap 추가 정령 TAG2540=1을 추가."
+  },
+  "2023-10-18": {
+    "cost": 6,
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 6
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 5
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 6
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 20
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 3
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      },
+      {
+        "id": 2540,
+        "name": "게임 태그 2540",
+        "value": 1
+      }
+    ],
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+    "confidence": "high",
+    "note": "27.6 한국 적용일. 비용 7→6 및 TAG48 동기화."
+  },
+  "nativeTagsTimelineStatus": "partial",
+  "historyIncompleteFields": [
+    "nativeTags"
+  ],
+  "historyKnownFields": [
+    "nativeTags"
+  ],
+  "unresolvedSourceFields": [
+    {
+      "field": "nativeTags[546]",
+      "reason": "현재 적응 태그 도입일이 확인되지 않아 current cache에만 보존."
     }
-  },
-  "root": true,
-  "relatedIds": [
-    41058,
-    41059,
-    41691,
-    41061,
-    41063,
-    41062,
-    41211,
-    41060,
-    41054,
-    41057,
-    41067
   ],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  }
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }

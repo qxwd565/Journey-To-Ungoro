@@ -1,31 +1,115 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Biteweed",
-  "card": {
-    "id": "UNG_063",
-    "dbfId": 41216,
+  "schemaVersion": 2,
+  "id": "UNG_063",
+  "dbfId": 41216,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "야금풀",
-    "text": "<b>연계:</b> 이번 턴에<br></br>앞서 낸 카드 1장당<br></br>+1/+1을 얻습니다.",
     "type": "MINION",
     "cardClass": "ROGUE",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "EPIC",
-    "race": "",
-    "races": [],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 2,
     "attack": 1,
     "health": 1,
-    "armor": 0,
-    "durability": 0,
+    "text": "<b>연계:</b> 이번 턴에<br></br>앞서 낸 카드 1장당<br></br>+1/+1를 얻습니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 1
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 1
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 2
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 7
+      },
+      {
+        "id": 201,
+        "name": "진영",
+        "value": 3
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 4
+      },
+      {
+        "id": 220,
+        "name": "연계",
+        "value": 1
+      },
+      {
+        "id": 251,
+        "name": "게임 태그 251",
+        "value": 6
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "[x]<b>연계:</b> 이번 턴에\n앞서 낸 카드 1장당\n+1/+1를 얻습니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "6c09ccbe-70d7-4632-bcdc-a06880d64bf7"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "밴클리풀이라고도 하죠."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "6c09ccbe-70d7-4632-bcdc-a06880d64bf7"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "야금풀",
+    "type": "MINION",
+    "cardClass": "ROGUE",
+    "classes": [],
+    "rarity": "EPIC",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-137_D.psd:aaf6578c59433474387df6b95e2e76da",
-    "flavor": "밴클리풀이라고도 하죠.",
+    "cost": 2,
+    "attack": 1,
+    "health": 2,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>연계:</b> 이번 턴에<br></br>앞서 낸 카드 1장당<br></br>+1/+1을 얻습니다.",
+    "races": [],
+    "race": "",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -78,40 +162,87 @@
         "value": 1
       }
     ],
-    "nativeRawText": "[x]<b>연계:</b> 이번 턴에\n앞서 낸 카드 1장당\n+1/+1를 얻습니다.",
-    "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [
+    "nativeRawText": "[x]<b>연계:</b> 이번 턴에\n앞서 낸 카드 1장당\n+1/+1를 얻습니다.",
+    "nativeTextBuilder": 0
+  },
+  "2023-10-18": {
+    "health": 2,
+    "nativeTags": [
       {
-        "date": "2023-10-18",
-        "changes": {
-          "health": 2
-        }
+        "id": 45,
+        "name": "생명력",
+        "value": 2
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 1
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 2
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 7
+      },
+      {
+        "id": 201,
+        "name": "진영",
+        "value": 3
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 4
+      },
+      {
+        "id": 220,
+        "name": "연계",
+        "value": 1
+      },
+      {
+        "id": 251,
+        "name": "게임 태그 251",
+        "value": 6
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
       }
     ],
-    "initialSpecStatus": "unverified",
-    "patchSources": {
-      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+    "confidence": "high",
+    "note": "27.6 한국 적용일. 생명력 1→2 및 자체 TAG 45 동기화. +1/+1를→+1/+1을은 표시 정규화만 유지하며 새 과거 날짜를 만들지 않음."
+  },
+  "nativeTagsTimelineStatus": "complete",
+  "historyIncompleteFields": [],
+  "unresolvedSourceFields": [
+    {
+      "field": "text",
+      "reason": "한국어 원시 문구 '+1/+1를'는 그대로 보존. 표시 정규화에서만 '+1/+1을'로 출력하며 교정일은 미확정."
     }
-  },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  }
+  "historyKnownFields": [
+    "nativeTags"
+  ],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }

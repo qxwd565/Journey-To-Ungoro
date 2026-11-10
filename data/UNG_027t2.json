@@ -1,33 +1,119 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Pyros",
-  "card": {
-    "id": "UNG_027t2",
-    "dbfId": 41164,
+  "schemaVersion": 2,
+  "id": "UNG_027t2",
+  "dbfId": 41164,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-04": {
     "name": "불사조 파이로스",
-    "text": "<b>죽음의 메아리:</b><br></br>이 하수인을 비용이 (10)인<br></br>10/10 하수인으로 내 손에<br></br>다시 가져옵니다.",
     "type": "MINION",
     "cardClass": "MAGE",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "LEGENDARY",
-    "race": "정령",
-    "races": [
-      "ELEMENTAL"
-    ],
-    "spellSchool": "",
     "cost": 6,
     "attack": 6,
     "health": 6,
-    "armor": 0,
-    "durability": 0,
+    "races": [
+      "ELEMENTAL"
+    ],
+    "race": "정령",
+    "text": "<b>죽음의 메아리:</b><br></br>이 하수인을 비용이 (10)인<br></br>10/10 하수인으로 내 손에<br></br>다시 가져옵니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 6
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 6
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 6
+      },
+      {
+        "id": 114,
+        "name": "전설 속성",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 4
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 18
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 5
+      },
+      {
+        "id": 217,
+        "name": "죽음의 메아리",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "[x]<b>죽음의 메아리:</b>\n이 하수인을 비용이 (10)인\n10/10 하수인으로 내 손에\n다시 가져옵니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "f1a6417c-6e44-4bf0-822a-05e21b24db9e"
+      ],
+      "triggeredPowerHistory": [
+        "effectIndex=\"0\" showInHistory=\"False\""
+      ]
+    },
+    "nativeSetId": 27
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "f1a6417c-6e44-4bf0-822a-05e21b24db9e"
+      ],
+      "triggeredPowerHistory": [
+        "effectIndex=\"0\" showInHistory=\"False\""
+      ]
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "불사조 파이로스",
+    "type": "MINION",
+    "cardClass": "MAGE",
+    "classes": [],
+    "rarity": "LEGENDARY",
     "collectible": false,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-191_D.psd:0bce141169faed84690d912821020cb9",
-    "flavor": "",
+    "cost": 4,
+    "attack": 6,
+    "health": 6,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>죽음의 메아리:</b><br></br>이 하수인을 비용이 (8)인<br></br>10/10 하수인으로 내 손에<br></br>다시 가져옵니다.",
+    "races": [
+      "ELEMENTAL",
+      "BEAST"
+    ],
+    "race": "정령, 야수",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -80,52 +166,146 @@
         "value": 1
       }
     ],
-    "nativeRawText": "[x]<b>죽음의 메아리:</b>\n이 하수인을 비용이 (8)인\n10/10 하수인으로 내 손에\n다시 가져옵니다.",
-    "nativeTextBuilder": 0,
     "releasedAt": null,
     "releaseStatus": "pending",
-    "patches": [
+    "nativeRawText": "[x]<b>죽음의 메아리:</b>\n이 하수인을 비용이 (8)인\n10/10 하수인으로 내 손에\n다시 가져옵니다.",
+    "nativeTextBuilder": 0
+  },
+  "2022-11-30": {
+    "race": "정령, 야수",
+    "races": [
+      "ELEMENTAL",
+      "BEAST"
+    ],
+    "nativeTags": [
       {
-        "date": "2022-11-30",
-        "changes": {
-          "races": [
-            "ELEMENTAL",
-            "BEAST"
-          ],
-          "race": "정령, 야수"
-        }
+        "id": 45,
+        "name": "생명력",
+        "value": 6
       },
       {
-        "date": "2023-10-18",
-        "changes": {
-          "cost": 4,
-          "text": "<b>죽음의 메아리:</b><br></br>이 하수인을 비용이 (8)인<br></br>10/10 하수인으로 내 손에<br></br>다시 가져옵니다."
-        }
+        "id": 47,
+        "name": "공격력",
+        "value": 6
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 6
+      },
+      {
+        "id": 114,
+        "name": "전설 속성",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 4
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 18
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 5
+      },
+      {
+        "id": 217,
+        "name": "죽음의 메아리",
+        "value": 1
+      },
+      {
+        "id": 2542,
+        "name": "게임 태그 2542",
+        "value": 1
       }
     ],
-    "initialSpecStatus": "unverified",
-    "patchSources": {
-      "2022-11-30": "https://hearthstone.blizzard.com/ko-kr/news/23882860/25-0-patch-notes",
-      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
-    }
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23882860/25-0-patch-notes",
+    "confidence": "high",
+    "note": "25.0 한국 적용일. 기본 CARDRACE=정령 유지, RaceTagMap 추가 야수 TAG2542=1을 추가."
   },
-  "root": false,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
+  "2023-10-18": {
+    "cost": 4,
+    "text": "<b>죽음의 메아리:</b><br></br>이 하수인을 비용이 (8)인<br></br>10/10 하수인으로 내 손에<br></br>다시 가져옵니다.",
+    "nativeRawText": "[x]<b>죽음의 메아리:</b>\n이 하수인을 비용이 (8)인\n10/10 하수인으로 내 손에\n다시 가져옵니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 6
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 6
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 4
+      },
+      {
+        "id": 114,
+        "name": "전설 속성",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 4
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 18
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 5
+      },
+      {
+        "id": 217,
+        "name": "죽음의 메아리",
+        "value": 1
+      },
+      {
+        "id": 2542,
+        "name": "게임 태그 2542",
+        "value": 1
+      }
+    ],
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+    "confidence": "high",
+    "note": "27.6 한국 적용일. 비용 6→4 및 죽음의 메아리 반환 비용 10→8. 생성 카드 최초 사용일은 pending 유지."
   },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "nativeTagsTimelineStatus": "complete",
+  "historyIncompleteFields": [],
+  "unresolvedSourceFields": [],
+  "historyKnownFields": [
+    "nativeTags"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  }
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }
