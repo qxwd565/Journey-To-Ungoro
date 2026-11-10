@@ -755,7 +755,7 @@ class HistoryOperationsTest(unittest.TestCase):
         queen = BUILD.load(ROOT / "data" / "UNG_920t1.json")
         self.assertIsNone(queen["current"]["releasedAt"])
         self.assertEqual(queen["current"]["releaseStatus"], "pending")
-        self.assertEqual(BUILD.native_tag_values(queen["2023-10-18"])[791], 1)
+        self.assertEqual(queen["2023-10-18"]["nativeTagUpdates"], [{"id": 791, "value": 1, "name": "속공"}])
         self.assertEqual(queen["2023-10-18"]["nativeRawText"], queen["current"]["nativeRawText"])
 
         sentinel = BUILD.load(ROOT / "data" / "UNG_926.json")
