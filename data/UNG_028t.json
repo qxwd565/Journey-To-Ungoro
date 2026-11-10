@@ -6,7 +6,7 @@
     "id": "UNG_028t",
     "dbfId": 41167,
     "name": "시간 왜곡",
-    "text": "내 턴이 한 번 더 진행됩니다.\n<i>(게임당 1번만 발동)</i>",
+    "text": "내 턴이 한 번 더 진행됩니다.",
     "type": "SPELL",
     "cardClass": "MAGE",
     "classes": [],
@@ -58,15 +58,15 @@
     "releaseStatus": "verified",
     "patches": [
       {
-        "date": "2021-03-26",
+        "date": "2024-04-26",
         "changes": {
-          "spellSchool": "ARCANE"
+          "text": "내 턴이 한 번 더 진행됩니다.\\n<i>(게임당 1번만 발동)</i>"
         }
       }
     ],
     "initialSpecStatus": "unverified",
     "patchSources": {
-      "2021-03-26": "taxonomy introduction"
+      "2024-04-26": "https://hearthstone.blizzard.com/ko-kr/news/24087317/29-2-2-patch-notes"
     }
   },
   "root": false,
