@@ -1,41 +1,75 @@
+import importlib.util
 import unittest
+from pathlib import Path
 
-
-def apply_event(state, event):
-    result = dict(state)
-    changes = event.get("changes", {})
-    remove = event.get("remove", [])
-    if not isinstance(changes, dict) or not isinstance(remove, list):
-        raise ValueError("invalid operation shape")
-    if set(changes) & set(remove):
-        raise ValueError("a field cannot be assigned and removed together")
-    for key in remove:
-        if key not in result:
-            raise ValueError("cannot remove an absent field")
-        del result[key]
-    result.update(changes)
-    return result
+ROOT = Path(__file__).resolve().parents[1]
+SPEC = importlib.util.spec_from_file_location("build_api", ROOT / "tools" / "build-api.py")
+BUILD = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(BUILD)
 
 
 class HistoryOperationsTest(unittest.TestCase):
     def test_missing_key_inherits(self):
-        self.assertEqual(apply_event({"a": 1, "b": 2}, {"changes": {"a": 3}}), {"a": 3, "b": 2})
+        card = {"releasedAt": "2017-04-07", "cost": 3, "patches": [
+            {"date": "2020-01-01", "changes": {"attack": 4}}
+        ]}
+        current = {}
+        revisions, blocked = BUILD.publish_forward_card(card, current, "TEST")
+        self.assertEqual(current, {"cost": 3, "attack": 4})
+        self.assertEqual(blocked, [])
 
     def test_falsy_and_empty_values_are_assignments(self):
-        values = {"zero": 0, "false": False, "null": None, "string": "", "array": []}
-        self.assertEqual(apply_event({}, {"changes": values}), values)
+        values = {"cost": 0, "collectible": False, "text": None, "race": "", "races": []}
+        card = {"releasedAt": "2017-04-07", "patches": [
+            {"date": "2020-01-01", "changes": values}
+        ]}
+        current = {}
+        BUILD.publish_forward_card(card, current, "TEST")
+        self.assertEqual(current, values)
 
-    def test_remove_is_distinct(self):
-        self.assertEqual(apply_event({"a": 1, "b": ""}, {"remove": ["a"]}), {"b": ""})
+    def test_remove_is_distinct_and_reverse_compatible(self):
+        card = {"releasedAt": "2017-04-07", "cost": 2, "patches": [
+            {"date": "2020-01-01", "changes": {}, "remove": ["cost"]}
+        ]}
+        current = {}
+        revisions, blocked = BUILD.publish_forward_card(card, current, "TEST")
+        self.assertNotIn("cost", current)
+        self.assertEqual(blocked, [])
+        self.assertEqual(revisions[0]["changes"]["cost"], 2)
 
-    def test_conflict_rejected(self):
+    def test_new_field_blocks_legacy_reverse_projection(self):
+        card = {"releasedAt": "2017-04-07", "patches": [
+            {"date": "2020-01-01", "changes": {"spellSchool": "FIRE"}}
+        ]}
+        current = {}
+        revisions, blocked = BUILD.publish_forward_card(card, current, "TEST")
+        self.assertEqual(current["spellSchool"], "FIRE")
+        self.assertEqual(revisions, [])
+        self.assertEqual(blocked, [{"date": "2020-01-01", "fields": ["spellSchool"]}])
+
+    def test_conflicting_operations_rejected(self):
+        card = {"releasedAt": "2017-04-07", "patches": [
+            {"date": "2020-01-01", "changes": {"cost": 0}, "remove": ["cost"]}
+        ]}
         with self.assertRaises(ValueError):
-            apply_event({"a": 1}, {"changes": {"a": 0}, "remove": ["a"]})
+            BUILD.read_patches(card, "TEST")
 
-    def test_absent_remove_rejected(self):
+    def test_remove_absent_field_rejected(self):
+        card = {"releasedAt": "2017-04-07", "patches": [
+            {"date": "2020-01-01", "changes": {}, "remove": ["cost"]}
+        ]}
         with self.assertRaises(ValueError):
-            apply_event({}, {"remove": ["a"]})
+            BUILD.publish_forward_card(card, {}, "TEST")
+
+    def test_display_linebreaks_do_not_touch_raw_text(self):
+        card = {"text": "first\\nsecond", "nativeRawText": "first\\nsecond", "patches": []}
+        BUILD.normalize_card_display("TEST", card)
+        self.assertEqual(card["text"], "first<br></br>second")
+        self.assertEqual(card["nativeRawText"], "first\\nsecond")
+
+    def test_known_grammar_correction_has_no_patch_date(self):
+        self.assertEqual(BUILD.normalize_display_text("UNG_063", "+1/+1를 얻습니다."), "+1/+1을 얻습니다.")
 
 
 if __name__ == "__main__":
-    unittest.main()
+    unittest.main(verbosity=2)
