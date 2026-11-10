@@ -57,13 +57,7 @@
     "powerDefinitions": [],
     "triggeredPowerHistory": []
   },
-  "currentReferenceTags": [
-    {
-      "id": 1635,
-      "name": "주문 속성",
-      "value": 4
-    }
-  ],
+  "currentReferenceTags": [],
   "current": {
     "name": "칼날꽃잎",
     "type": "SPELL",
