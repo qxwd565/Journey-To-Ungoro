@@ -58,6 +58,7 @@ def normalize_display_text(card_id: str, value):
         return value
     value = value.replace("\r\n", "\n").replace("\r", "\n")
     value = value.replace("\n", "<br></br>")
+    value = value.replace("\\n", "<br></br>")
     if card_id == "UNG_063":
         value = value.replace("+1/+1를 얻습니다.", "+1/+1을 얻습니다.")
     return value
