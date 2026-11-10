@@ -192,12 +192,18 @@
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified"
   },
-  "nativeTagsTimelineStatus": "complete",
-  "historyIncompleteFields": [],
+  "nativeTagsTimelineStatus": "partial",
+  "historyIncompleteFields": [
+    "nativeTags"
+  ],
   "unresolvedSourceFields": [
     {
       "field": "nativeTextBuilder",
       "reason": "현재 클라이언트 캐시에는 nativeTextBuilder=0이 있으나 CardDefs 18336 기준 스냅샷에는 없다. 도입·변경일을 입증할 자료가 없어 currentCache에만 보존."
+    },
+    {
+      "field": "nativeTags[363]",
+      "reason": "현재 클라이언트 캐시에는 TAG 363(독성)이 있으나 2017-04-04 CardDefs 스냅샷에는 없다. 별도 도입일을 입증할 출처가 없어 날짜형 nativeTags 전체 이력은 partial로 유지."
     }
   ],
   "referenceTags": [
