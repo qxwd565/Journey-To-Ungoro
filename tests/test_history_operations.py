@@ -1029,7 +1029,7 @@ class HistoryOperationsTest(unittest.TestCase):
             record = records[cid]
             release = policy.get("cards", {}).get(cid, policy["default"])
             initial_day = "2017-04-04" if release["status"] == "pending" else "2017-04-07"
-            expected = copy.deepcopy(baseline["cards"][cid]["state"])
+            expected = dict(baseline["cards"][cid]["state"])
             expected["nativeTags"] = [x for x in expected["nativeTags"] if x["id"] != 183]
             self.assertEqual(source[initial_day], expected, cid)
             self.assertEqual(source["dbfId"], record["dbfId"], cid)
