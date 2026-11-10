@@ -79,8 +79,8 @@
     ],
     "nativeRawText": "<b>휴면</b>, 한 턴에 카드를\n4장 이상 내면, 되살아납니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [],
     "initialSpecStatus": "unverified",
     "patchSources": {}
