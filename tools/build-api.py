@@ -50,6 +50,30 @@ def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def normalize_display_text(card_id: str, value):
+    """Normalize display text only; never rewrite nativeRawText or JSON layout."""
+    if not isinstance(value, str):
+        return value
+    value = value.replace("\\r\\n", "\\n").replace("\\r", "\\n")
+    value = value.replace("\\n", "<br></br>")
+    if card_id == "UNG_063":
+        value = value.replace("+1/+1를 얻습니다.", "+1/+1을 얻습니다.")
+    return value
+
+
+def normalize_card_display(card_id: str, card: dict, revisions: list[dict] | None = None):
+    if "text" in card:
+        card["text"] = normalize_display_text(card_id, card["text"])
+    for event in card.get("patches", []):
+        changes = event.get("changes", {})
+        if "text" in changes:
+            changes["text"] = normalize_display_text(card_id, changes["text"])
+    for revision in revisions or []:
+        changes = revision.get("changes", {})
+        if "text" in changes:
+            changes["text"] = normalize_display_text(card_id, changes["text"])
+
+
 def publish(path: Path, value):
     # Runtime catalogues are compact; the editor-facing catalog stays readable.
     if path.name in ("render.json", "history.json"):
@@ -349,6 +373,10 @@ def main():
                 # Avoid silently discarding previously migrated patches.
                 raise ValueError(f"{cid}: history exists in cards.json but not data/{cid}.json")
             record.pop("history", None)
+        if data is not None:
+            normalize_card_display(cid, card, revisions)
+        if "text" in record:
+            record["text"] = normalize_display_text(cid, record["text"])
         render_card = {field: record[field] for field in RENDER_FIELDS if field in record}
         # A single runtime endpoint: the current card and its sparse dated
         # differences are delivered together. Absence of history means current.
