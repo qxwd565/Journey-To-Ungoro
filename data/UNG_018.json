@@ -15,7 +15,7 @@
     "rarity": "COMMON",
     "race": "",
     "races": [],
-    "cost": 1,
+    "cost": 2,
     "attack": 0,
     "health": 0,
     "armor": 0,
@@ -82,11 +82,21 @@
         "changes": {
           "spellSchool": "FIRE"
         }
+      },
+      {
+        "date": "2023-04-05",
+        "changes": {
+          "cost": 1
+        }
       }
     ],
     "initialSpecStatus": "unverified",
     "patchSources": {
-      "2021-03-26": "https://hearthstone.blizzard.com/ko-kr/news/23642550"
+      "2021-03-26": "https://hearthstone.blizzard.com/ko-kr/news/23642550",
+      "2023-04-05": "https://hearthstone.blizzard.com/ko-kr/news/23934449"
+    },
+    "patchConfidence": {
+      "2023-04-05": "high"
     }
   },
   "root": true,
