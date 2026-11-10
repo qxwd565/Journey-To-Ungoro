@@ -44,8 +44,8 @@
     ],
     "nativeRawText": "야수에게 +3/+3을 부여합니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [
       {
         "date": "2023-10-18",
