@@ -6,6 +6,7 @@ then committed. Existing metadata is never overwritten: a conflicting value
 fails loudly so that historical data is not silently replaced.
 """
 import json
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from urllib.request import Request, urlopen
 
@@ -51,15 +52,17 @@ def main():
             raise RuntimeError("Metadata manifest references an unexpected baseline commit")
         baseline_cards = manifest.get("cards", {})
     else:
-        baseline_cards = {}
-        for path in paths:
+        def capture(path):
             card_id = path.stem
             baseline = read_baseline(card_id)
             if baseline.get("id") not in (None, card_id):
                 raise RuntimeError(f"Baseline ID mismatch for {card_id}")
-            baseline_cards[card_id] = {
+            return card_id, {
                 field: baseline[field] for field in FIELDS if field in baseline
             }
+
+        with ThreadPoolExecutor(max_workers=12) as pool:
+            baseline_cards = dict(pool.map(capture, paths))
         manifest = {
             "schemaVersion": 1,
             "sourceCommit": BASELINE_COMMIT,
