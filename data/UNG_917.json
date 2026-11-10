@@ -6,7 +6,7 @@
     "id": "UNG_917",
     "dbfId": 41363,
     "name": "공룡술",
-    "text": "내 영웅 능력이 '야수에게 +3/+3을 부여합니다.'로 바뀝니다.",
+    "text": "내 영웅 능력이 '야수에게 +2/+2를 부여합니다.'로 바뀝니다.",
     "type": "SPELL",
     "cardClass": "HUNTER",
     "classes": [],
@@ -62,9 +62,18 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "text": "내 영웅 능력이 '야수에게 +3/+3을 부여합니다.'로 바뀝니다."
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    }
   },
   "root": true,
   "relatedIds": [
