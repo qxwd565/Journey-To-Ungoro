@@ -60,13 +60,7 @@
     ],
     "triggeredPowerHistory": []
   },
-  "currentReferenceTags": [
-    {
-      "id": 1635,
-      "name": "주문 속성",
-      "value": 1
-    }
-  ],
+  "currentReferenceTags": [],
   "current": {
     "name": "시간 왜곡",
     "type": "SPELL",
