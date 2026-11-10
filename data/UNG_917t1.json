@@ -6,7 +6,7 @@
     "id": "UNG_917t1",
     "dbfId": 41362,
     "name": "공룡술",
-    "text": "야수에게 +3/+3을 부여합니다.",
+    "text": "야수에게 +2/+2를 부여합니다.",
     "type": "HERO_POWER",
     "cardClass": "HUNTER",
     "classes": [],
@@ -46,9 +46,18 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "text": "야수에게 +3/+3을 부여합니다."
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    }
   },
   "root": false,
   "relatedIds": [],
