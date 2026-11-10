@@ -49,8 +49,8 @@
     ],
     "nativeRawText": "[x]내 영웅의 생명력을\n12 회복시킵니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [],
     "initialSpecStatus": "unverified",
     "patchSources": {}
