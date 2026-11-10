@@ -96,20 +96,144 @@
       {
         "date": "2017-07-11",
         "changes": {
-          "text": "<b>퀘스트:</b>\n이름이 같은 하수인을 5회 내야 합니다.\n<b>보상:</b> 수정핵"
+          "text": "<b>퀘스트:</b>\\n이름이 같은 하수인을 5회 내야 합니다.\\n<b>보상:</b> 수정핵",
+          "nativeTags": [
+            {
+              "id": 48,
+              "name": "마나 비용",
+              "value": 1
+            },
+            {
+              "id": 114,
+              "name": "전설 속성",
+              "value": 1
+            },
+            {
+              "id": 199,
+              "name": "직업",
+              "value": 7
+            },
+            {
+              "id": 202,
+              "name": "카드 유형",
+              "value": 5
+            },
+            {
+              "id": 203,
+              "name": "희귀도",
+              "value": 5
+            },
+            {
+              "id": 321,
+              "name": "수집 가능",
+              "value": 1
+            },
+            {
+              "id": 462,
+              "name": "퀘스트",
+              "value": 1
+            },
+            {
+              "id": 535,
+              "name": "퀘스트 완료 조건",
+              "value": 5
+            },
+            {
+              "id": 676,
+              "name": "무작위 선택 제외",
+              "value": 1
+            },
+            {
+              "id": 839,
+              "name": "게임 태그 839",
+              "value": 1
+            },
+            {
+              "id": 1089,
+              "name": "퀘스트 보상 데이터베이스 ID",
+              "value": 41221
+            },
+            {
+              "id": 4297,
+              "name": "게임 태그 4297",
+              "value": 1
+            }
+          ]
         }
       },
       {
         "date": "2021-03-26",
         "changes": {
-          "text": "<b>퀘스트:</b>\n이름이 같은 하수인을 4회 내야 합니다.\n<b>보상:</b> 수정핵"
+          "text": "<b>퀘스트:</b>\\n이름이 같은 하수인을 4회 내야 합니다.\\n<b>보상:</b> 수정핵",
+          "nativeTags": [
+            {
+              "id": 48,
+              "name": "마나 비용",
+              "value": 1
+            },
+            {
+              "id": 114,
+              "name": "전설 속성",
+              "value": 1
+            },
+            {
+              "id": 199,
+              "name": "직업",
+              "value": 7
+            },
+            {
+              "id": 202,
+              "name": "카드 유형",
+              "value": 5
+            },
+            {
+              "id": 203,
+              "name": "희귀도",
+              "value": 5
+            },
+            {
+              "id": 321,
+              "name": "수집 가능",
+              "value": 1
+            },
+            {
+              "id": 462,
+              "name": "퀘스트",
+              "value": 1
+            },
+            {
+              "id": 535,
+              "name": "퀘스트 완료 조건",
+              "value": 4
+            },
+            {
+              "id": 676,
+              "name": "무작위 선택 제외",
+              "value": 1
+            },
+            {
+              "id": 839,
+              "name": "게임 태그 839",
+              "value": 1
+            },
+            {
+              "id": 1089,
+              "name": "퀘스트 보상 데이터베이스 ID",
+              "value": 41221
+            },
+            {
+              "id": 4297,
+              "name": "게임 태그 4297",
+              "value": 1
+            }
+          ]
         }
       }
     ],
     "initialSpecStatus": "partially_verified",
     "patchSources": {
       "2017-07-11": "https://hearthstone.blizzard.com/ko-kr/news/20904301",
-      "2021-03-26": "https://hearthstone.blizzard.com/en-us/news/23642550"
+      "2021-03-26": "https://hearthstone.blizzard.com/ko-kr/news/23642550"
     }
   },
   "root": true,
