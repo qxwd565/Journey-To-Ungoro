@@ -1,33 +1,30 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Radiant Elemental",
-  "card": {
-    "id": "UNG_034",
-    "dbfId": 41176,
+  "schemaVersion": 2,
+  "id": "UNG_034",
+  "dbfId": 41176,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "광명의 정령",
-    "text": "내 주문의 비용이<br></br>(1) 감소합니다.",
     "type": "MINION",
     "cardClass": "PRIEST",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "COMMON",
-    "race": "정령",
-    "races": [
-      "ELEMENTAL"
-    ],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 2,
     "attack": 2,
     "health": 3,
-    "armor": 0,
-    "durability": 0,
-    "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-036_M.psd:6110a6cfc5fdefb4c8fd67d5fab03e6a",
-    "flavor": "정령 등불로 만들면 불티나게 팔리겠군요!",
+    "races": [
+      "ELEMENTAL"
+    ],
+    "race": "정령",
+    "text": "내 주문의 비용이<br></br>(1) 감소합니다.",
     "nativeTags": [
       {
         "id": 45,
@@ -85,40 +82,139 @@
         "value": 1
       }
     ],
-    "nativeRawText": "내 주문들의 비용이\n(1) 감소합니다.\n<i>(단, 1보다 낮아지진 않습니다.)</i>",
-    "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
-    "patches": [
-      {
-        "date": "2024-10-18",
-        "changes": {
-          "text": "내 주문들의 비용이<br></br>(1) 감소합니다.<br></br><i>(단, 1보다 낮아지진 않습니다.)</i>"
-        }
-      }
-    ],
-    "initialSpecStatus": "unverified",
-    "patchSources": {
-      "2024-10-18": "https://hearthstone.blizzard.com/ko-kr/news/24149104"
+    "nativeRawText": "내 주문의 비용이\n(1) 감소합니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "31f03cb7-ee6b-4e3f-9642-a3f7fe27e0ce"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "정령 등불로 만들면 불티나게 팔리겠군요!"
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "31f03cb7-ee6b-4e3f-9642-a3f7fe27e0ce"
+      ],
+      "triggeredPowerHistory": []
     }
   },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
+  "currentReferenceTags": [],
+  "current": {
+    "name": "광명의 정령",
+    "type": "MINION",
+    "cardClass": "PRIEST",
+    "classes": [],
+    "rarity": "COMMON",
+    "collectible": true,
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "durability": 0,
+    "armor": 0,
+    "text": "내 주문들의 비용이<br></br>(1) 감소합니다.<br></br><i>(단, 1보다 낮아지진 않습니다.)</i>",
+    "races": [
+      "ELEMENTAL"
+    ],
+    "race": "정령",
+    "spellSchool": "",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 3
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 2
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 2
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 6
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 18
+      },
+      {
+        "id": 201,
+        "name": "진영",
+        "value": 3
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 1
+      },
+      {
+        "id": 251,
+        "name": "게임 태그 251",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      },
+      {
+        "id": 362,
+        "name": "지속 효과",
+        "value": 1
+      }
+    ],
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified",
+    "nativeRawText": "내 주문들의 비용이\n(1) 감소합니다.\n<i>(단, 1보다 낮아지진 않습니다.)</i>",
+    "nativeTextBuilder": 0
   },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "2024-10-18": {
+    "text": "내 주문들의 비용이<br></br>(1) 감소합니다.<br></br><i>(단, 1보다 낮아지진 않습니다.)</i>",
+    "nativeRawText": "내 주문들의 비용이\n(1) 감소합니다.\n<i>(단, 1보다 낮아지진 않습니다.)</i>",
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/24149104",
+    "confidence": "high",
+    "note": "확정된 한국 적용일의 설명 변경. 당시 원문 LF를 보존하고 표시 줄바꿈만 <br></br>로 표현."
+  },
+  "sourceEvidence": {
+    "2024-10-18": {
+      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/24149104",
+      "cardDefsCommit": "e6b9c5e51678d5035d1188f63c246326bb221c60",
+      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/e6b9c5e51678d5035d1188f63c246326bb221c60/CardDefs.xml"
+    }
+  },
+  "nativeTagsTimelineStatus": "complete",
+  "historyIncompleteFields": [
+    "nativeTextBuilder"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  }
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [
+    {
+      "field": "nativeTextBuilder",
+      "reason": "현재 nativeTextBuilder 도입일 미확정."
+    }
+  ],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }

@@ -912,6 +912,104 @@ class HistoryOperationsTest(unittest.TestCase):
             self.assertEqual(source["current"]["releaseStatus"], "pending", cid)
 
 
+    def test_fourteen_additional_ungoro_cards_replay_original_dates_and_sparse_tags(self):
+        ids = (
+            "UNG_833", "UNG_011", "UNG_022", "UNG_058", "UNG_061", "UNG_851",
+            "UNG_910", "UNG_914", "UNG_917", "UNG_917t1", "UNG_929", "UNG_034",
+            "UNG_067", "UNG_067t1",
+        )
+        baseline = BUILD.load(ROOT / "sources" / "carddefs-18336-baseline.json")
+        catalog = BUILD.load(ROOT / "cards.json")
+        records = {x["id"]: x for x in catalog["cards"]}
+        self.assertEqual(len(ids), 14)
+        for cid in ids:
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            self.assertEqual(source["schemaVersion"], 2, cid)
+            self.assertEqual(source["dbfId"], records[cid]["dbfId"], cid)
+            initial_day = "2017-04-04" if records[cid].get("releasedAt") is None else "2017-04-07"
+            self.assertEqual(
+                source[initial_day]["nativeTags"],
+                [x for x in baseline["cards"][cid]["state"]["nativeTags"] if x["id"] != 183],
+                cid,
+            )
+            card = BUILD.normalize_date_keyed_source(
+                source, {"id": cid, "releasedAt": records[cid].get("releasedAt")}
+            )
+            patches, states = BUILD.replay_forward_states(card, cid)
+            self.assertEqual(len(states), len(patches) + 1, cid)
+
+        expected_text = {
+            "UNG_833": ("2021-03-26", "<b>도발</b>, <b>전투의 함성:</b><br></br>비용이 가장 낮은 카드를<br></br>2장 버립니다."),
+            "UNG_011": ("2023-10-18", "<b>전투의 함성:</b> <b>비밀</b>을 <b>발견</b>하고 시전합니다."),
+            "UNG_022": ("2023-10-18", "<b>전투의 함성:</b> 하수인을 선택합니다. 그 하수인을 복사하여 1/1 하수인으로 소환합니다."),
+            "UNG_058": ("2023-10-18", "<b>전투의 함성:</b> 피해를<br></br>2 주는 칼날꽃잎을<br></br>내 손으로 가져옵니다."),
+            "UNG_061": ("2023-10-18", "이번 게임에서 내 손으로 가져온 도적이 아닌 직업 카드 하나당 비용이 (1)씩 감소합니다."),
+            "UNG_851": ("2023-10-18", "<b>전투의 함성:</b> 개봉하지 않은<br></br><b>운고로</b> 팩을 내 덱에 섞어<br></br>넣습니다. 내 덱에 똑같은 카드가<br></br>없으면, 그 카드를 뽑습니다."),
+            "UNG_910": ("2023-10-18", "하수인에게 피해를 $3 주고<br></br>그 양옆의 하수인들에게 피해를 $1 줍니다."),
+            "UNG_914": ("2023-10-18", "<b>죽음의 메아리:</b> 4/5 랩터를 내 덱에 섞어 넣습니다."),
+            "UNG_917": ("2023-10-18", "내 영웅 능력이 '야수에게 +3/+3을 부여합니다.'로 바뀝니다."),
+            "UNG_917t1": ("2023-10-18", "야수에게 +3/+3을 부여합니다."),
+            "UNG_929": ("2023-10-18", "내 손에 있으면<br></br>매 턴마다 무작위<br></br>무기로 변신합니다."),
+            "UNG_034": ("2024-10-18", "내 주문들의 비용이<br></br>(1) 감소합니다.<br></br><i>(단, 1보다 낮아지진 않습니다.)</i>"),
+        }
+        for cid, (day, expected) in expected_text.items():
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            self.assertEqual(source[day]["text"], expected, cid)
+            self.assertEqual(source[day]["nativeRawText"].count("\\n"),
+                             source[day]["text"].count("<br></br>"), cid)
+
+        # Weapon and hero-power records retain type-specific field absence.
+        for cid in ("UNG_061", "UNG_929"):
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            self.assertNotIn("health", source["2017-04-07"], cid)
+            self.assertIn("durability", source["2017-04-07"], cid)
+        power = BUILD.load(ROOT / "data" / "UNG_917t1.json")
+        self.assertNotIn("attack", power["2017-04-04"])
+        self.assertNotIn("health", power["2017-04-04"])
+        self.assertIsNone(power["current"]["releasedAt"])
+        self.assertEqual(power["current"]["releaseStatus"], "pending")
+
+        # Caverns of Time: only TAG535 changes at the two known dates.
+        cavern = BUILD.load(ROOT / "data" / "UNG_067.json")
+        self.assertEqual(BUILD.native_tag_values(cavern["2017-04-07"])[535], 4)
+        self.assertEqual(cavern["2017-07-11"]["nativeTagUpdates"], [{"id": 535, "value": 5}])
+        self.assertEqual(cavern["2021-03-26"]["nativeTagUpdates"], [{"id": 535, "value": 4}])
+        self.assertNotIn("nativeTags", cavern["2017-07-11"])
+        self.assertNotIn("nativeTags", cavern["2021-03-26"])
+        card = BUILD.normalize_date_keyed_source(cavern, {"id": "UNG_067", "releasedAt": "2017-04-07"})
+        _, states = BUILD.replay_forward_states(card, "UNG_067")
+        self.assertEqual([BUILD.native_tag_values(x)[535] for x in states], [4, 5, 4])
+        self.assertEqual([x["text"] for x in states], [
+            cavern["2017-04-07"]["text"], cavern["2017-07-11"]["text"], cavern["2021-03-26"]["text"]
+        ])
+        self.assertEqual([x["nativeRawText"] for x in states], [
+            cavern["2017-04-07"]["nativeRawText"], cavern["2017-07-11"]["nativeRawText"],
+            cavern["2021-03-26"]["nativeRawText"]
+        ])
+        self.assertIn("nativeTags", cavern["historyIncompleteFields"])
+        for event in ("2017-07-11", "2021-03-26"):
+            self.assertEqual(cavern[event]["sourceEvidence"] if "sourceEvidence" in cavern[event] else cavern["sourceEvidence"][event]["patchNotes"],
+                             "https://hearthstone.blizzard.com/ko-kr/news/20904301" if event == "2017-07-11" else "https://hearthstone.blizzard.com/ko-kr/news/23642550")
+
+        core = BUILD.load(ROOT / "data" / "UNG_067t1.json")
+        self.assertIsNone(core["current"]["releasedAt"])
+        self.assertEqual(core["current"]["releaseStatus"], "pending")
+        card = BUILD.normalize_date_keyed_source(core, {"id": "UNG_067t1", "releasedAt": None})
+        _, states = BUILD.replay_forward_states(card, "UNG_067t1")
+        self.assertEqual([x["text"] for x in states], [
+            "이번 게임 동안 내 하수인들의 능력치가 5/5가 됩니다.",
+            "이번 게임 동안 내 하수인들의 능력치가 4/4가 됩니다.",
+            "이번 게임 동안 내 하수인들의 능력치가 5/5가 됩니다.",
+        ])
+        self.assertEqual([x["nativeRawText"] for x in states], [
+            "이번 게임 동안 내 하수인들의 능력치가 5/5가 됩니다.",
+            "이번 게임 동안 내 하수인들의 능력치가 4/4가 됩니다.",
+            "이번 게임 동안 내 하수인들의 능력치가 5/5가 됩니다.",
+        ])
+        self.assertEqual(core["2018-05-23"]["source"], "https://hearthstone.blizzard.com/ko-kr/news/21758133/2018-5")
+        self.assertEqual(core["2021-03-26"]["source"], "https://hearthstone.blizzard.com/ko-kr/news/23642550")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
 
