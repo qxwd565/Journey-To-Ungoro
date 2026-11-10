@@ -6,7 +6,7 @@
     "id": "UNG_057t1",
     "dbfId": 41206,
     "name": "칼날꽃잎",
-    "text": "피해를 $2 줍니다.",
+    "text": "피해를 $1 줍니다.",
     "type": "SPELL",
     "cardClass": "ROGUE",
     "classes": [],
@@ -63,15 +63,15 @@
     "releaseStatus": "verified",
     "patches": [
       {
-        "date": "2021-03-26",
+        "date": "2023-10-18",
         "changes": {
-          "spellSchool": "NATURE"
+          "text": "피해를 $2 줍니다."
         }
       }
     ],
     "initialSpecStatus": "unverified",
     "patchSources": {
-      "2021-03-26": "taxonomy introduction"
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
     }
   },
   "root": false,
