@@ -48,6 +48,116 @@ RACE_KOREAN = {
     "DRAENEI": "드레나이", "NAGA": "나가",
 }
 
+# Hearthstone GameTag enum values, cross-checked against HearthSim/python-hearthstone.
+# Preserve numeric tags in source; these maps only validate/derive display fields.
+RARITY_BY_TAG = {1: "COMMON", 2: "FREE", 3: "RARE", 4: "EPIC", 5: "LEGENDARY"}
+CLASS_BY_TAG = {
+    2: "DRUID", 3: "HUNTER", 4: "MAGE", 5: "PALADIN", 6: "PRIEST",
+    7: "ROGUE", 8: "SHAMAN", 9: "WARLOCK", 10: "WARRIOR",
+    12: "NEUTRAL", 14: "DEMONHUNTER",
+}
+CARD_TYPE_BY_TAG = {
+    3: "HERO", 4: "MINION", 5: "SPELL", 6: "ENCHANTMENT",
+    7: "WEAPON", 10: "HERO_POWER",
+}
+RACE_BY_TAG = {
+    1: "BLOODELF", 2: "DRAENEI", 3: "DWARF", 4: "GNOME", 5: "GOBLIN",
+    6: "HUMAN", 7: "NIGHTELF", 8: "ORC", 9: "TAUREN", 10: "TROLL",
+    11: "UNDEAD", 12: "WORGEN", 13: "GOBLIN", 14: "MURLOC",
+    15: "DEMON", 16: "SCOURGE", 17: "MECHANICAL", 18: "ELEMENTAL",
+    19: "OGRE", 20: "BEAST", 21: "TOTEM", 22: "NERUBIAN",
+    23: "PIRATE", 24: "DRAGON", 25: "BLANK", 26: "ALL", 38: "EGG",
+}
+RACE_LABEL_BY_TAG = {
+    1: "블러드엘프", 2: "드레나이", 3: "드워프", 4: "노움", 5: "고블린",
+    6: "인간", 7: "나이트 엘프", 8: "오크", 9: "타우렌", 10: "트롤",
+    11: "언데드", 12: "늑대인간", 13: "고블린", 14: "멀록",
+    15: "악마", 16: "스컬지", 17: "기계", 18: "정령", 19: "오우거",
+    20: "야수", 21: "토템", 22: "네루비안", 23: "해적", 24: "용족",
+    25: "공백", 26: "모두", 38: "알",
+}
+SPELL_SCHOOL_BY_TAG = {
+    1: "ARCANE", 2: "FIRE", 3: "FROST", 4: "NATURE",
+    5: "HOLY", 6: "SHADOW", 7: "FEL",
+}
+
+
+def native_tag_values(card: dict) -> dict[int, int]:
+    return {item["id"]: item["value"] for item in card.get("nativeTags", [])
+            if isinstance(item, dict) and isinstance(item.get("id"), int)
+            and isinstance(item.get("value"), int)}
+
+
+def validate_baseline_enum_mappings(baseline: dict) -> dict:
+    """Reject derived CardDefs labels that disagree with their preserved numeric tags."""
+    counts = {"cards": 0, "rarity": 0, "race": 0, "cardClass": 0, "type": 0}
+    for cid, entry in baseline.get("cards", {}).items():
+        state = entry.get("state", {})
+        tags = native_tag_values(state)
+        counts["cards"] += 1
+        for field, tag_id, mapping in (
+            ("rarity", 203, RARITY_BY_TAG),
+            ("cardClass", 199, CLASS_BY_TAG),
+            ("type", 202, CARD_TYPE_BY_TAG),
+        ):
+            expected = mapping.get(tags.get(tag_id))
+            if expected is not None and field in state:
+                if state[field] != expected:
+                    raise ValueError(
+                        f"{cid}: CardDefs {field}={state[field]!r} disagrees with "
+                        f"TAG {tag_id}={tags[tag_id]} (expected {expected!r})"
+                    )
+                counts[field] += 1
+        expected_race = RACE_LABEL_BY_TAG.get(tags.get(200))
+        if expected_race is not None and state.get("race") not in (None, "", expected_race):
+            raise ValueError(
+                f"{cid}: CardDefs race={state['race']!r} disagrees with "
+                f"CARDRACE={tags[200]} (expected {expected_race!r})"
+            )
+        if expected_race is not None and state.get("race"):
+            counts["race"] += 1
+    return counts
+
+
+def validate_current_enum_mappings(records: list[dict]) -> dict:
+    """Cross-check current derived fields against their retained raw enum tags."""
+    counts = {"cards": 0, "rarity": 0, "race": 0, "cardClass": 0, "type": 0, "spellSchool": 0}
+    for card in records:
+        counts["cards"] += 1
+        tags = native_tag_values(card)
+        for field, tag_id, mapping in (
+            ("rarity", 203, RARITY_BY_TAG),
+            ("cardClass", 199, CLASS_BY_TAG),
+            ("type", 202, CARD_TYPE_BY_TAG),
+            ("spellSchool", 1635, SPELL_SCHOOL_BY_TAG),
+        ):
+            expected = mapping.get(tags.get(tag_id))
+            if expected is not None and field in card:
+                if card[field] != expected:
+                    raise ValueError(
+                        f"{card['id']}: current {field}={card[field]!r} disagrees "
+                        f"with TAG {tag_id}={tags[tag_id]} (expected {expected!r})"
+                    )
+                counts[field] += 1
+        race_code = RACE_BY_TAG.get(tags.get(200))
+        if race_code is not None:
+            races = card.get("races", [])
+            if races and race_code not in races:
+                raise ValueError(
+                    f"{card['id']}: current races={races!r} omits "
+                    f"CARDRACE={tags[200]} ({race_code})"
+                )
+            expected_label = RACE_LABEL_BY_TAG.get(tags.get(200))
+            if expected_label and card.get("race"):
+                labels = [part.strip() for part in card["race"].split(",")]
+                if expected_label not in labels:
+                    raise ValueError(
+                        f"{card['id']}: current race={card['race']!r} disagrees "
+                        f"with CARDRACE={tags[200]} (expected {expected_label!r})"
+                    )
+            counts["race"] += 1
+    return counts
+
 
 def load(path: Path):
     return json.loads(path.read_text(encoding="utf-8"))
@@ -429,6 +539,10 @@ def main():
     if catalog.get("schema") != 1 or not isinstance(catalog.get("cards"), list):
         raise ValueError("Unexpected cards.json schema")
     detailed = ROOT / "data"
+    baseline_path = ROOT / "sources" / "carddefs-18336-baseline.json"
+    if baseline_path.exists():
+        validate_baseline_enum_mappings(load(baseline_path))
+    validate_current_enum_mappings(catalog["cards"])
     release_policy_path = ROOT / "release-policy.json"
     release_policy = load(release_policy_path) if release_policy_path.exists() else None
     taxonomy_policy = read_taxonomy_policy(ROOT / "taxonomy-history.json")
