@@ -1,33 +1,118 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Nesting Roc",
-  "card": {
-    "id": "UNG_801",
-    "dbfId": 41305,
+  "schemaVersion": 2,
+  "id": "UNG_801",
+  "dbfId": 41305,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "둥지를 튼 로크",
-    "text": "<b>전투의 함성:</b> 내 전장에 다른 하수인이 둘 이상 있으면, <b>도발</b>을 얻습니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "COMMON",
-    "race": "야수",
-    "races": [
-      "BEAST"
-    ],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 5,
     "attack": 4,
     "health": 7,
-    "armor": 0,
-    "durability": 0,
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "text": "<b>전투의 함성:</b><br></br>내 전장에 다른 하수인이 둘 이상 있으면, <b>도발</b>을 얻습니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 7
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 4
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 5
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 20
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 1
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>전투의 함성:</b>\n내 전장에 다른 하수인이 둘 이상 있으면, <b>도발</b>을 얻습니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "cdc82920-9f0c-400c-8779-b1e4bacabfdc",
+        "00000012-6d52-4318-aa28-18d60165e271"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "로크의 알은 오믈렛이나 샌드위치를 만들 때 아주 좋습니다. 밀렵꾼을 유인할 때에도 유용하죠."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "cdc82920-9f0c-400c-8779-b1e4bacabfdc",
+        "00000012-6d52-4318-aa28-18d60165e271"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "둥지를 튼 로크",
+    "type": "MINION",
+    "cardClass": "NEUTRAL",
+    "classes": [],
+    "rarity": "COMMON",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-143_D.psd:207db2c857900c34489d7514eb80c7c0",
-    "flavor": "로크의 알은 오믈렛이나 샌드위치를 만들 때 아주 좋습니다. 밀렵꾼을 유인할 때에도 유용하죠.",
+    "cost": 5,
+    "attack": 4,
+    "health": 7,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>전투의 함성:</b> 내 전장에 다른 하수인이 둘 이상 있으면, <b>도발</b>을 얻습니다.",
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -80,31 +165,39 @@
         "value": 1
       }
     ],
-    "nativeRawText": "<b>전투의_함성:</b> 내 전장에 다른 하수인이 둘 이상 있으면, <b>도발</b>을 얻습니다.",
-    "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
-    "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "nativeRawText": "<b>전투의_함성:</b> 내 전장에 다른 하수인이 둘 이상 있으면, <b>도발</b>을 얻습니다.",
+    "nativeTextBuilder": 0
   },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "nativeTagsTimelineStatus": "partial",
+  "historyIncompleteFields": [
+    "nativeTags",
+    "text",
+    "nativeTextBuilder"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  }
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [
+    {
+      "field": "nativeTags",
+      "reason": "현재 캐시에만 존재하는 태그의 도입일은 미확정. 확정된 TAG 업데이트만 날짜 이벤트로 기록."
+    },
+    {
+      "field": "text",
+      "reason": "현재 표시 문구와 최초 CardDefs 원문 사이의 변경일이 확인되지 않은 차이는 별도 과거 사건으로 만들지 않음."
+    },
+    {
+      "field": "nativeTags[190]",
+      "reason": "현재 도발 태그는 조건부 효과/표시와 관련될 수 있으며, 최초 원본에 없다는 이유만으로 2023년 신규 도발 부여 사건으로 해석하지 않음."
+    }
+  ],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }

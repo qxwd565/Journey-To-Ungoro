@@ -590,6 +590,95 @@ class HistoryOperationsTest(unittest.TestCase):
                       [x["field"] for x in source["unresolvedSourceFields"]])
 
 
+    def test_next_sixteen_ungoro_sources_replay_confirmed_boundaries_and_scoped_tags(self):
+        ids = (
+            "UNG_084", "UNG_085", "UNG_086", "UNG_088", "UNG_099", "UNG_100",
+            "UNG_101", "UNG_111t1", "UNG_113", "UNG_208", "UNG_211", "UNG_800",
+            "UNG_801", "UNG_808", "UNG_816", "UNG_818",
+        )
+        catalog = BUILD.load(ROOT / "cards.json")
+        records = {card["id"]: card for card in catalog["cards"]}
+        self.assertEqual(len(ids), 16)
+        for cid in ids:
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            self.assertEqual(source["schemaVersion"], 2, cid)
+            self.assertEqual(source["dbfId"], records[cid]["dbfId"], cid)
+            initial_day = "2017-04-04" if cid == "UNG_111t1" else "2017-04-07"
+            self.assertEqual(source[initial_day]["nativeTags"],
+                             [x for x in BUILD.load(ROOT / "sources" / "carddefs-18336-baseline.json")["cards"][cid]["state"]["nativeTags"] if x["id"] != 183], cid)
+            card = BUILD.normalize_date_keyed_source(
+                source, {"id": cid, "releasedAt": records[cid]["releasedAt"]}
+            )
+            patches, states = BUILD.replay_forward_states(card, cid)
+            latest = states[-1]
+            current = source["current"]
+            self.assertEqual(latest["id"] if "id" in latest else cid, cid)
+            self.assertEqual(current["nativeTags"], records[cid]["nativeTags"], cid)
+            self.assertEqual(current.get("releasedAt"), records[cid].get("releasedAt"), cid)
+
+        volcano = BUILD.load(ROOT / "data" / "UNG_084.json")
+        card = BUILD.normalize_date_keyed_source(volcano, {"id": "UNG_084", "releasedAt": "2017-04-07"})
+        _, states = BUILD.replay_forward_states(card, "UNG_084")
+        self.assertEqual((states[0]["health"], BUILD.native_tag_values(states[0])[45]), (3, 3))
+        self.assertEqual((states[1]["race"], states[1]["races"]), ("정령, 야수", ["ELEMENTAL", "BEAST"]))
+        self.assertEqual(BUILD.native_tag_values(states[1])[2542], 1)
+        self.assertEqual((states[2]["text"], states[2]["nativeRawText"]),
+                         (volcano["2023-10-18"]["text"], volcano["2023-10-18"]["nativeRawText"]))
+        self.assertEqual((states[3]["health"], BUILD.native_tag_values(states[3])[45]), (4, 4))
+
+        devil = BUILD.load(ROOT / "data" / "UNG_099.json")
+        card = BUILD.normalize_date_keyed_source(devil, {"id": "UNG_099", "releasedAt": "2017-04-07"})
+        _, states = BUILD.replay_forward_states(card, "UNG_099")
+        self.assertEqual(BUILD.native_tag_values(states[0])[200], 20)
+        self.assertEqual(BUILD.native_tag_values(states[1])[2540], 1)
+        self.assertEqual(states[1]["races"], ["ELEMENTAL", "BEAST"])
+        self.assertEqual((states[2]["cost"], BUILD.native_tag_values(states[2])[48]), (7, 7))
+
+        expected = {
+            "UNG_085": ("attack", 2, 3, 47, 3),
+            "UNG_088": ("health", 4, 5, 45, 5),
+            "UNG_100": ("health", 4, 5, 45, 5),
+            "UNG_113": ("cost", 4, 3, 48, 3),
+            "UNG_208": ("cost", 7, 5, 48, 5),
+            "UNG_211": ("cost", 8, 7, 48, 7),
+            "UNG_800": ("cost", 3, 2, 48, 2),
+            "UNG_808": ("health", 2, 3, 45, 3),
+            "UNG_816": ("attack", 4, 5, 47, 5),
+            "UNG_818": ("attack", 1, 3, 47, 3),
+        }
+        for cid, (field, before, after, tag_id, tag_value) in expected.items():
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            card = BUILD.normalize_date_keyed_source(source, {"id": cid, "releasedAt": "2017-04-07"})
+            _, states = BUILD.replay_forward_states(card, cid)
+            self.assertEqual(states[0][field], before, cid)
+            self.assertEqual(states[-1][field], after, cid)
+            self.assertEqual(BUILD.native_tag_values(states[-1])[tag_id], tag_value, cid)
+
+        anaconda = BUILD.load(ROOT / "data" / "UNG_086.json")
+        self.assertNotIn(190, BUILD.native_tag_values(anaconda["2017-04-07"]))
+        self.assertNotIn("nativeTagUpdates", anaconda["2023-10-18"])
+        rock = BUILD.load(ROOT / "data" / "UNG_801.json")
+        self.assertNotIn(190, BUILD.native_tag_values(rock["2017-04-07"]))
+        self.assertNotIn("nativeTagUpdates", rock)
+        stalker = BUILD.load(ROOT / "data" / "UNG_800.json")
+        self.assertNotIn(217, BUILD.native_tag_values(stalker["2017-04-07"]))
+        self.assertNotIn(217, BUILD.native_tag_values(stalker["2023-10-18"]))
+        shell = BUILD.load(ROOT / "data" / "UNG_101.json")
+        self.assertNotIn(190, BUILD.native_tag_values(shell["2017-04-07"]))
+        self.assertNotIn("nativeTagUpdates", shell)
+
+        treant = BUILD.load(ROOT / "data" / "UNG_111t1.json")
+        self.assertIsNone(treant["current"]["releasedAt"])
+        self.assertEqual(treant["current"]["releaseStatus"], "pending")
+        self.assertEqual(treant["current"]["races"], [])
+        self.assertNotIn("races", treant["2017-04-04"])
+        self.assertNotIn(2831, BUILD.native_tag_values(treant["2017-04-04"]))
+        self.assertEqual(treant["2023-04-05"]["confidence"], "medium-high")
+        card = BUILD.normalize_date_keyed_source(treant, {"id": "UNG_111t1", "releasedAt": None})
+        _, states = BUILD.replay_forward_states(card, "UNG_111t1")
+        self.assertEqual((states[-1]["cost"], BUILD.native_tag_values(states[-1])[48]), (1, 1))
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
 

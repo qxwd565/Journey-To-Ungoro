@@ -1,33 +1,124 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Charged Devilsaur",
-  "card": {
-    "id": "UNG_099",
-    "dbfId": 41286,
+  "schemaVersion": 2,
+  "id": "UNG_099",
+  "dbfId": 41286,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "감전된 데빌사우루스",
-    "text": "<b>돌진</b>, <b>전투의 함성:</b><br></br>이번 턴에 영웅을<br></br>공격할 수 없습니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "EPIC",
-    "race": "야수",
-    "races": [
-      "BEAST"
-    ],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 8,
     "attack": 7,
     "health": 7,
-    "armor": 0,
-    "durability": 0,
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "text": "<b>돌진</b>, <b>전투의 함성:</b><br></br>이번 턴에 영웅을<br></br>공격할 수 없습니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 7
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 7
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 8
+      },
+      {
+        "id": 197,
+        "name": "돌진",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 20
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 4
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>돌진</b>, <b>전투의 함성:</b>\n이번 턴에 영웅을\n공격할 수 없습니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "1a48a03a-0261-42ab-9789-00d97d76599b",
+        "00000012-3087-42d1-8c41-20d54b7aaa33"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "공룡 정도의 크기면 정전기도 매우 치명적이죠."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "1a48a03a-0261-42ab-9789-00d97d76599b",
+        "00000012-3087-42d1-8c41-20d54b7aaa33"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "감전된 데빌사우루스",
+    "type": "MINION",
+    "cardClass": "NEUTRAL",
+    "classes": [],
+    "rarity": "EPIC",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-166_M.psd:458ce84683d7fba49b988de007663d1a",
-    "flavor": "공룡 정도의 크기면 정전기도 매우 치명적이죠.",
+    "cost": 7,
+    "attack": 7,
+    "health": 7,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>돌진</b>, <b>전투의 함성:</b><br></br>이번 턴에 영웅을<br></br>공격할 수 없습니다.",
+    "races": [
+      "ELEMENTAL",
+      "BEAST"
+    ],
+    "race": "정령, 야수",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -85,51 +176,65 @@
         "value": 1
       }
     ],
-    "nativeRawText": "<b>돌진</b>, <b>전투의 함성:</b>\n이번 턴에 영웅을\n공격할 수 없습니다.",
-    "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [
+    "nativeRawText": "<b>돌진</b>, <b>전투의 함성:</b>\n이번 턴에 영웅을\n공격할 수 없습니다.",
+    "nativeTextBuilder": 0
+  },
+  "2022-11-30": {
+    "race": "정령, 야수",
+    "races": [
+      "ELEMENTAL",
+      "BEAST"
+    ],
+    "nativeTagUpdates": [
       {
-        "date": "2022-11-30",
-        "changes": {
-          "races": [
-            "ELEMENTAL",
-            "BEAST"
-          ],
-          "race": "정령, 야수"
-        }
-      },
-      {
-        "date": "2023-10-18",
-        "changes": {
-          "cost": 7
-        }
+        "id": 2540,
+        "name": "게임 태그 2540",
+        "value": 1
       }
     ],
-    "initialSpecStatus": "unverified",
-    "patchSources": {
-      "2022-11-30": "https://hearthstone.blizzard.com/ko-kr/news/23882860/25-0-patch-notes",
-      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23882860/25-0-patch-notes",
+    "confidence": "high",
+    "note": "25.0 한국 적용일. 기본 CARDRACE=야수 유지, 추가 정령 종족 TAG2540을 추가."
+  },
+  "sourceEvidence": {
+    "2022-11-30": {
+      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23882860/25-0-patch-notes",
+      "cardDefsCommit": "54141c4a6bf3efeedaf69d7510b987f216ff00e6",
+      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/54141c4a6bf3efeedaf69d7510b987f216ff00e6/CardDefs.xml"
+    },
+    "2023-10-18": {
+      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
+      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
     }
   },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
+  "2023-10-18": {
+    "cost": 7,
+    "nativeTagUpdates": [
+      {
+        "id": 48,
+        "value": 7
+      }
+    ],
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+    "confidence": "high",
+    "note": "27.6 한국 적용일. 비용 8→7 및 TAG48 동기화."
   },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "nativeTagsTimelineStatus": "complete",
+  "historyIncompleteFields": [
+    "nativeTextBuilder"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  }
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }

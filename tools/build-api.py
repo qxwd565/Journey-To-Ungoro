@@ -442,8 +442,20 @@ def read_patches(card: dict, name: str) -> list[dict]:
             raise ValueError(f"{name}: overlapping/unsorted patch dates {prev}, {day}")
         if not changes and not remove:
             raise ValueError(f"{name}: empty operation on {day}")
-        if (set(changes) | set(remove)) - (PATCH_FIELD_SET | {"legacyArt"}):
+        if (set(changes) | set(remove)) - (PATCH_FIELD_SET | {"legacyArt", "nativeTagUpdates"}):
             raise ValueError(f"{name}: unknown gameplay patch field")
+        if "nativeTagUpdates" in changes:
+            updates = changes["nativeTagUpdates"]
+            if (not isinstance(updates, list)
+                    or any(not isinstance(item, dict)
+                           or not {"id", "value"} <= set(item)
+                           or set(item) - {"id", "value", "name"}
+                           or not isinstance(item["id"], int)
+                           or not isinstance(item["value"], int)
+                           or ("name" in item and not isinstance(item["name"], str))
+                           for item in updates)
+                    or len({item["id"] for item in updates}) != len(updates)):
+                raise ValueError(f"{name}: nativeTagUpdates must contain unique integer id/value pairs")
         prev = day
     return patches
 
@@ -467,8 +479,8 @@ def normalize_history_cache(cache: dict):
     return result
 
 
-def publish_forward_card(card: dict, current: dict, name: str):
-    """Replay dated source and publish only reversible, date-supported history."""
+def replay_forward_states(card: dict, name: str):
+    """Reconstruct each date state, merging explicitly scoped native tag updates."""
     patches = read_patches(card, name)
     base = {field: copy.deepcopy(card[field]) for field in PATCH_FIELDS if field in card}
     if "legacyArt" in card:
@@ -481,10 +493,31 @@ def publish_forward_card(card: dict, current: dict, name: str):
                 raise ValueError(f"{name}: cannot remove absent field {field} on {event['date']}")
             del next_state[field]
         for field, value in event["changes"].items():
+            if field == "nativeTagUpdates":
+                tags = {item["id"]: copy.deepcopy(item) for item in next_state.get("nativeTags", [])}
+                for update in value:
+                    if update["id"] not in tags:
+                        if "name" not in update:
+                            raise ValueError(
+                                f"{name}: adding native tag {update['id']} requires its source name on {event['date']}"
+                            )
+                        tags[update["id"]] = {
+                            "id": update["id"], "name": update["name"], "value": update["value"]
+                        }
+                    else:
+                        tags[update["id"]]["value"] = update["value"]
+                next_state["nativeTags"] = [tags[key] for key in sorted(tags)]
+                continue
             if field in next_state and next_state[field] == value:
                 raise ValueError(f"{name}: redundant patch for {field} on {event['date']}")
             next_state[field] = copy.deepcopy(value)
         states.append(next_state)
+    return patches, states
+
+
+def publish_forward_card(card: dict, current: dict, name: str):
+    """Replay dated source and publish only reversible, date-supported history."""
+    patches, states = replay_forward_states(card, name)
     latest = states[-1]
     current_cache = card.get("currentCache")
     unresolved = set(card.get("historyIncompleteFields", []))

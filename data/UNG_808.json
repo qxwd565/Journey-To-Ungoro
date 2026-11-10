@@ -1,33 +1,133 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Stubborn Gastropod",
-  "card": {
-    "id": "UNG_808",
-    "dbfId": 41318,
+  "schemaVersion": 2,
+  "id": "UNG_808",
+  "dbfId": 41318,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "완강한 복족이",
-    "text": "<b>도발</b><br></br><b>독성</b>",
     "type": "MINION",
     "cardClass": "NEUTRAL",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "COMMON",
-    "race": "야수",
-    "races": [
-      "BEAST"
-    ],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 2,
     "attack": 1,
     "health": 2,
-    "armor": 0,
-    "durability": 0,
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "text": "<b>도발</b><br></br><b>독성</b>",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 2
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 1
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 2
+      },
+      {
+        "id": 190,
+        "name": "도발",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 20
+      },
+      {
+        "id": 201,
+        "name": "진영",
+        "value": 3
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 1
+      },
+      {
+        "id": 251,
+        "name": "게임 태그 251",
+        "value": 6
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      },
+      {
+        "id": 363,
+        "name": "독성",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>도발</b>\n<b>독성</b>",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-df20-4c21-bc9c-bec1eb14da2a",
+        "00000012-cf0e-49bb-9ea5-653a12a7c3c4"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "아제로스에서 가장 빠른 동물이 되어 보이겠다는군요. 어찌나 완강한지!"
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-df20-4c21-bc9c-bec1eb14da2a",
+        "00000012-cf0e-49bb-9ea5-653a12a7c3c4"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "완강한 복족이",
+    "type": "MINION",
+    "cardClass": "NEUTRAL",
+    "classes": [],
+    "rarity": "COMMON",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-050_M.psd:15fac7e9ddca3c64fab4c122b0b7fbe9",
-    "flavor": "아제로스에서 가장 빠른 동물이 되어 보이겠다는군요. 어찌나 완강한지!",
+    "cost": 2,
+    "attack": 1,
+    "health": 3,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>도발</b><br></br><b>독성</b>",
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -90,40 +190,43 @@
         "value": 1
       }
     ],
-    "nativeRawText": "<b>도발</b>\n<b>독성</b>",
-    "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [
+    "nativeRawText": "<b>도발</b>\n<b>독성</b>",
+    "nativeTextBuilder": 0
+  },
+  "2023-10-18": {
+    "health": 3,
+    "nativeTagUpdates": [
       {
-        "date": "2023-10-18",
-        "changes": {
-          "health": 3
-        }
+        "id": 45,
+        "value": 3
       }
     ],
-    "initialSpecStatus": "unverified",
-    "patchSources": {
-      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+    "confidence": "high",
+    "note": "27.6 한국 적용일. 확정된 수치 변경과 그 의미의 TAG만 업데이트. 현재 조건부 도발·죽음의 메아리·발견 태그의 도입일은 소급하지 않음."
+  },
+  "sourceEvidence": {
+    "2023-10-18": {
+      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
+      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
     }
   },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "nativeTagsTimelineStatus": "complete",
+  "historyIncompleteFields": [
+    "nativeTextBuilder"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  }
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }

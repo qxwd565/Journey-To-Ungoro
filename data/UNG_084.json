@@ -1,33 +1,113 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Fire Plume Phoenix",
-  "card": {
-    "id": "UNG_084",
-    "dbfId": 41260,
+  "schemaVersion": 2,
+  "id": "UNG_084",
+  "dbfId": 41260,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "불길의 불사조",
-    "text": "<b>전투의 함성:</b><br></br>피해를 2 줍니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "COMMON",
-    "race": "정령",
-    "races": [
-      "ELEMENTAL"
-    ],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 4,
     "attack": 3,
     "health": 3,
-    "armor": 0,
-    "durability": 0,
+    "races": [
+      "ELEMENTAL"
+    ],
+    "race": "정령",
+    "text": "<b>전투의 함성:</b><br></br>피해를 2 줍니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 3
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 3
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 4
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 18
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 1
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>전투의 함성:</b>\n피해를 2 줍니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "화산을 조류용 욕조로 쓰면 이렇게 됩니다."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "불길의 불사조",
+    "type": "MINION",
+    "cardClass": "NEUTRAL",
+    "classes": [],
+    "rarity": "COMMON",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-060_M.psd:40f982cfab0cfa54dab7134cb3f6c7cf",
-    "flavor": "화산을 조류용 욕조로 쓰면 이렇게 됩니다.",
+    "cost": 4,
+    "attack": 3,
+    "health": 4,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>전투의 함성:</b><br></br>피해를 3 줍니다.",
+    "races": [
+      "ELEMENTAL",
+      "BEAST"
+    ],
+    "race": "정령, 야수",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -80,58 +160,77 @@
         "value": 1
       }
     ],
-    "nativeRawText": "<b>전투의 함성:</b>\n피해를 3 줍니다.",
-    "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [
+    "nativeRawText": "<b>전투의 함성:</b>\n피해를 3 줍니다.",
+    "nativeTextBuilder": 0
+  },
+  "2022-11-30": {
+    "race": "정령, 야수",
+    "races": [
+      "ELEMENTAL",
+      "BEAST"
+    ],
+    "nativeTagUpdates": [
       {
-        "date": "2022-11-30",
-        "changes": {
-          "races": [
-            "ELEMENTAL",
-            "BEAST"
-          ],
-          "race": "정령, 야수"
-        }
-      },
-      {
-        "date": "2023-10-18",
-        "changes": {
-          "text": "<b>전투의 함성:</b><br></br>피해를 3 줍니다."
-        }
-      },
-      {
-        "date": "2025-03-19",
-        "changes": {
-          "health": 4
-        }
+        "id": 2542,
+        "name": "게임 태그 2542",
+        "value": 1
       }
     ],
-    "initialSpecStatus": "unverified",
-    "patchSources": {
-      "2022-11-30": "https://hearthstone.blizzard.com/ko-kr/news/23882860/25-0-patch-notes",
-      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-      "2025-03-19": "https://hearthstone.blizzard.com/ko-kr/news/24187196"
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23882860/25-0-patch-notes",
+    "confidence": "high",
+    "note": "25.0 한국 적용일. 기본 CARDRACE=정령 유지, 추가 야수 종족 TAG2542를 추가."
+  },
+  "sourceEvidence": {
+    "2022-11-30": {
+      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23882860/25-0-patch-notes",
+      "cardDefsCommit": "54141c4a6bf3efeedaf69d7510b987f216ff00e6",
+      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/54141c4a6bf3efeedaf69d7510b987f216ff00e6/CardDefs.xml"
+    },
+    "2023-10-18": {
+      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
+      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
+    },
+    "2025-03-19": {
+      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/24187196",
+      "cardDefsCommit": "fdad346dc49ebb5465f548a0a2b58b59edcbe087",
+      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/fdad346dc49ebb5465f548a0a2b58b59edcbe087/CardDefs.xml"
     }
   },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
+  "2023-10-18": {
+    "text": "<b>전투의 함성:</b><br></br>피해를 3 줍니다.",
+    "nativeRawText": "<b>전투의 함성:</b>\n피해를 3 줍니다.",
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+    "confidence": "high",
+    "note": "27.6 한국 적용일. 전투의 함성 피해 2→3."
   },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "2025-03-19": {
+    "health": 4,
+    "nativeTagUpdates": [
+      {
+        "id": 45,
+        "value": 4
+      }
+    ],
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/24187196",
+    "confidence": "high",
+    "note": "32.0 한국 적용일. 생명력 3→4 및 TAG45 동기화."
+  },
+  "nativeTagsTimelineStatus": "complete",
+  "historyIncompleteFields": [
+    "nativeTextBuilder"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  }
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }

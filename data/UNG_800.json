@@ -1,31 +1,106 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Terrorscale Stalker",
-  "card": {
-    "id": "UNG_800",
-    "dbfId": 41304,
+  "schemaVersion": 2,
+  "id": "UNG_800",
+  "dbfId": 41304,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "공포비늘 추적자",
-    "text": "<b>전투의 함성:</b> 아군 하수인의 <b>죽음의 메아리</b> 능력을 발동시킵니다.",
     "type": "MINION",
     "cardClass": "HUNTER",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "RARE",
-    "race": "",
-    "races": [],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 3,
     "attack": 3,
     "health": 3,
-    "armor": 0,
-    "durability": 0,
+    "text": "<b>전투의 함성:</b> 아군 하수인 하나의 <b>죽음의 메아리</b> 능력을 발동시킵니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 3
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 3
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 3
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 3
+      },
+      {
+        "id": 201,
+        "name": "진영",
+        "value": 3
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 3
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>전투의 함성:</b> 아군 하수인 하나의 <b>죽음의 메아리</b> 능력을 발동시킵니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "죽을만큼 공포에 질리게 하여 능력을 발동시킵니다."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "공포비늘 추적자",
+    "type": "MINION",
+    "cardClass": "HUNTER",
+    "classes": [],
+    "rarity": "RARE",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-195_D.psd:d76b8eb273d08c34398739d4ee0863bc",
-    "flavor": "죽을만큼 공포에 질리게 하여 능력을 발동시킵니다.",
+    "cost": 2,
+    "attack": 2,
+    "health": 3,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>전투의 함성:</b> 아군 하수인의 <b>죽음의 메아리</b> 능력을 발동시킵니다.",
+    "races": [],
+    "race": "",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -78,41 +153,63 @@
         "value": 1
       }
     ],
-    "nativeRawText": "<b>전투의 함성:</b> 아군 하수인의 <b>죽음의 메아리</b> 능력을 발동시킵니다.",
-    "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [
+    "nativeRawText": "<b>전투의 함성:</b> 아군 하수인의 <b>죽음의 메아리</b> 능력을 발동시킵니다.",
+    "nativeTextBuilder": 0
+  },
+  "2023-10-18": {
+    "cost": 2,
+    "attack": 2,
+    "nativeTagUpdates": [
       {
-        "date": "2023-10-18",
-        "changes": {
-          "cost": 2,
-          "attack": 2
-        }
+        "id": 48,
+        "value": 2
+      },
+      {
+        "id": 47,
+        "value": 2
       }
     ],
-    "initialSpecStatus": "unverified",
-    "patchSources": {
-      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+    "confidence": "high",
+    "note": "27.6 한국 적용일. 확정된 수치 변경과 그 의미의 TAG만 업데이트. 현재 조건부 도발·죽음의 메아리·발견 태그의 도입일은 소급하지 않음."
+  },
+  "sourceEvidence": {
+    "2023-10-18": {
+      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
+      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
     }
   },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "nativeTagsTimelineStatus": "partial",
+  "historyIncompleteFields": [
+    "nativeTags",
+    "text",
+    "nativeTextBuilder"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  }
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [
+    {
+      "field": "nativeTags",
+      "reason": "현재 캐시에만 존재하는 태그의 도입일은 미확정. 확정된 TAG 업데이트만 날짜 이벤트로 기록."
+    },
+    {
+      "field": "text",
+      "reason": "현재 표시 문구와 최초 CardDefs 원문 사이의 변경일이 확인되지 않은 차이는 별도 과거 사건으로 만들지 않음."
+    },
+    {
+      "field": "nativeTags[217]",
+      "reason": "현재 죽음의 메아리 태그가 원본에 없으나 도입일을 확인할 근거가 없어 소급하지 않음."
+    }
+  ],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }

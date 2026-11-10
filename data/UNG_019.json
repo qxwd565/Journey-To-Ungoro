@@ -202,7 +202,13 @@
     "attack": 3,
     "source": "https://hearthstone.blizzard.com/ko-kr/news/24064739",
     "confidence": "high",
-    "note": "29.0.3 한국 적용일. 공격력 2→3 및 자체 TAG 47 동기화. 이 이벤트는 공격력만 확정하며 TAG311/332와 TAG1211 사이의 원시 태그 표현 전환일은 확정하지 않음."
+    "note": "29.0.3 한국 적용일. 공격력 2→3 및 확정된 자체 TAG 47만 2→3으로 동기화. TAG311/332와 TAG1211 사이의 표현 전환일은 미확정이며 이 경계에 포함하지 않음.",
+    "nativeTagUpdates": [
+      {
+        "id": 47,
+        "value": 3
+      }
+    ]
   },
   "nativeTagsTimelineStatus": "partial",
   "historyIncompleteFields": [
@@ -231,10 +237,9 @@
   ],
   "sourceEvidence": {
     "2024-03-29": {
-      "officialPatchNotes": "https://hearthstone.blizzard.com/ko-kr/news/24064739",
-      "cardDefsSnapshot": "https://github.com/HearthSim/hsdata/blob/e73eeb8d2c284af5fcddc2db5fce692c77434cd8/CardDefs.xml",
+      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/24064739",
       "cardDefsCommit": "e73eeb8d2c284af5fcddc2db5fce692c77434cd8",
-      "note": "이 CardDefs는 해당 패치 시점의 스냅샷 근거로만 연결한다. 단일 스냅샷만으로 TAG311/332의 전 기간 부재나 TAG1211의 최초 도입일을 단정하지 않는다."
+      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/e73eeb8d2c284af5fcddc2db5fce692c77434cd8/CardDefs.xml"
     }
   }
 }
