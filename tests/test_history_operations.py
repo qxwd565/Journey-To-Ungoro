@@ -194,6 +194,58 @@ class HistoryOperationsTest(unittest.TestCase):
                 self.assertIn("collectible", incomplete)
                 self.assertTrue(any("attack" in x["fields"] for x in blocked))
 
+    def test_eight_card_carddefs_baselines_and_tag_boundaries(self):
+        catalogue = BUILD.load(ROOT / "cards.json")
+        records = {x["id"]: x for x in catalogue["cards"]}
+        school = {
+            "UNG_018": ("FIRE", 2), "UNG_024": ("ARCANE", 1),
+            "UNG_025": ("FIRE", 2), "UNG_028t": ("ARCANE", 1),
+            "UNG_029": ("SHADOW", 6), "UNG_030": ("HOLY", 5),
+            "UNG_057": ("NATURE", 4), "UNG_057t1": ("NATURE", 4),
+        }
+        for cid, (school_name, school_value) in school.items():
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            days = sorted(k for k in source if BUILD.DATE_RE.fullmatch(k))
+            playable_day = "2017-04-04" if cid in ("UNG_028t", "UNG_057t1") else "2017-04-07"
+            self.assertEqual(days[0], playable_day)
+            initial = source[days[0]]
+            initial_tags = {x["id"]: x["value"] for x in initial["nativeTags"]}
+            self.assertNotIn("spellSchool", initial)
+            self.assertNotIn(1635, initial_tags)
+            school_event = source["2021-03-26"]
+            school_tags = {x["id"]: x["value"] for x in school_event["nativeTags"]}
+            self.assertEqual(school_event["spellSchool"], school_name)
+            self.assertEqual(school_tags[1635], school_value)
+            self.assertEqual(source["current"]["nativeTags"], records[cid]["nativeTags"])
+            self.assertEqual(source["sourceBaseline"]["commitDate"], "2017-04-04")
+            self.assertNotIn("nativeReferences", initial)
+            self.assertIn("references", source)
+            self.assertEqual(source["nativeTagsTimelineStatus"], "partial")
+
+        geyser = BUILD.load(ROOT / "data" / "UNG_018.json")
+        self.assertEqual(geyser["2017-04-07"]["cost"], 2)
+        self.assertEqual(next(x for x in geyser["2017-04-07"]["nativeTags"] if x["id"] == 48)["value"], 2)
+        self.assertEqual(geyser["2023-04-05"]["cost"], 1)
+        self.assertEqual(next(x for x in geyser["2023-04-05"]["nativeTags"] if x["id"] == 48)["value"], 1)
+
+        volcano = BUILD.load(ROOT / "data" / "UNG_025.json")
+        self.assertEqual(next(x for x in volcano["2017-04-07"]["nativeTags"] if x["id"] == 215)["value"], 2)
+        self.assertEqual(next(x for x in volcano["2023-10-18"]["nativeTags"] if x["id"] == 215)["value"], 1)
+        self.assertIn(296, {x["id"] for x in volcano["2023-10-18"]["nativeTags"]})
+        self.assertTrue(any(x["field"] == "nativeTags[296]" for x in volcano["unresolvedSourceFields"]))
+
+        warp = BUILD.load(ROOT / "data" / "UNG_028t.json")
+        self.assertEqual(warp["current"]["releaseStatus"], "pending")
+        self.assertNotIn("releasedAt", warp)
+        self.assertIn("2024-04-26", warp)
+        self.assertIn("nativeRawText", warp["2024-04-26"])
+
+        for cid in ("UNG_057", "UNG_057t1"):
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            self.assertIn("2023-10-18", source)
+            self.assertIn("nativeRawText", source["2023-10-18"])
+        self.assertEqual(BUILD.load(ROOT / "data" / "UNG_057t1.json")["current"]["releaseStatus"], "pending")
+
     def test_known_grammar_correction_has_no_patch_date(self):
         self.assertEqual(BUILD.normalize_display_text("UNG_063", "+1/+1를 얻습니다."), "+1/+1을 얻습니다.")
 
