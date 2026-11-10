@@ -69,8 +69,8 @@
     ],
     "nativeRawText": "내 턴이 끝날 때, 3/2 임프를 둘 소환합니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [],
     "initialSpecStatus": "unverified",
     "patchSources": {}
