@@ -219,5 +219,6 @@
       "field": "nativeTextBuilder",
       "reason": "Current nativeTextBuilder is retained in current only; historical introduction is unverified."
     }
-  ]
+  ],
+  "mode": "constructed"
 }

@@ -154,5 +154,6 @@
       "field": "releasedAt",
       "reason": "release-policy.json marks this generated/choice card pending; 2017-04-04 is snapshot date only."
     }
-  ]
+  ],
+  "mode": "constructed"
 }

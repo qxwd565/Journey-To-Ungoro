@@ -248,5 +248,6 @@
       "field": "nativeTextBuilder",
       "reason": "nativeTextBuilder의 도입일을 확인할 수 없어 current cache에만 보존."
     }
-  ]
+  ],
+  "mode": "constructed"
 }

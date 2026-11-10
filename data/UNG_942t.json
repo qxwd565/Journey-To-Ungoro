@@ -225,5 +225,6 @@
       "field": "nativeTextBuilder",
       "reason": "도입일 미확정이므로 current cache에만 보존."
     }
-  ]
+  ],
+  "mode": "constructed"
 }
