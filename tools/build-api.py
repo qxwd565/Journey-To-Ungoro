@@ -301,26 +301,22 @@ def publish_forward_card(card: dict, current: dict, name: str):
     compatibility_blocked = []
     for i, event in enumerate(patches):
         old = states[i]
-        # Legacy reverse-override clients cannot express deleting a field from
-        # the current object. Never fake deletion with null/empty/zero values.
+        # Legacy reverse-override clients cannot express a field that was
+        # absent before its introduction. Keep all other reversible fields.
         introduced = sorted(set(latest) - set(old))
         if introduced:
             compatibility_blocked.append({"date": event["date"], "fields": introduced})
-            continue
         differences = {field: copy.deepcopy(value) for field, value in old.items()
-                       if field in SPEC_FIELDS and value != latest.get(field)}
+                       if field in SPEC_FIELDS and field in latest and value != latest[field]}
         if not differences:
             continue
         start = card.get("releasedAt") if i == 0 else patches[i - 1]["date"]
         revision = {"before": event["date"], "changes": differences}
+        if introduced:
+            revision["incompleteFields"] = introduced
         if start:
             revision["from"] = start
         backward.append(revision)
-    # One unrepresentable interval makes the whole card timeline unsafe for
-    # legacy consumers: without it, that consumer would leak a current field
-    # into dates before its introduction. Other cards continue unaffected.
-    if compatibility_blocked:
-        backward = []
     return backward, compatibility_blocked
 
 
@@ -377,7 +373,12 @@ def main():
                         card["history"] = revisions
                     revisions = read_history(card, cid)
             if revisions:
-                history[str(record["dbfId"])] = {"id": cid, "history": revisions}
+                incomplete = sorted({field for item in compatibility_blocked if item["id"] == cid
+                                     for event in item["events"] for field in event["fields"]})
+                history_entry = {"id": cid, "history": revisions}
+                if incomplete:
+                    history_entry["incompleteFields"] = incomplete
+                history[str(record["dbfId"])] = history_entry
             elif record.get("history"):
                 # Avoid silently discarding previously migrated patches.
                 raise ValueError(f"{cid}: history exists in cards.json but not data/{cid}.json")
@@ -391,6 +392,10 @@ def main():
         # differences are delivered together. Absence of history means current.
         if data is not None and revisions:
             render_card["history"] = revisions
+        incomplete = sorted({field for item in compatibility_blocked if item["id"] == cid
+                             for event in item["events"] for field in event["fields"]})
+        if incomplete:
+            render_card["historyIncompleteFields"] = incomplete
         if release_policy is not None:
             release_date, release_status = release_for_card(record, release_policy)
             record["releasedAt"] = release_date
