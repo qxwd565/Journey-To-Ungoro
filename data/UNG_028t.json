@@ -14,7 +14,6 @@
     "set": "UNGORO",
     "race": "",
     "races": [],
-    "spellSchool": "",
     "cost": 5,
     "attack": 0,
     "health": 0,
@@ -58,6 +57,12 @@
     "releaseStatus": "verified",
     "patches": [
       {
+        "date": "2021-03-26",
+        "changes": {
+          "spellSchool": "ARCANE"
+        }
+      },
+      {
         "date": "2024-04-26",
         "changes": {
           "text": "내 턴이 한 번 더 진행됩니다.\\n<i>(게임당 1번만 발동)</i>"
@@ -66,7 +71,8 @@
     ],
     "initialSpecStatus": "unverified",
     "patchSources": {
-      "2024-04-26": "https://hearthstone.blizzard.com/ko-kr/news/24087317/29-2-2-patch-notes"
+      "2024-04-26": "https://hearthstone.blizzard.com/ko-kr/news/24087317/29-2-2-patch-notes",
+      "2021-03-26": "https://hearthstone.blizzard.com/ko-kr/news/23642550"
     }
   },
   "root": false,
