@@ -168,6 +168,7 @@ class HistoryOperationsTest(unittest.TestCase):
             self.assertEqual(after_tags[200], 20)
             self.assertEqual(after_tags.get(190) == 1, expected["taunt"])
             self.assertEqual(event["nativeRawText"], event["text"])
+            self.assertEqual(source["current"]["nativeRawText"], event["nativeRawText"])
             self.assertNotIn("nativeTextBuilder", event)
             self.assertEqual(source["current"]["nativeTextBuilder"], 0)
             self.assertNotIn("releasedAt", source)
