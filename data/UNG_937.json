@@ -1,33 +1,118 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Primalfin Lookout",
-  "card": {
-    "id": "UNG_937",
-    "dbfId": 41478,
+  "schemaVersion": 2,
+  "id": "UNG_937",
+  "dbfId": 41478,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "원시지느러미 망꾼",
-    "text": "<b>전투의 함성:</b> 내 전장에 다른 멀록이 있으면, 멀록을 <b>발견</b>합니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "COMMON",
-    "race": "멀록",
-    "races": [
-      "MURLOC"
-    ],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 3,
     "attack": 3,
     "health": 2,
-    "armor": 0,
-    "durability": 0,
+    "races": [
+      "MURLOC"
+    ],
+    "race": "멀록",
+    "text": "<b>전투의 함성:</b> 내 전장에 다른 멀록이 있으면, 멀록을 1마리 <b>발견</b>합니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 2
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 3
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 3
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 14
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 1
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>전투의 함성:</b> 내 전장에 다른 멀록이 있으면, 멀록을 1마리 <b>발견</b>합니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "49efd41b-e3c1-436d-8532-59d3c85ef573",
+        "6e3e87ce-ee20-429b-96e4-639148ee36eb"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "망꾼이라는 역할은 마음대로 날뛰려는 핑계에 불과합니다."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "49efd41b-e3c1-436d-8532-59d3c85ef573",
+        "6e3e87ce-ee20-429b-96e4-639148ee36eb"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "원시지느러미 망꾼",
+    "type": "MINION",
+    "cardClass": "NEUTRAL",
+    "classes": [],
+    "rarity": "COMMON",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-062_M.psd:30258c9845b3f3342a18c0248c929c80",
-    "flavor": "망꾼이라는 역할은 마음대로 날뛰려는 핑계에 불과합니다.",
+    "cost": 2,
+    "attack": 3,
+    "health": 2,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>전투의 함성:</b> 내 전장에 다른 멀록이 있으면, 멀록을 <b>발견</b>합니다.",
+    "races": [
+      "MURLOC"
+    ],
+    "race": "멀록",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -85,40 +170,54 @@
         "value": 1
       }
     ],
-    "nativeRawText": "<b>전투의 함성:</b> 내 전장에 다른 멀록이 있으면, 멀록을 <b>발견</b>합니다.",
-    "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [
+    "nativeRawText": "<b>전투의 함성:</b> 내 전장에 다른 멀록이 있으면, 멀록을 <b>발견</b>합니다.",
+    "nativeTextBuilder": 0
+  },
+  "2023-10-18": {
+    "cost": 2,
+    "nativeTagUpdates": [
       {
-        "date": "2023-10-18",
-        "changes": {
-          "cost": 2
-        }
+        "id": 48,
+        "value": 2
       }
     ],
-    "initialSpecStatus": "unverified",
-    "patchSources": {
-      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+    "confidence": "high",
+    "note": "27.6 한국 적용일. 확정된 수치·퀘스트 목표와 해당 의미의 자체 태그만 동기화. 현재 캐시의 도발/죽음의 메아리 참조 태그를 신규 능력 사건으로 소급하지 않음."
+  },
+  "sourceEvidence": {
+    "2023-10-18": {
+      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
+      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
     }
   },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "nativeTagsTimelineStatus": "partial",
+  "historyIncompleteFields": [
+    "nativeTags",
+    "text",
+    "nativeTextBuilder"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  }
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [
+    {
+      "field": "nativeTags",
+      "reason": "현재 캐시의 일부 태그는 정확한 최초 도입일이 확인되지 않아 확정된 TAG 업데이트만 날짜에 기록."
+    },
+    {
+      "field": "text",
+      "reason": "현재 표시문구와 당시 원문 사이의 미확정 변경은 날짜를 만들지 않고 current cache에 분리."
+    }
+  ],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }

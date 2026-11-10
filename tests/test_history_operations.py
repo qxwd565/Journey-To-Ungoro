@@ -772,6 +772,125 @@ class HistoryOperationsTest(unittest.TestCase):
 
 
 
+    def test_remaining_twenty_four_ungoro_initial_states_and_dated_tag_boundaries(self):
+        ids = (
+            "UNG_004", "UNG_028", "UNG_116", "UNG_834", "UNG_854", "UNG_916",
+            "UNG_922t1", "UNG_933", "UNG_934", "UNG_937", "UNG_940", "UNG_942",
+            "UNG_952", "UNG_953", "UNG_954", "UNG_954t1", "UNG_957", "UNG_957t1",
+            "UNG_961", "UNG_962", "UNG_963", "UNG_999t2", "UNG_999t5", "UNG_999t6",
+        )
+        baseline = BUILD.load(ROOT / "sources" / "carddefs-18336-baseline.json")
+        catalog = BUILD.load(ROOT / "cards.json")
+        records = {x["id"]: x for x in catalog["cards"]}
+        self.assertEqual(len(ids), 24)
+        for cid in ids:
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            self.assertEqual(source["schemaVersion"], 2, cid)
+            self.assertEqual(source["dbfId"], records[cid]["dbfId"], cid)
+            initial_day = "2017-04-04" if records[cid].get("releasedAt") is None else "2017-04-07"
+            self.assertEqual(
+                source[initial_day]["nativeTags"],
+                [x for x in baseline["cards"][cid]["state"]["nativeTags"] if x["id"] != 183],
+                cid,
+            )
+            self.assertEqual(source["current"]["releasedAt"], records[cid].get("releasedAt"), cid)
+            self.assertEqual(source["current"]["releaseStatus"], records[cid]["releaseStatus"], cid)
+
+        expected = {
+            "UNG_004": ("cost", 8, 7, 48, 7),
+            "UNG_834": ("cost", 5, 4, 48, 4),
+            "UNG_854": ("cost", 8, 7, 48, 7),
+            "UNG_933": ("cost", 9, 7, 48, 7),
+            "UNG_937": ("cost", 3, 2, 48, 2),
+            "UNG_953": ("health", 2, 3, 45, 3),
+            "UNG_954t1": ("attack", 5, 8, 47, 8),
+            "UNG_957": ("attack", 3, 4, 47, 4),
+            "UNG_957t1": ("attack", 6, 8, 47, 8),
+            "UNG_962": ("cost", 4, 3, 48, 3),
+            "UNG_963": ("cost", 5, 4, 48, 4),
+        }
+        for cid, (field, before, after, tag_id, tag_value) in expected.items():
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            released = records[cid].get("releasedAt")
+            card = BUILD.normalize_date_keyed_source(source, {"id": cid, "releasedAt": released})
+            patches, states = BUILD.replay_forward_states(card, cid)
+            self.assertEqual(states[0][field], before, cid)
+            self.assertEqual(states[-1][field], after, cid)
+            self.assertEqual(BUILD.native_tag_values(states[-1])[tag_id], tag_value, cid)
+
+        for cid, old_count, new_count, day in (
+            ("UNG_028", 6, 8, "2020-04-21"),
+            ("UNG_116", 5, 4, "2023-10-18"),
+            ("UNG_940", 7, 6, "2023-10-18"),
+            ("UNG_942", 10, 8, "2023-10-18"),
+            ("UNG_954", 6, 5, "2023-10-18"),
+        ):
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            initial_day = "2017-04-07"
+            self.assertEqual(BUILD.native_tag_values(source[initial_day])[535], old_count, cid)
+            event = source[day]
+            self.assertEqual(next(x for x in event["nativeTagUpdates"] if x["id"] == 535)["value"], new_count, cid)
+            card = BUILD.normalize_date_keyed_source(source, {"id": cid, "releasedAt": "2017-04-07"})
+            _, states = BUILD.replay_forward_states(card, cid)
+            self.assertEqual(BUILD.native_tag_values(states[0])[535], old_count, cid)
+            self.assertEqual(BUILD.native_tag_values(states[-1])[535], new_count, cid)
+        self.assertNotIn("2023-10-18", BUILD.load(ROOT / "data" / "UNG_934.json"))
+
+        for cid in ("UNG_916", "UNG_922t1", "UNG_961"):
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            day = "2017-04-04" if cid == "UNG_922t1" else "2017-04-07"
+            self.assertEqual(source[day]["cost"], 1, cid)
+            self.assertEqual(BUILD.native_tag_values(source[day])[48], 1, cid)
+            self.assertEqual(source["2023-10-18"]["cost"], 0, cid)
+            self.assertEqual(source["2023-10-18"]["nativeTagRemovals"], [48], cid)
+            card = BUILD.normalize_date_keyed_source(source, {"id": cid, "releasedAt": records[cid].get("releasedAt")})
+            _, states = BUILD.replay_forward_states(card, cid)
+            self.assertEqual(states[-1]["cost"], 0, cid)
+            self.assertNotIn(48, BUILD.native_tag_values(states[-1]), cid)
+
+        quest_sources = {
+            "UNG_028": "https://kr.forums.blizzard.com/ko/hearthstone/t/1737.json",
+            "UNG_116": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+            "UNG_940": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+            "UNG_942": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+            "UNG_954": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+        }
+        for cid, source_url in quest_sources.items():
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            day = "2020-04-21" if cid == "UNG_028" else "2023-10-18"
+            self.assertEqual(source[day]["source"], source_url, cid)
+        self.assertEqual(BUILD.load(ROOT / "data" / "UNG_952.json")["2025-03-19"]["cost"], 5)
+        self.assertEqual(BUILD.load(ROOT / "data" / "UNG_952.json")["2025-03-19"]["source"],
+                         "https://hearthstone.blizzard.com/ko-kr/news/24187196")
+
+        storm = BUILD.load(ROOT / "data" / "UNG_940.json")
+        self.assertNotIn(217, BUILD.native_tag_values(storm["2017-04-07"]))
+        self.assertNotIn("nativeTagUpdates", storm["2023-10-18"])
+        thorns = BUILD.load(ROOT / "data" / "UNG_952.json")
+        self.assertNotIn(190, BUILD.native_tag_values(thorns["2017-04-07"]))
+        self.assertNotIn(217, BUILD.native_tag_values(thorns["2017-04-07"]))
+        self.assertNotIn("nativeTagUpdates", thorns["2025-03-19"])
+        for cid, tag_id in (("UNG_934", 190), ("UNG_940", 217),
+                            ("UNG_952", 190), ("UNG_952", 217),
+                            ("UNG_999t2", 217), ("UNG_999t6", 190)):
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            self.assertIn("nativeTags", source["historyIncompleteFields"], cid)
+            self.assertTrue(any(x["field"] == "nativeTags" for x in source["unresolvedSourceFields"]), cid)
+
+        liquid = BUILD.load(ROOT / "data" / "UNG_999t5.json")
+        self.assertIn(311, BUILD.native_tag_values(liquid["2017-04-04"]))
+        self.assertIn(332, BUILD.native_tag_values(liquid["2017-04-04"]))
+        self.assertNotIn(1211, BUILD.native_tag_values(liquid["2017-04-04"]))
+        self.assertIn("nativeTags[311,332,1211]",
+                      [x["field"] for x in liquid["unresolvedSourceFields"]])
+        self.assertEqual(liquid["nativeTagsTimelineStatus"], "partial")
+
+        for cid in ("UNG_922t1", "UNG_954t1", "UNG_957t1", "UNG_999t2", "UNG_999t5", "UNG_999t6"):
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            self.assertIsNone(source["current"]["releasedAt"], cid)
+            self.assertEqual(source["current"]["releaseStatus"], "pending", cid)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
 
