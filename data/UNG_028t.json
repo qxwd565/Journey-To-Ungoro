@@ -30,11 +30,6 @@
         "value": 1
       },
       {
-        "id": 183,
-        "name": "CARD_SET",
-        "value": 27
-      },
-      {
         "id": 199,
         "name": "직업",
         "value": 4
@@ -54,11 +49,13 @@
     "nativeSetId": 27
   },
   "references": {
-    "entourageCardIds": [],
-    "powerDefinitions": [
-      "62606527-b5d0-4614-ac05-98d8f9368c4b"
-    ],
-    "triggeredPowerHistory": []
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "62606527-b5d0-4614-ac05-98d8f9368c4b"
+      ],
+      "triggeredPowerHistory": []
+    }
   },
   "currentReferenceTags": [],
   "current": {
@@ -112,7 +109,12 @@
   "historyIncompleteFields": [
     "nativeTags"
   ],
-  "unresolvedSourceFields": [],
+  "unresolvedSourceFields": [
+    {
+      "field": "nativeTextBuilder",
+      "reason": "The current client cache contains nativeTextBuilder=0, but the CardDefs 18336 baseline does not expose this field; no dated introduction/change evidence is available."
+    }
+  ],
   "2021-03-26": {
     "spellSchool": "ARCANE",
     "nativeTags": [
@@ -125,11 +127,6 @@
         "id": 114,
         "name": "전설 속성",
         "value": 1
-      },
-      {
-        "id": 183,
-        "name": "CARD_SET",
-        "value": 27
       },
       {
         "id": 199,
@@ -162,5 +159,14 @@
     "source": "https://hearthstone.blizzard.com/ko-kr/news/24087317/29-2-2-patch-notes",
     "confidence": "high",
     "note": "게임당 1번 제한 문구 추가. 기존 비용·유형·태그는 유지."
-  }
+  },
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }
