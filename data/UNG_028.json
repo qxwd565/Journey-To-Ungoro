@@ -6,7 +6,7 @@
     "id": "UNG_028",
     "dbfId": 41168,
     "name": "고대 차원문 개방",
-    "text": "<b>퀘스트:</b> 게임이 시작됐을 때 내 덱에 없던 주문을 8회 시전해야 합니다.\n<b>보상:</b> 시간 왜곡",
+    "text": "<b>퀘스트:</b> 게임이 시작됐을 때 내 덱에 없던 주문을 6회 시전해야 합니다.\\n<b>보상:</b> 시간 왜곡",
     "type": "SPELL",
     "cardClass": "MAGE",
     "classes": [],
@@ -92,9 +92,18 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2020-04-21",
+        "changes": {
+          "text": "<b>퀘스트:</b> 게임이 시작됐을 때 내 덱에 없던 주문을 8회 시전해야 합니다.\\n<b>보상:</b> 시간 왜곡"
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2020-04-21": "https://kr.forums.blizzard.com/ko/hearthstone/t/1737.json"
+    }
   },
   "root": true,
   "relatedIds": [

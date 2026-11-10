@@ -6,7 +6,7 @@
     "id": "UNG_833",
     "dbfId": 41873,
     "name": "락카리 지옥사냥개",
-    "text": "<b>도발</b>, <b>전투의 함성:</b>\n비용이 가장 낮은 카드를\n2장 버립니다.",
+    "text": "<b>도발</b>, <b>전투의 함성:</b> 무작위로 카드를\\n2장 버립니다.",
     "type": "MINION",
     "cardClass": "WARLOCK",
     "classes": [],
@@ -104,9 +104,18 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2021-03-26",
+        "changes": {
+          "text": "[x]<b>도발</b>, <b>전투의 함성:</b>\\n비용이 가장 낮은 카드를\\n2장 버립니다."
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2021-03-26": "https://hearthstone.blizzard.com/ko-kr/news/23642550"
+    }
   },
   "root": true,
   "relatedIds": [],
