@@ -305,5 +305,47 @@ class HistoryOperationsTest(unittest.TestCase):
         self.assertEqual(BUILD.normalize_display_text("UNG_063", "+1/+1를 얻습니다."), "+1/+1을 얻습니다.")
 
 
+    def test_eight_spell_batch_date_boundaries_and_cache_separation(self):
+        expected = {
+            "UNG_060": ["2021-03-26", "2023-10-18"],
+            "UNG_103": ["2021-03-26", "2023-10-18"],
+            "UNG_108": ["2021-03-26"],
+            "UNG_111": ["2021-03-26"],
+            "UNG_817": ["2021-03-26", "2021-05-13", "2023-10-18"],
+            "UNG_823": ["2021-03-26", "2023-10-18"],
+            "UNG_829t1": ["2021-03-26"],
+            "UNG_831": ["2021-03-26"],
+        }
+        for cid, patch_dates in expected.items():
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            self.assertEqual(source["schemaVersion"], 2)
+            date_keys = sorted(k for k in source if BUILD.DATE_RE.fullmatch(k))
+            self.assertEqual(date_keys[1:], patch_dates)
+            first = source[date_keys[0]]
+            self.assertEqual(first["type"], "SPELL")
+            self.assertNotIn("nativeTextBuilder", first)
+            self.assertNotIn(183, {x["id"] for x in first["nativeTags"]})
+            self.assertEqual(source["sourceBaseline"]["commitDate"], "2017-04-04")
+            self.assertEqual(source["referenceTags"][0]["id"], 183)
+            self.assertEqual(source["current"]["spellSchool"],
+                             "SHADOW" if cid in ("UNG_829t1", "UNG_831") else "NATURE")
+            school = source["2021-03-26"]
+            self.assertEqual(school["spellSchool"], source["current"]["spellSchool"])
+            self.assertIn(1635, {x["id"] for x in school["nativeTags"]})
+            self.assertIn("nativeTextBuilder", {x["field"] for x in source["unresolvedSourceFields"]})
+        token = BUILD.load(ROOT / "data" / "UNG_829t1.json")
+        self.assertEqual(token["current"]["releaseStatus"], "pending")
+        self.assertIsNone(token["current"]["releasedAt"])
+        self.assertEqual(token["nativeTagsTimelineStatus"], "partial")
+        tide = BUILD.load(ROOT / "data" / "UNG_817.json")
+        self.assertIn(685, {x["id"] for x in tide["2021-03-26"]["nativeTags"]})
+        self.assertEqual(tide["2021-05-13"]["cost"], 3)
+        self.assertEqual(tide["2023-10-18"]["text"],
+                         "<b>생명력 흡수</b><br></br>하수인에게 피해를<br></br>$5 줍니다.")
+        scales = BUILD.load(ROOT / "data" / "UNG_108.json")
+        self.assertIn("cost", scales["historyIncompleteFields"])
+        self.assertTrue(any(x["field"] == "cost" for x in scales["unresolvedSourceFields"]))
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
