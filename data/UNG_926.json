@@ -13,7 +13,7 @@
     "nativeSetId": 27,
     "set": "UNGORO",
     "rarity": "RARE",
-    "race": "드레나이",
+    "race": "",
     "races": [],
     "spellSchool": "",
     "cost": 2,
@@ -91,6 +91,7 @@
       {
         "date": "2024-10-30",
         "changes": {
+          "race": "드레나이",
           "races": [
             "DRAENEI"
           ]
@@ -99,7 +100,7 @@
     ],
     "initialSpecStatus": "unverified",
     "patchSources": {
-      "2024-10-30": "taxonomy introduction"
+      "2024-10-30": "https://hearthstone.blizzard.com/ko-kr/news/24149104"
     }
   },
   "root": true,
