@@ -53,8 +53,8 @@
     ],
     "nativeRawText": "내 턴이 한 번 더 진행됩니다.\n<i>(게임당 1번만 발동)</i>",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [
       {
         "date": "2021-03-26",
