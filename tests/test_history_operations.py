@@ -265,6 +265,42 @@ class HistoryOperationsTest(unittest.TestCase):
         self.assertIsNone(token.get("releasedAt"))
         self.assertTrue(any(x["field"] == "collectible" for x in token["unresolvedSourceFields"]))
 
+    def test_carddefs_enum_mappings_match_raw_tags_across_all_185_cards(self):
+        baseline = BUILD.load(ROOT / "sources" / "carddefs-18336-baseline.json")
+        catalogue = BUILD.load(ROOT / "cards.json")
+        baseline_counts = BUILD.validate_baseline_enum_mappings(baseline)
+        current_counts = BUILD.validate_current_enum_mappings(catalogue["cards"])
+        self.assertEqual(baseline_counts["cards"], 185)
+        self.assertEqual(current_counts["cards"], 185)
+        self.assertEqual(BUILD.RARITY_BY_TAG[3], "RARE")
+        self.assertEqual(BUILD.RARITY_BY_TAG[4], "EPIC")
+        rare_tag_three = [
+            entry["state"] for entry in baseline["cards"].values()
+            if BUILD.native_tag_values(entry["state"]).get(203) == 3
+        ]
+        self.assertEqual(len(rare_tag_three), 39)
+        self.assertTrue(all(state["rarity"] == "RARE" for state in rare_tag_three))
+        epic_tag_four = [
+            entry["state"] for entry in baseline["cards"].values()
+            if BUILD.native_tag_values(entry["state"]).get(203) == 4
+        ]
+        self.assertTrue(all(state["rarity"] == "EPIC" for state in epic_tag_four))
+        self.assertEqual(BUILD.RACE_LABEL_BY_TAG[20], "야수")
+        self.assertEqual(BUILD.RACE_LABEL_BY_TAG[14], "멀록")
+        self.assertEqual(BUILD.RACE_LABEL_BY_TAG[24], "용족")
+
+        for cid in ("UNG_024", "UNG_025"):
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            initial = source["2017-04-07"]
+            self.assertEqual(initial["rarity"], "RARE")
+            self.assertEqual(BUILD.native_tag_values(initial)[203], 3)
+            self.assertEqual(source["current"]["rarity"], "RARE")
+            self.assertFalse(any(x["field"] == "rarity"
+                                 for x in source["unresolvedSourceFields"]))
+        current_by_id = {x["id"]: x for x in catalogue["cards"]}
+        self.assertEqual(current_by_id["UNG_024"]["rarity"], "RARE")
+        self.assertEqual(current_by_id["UNG_025"]["rarity"], "RARE")
+
     def test_known_grammar_correction_has_no_patch_date(self):
         self.assertEqual(BUILD.normalize_display_text("UNG_063", "+1/+1를 얻습니다."), "+1/+1을 얻습니다.")
 
