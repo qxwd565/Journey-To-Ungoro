@@ -6,7 +6,7 @@
     "id": "UNG_061",
     "dbfId": 41213,
     "name": "흑요석 파편",
-    "text": "이번 게임에서 내 손으로 가져온 도적이 아닌 직업 카드 하나당 비용이 (1)씩 감소합니다.",
+    "text": "[x]내가 낸 다른 직업의\\n카드 하나당 비용이\\n(1)씩 감소합니다.",
     "type": "WEAPON",
     "cardClass": "ROGUE",
     "classes": [],
@@ -67,9 +67,18 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "text": "이번 게임에서 내 손으로 가져온 도적이 아닌 직업 카드 하나당 비용이 (1)씩 감소합니다."
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    }
   },
   "root": true,
   "relatedIds": [],
