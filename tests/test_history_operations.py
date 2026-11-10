@@ -48,15 +48,22 @@ class HistoryOperationsTest(unittest.TestCase):
         self.assertEqual(blocked, [])
         self.assertEqual(revisions[0]["changes"]["cost"], 2)
 
-    def test_new_field_blocks_legacy_reverse_projection(self):
-        card = {"releasedAt": "2017-04-07", "patches": [
-            {"date": "2020-01-01", "changes": {"spellSchool": "FIRE"}}
+    def test_new_field_does_not_drop_other_field_history(self):
+        card = {"releasedAt": "2017-04-07", "cost": 2, "patches": [
+            {"date": "2020-04-21", "changes": {"cost": 4}},
+            {"date": "2021-03-26", "changes": {"spellSchool": "SHADOW"}}
         ]}
         current = {}
         revisions, blocked = BUILD.publish_forward_card(card, current, "TEST")
-        self.assertEqual(current["spellSchool"], "FIRE")
-        self.assertEqual(revisions, [])
-        self.assertEqual(blocked, [{"date": "2020-01-01", "fields": ["spellSchool"]}])
+        self.assertEqual(current, {"cost": 4, "spellSchool": "SHADOW"})
+        self.assertEqual(revisions[0]["before"], "2020-04-21")
+        self.assertEqual(revisions[0]["changes"]["cost"], 2)
+        self.assertEqual(revisions[0]["incompleteFields"], ["spellSchool"])
+        self.assertEqual(revisions[1]["before"], "2021-03-26")
+        self.assertEqual(revisions[1]["changes"]["cost"], 4)
+        self.assertEqual(revisions[1]["incompleteFields"], ["spellSchool"])
+        self.assertEqual(len(blocked), 2)
+        self.assertEqual(blocked[-1]["fields"], ["spellSchool"])
 
     def test_conflicting_operations_rejected(self):
         card = {"releasedAt": "2017-04-07", "patches": [
