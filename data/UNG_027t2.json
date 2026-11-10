@@ -82,8 +82,8 @@
     ],
     "nativeRawText": "[x]<b>죽음의 메아리:</b>\n이 하수인을 비용이 (8)인\n10/10 하수인으로 내 손에\n다시 가져옵니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [
       {
         "date": "2022-11-30",
