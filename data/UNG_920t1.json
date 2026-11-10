@@ -81,8 +81,8 @@
     ],
     "nativeRawText": "<b>속공</b>. <b>전투의 함성:</b> 랩터 20마리를 내 덱에 섞어 넣습니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [
       {
         "date": "2023-10-18",
