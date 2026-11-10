@@ -656,7 +656,7 @@ class HistoryOperationsTest(unittest.TestCase):
 
         anaconda = BUILD.load(ROOT / "data" / "UNG_086.json")
         self.assertNotIn(190, BUILD.native_tag_values(anaconda["2017-04-07"]))
-        self.assertNotIn("nativeTagUpdates", anaconda["2023-10-18"])
+        self.assertEqual(anaconda["2023-10-18"]["nativeTagUpdates"], [{"id": 190, "value": 1, "name": "도발"}])
         rock = BUILD.load(ROOT / "data" / "UNG_801.json")
         self.assertNotIn(190, BUILD.native_tag_values(rock["2017-04-07"]))
         self.assertNotIn("nativeTagUpdates", rock)
@@ -744,7 +744,7 @@ class HistoryOperationsTest(unittest.TestCase):
 
         umbra = BUILD.load(ROOT / "data" / "UNG_900.json")
         self.assertNotIn(217, BUILD.native_tag_values(umbra["2017-04-07"]))
-        self.assertNotIn("nativeTagUpdates", umbra["2026-02-25"])
+        self.assertEqual(umbra["2026-02-25"]["nativeTagUpdates"], [{"id": 48, "value": 5}])
         self.assertIn("nativeTags[217]", [x["field"] for x in umbra["unresolvedSourceFields"]])
         self.assertEqual(umbra["2026-02-25"]["cost"], 5)
 
