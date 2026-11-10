@@ -13,15 +13,14 @@
     "nativeSetId": 27,
     "set": "UNGORO",
     "rarity": "COMMON",
-    "race": "정령, 야수",
+    "race": "정령",
     "races": [
-      "ELEMENTAL",
-      "BEAST"
+      "ELEMENTAL"
     ],
     "spellSchool": "",
     "cost": 4,
     "attack": 3,
-    "health": 4,
+    "health": 3,
     "armor": 0,
     "durability": 0,
     "collectible": true,
@@ -85,9 +84,36 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2022-11-30",
+        "changes": {
+          "races": [
+            "ELEMENTAL",
+            "BEAST"
+          ],
+          "race": "정령, 야수"
+        }
+      },
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "text": "<b>전투의 함성:</b>\\n피해를 3 줍니다."
+        }
+      },
+      {
+        "date": "2025-03-19",
+        "changes": {
+          "health": 4
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2022-11-30": "https://hearthstone.blizzard.com/ko-kr/news/23882860/25-0-patch-notes",
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+      "2025-03-19": "https://hearthstone.blizzard.com/ko-kr/news/24187196"
+    }
   },
   "root": true,
   "relatedIds": [],

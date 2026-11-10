@@ -13,10 +13,9 @@
     "nativeSetId": 27,
     "set": "UNGORO",
     "rarity": "LEGENDARY",
-    "race": "정령, 야수",
+    "race": "정령",
     "races": [
-      "ELEMENTAL",
-      "BEAST"
+      "ELEMENTAL"
     ],
     "spellSchool": "",
     "cost": 2,
@@ -90,9 +89,29 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2022-11-30",
+        "changes": {
+          "races": [
+            "ELEMENTAL",
+            "BEAST"
+          ],
+          "race": "정령, 야수"
+        }
+      },
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "text": "<b>죽음의 메아리:</b>\\n이 하수인을 비용이 (4)인\\n6/6 하수인으로 내 손에\\n다시 가져옵니다."
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2022-11-30": "https://hearthstone.blizzard.com/ko-kr/news/23882860/25-0-patch-notes",
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    }
   },
   "root": true,
   "relatedIds": [

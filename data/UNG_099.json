@@ -13,13 +13,12 @@
     "nativeSetId": 27,
     "set": "UNGORO",
     "rarity": "EPIC",
-    "race": "정령, 야수",
+    "race": "야수",
     "races": [
-      "ELEMENTAL",
       "BEAST"
     ],
     "spellSchool": "",
-    "cost": 7,
+    "cost": 8,
     "attack": 7,
     "health": 7,
     "armor": 0,
@@ -90,9 +89,29 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2022-11-30",
+        "changes": {
+          "races": [
+            "ELEMENTAL",
+            "BEAST"
+          ],
+          "race": "정령, 야수"
+        }
+      },
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "cost": 7
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2022-11-30": "https://hearthstone.blizzard.com/ko-kr/news/23882860/25-0-patch-notes",
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    }
   },
   "root": true,
   "relatedIds": [],
