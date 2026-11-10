@@ -6,7 +6,7 @@
     "id": "UNG_034",
     "dbfId": 41176,
     "name": "광명의 정령",
-    "text": "내 주문들의 비용이\n(1) 감소합니다.\n<i>(단, 1보다 낮아지진 않습니다.)</i>",
+    "text": "내 주문의 비용이\\n(1) 감소합니다.",
     "type": "MINION",
     "cardClass": "PRIEST",
     "classes": [],
@@ -89,9 +89,18 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2024-10-18",
+        "changes": {
+          "text": "내 주문들의 비용이\\n(1) 감소합니다.\\n<i>(단, 1보다 낮아지진 않습니다.)</i>"
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2024-10-18": "https://hearthstone.blizzard.com/ko-kr/news/24149104"
+    }
   },
   "root": true,
   "relatedIds": [],
