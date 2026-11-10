@@ -108,7 +108,7 @@
     ],
     "initialSpecStatus": "partially_verified",
     "patchSources": {
-      "2017-07-11": "https://hearthstone.blizzard.com/en-us/news/20852959",
+      "2017-07-11": "https://hearthstone.blizzard.com/ko-kr/news/20904301",
       "2021-03-26": "https://hearthstone.blizzard.com/en-us/news/23642550"
     }
   },
@@ -133,4 +133,4 @@
     "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
     "locale": "koKR"
   }
-}
+}\n

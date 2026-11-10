@@ -6,8 +6,320 @@
     "status": "verified"
   },
   "prefixes": {},
-  "cards": {},
+  "cards": {
+    "UNG_002": {
+      "date": "2017-04-05",
+      "status": "verified",
+      "source": "https://hearthstone.blizzard.com/ko-kr/news/20567513",
+      "corroboration": "https://www.hearthpwn.com/forums/hearthstone-general/general-discussion/189928-volcanosaur-ungoro-are-already-playable-on-asia",
+      "confidence": "high",
+      "note": "Korean first-playable date; exact first-play timestamp not asserted."
+    },
+    "UNG_027t2": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_027t4": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_028t": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_057t1": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_065t": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_067t1": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_076t1": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_083t1": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_101a": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_101b": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_101t": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_101t2": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_101t3": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_111t1": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_116t": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_201t": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_208t": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_211a": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_211aa": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_211b": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_211c": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_211d": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_809t1": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_829t1": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_829t2": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_829t3": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_834t1": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_851t1": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_914t1": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_917t1": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_920t1": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_920t2": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_922t1": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_934t1": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_934t2": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_940t8": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_942t": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_954t1": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_957t1": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_999t10": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_999t13": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_999t14": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_999t2": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_999t2t1": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_999t3": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_999t4": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_999t5": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_999t6": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_999t7": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    },
+    "UNG_999t8": {
+      "date": null,
+      "status": "pending",
+      "confidence": "unconfirmed",
+      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+    }
+  },
   "sources": {
-    "main": "https://hearthstone.blizzard.com/ko-kr/news/20643472"
+    "main": "https://hearthstone.blizzard.com/ko-kr/news/20659262",
+    "previousMain": "https://hearthstone.blizzard.com/ko-kr/news/20643472",
+    "volcanosaurFirstPlayable": "https://hearthstone.blizzard.com/ko-kr/news/20567513",
+    "volcanosaurAsiaUse": "https://www.hearthpwn.com/forums/hearthstone-general/general-discussion/189928-volcanosaur-ungoro-are-already-playable-on-asia"
   }
-}
+}\n
