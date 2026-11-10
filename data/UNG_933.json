@@ -18,7 +18,7 @@
       "BEAST"
     ],
     "spellSchool": "",
-    "cost": 7,
+    "cost": 9,
     "attack": 9,
     "health": 7,
     "armor": 0,
@@ -94,9 +94,18 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "cost": 7
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    }
   },
   "root": true,
   "relatedIds": [],
