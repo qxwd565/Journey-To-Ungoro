@@ -519,12 +519,13 @@ class HistoryOperationsTest(unittest.TestCase):
 
         wind = BUILD.load(ROOT / "data" / "UNG_019.json")
         old_wind_tags = BUILD.native_tag_values(wind["2017-04-07"])
-        new_wind_tags = BUILD.native_tag_values(wind["2024-03-29"])
         self.assertEqual((old_wind_tags[311], old_wind_tags[332]), (1, 1))
         self.assertNotIn(1211, old_wind_tags)
         self.assertEqual(wind["2024-03-29"]["attack"], 3)
-        self.assertEqual(new_wind_tags[1211], 1)
-        self.assertIn("상실 사건으로 해석하지 않음", wind["2024-03-29"]["note"])
+        self.assertNotIn("nativeTags", wind["2024-03-29"])
+        self.assertEqual(BUILD.native_tag_values(wind["current"])[1211], 1)
+        self.assertEqual(wind["nativeTagsTimelineStatus"], "partial")
+        self.assertIn("nativeTags", wind["historyIncompleteFields"])
 
         stat_changes = {
             "UNG_032": (("health", 1), ("health", 2), 45, 2),
