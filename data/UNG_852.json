@@ -245,10 +245,7 @@
     "note": "27.6 한국 적용일. 공격력·생명력 12→14 및 도발 추가. CardDefs의 TAG 311/332 미검출은 공식 인쇄 설명의 대상 지정 방지 효과 상실을 뜻하지 않으므로 보호 상실 이력을 만들지 않음."
   },
   "nativeTagsTimelineStatus": "partial",
-  "historyIncompleteFields": [
-    "nativeTags",
-    "text"
-  ],
+  "historyIncompleteFields": [],
   "unresolvedSourceFields": [
     {
       "field": "text",

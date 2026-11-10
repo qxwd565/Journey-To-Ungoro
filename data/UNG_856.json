@@ -170,7 +170,7 @@
   },
   "nativeTagsTimelineStatus": "partial",
   "historyIncompleteFields": [
-    "nativeTags"
+    "name"
   ],
   "unresolvedSourceFields": [
     {
@@ -180,6 +180,10 @@
     {
       "field": "nativeTags[1342]",
       "reason": "현재 TAG 1342 발견 시각 효과의 도입일 미확정."
+    },
+    {
+      "field": "name",
+      "reason": "2017 CardDefs 명칭 '환상'과 현재 카드명 '포자 환상'의 차이는 확인되나 한국어 명칭 변경일은 미확정."
     }
   ],
   "referenceTags": [

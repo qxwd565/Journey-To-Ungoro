@@ -288,6 +288,15 @@ class HistoryOperationsTest(unittest.TestCase):
         self.assertEqual(BUILD.RACE_LABEL_BY_TAG[20], "야수")
         self.assertEqual(BUILD.RACE_LABEL_BY_TAG[14], "멀록")
         self.assertEqual(BUILD.RACE_LABEL_BY_TAG[24], "용족")
+        expected_races = {14: "MURLOC", 20: "BEAST", 24: "DRAGON"}
+        race_count = 0
+        for cid, entry in baseline["cards"].items():
+            state = entry["state"]
+            race_tag = BUILD.native_tag_values(state).get(200)
+            if race_tag in expected_races:
+                self.assertEqual(state.get("races"), [expected_races[race_tag]], cid)
+                race_count += 1
+        self.assertEqual(race_count, 53)
 
         for cid in ("UNG_024", "UNG_025"):
             source = BUILD.load(ROOT / "data" / (cid + ".json"))
@@ -363,26 +372,56 @@ class HistoryOperationsTest(unittest.TestCase):
         self.assertFalse(any(x["field"] in ("cost", "nativeTags[48]") for x in scales["unresolvedSourceFields"]))
 
 
+    def test_october_2023_eight_card_source_and_published_boundaries(self):
+        expected_schools = {
+            "UNG_856": ("NATURE", 4), "UNG_927": ("NATURE", 4),
+            "UNG_941": ("ARCANE", 1), "UNG_948": ("FIRE", 2),
+            "UNG_955": ("FIRE", 2), "UNG_956": ("NATURE", 4),
+        }
+        for cid, (school, tag_value) in expected_schools.items():
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            initial = source["2017-04-07"]
+            self.assertNotIn("spellSchool", initial, cid)
+            self.assertNotIn(1635, {x["id"] for x in initial["nativeTags"]}, cid)
+            event = source["2021-03-26"]
+            self.assertEqual(event["spellSchool"], school, cid)
+            self.assertEqual(BUILD.native_tag_values(event)[1635], tag_value, cid)
+            self.assertEqual(source["current"]["spellSchool"], school, cid)
+
+        tyrant = BUILD.load(ROOT / "data" / "UNG_852.json")
+        self.assertEqual((tyrant["2017-04-07"]["attack"], tyrant["2017-04-07"]["health"]), (12, 12))
+        self.assertEqual((tyrant["2023-10-18"]["attack"], tyrant["2023-10-18"]["health"]), (14, 14))
+        self.assertNotIn(190, BUILD.native_tag_values(tyrant["2017-04-07"]))
+        self.assertEqual(BUILD.native_tag_values(tyrant["2023-10-18"])[190], 1)
+        self.assertIn("[x]", tyrant["2023-10-18"]["nativeRawText"])
+        self.assertNotIn(1211, BUILD.native_tag_values(tyrant["2023-10-18"]))
+
+        cleaver = BUILD.load(ROOT / "data" / "UNG_950.json")
+        self.assertEqual(cleaver["2017-04-07"]["cost"], 7)
+        self.assertEqual(BUILD.native_tag_values(cleaver["2017-04-07"])[48], 7)
+        self.assertEqual(cleaver["2023-10-18"]["cost"], 6)
+        self.assertEqual(BUILD.native_tag_values(cleaver["2023-10-18"])[48], 6)
+
+        genesis = BUILD.load(ROOT / "data" / "UNG_927.json")
+        self.assertEqual((genesis["2017-04-07"]["cost"], genesis["2023-10-18"]["cost"]), (5, 4))
+        meteor = BUILD.load(ROOT / "data" / "UNG_955.json")
+        self.assertIn("$3", meteor["2017-04-07"]["nativeRawText"])
+        self.assertIn("$4", meteor["2023-10-18"]["nativeRawText"])
+        self.assertIn(chr(10), meteor["2023-10-18"]["nativeRawText"])
+        echo = BUILD.load(ROOT / "data" / "UNG_956.json")
+        self.assertEqual((echo["2017-04-07"]["cost"], echo["2023-10-18"]["cost"]), (3, 2))
+
+        render = BUILD.load(ROOT / "render.json")
+        history = BUILD.load(ROOT / "history.json")
+        cards = BUILD.load(ROOT / "cards.json")
+        by_id = {x["id"]: x for x in render["cards"]}
+        self.assertEqual((by_id["UNG_852"]["attack"], by_id["UNG_852"]["health"]), (14, 14))
+        self.assertEqual(by_id["UNG_955"]["text"], meteor["current"]["text"])
+        card_index = next(i for i, x in enumerate(cards["cards"]) if x["id"] == "UNG_955")
+        self.assertEqual(cards["cards"][card_index]["text"], meteor["current"]["text"])
+        self.assertIn("41954", history["cards"])
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
 
-
-    def test_all_baseline_races_match_native_tag_200(self):
-        baseline = BUILD.load(ROOT / "sources" / "carddefs-18336-baseline.json")
-        expected = {14: "MURLOC", 20: "BEAST", 24: "DRAGON"}
-        checked = 0
-        for cid, entry in baseline["cards"].items():
-            state = entry["state"]
-            tags = BUILD.native_tag_values(state)
-            if tags.get(200) in expected:
-                self.assertEqual(state.get("races"), [expected[tags[200]]], cid)
-                checked += 1
-        self.assertEqual(checked, 53)
-
-    def test_baseline_race_conversion_regressions_are_rejected(self):
-        baseline = {"cards": {"BAD": {"state": {
-            "race": "야수", "races": ["PIRATE"],
-            "nativeTags": [{"id": 200, "value": 20}]
-        }}}}
-        with self.assertRaisesRegex(ValueError, "races=.*CARDRACE"):
-            BUILD.validate_baseline_enum_mappings(baseline)

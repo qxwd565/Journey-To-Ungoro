@@ -202,9 +202,7 @@
     "note": "27.6 한국 적용일. 비용 3→2 변경 및 자체 TAG 48 동기화."
   },
   "nativeTagsTimelineStatus": "partial",
-  "historyIncompleteFields": [
-    "nativeTags"
-  ],
+  "historyIncompleteFields": [],
   "unresolvedSourceFields": [
     {
       "field": "nativeTags[217]",

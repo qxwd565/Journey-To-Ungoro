@@ -170,8 +170,7 @@
   },
   "nativeTagsTimelineStatus": "partial",
   "historyIncompleteFields": [
-    "text",
-    "nativeTags"
+    "text"
   ],
   "unresolvedSourceFields": [
     {

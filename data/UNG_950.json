@@ -212,7 +212,7 @@
   },
   "nativeTagsTimelineStatus": "partial",
   "historyIncompleteFields": [
-    "nativeTags"
+    "text"
   ],
   "unresolvedSourceFields": [
     {
