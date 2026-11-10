@@ -1,31 +1,26 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Vilespine Slayer",
-  "card": {
-    "id": "UNG_064",
-    "dbfId": 41217,
+  "schemaVersion": 2,
+  "id": "UNG_064",
+  "dbfId": 41217,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "2017-04-04 is the CardDefs source snapshot date; the verified first playable date is 2017-04-07.",
+  "2017-04-07": {
     "name": "썩은가시 식인꽃",
-    "text": "<b>연계:</b> 하수인을 처치합니다.",
     "type": "MINION",
     "cardClass": "ROGUE",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "EPIC",
-    "race": "",
-    "races": [],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 5,
     "attack": 3,
     "health": 4,
-    "armor": 0,
-    "durability": 0,
-    "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-139_D.psd:be918a461db797348a4b7829e7efcca4",
-    "flavor": "한 입 베어 물기만 했을 뿐인데...",
+    "text": "<b>연계:</b> 하수인 하나를 처치합니다.",
     "nativeTags": [
       {
         "id": 45,
@@ -78,16 +73,105 @@
         "value": 1
       }
     ],
-    "nativeRawText": "<b>연계:</b> 하수인을 처치합니다.",
-    "nativeTextBuilder": 0,
+    "nativeRawText": "<b>연계:</b> 하수인 하나를 처치합니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "한 입 베어 물기만 했을 뿐인데..."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "id": "UNG_064",
+    "dbfId": 41217,
+    "name": "썩은가시 식인꽃",
+    "type": "MINION",
+    "cardClass": "ROGUE",
+    "rarity": "EPIC",
+    "collectible": true,
+    "cost": 5,
+    "text": "<b>연계:</b> 하수인을 처치합니다.",
+    "attack": 3,
+    "health": 4,
+    "durability": 0,
+    "armor": 0,
+    "flavor": "한 입 베어 물기만 했을 뿐인데...",
+    "spellSchool": "",
+    "portrait": "HS10-139_D.psd:be918a461db797348a4b7829e7efcca4",
+    "set": "UNGORO",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 4
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 3
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 5
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 7
+      },
+      {
+        "id": 201,
+        "name": "진영",
+        "value": 3
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 4
+      },
+      {
+        "id": 220,
+        "name": "연계",
+        "value": 1
+      },
+      {
+        "id": 251,
+        "name": "게임 태그 251",
+        "value": 7
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "races": [],
+    "race": "",
+    "classes": [],
+    "art": "art/UNG_064.png",
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
-    "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "nativeRawText": "<b>연계:</b> 하수인을 처치합니다.",
+    "nativeTextBuilder": 0
   },
   "root": true,
   "relatedIds": [],
+  "englishName": "Vilespine Slayer",
   "expansion": {
     "id": 27,
     "slug": "journey-to-ungoro",
@@ -104,5 +188,35 @@
     "gameVersion": "6000.3.11.3145967",
     "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
     "locale": "koKR"
-  }
+  },
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ],
+  "nativeTagsTimelineStatus": "complete",
+  "historyKnownFields": [],
+  "historyIncompleteFields": [
+    "text",
+    "nativeRawText",
+    "nativeTextBuilder"
+  ],
+  "unresolvedSourceFields": [
+    {
+      "field": "text",
+      "reason": "Current text differs from or is absent in the baseline snapshot; no confirmed date supports a historical event."
+    },
+    {
+      "field": "nativeRawText",
+      "reason": "Current raw text differs from the 2017 snapshot; no dated source establishes when."
+    },
+    {
+      "field": "nativeTextBuilder",
+      "reason": "Current nativeTextBuilder is retained in current only; historical introduction is unverified."
+    }
+  ]
 }

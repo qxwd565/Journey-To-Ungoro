@@ -1,32 +1,28 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Rock Elemental",
-  "card": {
-    "id": "UNG_208t",
-    "dbfId": 41113,
-    "name": "암석 정령",
-    "text": "<b>도발</b>",
+  "schemaVersion": 2,
+  "id": "UNG_208t",
+  "dbfId": 41113,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "2017-04-04 is a CardDefs source snapshot date, not a playable date; first playable date remains pending.",
+  "2017-04-04": {
+    "name": "바위 정령",
     "type": "MINION",
     "cardClass": "SHAMAN",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
-    "race": "정령",
-    "races": [
-      "ELEMENTAL"
-    ],
-    "spellSchool": "",
     "cost": 2,
     "attack": 2,
     "health": 3,
-    "armor": 0,
-    "durability": 0,
-    "collectible": false,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-014_M.psd:11e20307f5808a0438359a00537d142c",
-    "flavor": "",
+    "races": [
+      "ELEMENTAL"
+    ],
+    "race": "정령",
+    "text": "<b>도발</b>",
     "nativeTags": [
       {
         "id": 45,
@@ -65,15 +61,93 @@
       }
     ],
     "nativeRawText": "<b>도발</b>",
-    "nativeTextBuilder": 0,
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-c7e6-478a-b482-ed40c6600569"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-c7e6-478a-b482-ed40c6600569"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "id": "UNG_208t",
+    "dbfId": 41113,
+    "name": "암석 정령",
+    "type": "MINION",
+    "cardClass": "SHAMAN",
+    "collectible": false,
+    "cost": 2,
+    "text": "<b>도발</b>",
+    "attack": 2,
+    "health": 3,
+    "durability": 0,
+    "armor": 0,
+    "flavor": "",
+    "spellSchool": "",
+    "portrait": "HS10-014_M.psd:11e20307f5808a0438359a00537d142c",
+    "set": "UNGORO",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 3
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 2
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 2
+      },
+      {
+        "id": 190,
+        "name": "도발",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 8
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 18
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      }
+    ],
+    "races": [
+      "ELEMENTAL"
+    ],
+    "race": "정령",
+    "classes": [],
+    "art": "art/UNG_208t.png",
     "releasedAt": null,
     "releaseStatus": "pending",
-    "patches": [],
-    "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "nativeRawText": "<b>도발</b>",
+    "nativeTextBuilder": 0
   },
   "root": false,
   "relatedIds": [],
+  "englishName": "Rock Elemental",
   "expansion": {
     "id": 27,
     "slug": "journey-to-ungoro",
@@ -90,5 +164,39 @@
     "gameVersion": "6000.3.11.3145967",
     "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
     "locale": "koKR"
-  }
+  },
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ],
+  "nativeTagsTimelineStatus": "complete",
+  "historyKnownFields": [],
+  "historyIncompleteFields": [
+    "name",
+    "collectible",
+    "nativeTextBuilder"
+  ],
+  "unresolvedSourceFields": [
+    {
+      "field": "name",
+      "reason": "Current name differs from or is absent in the baseline snapshot; no confirmed date supports a historical event."
+    },
+    {
+      "field": "collectible",
+      "reason": "Current collectible differs from or is absent in the baseline snapshot; no confirmed date supports a historical event."
+    },
+    {
+      "field": "nativeTextBuilder",
+      "reason": "Current nativeTextBuilder is retained in current only; historical introduction is unverified."
+    },
+    {
+      "field": "releasedAt",
+      "reason": "release-policy.json marks this generated/choice card pending; 2017-04-04 is snapshot date only."
+    }
+  ]
 }

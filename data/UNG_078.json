@@ -1,31 +1,26 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Tortollan Forager",
-  "card": {
-    "id": "UNG_078",
-    "dbfId": 41252,
+  "schemaVersion": 2,
+  "id": "UNG_078",
+  "dbfId": 41252,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "2017-04-04 is the CardDefs source snapshot date; the verified first playable date is 2017-04-07.",
+  "2017-04-07": {
     "name": "토르톨란 채집꾼",
-    "text": "<b>전투의 함성:</b> 공격력이 5 이상인 무작위 하수인을 내 손으로 가져옵니다.",
     "type": "MINION",
     "cardClass": "DRUID",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "COMMON",
-    "race": "",
-    "races": [],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 2,
     "attack": 2,
     "health": 2,
-    "armor": 0,
-    "durability": 0,
-    "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-006_M.psd:295b7cc80a016654b8aa55b1a18c240c",
-    "flavor": "토르톨라어로 운고로는 \"고대의 분실물 취급소\"입니다.",
+    "text": "<b>전투의 함성:</b><br></br>공격력이 5 이상인<br></br>무작위 하수인 카드 1장을<br></br>내 손으로 가져옵니다.",
     "nativeTags": [
       {
         "id": 45,
@@ -68,16 +63,99 @@
         "value": 1
       }
     ],
-    "nativeRawText": "<b>전투의 함성:</b> 공격력이 5 이상인 무작위 하수인을 내 손으로 가져옵니다.",
-    "nativeTextBuilder": 0,
+    "nativeRawText": "[x]<b>전투의 함성:</b>\n공격력이 5 이상인\n무작위 하수인 카드 1장을\n내 손으로 가져옵니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-f04e-4f19-8970-c62001a16d08"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "토르톨라어로 운고로는 \"고대의 분실물 취급소\"입니다."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-f04e-4f19-8970-c62001a16d08"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "id": "UNG_078",
+    "dbfId": 41252,
+    "name": "토르톨란 채집꾼",
+    "type": "MINION",
+    "cardClass": "DRUID",
+    "rarity": "COMMON",
+    "collectible": true,
+    "cost": 2,
+    "text": "<b>전투의 함성:</b> 공격력이 5 이상인 무작위 하수인을 내 손으로 가져옵니다.",
+    "attack": 2,
+    "health": 2,
+    "durability": 0,
+    "armor": 0,
+    "flavor": "토르톨라어로 운고로는 \"고대의 분실물 취급소\"입니다.",
+    "spellSchool": "",
+    "portrait": "HS10-006_M.psd:295b7cc80a016654b8aa55b1a18c240c",
+    "set": "UNGORO",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 2
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 2
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 2
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 2
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 1
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "races": [],
+    "race": "",
+    "classes": [],
+    "art": "art/UNG_078.png",
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
-    "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "nativeRawText": "<b>전투의 함성:</b> 공격력이 5 이상인 무작위 하수인을 내 손으로 가져옵니다.",
+    "nativeTextBuilder": 0
   },
   "root": true,
   "relatedIds": [],
+  "englishName": "Tortollan Forager",
   "expansion": {
     "id": 27,
     "slug": "journey-to-ungoro",
@@ -94,5 +172,35 @@
     "gameVersion": "6000.3.11.3145967",
     "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
     "locale": "koKR"
-  }
+  },
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ],
+  "nativeTagsTimelineStatus": "complete",
+  "historyKnownFields": [],
+  "historyIncompleteFields": [
+    "text",
+    "nativeRawText",
+    "nativeTextBuilder"
+  ],
+  "unresolvedSourceFields": [
+    {
+      "field": "text",
+      "reason": "Current text differs from or is absent in the baseline snapshot; no confirmed date supports a historical event."
+    },
+    {
+      "field": "nativeRawText",
+      "reason": "Current raw text differs from the 2017 snapshot; no dated source establishes when."
+    },
+    {
+      "field": "nativeTextBuilder",
+      "reason": "Current nativeTextBuilder is retained in current only; historical introduction is unverified."
+    }
+  ]
 }

@@ -1,31 +1,107 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Arcanologist",
-  "card": {
-    "id": "UNG_020",
-    "dbfId": 41153,
+  "schemaVersion": 2,
+  "id": "UNG_020",
+  "dbfId": 41153,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "2017-04-04 is a CardDefs source snapshot date, not a playable date; first playable date is 2017-04-07.",
+  "2017-04-07": {
     "name": "비전학자",
-    "text": "<b>전투의 함성:</b> <b>비밀</b>을 뽑습니다.",
     "type": "MINION",
     "cardClass": "MAGE",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "COMMON",
-    "race": "",
-    "races": [],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 2,
     "attack": 2,
     "health": 3,
-    "armor": 0,
-    "durability": 0,
+    "text": "<b>전투의 함성:</b><br></br>내 덱에서 <b>비밀</b> 카드를 1장 뽑습니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 3
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 2
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 2
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 4
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 1
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>전투의 함성:</b>\n내 덱에서 <b>비밀</b> 카드를 1장 뽑습니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "1843faac-e092-465c-a408-f72eb8350389"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "\"무슨 카드를 뽑은 거야?\"\n\"쉬이잇...! 비밀이야.\""
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "1843faac-e092-465c-a408-f72eb8350389"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "id": "UNG_020",
+    "dbfId": 41153,
+    "name": "비전학자",
+    "type": "MINION",
+    "cardClass": "MAGE",
+    "rarity": "COMMON",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-113_D.psd:c0dddfa678f57da4ab7a00eea5cb4899",
+    "cost": 2,
+    "text": "<b>전투의 함성:</b> <b>비밀</b>을 뽑습니다.",
+    "attack": 2,
+    "health": 3,
+    "durability": 0,
+    "armor": 0,
     "flavor": "\"무슨 카드를 뽑은 거야?\" \"쉬이잇...! 비밀이야.\"",
+    "spellSchool": "",
+    "portrait": "HS10-113_D.psd:c0dddfa678f57da4ab7a00eea5cb4899",
+    "set": "UNGORO",
     "nativeTags": [
       {
         "id": 45,
@@ -73,16 +149,18 @@
         "value": 1
       }
     ],
-    "nativeRawText": "<b>전투의 함성:</b> <b>비밀</b>을 뽑습니다.",
-    "nativeTextBuilder": 0,
+    "races": [],
+    "race": "",
+    "classes": [],
+    "art": "art/UNG_020.png",
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
-    "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "nativeRawText": "<b>전투의 함성:</b> <b>비밀</b>을 뽑습니다.",
+    "nativeTextBuilder": 0
   },
   "root": true,
   "relatedIds": [],
+  "englishName": "Arcanologist",
   "expansion": {
     "id": 27,
     "slug": "journey-to-ungoro",
@@ -99,5 +177,40 @@
     "gameVersion": "6000.3.11.3145967",
     "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
     "locale": "koKR"
-  }
+  },
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ],
+  "nativeTagsTimelineStatus": "partial",
+  "historyKnownFields": [],
+  "historyIncompleteFields": [
+    "text",
+    "nativeTags",
+    "nativeRawText",
+    "nativeTextBuilder"
+  ],
+  "unresolvedSourceFields": [
+    {
+      "field": "text",
+      "reason": "Current text differs from the 2017-04-04 snapshot; no confirmed date supports a historical event."
+    },
+    {
+      "field": "nativeTags",
+      "reason": "Current nativeTags differs from the 2017-04-04 snapshot; no confirmed date supports a historical event."
+    },
+    {
+      "field": "nativeRawText",
+      "reason": "Current raw text differs from the original snapshot; no dated source establishes when."
+    },
+    {
+      "field": "nativeTextBuilder",
+      "reason": "Current nativeTextBuilder is retained in current only; historical introduction is unverified."
+    }
+  ]
 }

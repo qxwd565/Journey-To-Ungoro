@@ -1,33 +1,120 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Vicious Fledgling",
-  "card": {
-    "id": "UNG_075",
-    "dbfId": 41247,
+  "schemaVersion": 2,
+  "id": "UNG_075",
+  "dbfId": 41247,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "2017-04-04 is the CardDefs source snapshot date; the verified first playable date is 2017-04-07.",
+  "2017-04-07": {
     "name": "흉포한 어린 테러닥스",
-    "text": "이 하수인은 영웅을 공격한 후에 <b>적응</b>합니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "RARE",
-    "race": "야수",
-    "races": [
-      "BEAST"
-    ],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 3,
     "attack": 3,
     "health": 3,
-    "armor": 0,
-    "durability": 0,
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "text": "이 하수인은 영웅을 공격한 후에 <b>적응</b>합니다.",
+    "nativeTags": [
+      {
+        "id": 32,
+        "name": "발동 효과 표시",
+        "value": 1
+      },
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 3
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 3
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 3
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 20
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 3
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "이 하수인은 영웅을 공격한 후에 <b>적응</b>합니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-fe0e-460c-9ced-219c2ce2f07b"
+      ],
+      "triggeredPowerHistory": [
+        "effectIndex=\"0\" showInHistory=\"True\""
+      ]
+    },
+    "nativeSetId": 27,
+    "flavor": "어린 나이에도 자기 계발에 정진합니다."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-fe0e-460c-9ced-219c2ce2f07b"
+      ],
+      "triggeredPowerHistory": [
+        "effectIndex=\"0\" showInHistory=\"True\""
+      ]
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "id": "UNG_075",
+    "dbfId": 41247,
+    "name": "흉포한 어린 테러닥스",
+    "type": "MINION",
+    "cardClass": "NEUTRAL",
+    "rarity": "RARE",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-055_M.psd:5c7f1f6f9339f5843ac5c683de8b7b61",
+    "cost": 3,
+    "text": "이 하수인은 영웅을 공격한 후에 <b>적응</b>합니다.",
+    "attack": 3,
+    "health": 3,
+    "durability": 0,
+    "armor": 0,
     "flavor": "어린 나이에도 자기 계발에 정진합니다.",
+    "spellSchool": "",
+    "portrait": "HS10-055_M.psd:5c7f1f6f9339f5843ac5c683de8b7b61",
+    "set": "UNGORO",
     "nativeTags": [
       {
         "id": 32,
@@ -80,13 +167,16 @@
         "value": 1
       }
     ],
-    "nativeRawText": "이 하수인은 영웅을 공격한 후에 <b>적응</b>합니다.",
-    "nativeTextBuilder": 0,
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "classes": [],
+    "art": "art/UNG_075.png",
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
-    "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "nativeRawText": "이 하수인은 영웅을 공격한 후에 <b>적응</b>합니다.",
+    "nativeTextBuilder": 0
   },
   "root": true,
   "relatedIds": [
@@ -102,6 +192,7 @@
     41057,
     41067
   ],
+  "englishName": "Vicious Fledgling",
   "expansion": {
     "id": 27,
     "slug": "journey-to-ungoro",
@@ -118,5 +209,30 @@
     "gameVersion": "6000.3.11.3145967",
     "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
     "locale": "koKR"
-  }
+  },
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ],
+  "nativeTagsTimelineStatus": "partial",
+  "historyKnownFields": [],
+  "historyIncompleteFields": [
+    "nativeTags",
+    "nativeTextBuilder"
+  ],
+  "unresolvedSourceFields": [
+    {
+      "field": "nativeTags",
+      "reason": "Current nativeTags differs from or is absent in the baseline snapshot; no confirmed date supports a historical event."
+    },
+    {
+      "field": "nativeTextBuilder",
+      "reason": "Current nativeTextBuilder is retained in current only; historical introduction is unverified."
+    }
+  ]
 }

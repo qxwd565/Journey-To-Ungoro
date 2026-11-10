@@ -1010,6 +1010,53 @@ class HistoryOperationsTest(unittest.TestCase):
         self.assertEqual(core["2021-03-26"]["source"], "https://hearthstone.blizzard.com/ko-kr/news/23642550")
 
 
+    def test_thirty_six_additional_ungoro_cards_use_baseline_only_and_preserve_current_cache(self):
+        ids = (
+            "UNG_001", "UNG_009", "UNG_015", "UNG_020", "UNG_021", "UNG_049",
+            "UNG_064", "UNG_065t", "UNG_073", "UNG_075", "UNG_076", "UNG_076t1",
+            "UNG_078", "UNG_082", "UNG_083", "UNG_083t1", "UNG_087", "UNG_089",
+            "UNG_101t", "UNG_101t2", "UNG_101t3", "UNG_109", "UNG_116t", "UNG_201",
+            "UNG_201t", "UNG_202", "UNG_205", "UNG_208t", "UNG_211a", "UNG_211aa",
+            "UNG_211b", "UNG_211c", "UNG_211d", "UNG_803", "UNG_806", "UNG_807",
+        )
+        baseline = BUILD.load(ROOT / "sources" / "carddefs-18336-baseline.json")
+        catalog = BUILD.load(ROOT / "cards.json")
+        policy = BUILD.load(ROOT / "release-policy.json")
+        records = {x["id"]: x for x in catalog["cards"]}
+        self.assertEqual(len(ids), 36)
+        for cid in ids:
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            record = records[cid]
+            release = policy.get("cards", {}).get(cid, policy["default"])
+            initial_day = "2017-04-04" if release["status"] == "pending" else "2017-04-07"
+            expected = copy.deepcopy(baseline["cards"][cid]["state"])
+            expected["nativeTags"] = [x for x in expected["nativeTags"] if x["id"] != 183]
+            self.assertEqual(source[initial_day], expected, cid)
+            self.assertEqual(source["dbfId"], record["dbfId"], cid)
+            self.assertEqual(source["current"]["id"], cid)
+            self.assertEqual(source["current"]["dbfId"], record["dbfId"], cid)
+            for field, value in record.items():
+                self.assertEqual(source["current"].get(field), value, f"{cid}:{field}")
+            self.assertEqual(source["current"]["releaseStatus"], release["status"], cid)
+            self.assertEqual(source["current"]["releasedAt"], release["date"], cid)
+            date_keys = sorted(k for k in source if BUILD.DATE_RE.fullmatch(k))
+            self.assertEqual(date_keys, [initial_day], cid)
+            self.assertEqual(source["historyKnownFields"], [], cid)
+            self.assertIn(source["nativeTagsTimelineStatus"], ("complete", "partial"), cid)
+            self.assertEqual(source["sourceBaseline"]["commit"], "085f915af6c4374ac2a7088862390ebea44eb6c9", cid)
+            card = BUILD.normalize_date_keyed_source(source, {"id": cid, "releasedAt": record["releasedAt"]})
+            patches, states = BUILD.replay_forward_states(card, cid)
+            self.assertEqual(patches, [], cid)
+            self.assertEqual(states, [{k: v for k, v in expected.items() if k in BUILD.PATCH_FIELD_SET}], cid)
+
+        # Type-inapplicable placeholders remain current-only and are ignored in history comparisons.
+        for cid in ("UNG_001", "UNG_009", "UNG_015", "UNG_020"):
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            self.assertIn("armor", source["current"])
+            self.assertNotIn("armor", source["2017-04-07"])
+            self.assertNotIn("armor", source["historyIncompleteFields"])
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
 

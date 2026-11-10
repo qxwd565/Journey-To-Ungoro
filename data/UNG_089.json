@@ -1,33 +1,118 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Gentle Megasaur",
-  "card": {
-    "id": "UNG_089",
-    "dbfId": 41265,
+  "schemaVersion": 2,
+  "id": "UNG_089",
+  "dbfId": 41265,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "2017-04-04 is the CardDefs source snapshot date; the verified first playable date is 2017-04-07.",
+  "2017-04-07": {
     "name": "온순한 메가사우루스",
-    "text": "<b>전투의 함성:</b> 내 멀록들을 <b>적응</b>시킵니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "EPIC",
-    "race": "야수",
-    "races": [
-      "BEAST"
-    ],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 4,
     "attack": 5,
     "health": 4,
-    "armor": 0,
-    "durability": 0,
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "text": "<b>전투의 함성:</b> 내 멀록들을 <b>적응</b>시킵니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 4
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 5
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 4
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 20
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 4
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>전투의 함성:</b> 내 멀록들을 <b>적응</b>시킵니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "e217a22e-da3f-4533-9bf1-05b094b3160d",
+        "00000012-4751-49fa-99ad-1847f8af49c3"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "\"값싼 월세! 유목민의 기분을 느껴보세요! 이족 보행 가능한 인간계 양서류만 받습니다!\""
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "e217a22e-da3f-4533-9bf1-05b094b3160d",
+        "00000012-4751-49fa-99ad-1847f8af49c3"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "id": "UNG_089",
+    "dbfId": 41265,
+    "name": "온순한 메가사우루스",
+    "type": "MINION",
+    "cardClass": "NEUTRAL",
+    "rarity": "EPIC",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-067_M.psd:2100bb359814ef5439f7459e5db4c7e3",
+    "cost": 4,
+    "text": "<b>전투의 함성:</b> 내 멀록들을 <b>적응</b>시킵니다.",
+    "attack": 5,
+    "health": 4,
+    "durability": 0,
+    "armor": 0,
     "flavor": "\"값싼 월세! 유목민의 기분을 느껴보세요! 이족 보행 가능한 인간계 양서류만 받습니다!\"",
+    "spellSchool": "",
+    "portrait": "HS10-067_M.psd:2100bb359814ef5439f7459e5db4c7e3",
+    "set": "UNGORO",
     "nativeTags": [
       {
         "id": 45,
@@ -80,13 +165,16 @@
         "value": 1
       }
     ],
-    "nativeRawText": "<b>전투의_함성:</b> 내 멀록들을 <b>적응</b>시킵니다.",
-    "nativeTextBuilder": 0,
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "classes": [],
+    "art": "art/UNG_089.png",
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
-    "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "nativeRawText": "<b>전투의_함성:</b> 내 멀록들을 <b>적응</b>시킵니다.",
+    "nativeTextBuilder": 0
   },
   "root": true,
   "relatedIds": [
@@ -102,6 +190,7 @@
     41057,
     41067
   ],
+  "englishName": "Gentle Megasaur",
   "expansion": {
     "id": 27,
     "slug": "journey-to-ungoro",
@@ -118,5 +207,40 @@
     "gameVersion": "6000.3.11.3145967",
     "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
     "locale": "koKR"
-  }
+  },
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ],
+  "nativeTagsTimelineStatus": "partial",
+  "historyKnownFields": [],
+  "historyIncompleteFields": [
+    "text",
+    "nativeTags",
+    "nativeRawText",
+    "nativeTextBuilder"
+  ],
+  "unresolvedSourceFields": [
+    {
+      "field": "text",
+      "reason": "Current text differs from or is absent in the baseline snapshot; no confirmed date supports a historical event."
+    },
+    {
+      "field": "nativeTags",
+      "reason": "Current nativeTags differs from or is absent in the baseline snapshot; no confirmed date supports a historical event."
+    },
+    {
+      "field": "nativeRawText",
+      "reason": "Current raw text differs from the 2017 snapshot; no dated source establishes when."
+    },
+    {
+      "field": "nativeTextBuilder",
+      "reason": "Current nativeTextBuilder is retained in current only; historical introduction is unverified."
+    }
+  ]
 }

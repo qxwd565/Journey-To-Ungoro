@@ -1,33 +1,30 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Bittertide Hydra",
-  "card": {
-    "id": "UNG_087",
-    "dbfId": 41263,
+  "schemaVersion": 2,
+  "id": "UNG_087",
+  "dbfId": 41263,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "2017-04-04 is the CardDefs source snapshot date; the verified first playable date is 2017-04-07.",
+  "2017-04-07": {
     "name": "거센물결 히드라",
-    "text": "이 하수인은 피해를 받을 때마다 내 영웅에게 피해를 3 줍니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "EPIC",
-    "race": "야수",
-    "races": [
-      "BEAST"
-    ],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 5,
     "attack": 8,
     "health": 8,
-    "armor": 0,
-    "durability": 0,
-    "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-164_D.psd:7da9865632a6b184498bf3b93408d68f",
-    "flavor": "중간 머리만 거셉니다. 나머지는 온화하고 다혈질입니다.",
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "text": "이 하수인은 피해를 입을 때마다 내 영웅에게 피해를 3 줍니다.",
     "nativeTags": [
       {
         "id": 32,
@@ -75,16 +72,110 @@
         "value": 1
       }
     ],
-    "nativeRawText": "이 하수인은 피해를 받을 때마다 내 영웅에게 피해를 3 줍니다.",
-    "nativeTextBuilder": 0,
+    "nativeRawText": "이 하수인은 피해를 입을 때마다 내 영웅에게 피해를 3 줍니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "d210be22-7b4c-43df-827b-1c298614e3e6"
+      ],
+      "triggeredPowerHistory": [
+        "effectIndex=\"0\" showInHistory=\"False\""
+      ]
+    },
+    "nativeSetId": 27,
+    "flavor": "중간 머리만 거셉니다. 나머지는 온화하고 다혈질입니다."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "d210be22-7b4c-43df-827b-1c298614e3e6"
+      ],
+      "triggeredPowerHistory": [
+        "effectIndex=\"0\" showInHistory=\"False\""
+      ]
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "id": "UNG_087",
+    "dbfId": 41263,
+    "name": "거센물결 히드라",
+    "type": "MINION",
+    "cardClass": "NEUTRAL",
+    "rarity": "EPIC",
+    "collectible": true,
+    "cost": 5,
+    "text": "이 하수인은 피해를 받을 때마다 내 영웅에게 피해를 3 줍니다.",
+    "attack": 8,
+    "health": 8,
+    "durability": 0,
+    "armor": 0,
+    "flavor": "중간 머리만 거셉니다. 나머지는 온화하고 다혈질입니다.",
+    "spellSchool": "",
+    "portrait": "HS10-164_D.psd:7da9865632a6b184498bf3b93408d68f",
+    "set": "UNGORO",
+    "nativeTags": [
+      {
+        "id": 32,
+        "name": "발동 효과 표시",
+        "value": 1
+      },
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 8
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 8
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 5
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 20
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 4
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "classes": [],
+    "art": "art/UNG_087.png",
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
-    "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "nativeRawText": "이 하수인은 피해를 받을 때마다 내 영웅에게 피해를 3 줍니다.",
+    "nativeTextBuilder": 0
   },
   "root": true,
   "relatedIds": [],
+  "englishName": "Bittertide Hydra",
   "expansion": {
     "id": 27,
     "slug": "journey-to-ungoro",
@@ -101,5 +192,35 @@
     "gameVersion": "6000.3.11.3145967",
     "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
     "locale": "koKR"
-  }
+  },
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ],
+  "nativeTagsTimelineStatus": "complete",
+  "historyKnownFields": [],
+  "historyIncompleteFields": [
+    "text",
+    "nativeRawText",
+    "nativeTextBuilder"
+  ],
+  "unresolvedSourceFields": [
+    {
+      "field": "text",
+      "reason": "Current text differs from or is absent in the baseline snapshot; no confirmed date supports a historical event."
+    },
+    {
+      "field": "nativeRawText",
+      "reason": "Current raw text differs from the 2017 snapshot; no dated source establishes when."
+    },
+    {
+      "field": "nativeTextBuilder",
+      "reason": "Current nativeTextBuilder is retained in current only; historical introduction is unverified."
+    }
+  ]
 }
