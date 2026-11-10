@@ -15,7 +15,6 @@
     "rarity": "COMMON",
     "race": "",
     "races": [],
-    "spellSchool": "",
     "cost": 1,
     "attack": 0,
     "health": 0,
@@ -82,7 +81,7 @@
     ],
     "initialSpecStatus": "unverified",
     "patchSources": {
-      "2021-03-26": "taxonomy introduction"
+      "2021-03-26": "https://hearthstone.blizzard.com/ko-kr/news/23642550"
     }
   },
   "root": true,
