@@ -200,79 +200,16 @@
   },
   "2024-03-29": {
     "attack": 3,
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 1
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 3
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 1
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 8
-      },
-      {
-        "id": 200,
-        "name": "종족",
-        "value": 18
-      },
-      {
-        "id": 201,
-        "name": "진영",
-        "value": 1
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 1
-      },
-      {
-        "id": 251,
-        "name": "게임 태그 251",
-        "value": 1
-      },
-      {
-        "id": 268,
-        "name": "게임 태그 268",
-        "value": 2
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      },
-      {
-        "id": 1211,
-        "name": "모면",
-        "value": 1
-      }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/24064739",
     "confidence": "high",
-    "note": "29.0.3 한국 적용일. 공격력 2→3. TAG311/332에서 TAG1211로 보이는 원시 태그 표현 차이는 대상 지정 방지 능력 상실 사건으로 해석하지 않음."
+    "note": "29.0.3 한국 적용일. 공격력 2→3 및 자체 TAG 47 동기화. 이 이벤트는 공격력만 확정하며 TAG311/332와 TAG1211 사이의 원시 태그 표현 전환일은 확정하지 않음."
   },
-  "nativeTagsTimelineStatus": "complete",
+  "nativeTagsTimelineStatus": "partial",
   "historyIncompleteFields": [
+    "nativeTags",
     "text"
   ],
-  "historyKnownFields": [
-    "nativeTags"
-  ],
+  "historyKnownFields": [],
   "unresolvedSourceFields": [
     {
       "field": "text",
@@ -280,7 +217,7 @@
     },
     {
       "field": "nativeTags[311,332,1211]",
-      "reason": "원시 태그 표현 차이를 게임 내 보호 능력 상실로 해석하지 않음."
+      "reason": "2017 baseline에는 TAG311/332가 있고 current cache에는 TAG1211이 존재한다. 29.0.3 CardDefs는 단일 시점 스냅샷이므로 전환의 정확한 최초 적용일은 확정하지 않으며, 공격력 변경 경계에 태그 전환을 소급하지 않는다."
     }
   ],
   "referenceTags": [
@@ -291,5 +228,13 @@
       "sourceSnapshot": "2017-04-04",
       "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
     }
-  ]
+  ],
+  "sourceEvidence": {
+    "2024-03-29": {
+      "officialPatchNotes": "https://hearthstone.blizzard.com/ko-kr/news/24064739",
+      "cardDefsSnapshot": "https://github.com/HearthSim/hsdata/blob/e73eeb8d2c284af5fcddc2db5fce692c77434cd8/CardDefs.xml",
+      "cardDefsCommit": "e73eeb8d2c284af5fcddc2db5fce692c77434cd8",
+      "note": "이 CardDefs는 해당 패치 시점의 스냅샷 근거로만 연결한다. 단일 스냅샷만으로 TAG311/332의 전 기간 부재나 TAG1211의 최초 도입일을 단정하지 않는다."
+    }
+  }
 }

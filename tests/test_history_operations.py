@@ -565,6 +565,30 @@ class HistoryOperationsTest(unittest.TestCase):
                          "이 하수인은 주문이나 영웅 능력의 대상으로 지정되지 않습니다.")
 
 
+    def test_ung_019_2024_attack_boundary_does_not_date_target_protection_tag_conversion(self):
+        source = BUILD.load(ROOT / "data" / "UNG_019.json")
+        initial = source["2017-04-07"]
+        event = source["2024-03-29"]
+        current = source["current"]
+        initial_tags = BUILD.native_tag_values(initial)
+        current_tags = BUILD.native_tag_values(current)
+        self.assertEqual((initial_tags[311], initial_tags[332]), (1, 1))
+        self.assertNotIn(1211, initial_tags)
+        self.assertEqual(event["attack"], 3)
+        self.assertNotIn("nativeTags", event)
+        self.assertEqual(event["source"], "https://hearthstone.blizzard.com/ko-kr/news/24064739")
+        self.assertEqual(event["sourceEvidence"] if "sourceEvidence" in event else source["sourceEvidence"]["2024-03-29"]["cardDefsCommit"],
+                         "e73eeb8d2c284af5fcddc2db5fce692c77434cd8")
+        self.assertEqual(current["attack"], 3)
+        self.assertEqual(current_tags[47], 3)
+        self.assertEqual(current_tags[1211], 1)
+        self.assertEqual(source["nativeTagsTimelineStatus"], "partial")
+        self.assertEqual(source["historyKnownFields"], [])
+        self.assertIn("nativeTags", source["historyIncompleteFields"])
+        self.assertIn("nativeTags[311,332,1211]",
+                      [x["field"] for x in source["unresolvedSourceFields"]])
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
 
