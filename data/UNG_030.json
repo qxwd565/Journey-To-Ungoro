@@ -116,7 +116,9 @@
       }
     ],
     "nativeRawText": "하수인과 내 영웅의 생명력을\n#5 회복시킵니다.",
-    "nativeTextBuilder": 0
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified"
   },
   "nativeTagsTimelineStatus": "partial",
   "historyIncompleteFields": [

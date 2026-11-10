@@ -110,7 +110,9 @@
       }
     ],
     "nativeRawText": "내 턴이 한 번 더 진행됩니다.\n<i>(게임당 1번만 발동)</i>",
-    "nativeTextBuilder": 0
+    "nativeTextBuilder": 0,
+    "releasedAt": null,
+    "releaseStatus": "pending"
   },
   "nativeTagsTimelineStatus": "partial",
   "historyIncompleteFields": [

@@ -146,7 +146,9 @@
       }
     ],
     "nativeRawText": "[x]피해를 $2 줍니다.\n1/2 정령을 내 손으로\n가져옵니다.",
-    "nativeTextBuilder": 0
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified"
   },
   "nativeTagsTimelineStatus": "partial",
   "historyIncompleteFields": [

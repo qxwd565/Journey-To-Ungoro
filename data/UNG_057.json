@@ -138,7 +138,9 @@
       }
     ],
     "nativeRawText": "피해를 2 주는 칼날꽃잎 둘을 내 손으로 가져옵니다.",
-    "nativeTextBuilder": 0
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified"
   },
   "nativeTagsTimelineStatus": "partial",
   "historyIncompleteFields": [

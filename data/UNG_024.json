@@ -130,7 +130,9 @@
       }
     ],
     "nativeRawText": "[x]<b>비밀:</b> 상대편이 주문을\n시전하면, 그 주문을 복사하여\n내 손으로 가져옵니다.\n그 주문의 비용이 (0)이 됩니다.",
-    "nativeTextBuilder": 0
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified"
   },
   "nativeTagsTimelineStatus": "partial",
   "historyIncompleteFields": [

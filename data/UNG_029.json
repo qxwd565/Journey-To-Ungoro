@@ -138,7 +138,9 @@
       }
     ],
     "nativeRawText": "내 덱에서 주문을 <b>발견</b>해서 복사해옵니다.",
-    "nativeTextBuilder": 0
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified"
   },
   "nativeTagsTimelineStatus": "partial",
   "historyIncompleteFields": [

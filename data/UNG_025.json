@@ -143,7 +143,9 @@
       }
     ],
     "nativeRawText": "<b>모든</b> 하수인에게 $15의 피해를 무작위로 나누어 입힙니다.\n<b>과부하:</b> (1)",
-    "nativeTextBuilder": 0
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified"
   },
   "nativeTagsTimelineStatus": "partial",
   "historyIncompleteFields": [
