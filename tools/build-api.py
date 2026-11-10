@@ -468,8 +468,10 @@ def main():
                         card["history"] = revisions
                     revisions = read_history(card, cid)
             if revisions:
-                incomplete = sorted({field for item in compatibility_blocked if item["id"] == cid
-                                     for event in item["events"] for field in event["fields"]})
+                incomplete = sorted(set(incomplete_fields) | {
+                    field for item in compatibility_blocked if item["id"] == cid
+                    for event in item["events"] for field in event["fields"]
+                })
                 history_entry = {"id": cid, "history": revisions}
                 if incomplete:
                     history_entry["incompleteFields"] = incomplete
@@ -489,8 +491,10 @@ def main():
             render_card["history"] = revisions
         if incomplete_fields:
             render_card["historyIncompleteFields"] = incomplete_fields
-        incomplete = sorted({field for item in compatibility_blocked if item["id"] == cid
-                             for event in item["events"] for field in event["fields"]})
+        incomplete = sorted(set(incomplete_fields) | {
+            field for item in compatibility_blocked if item["id"] == cid
+            for event in item["events"] for field in event["fields"]
+        })
         if incomplete:
             render_card["historyIncompleteFields"] = incomplete
         if release_policy is not None:
