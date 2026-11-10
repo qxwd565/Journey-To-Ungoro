@@ -6,7 +6,7 @@
     "id": "UNG_834",
     "dbfId": 41874,
     "name": "포식",
-    "text": "하수인에게 피해를 $3 줍니다. 1/1 테러닥스를 셋 소환하고 <b>적응</b>시킵니다.",
+    "text": "하수인에게 피해를 $3 줍니다.\\n1/1 테러닥스를\\n셋 소환합니다.",
     "type": "SPELL",
     "cardClass": "WARLOCK",
     "classes": [],
@@ -16,7 +16,7 @@
     "race": "",
     "races": [],
     "spellSchool": "",
-    "cost": 4,
+    "cost": 5,
     "attack": 0,
     "health": 0,
     "armor": 0,
@@ -67,9 +67,19 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "cost": 4,
+          "text": "하수인에게 피해를 $3 줍니다. 1/1 테러닥스를 셋 소환하고 <b>적응</b>시킵니다."
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    }
   },
   "root": true,
   "relatedIds": [
