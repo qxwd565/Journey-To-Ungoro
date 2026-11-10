@@ -6,7 +6,7 @@
     "id": "UNG_099",
     "dbfId": 41286,
     "name": "감전된 데빌사우루스",
-    "text": "<b>돌진</b>, <b>전투의 함성:</b>\n이번 턴에 영웅을\n공격할 수 없습니다.",
+    "text": "<b>돌진</b>, <b>전투의 함성:</b><br></br>이번 턴에 영웅을<br></br>공격할 수 없습니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
     "classes": [],

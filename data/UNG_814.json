@@ -6,7 +6,7 @@
     "id": "UNG_814",
     "dbfId": 41328,
     "name": "커다란 말벌",
-    "text": "<b>은신</b>\n<b>독성</b>",
+    "text": "<b>은신</b><br></br><b>독성</b>",
     "type": "MINION",
     "cardClass": "NEUTRAL",
     "classes": [],

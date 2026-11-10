@@ -6,7 +6,7 @@
     "id": "UNG_913",
     "dbfId": 41354,
     "name": "톨비르 감시자",
-    "text": "<b>전투의 함성:</b> 내 덱에서\n비용이 1인 하수인을\n둘 뽑습니다.",
+    "text": "<b>전투의 함성:</b> 내 덱에서<br></br>비용이 1인 하수인을<br></br>둘 뽑습니다.",
     "type": "MINION",
     "cardClass": "HUNTER",
     "classes": [],

@@ -6,7 +6,7 @@
     "id": "UNG_999t2",
     "dbfId": 41057,
     "name": "살아있는 포자",
-    "text": "<b>죽음의 메아리:</b>\n1/1 식물을\n둘 소환합니다.",
+    "text": "<b>죽음의 메아리:</b><br></br>1/1 식물을<br></br>둘 소환합니다.",
     "type": "SPELL",
     "cardClass": "NEUTRAL",
     "classes": [],

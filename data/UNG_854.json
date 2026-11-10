@@ -6,7 +6,7 @@
     "id": "UNG_854",
     "dbfId": 42009,
     "name": "호박석 속의 괴수",
-    "text": "비용이 (8) 이상인\n하수인을 <b>발견</b>하여 소환합니다.",
+    "text": "비용이 (8) 이상인<br></br>하수인을 <b>발견</b>하여 소환합니다.",
     "type": "SPELL",
     "cardClass": "PRIEST",
     "classes": [],

@@ -6,7 +6,7 @@
     "id": "UNG_047",
     "dbfId": 41191,
     "name": "굶주린 테러닥스",
-    "text": "<b>전투의 함성:</b> 아군 하수인을 처치하고,\n2번 <b>적응</b>합니다.",
+    "text": "<b>전투의 함성:</b> 아군 하수인을 처치하고,<br></br>2번 <b>적응</b>합니다.",
     "type": "MINION",
     "cardClass": "WARLOCK",
     "classes": [],

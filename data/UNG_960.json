@@ -6,7 +6,7 @@
     "id": "UNG_960",
     "dbfId": 41912,
     "name": "길 잃은 신병들",
-    "text": "1/1 은빛 성기사단 신병을\n2명 소환합니다.",
+    "text": "1/1 은빛 성기사단 신병을<br></br>2명 소환합니다.",
     "type": "SPELL",
     "cardClass": "PALADIN",
     "classes": [],

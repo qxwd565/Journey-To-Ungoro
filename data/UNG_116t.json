@@ -6,7 +6,7 @@
     "id": "UNG_116t",
     "dbfId": 41100,
     "name": "난폭한 바르나부스",
-    "text": "<b>전투의 함성:</b>\n내 덱에 있는 하수인들의\n비용이 (0)이 됩니다.",
+    "text": "<b>전투의 함성:</b><br></br>내 덱에 있는 하수인들의<br></br>비용이 (0)이 됩니다.",
     "type": "MINION",
     "cardClass": "DRUID",
     "classes": [],

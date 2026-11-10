@@ -6,7 +6,7 @@
     "id": "UNG_101t3",
     "dbfId": 40976,
     "name": "껍질술사",
-    "text": "<b>은신</b>\n<b>도발</b>",
+    "text": "<b>은신</b><br></br><b>도발</b>",
     "type": "MINION",
     "cardClass": "DRUID",
     "classes": [],

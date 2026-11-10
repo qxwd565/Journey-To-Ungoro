@@ -6,7 +6,7 @@
     "id": "UNG_211d",
     "dbfId": 41336,
     "name": "바람의 기원",
-    "text": "모든 적 하수인에게\n피해를 3 줍니다.",
+    "text": "모든 적 하수인에게<br></br>피해를 3 줍니다.",
     "type": "SPELL",
     "cardClass": "SHAMAN",
     "classes": [],

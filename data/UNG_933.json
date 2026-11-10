@@ -6,7 +6,7 @@
     "id": "UNG_933",
     "dbfId": 41425,
     "name": "폭군 모쉬",
-    "text": "<b>전투의 함성:</b>\n피해를 받은 <b>모든</b> 하수인을 처치합니다.",
+    "text": "<b>전투의 함성:</b><br></br>피해를 받은 <b>모든</b> 하수인을 처치합니다.",
     "type": "MINION",
     "cardClass": "WARRIOR",
     "classes": [],

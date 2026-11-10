@@ -6,7 +6,7 @@
     "id": "UNG_101",
     "dbfId": 40973,
     "name": "껍질술사",
-    "text": "<b>선택 -</b> 5/3 <b>은신</b> 하수인\n또는 3/5 <b>도발</b> 하수인으로\n변신합니다.",
+    "text": "<b>선택 -</b> 5/3 <b>은신</b> 하수인<br></br>또는 3/5 <b>도발</b> 하수인으로<br></br>변신합니다.",
     "type": "MINION",
     "cardClass": "DRUID",
     "classes": [],

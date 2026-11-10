@@ -6,7 +6,7 @@
     "id": "UNG_063",
     "dbfId": 41216,
     "name": "야금풀",
-    "text": "<b>연계:</b> 이번 턴에\n앞서 낸 카드 1장당\n+1/+1를 얻습니다.",
+    "text": "<b>연계:</b> 이번 턴에<br></br>앞서 낸 카드 1장당<br></br>+1/+1을 얻습니다.",
     "type": "MINION",
     "cardClass": "ROGUE",
     "classes": [],

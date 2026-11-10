@@ -6,7 +6,7 @@
     "id": "UNG_834",
     "dbfId": 41874,
     "name": "포식",
-    "text": "하수인에게 피해를 $3 줍니다.\\n1/1 테러닥스를\\n셋 소환합니다.",
+    "text": "하수인에게 피해를 $3 줍니다.<br></br>1/1 테러닥스를<br></br>셋 소환합니다.",
     "type": "SPELL",
     "cardClass": "WARLOCK",
     "classes": [],

@@ -6,7 +6,7 @@
     "id": "UNG_925",
     "dbfId": 41404,
     "name": "성난 공포뿔",
-    "text": "<b>도발</b>\n<b>전투의 함성:</b> <b>적응</b>",
+    "text": "<b>도발</b><br></br><b>전투의 함성:</b> <b>적응</b>",
     "type": "MINION",
     "cardClass": "WARRIOR",
     "classes": [],

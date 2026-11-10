@@ -6,7 +6,7 @@
     "id": "UNG_061",
     "dbfId": 41213,
     "name": "흑요석 파편",
-    "text": "[x]내가 낸 다른 직업의\\n카드 하나당 비용이\\n(1)씩 감소합니다.",
+    "text": "[x]내가 낸 다른 직업의<br></br>카드 하나당 비용이<br></br>(1)씩 감소합니다.",
     "type": "WEAPON",
     "cardClass": "ROGUE",
     "classes": [],

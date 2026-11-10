@@ -6,7 +6,7 @@
     "id": "UNG_900",
     "dbfId": 41289,
     "name": "영혼노래꾼 움브라",
-    "text": "내 하수인이 소환된\n후에, 그 하수인의\n<b>죽음의 메아리</b>를\n발동시킵니다.",
+    "text": "내 하수인이 소환된<br></br>후에, 그 하수인의<br></br><b>죽음의 메아리</b>를<br></br>발동시킵니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
     "classes": [],

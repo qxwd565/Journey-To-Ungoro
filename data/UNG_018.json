@@ -6,7 +6,7 @@
     "id": "UNG_018",
     "dbfId": 41151,
     "name": "화염 분출",
-    "text": "피해를 $2 줍니다.\n1/2 정령을 내 손으로\n가져옵니다.",
+    "text": "피해를 $2 줍니다.<br></br>1/2 정령을 내 손으로<br></br>가져옵니다.",
     "type": "SPELL",
     "cardClass": "MAGE",
     "classes": [],

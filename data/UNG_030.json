@@ -6,7 +6,7 @@
     "id": "UNG_030",
     "dbfId": 41170,
     "name": "결속의 치유",
-    "text": "하수인과 내 영웅의 생명력을\n#5 회복시킵니다.",
+    "text": "하수인과 내 영웅의 생명력을<br></br>#5 회복시킵니다.",
     "type": "SPELL",
     "cardClass": "PRIEST",
     "classes": [],

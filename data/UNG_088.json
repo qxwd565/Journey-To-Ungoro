@@ -6,7 +6,7 @@
     "id": "UNG_088",
     "dbfId": 41264,
     "name": "토르톨란 원시술사",
-    "text": "<b>전투의 함성:</b>\n주문을 <b>발견</b>하여 무작위\n대상에게 시전합니다.",
+    "text": "<b>전투의 함성:</b><br></br>주문을 <b>발견</b>하여 무작위<br></br>대상에게 시전합니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
     "classes": [],

@@ -6,7 +6,7 @@
     "id": "UNG_201",
     "dbfId": 41105,
     "name": "원시지느러미 토템",
-    "text": "내 턴이 끝날 때,\n1/1 멀록을 소환합니다.",
+    "text": "내 턴이 끝날 때,<br></br>1/1 멀록을 소환합니다.",
     "type": "MINION",
     "cardClass": "SHAMAN",
     "classes": [],

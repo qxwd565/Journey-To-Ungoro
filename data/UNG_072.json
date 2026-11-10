@@ -6,7 +6,7 @@
     "id": "UNG_072",
     "dbfId": 41243,
     "name": "바위언덕 수호병",
-    "text": "<b>도발</b>, <b>전투의 함성:</b>\n<b>도발</b> 하수인을 <b>발견</b>합니다.",
+    "text": "<b>도발</b>, <b>전투의 함성:</b><br></br><b>도발</b> 하수인을 <b>발견</b>합니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
     "classes": [],

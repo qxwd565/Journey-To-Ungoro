@@ -6,7 +6,7 @@
     "id": "UNG_836",
     "dbfId": 41876,
     "name": "여왕 자바스",
-    "text": "이 하수인을 버릴 때마다\n+2/+2를 부여하고\n내 손으로 다시 가져옵니다.",
+    "text": "이 하수인을 버릴 때마다<br></br>+2/+2를 부여하고<br></br>내 손으로 다시 가져옵니다.",
     "type": "MINION",
     "cardClass": "WARLOCK",
     "classes": [],

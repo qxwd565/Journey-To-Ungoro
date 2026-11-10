@@ -6,7 +6,7 @@
     "id": "UNG_940t8",
     "dbfId": 41950,
     "name": "희망의 감시자 아마라",
-    "text": "<b>도발</b>, <b>전투의 함성:</b>\n내 영웅의 생명력을 40으로 만듭니다.",
+    "text": "<b>도발</b>, <b>전투의 함성:</b><br></br>내 영웅의 생명력을 40으로 만듭니다.",
     "type": "MINION",
     "cardClass": "PRIEST",
     "classes": [],

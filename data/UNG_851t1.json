@@ -6,7 +6,7 @@
     "id": "UNG_851t1",
     "dbfId": 41491,
     "name": "운고로 팩",
-    "text": "<b>운고로를 향한 여정</b> 카드 5장을\n내 손으로 가져옵니다.",
+    "text": "<b>운고로를 향한 여정</b> 카드 5장을<br></br>내 손으로 가져옵니다.",
     "type": "SPELL",
     "cardClass": "NEUTRAL",
     "classes": [],

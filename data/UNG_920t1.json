@@ -6,7 +6,7 @@
     "id": "UNG_920t1",
     "dbfId": 41367,
     "name": "여왕 칼나사",
-    "text": "<b>전투의 함성:</b>\\n랩터 15마리를\\n내 덱에 섞어 넣습니다.",
+    "text": "<b>전투의 함성:</b><br></br>랩터 15마리를<br></br>내 덱에 섞어 넣습니다.",
     "type": "MINION",
     "cardClass": "HUNTER",
     "classes": [],

@@ -6,7 +6,7 @@
     "id": "UNG_829",
     "dbfId": 41856,
     "name": "락카리 제물",
-    "text": "<b>퀘스트:</b> 카드를 6장 버려야 합니다.\n<b>보상:</b> 황천의 차원문",
+    "text": "<b>퀘스트:</b> 카드를 6장 버려야 합니다.<br></br><b>보상:</b> 황천의 차원문",
     "type": "SPELL",
     "cardClass": "WARLOCK",
     "classes": [],

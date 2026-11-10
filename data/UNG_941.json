@@ -6,7 +6,7 @@
     "id": "UNG_941",
     "dbfId": 41496,
     "name": "태고의 문양",
-    "text": "주문을 <b>발견</b>합니다.\n그 카드의 비용이\n(2) 감소합니다.",
+    "text": "주문을 <b>발견</b>합니다.<br></br>그 카드의 비용이<br></br>(2) 감소합니다.",
     "type": "SPELL",
     "cardClass": "MAGE",
     "classes": [],

@@ -6,7 +6,7 @@
     "id": "UNG_919",
     "dbfId": 41366,
     "name": "랩터왕 서슬발톱",
-    "text": "상대편이 하수인을 낸 후에,\n그 하수인을 공격합니다.",
+    "text": "상대편이 하수인을 낸 후에,<br></br>그 하수인을 공격합니다.",
     "type": "MINION",
     "cardClass": "HUNTER",
     "classes": [],

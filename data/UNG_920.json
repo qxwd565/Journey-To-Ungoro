@@ -6,7 +6,7 @@
     "id": "UNG_920",
     "dbfId": 41368,
     "name": "늪지의 여왕",
-    "text": "<b>퀘스트:</b>\n비용이 1인 하수인을\n7회 내야 합니다.\n<b>보상:</b> 여왕 칼나사",
+    "text": "<b>퀘스트:</b><br></br>비용이 1인 하수인을<br></br>7회 내야 합니다.<br></br><b>보상:</b> 여왕 칼나사",
     "type": "SPELL",
     "cardClass": "HUNTER",
     "classes": [],

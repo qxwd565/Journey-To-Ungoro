@@ -6,7 +6,7 @@
     "id": "UNG_083",
     "dbfId": 41259,
     "name": "데빌사우루스 알",
-    "text": "<b>죽음의 메아리:</b>\n5/5 데빌사우루스를 소환합니다.",
+    "text": "<b>죽음의 메아리:</b><br></br>5/5 데빌사우루스를 소환합니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
     "classes": [],

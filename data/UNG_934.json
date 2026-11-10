@@ -6,7 +6,7 @@
     "id": "UNG_934",
     "dbfId": 41427,
     "name": "불길의 심장",
-    "text": "<b>퀘스트:</b>\n<b>도발</b> 하수인을\n7회 내야 합니다.\n<b>보상:</b> 설퍼라스",
+    "text": "<b>퀘스트:</b><br></br><b>도발</b> 하수인을<br></br>7회 내야 합니다.<br></br><b>보상:</b> 설퍼라스",
     "type": "SPELL",
     "cardClass": "WARRIOR",
     "classes": [],

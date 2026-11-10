@@ -6,7 +6,7 @@
     "id": "UNG_211b",
     "dbfId": 41334,
     "name": "물의 기원",
-    "text": "내 영웅의 생명력을\n12 회복시킵니다.",
+    "text": "내 영웅의 생명력을<br></br>12 회복시킵니다.",
     "type": "SPELL",
     "cardClass": "SHAMAN",
     "classes": [],
