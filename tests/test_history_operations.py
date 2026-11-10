@@ -88,6 +88,10 @@ class HistoryOperationsTest(unittest.TestCase):
                  "armor": 0, "durability": 0, "race": "", "races": [],
                  "spellSchool": ""}
         self.assertEqual(BUILD.normalize_history_cache(cache), {"type": "SPELL", "cost": 2})
+        self.assertEqual(BUILD.normalize_history_cache({"type": "MINION", "classes": []}),
+                         {"type": "MINION"})
+        self.assertEqual(BUILD.normalize_history_cache({"type": "MINION", "classes": ["DEMONHUNTER"]}),
+                         {"type": "MINION", "classes": ["DEMONHUNTER"]})
 
     def test_date_keyed_source_normalizes_without_losing_current_cache(self):
         data = {
