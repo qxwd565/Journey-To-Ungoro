@@ -42,8 +42,8 @@
     ],
     "nativeRawText": "생명력 +2, <b>도발</b>",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [
       {
         "date": "2018-11-30",
