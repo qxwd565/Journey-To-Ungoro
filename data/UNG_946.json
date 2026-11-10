@@ -1,31 +1,26 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Gluttonous Ooze",
-  "card": {
-    "id": "UNG_946",
-    "dbfId": 41683,
+  "schemaVersion": 2,
+  "id": "UNG_946",
+  "dbfId": 41683,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "걸신들린 수액",
-    "text": "<b>전투의 함성:</b> 상대편의 무기를 파괴하고, 그 무기의 공격력만큼 방어도를 얻습니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "EPIC",
-    "race": "",
-    "races": [],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 3,
     "attack": 3,
     "health": 3,
-    "armor": 0,
-    "durability": 0,
-    "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-019_M.psd:8502c74ab900a6d43bffedbb44bcc5db",
-    "flavor": "운고로 무기 먹기 대회에서 3번 연속 우승했습니다.",
+    "text": "<b>전투의 함성:</b> 상대편의 무기를 파괴하고, 그 무기의 공격력만큼 방어도를 얻습니다.",
     "nativeTags": [
       {
         "id": 45,
@@ -69,30 +64,152 @@
       }
     ],
     "nativeRawText": "<b>전투의 함성:</b> 상대편의 무기를 파괴하고, 그 무기의 공격력만큼 방어도를 얻습니다.",
-    "nativeTextBuilder": 0,
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "운고로 무기 먹기 대회에서 3번 연속 우승했습니다."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "걸신들린 수액",
+    "type": "MINION",
+    "cardClass": "NEUTRAL",
+    "classes": [],
+    "rarity": "EPIC",
+    "collectible": true,
+    "cost": 3,
+    "attack": 3,
+    "health": 3,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>전투의 함성:</b> 상대편의 무기를 파괴하고, 그 무기의 공격력만큼 방어도를 얻습니다.",
+    "races": [],
+    "race": "",
+    "spellSchool": "",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 3
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 3
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 3
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 4
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
-    "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "nativeRawText": "<b>전투의 함성:</b> 상대편의 무기를 파괴하고, 그 무기의 공격력만큼 방어도를 얻습니다.",
+    "nativeTextBuilder": 0
   },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "historyIncompleteFields": [
+    "nativeTextBuilder",
+    "classes",
+    "durability",
+    "armor",
+    "races",
+    "race",
+    "spellSchool"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [
+    {
+      "field": "classes",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "durability",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "armor",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "races",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "race",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "spellSchool",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    }
+  ],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ],
+  "nativeTagsTimelineStatus": "partial",
+  "relatedIds": [],
+  "catalogMetadata": {
+    "englishName": "Gluttonous Ooze",
+    "root": true,
+    "expansion": {
+      "id": 27,
+      "slug": "journey-to-ungoro",
+      "name": "운고로를 향한 여정",
+      "type": "expansion",
+      "englishName": "Journey To Ungoro"
+    },
+    "setOrder": 34,
+    "formats": [
+      "wild"
+    ],
+    "provenance": {
+      "source": "Installed Hearthstone dbf.unity3d",
+      "gameVersion": "6000.3.11.3145967",
+      "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+      "locale": "koKR"
+    },
+    "portrait": "HS10-019_M.psd:8502c74ab900a6d43bffedbb44bcc5db"
   }
 }
