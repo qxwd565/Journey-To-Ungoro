@@ -190,7 +190,9 @@
       }
     ],
     "nativeRawText": "아군 하수인에게 +1/+1을 부여하고,\n그 하수인의 공격력만큼 방어도를 얻습니다.",
-    "nativeTextBuilder": 0
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified"
   },
   "nativeTagsTimelineStatus": "complete",
   "historyIncompleteFields": [

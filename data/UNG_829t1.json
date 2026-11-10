@@ -137,7 +137,9 @@
       }
     ],
     "nativeRawText": "3/2 임프들을 소환하는 차원문을 영구히 엽니다.",
-    "nativeTextBuilder": 0
+    "nativeTextBuilder": 0,
+    "releasedAt": null,
+    "releaseStatus": "pending"
   },
   "nativeTagsTimelineStatus": "partial",
   "historyIncompleteFields": [

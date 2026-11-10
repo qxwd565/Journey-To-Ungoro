@@ -153,7 +153,9 @@
       }
     ],
     "nativeRawText": "[x]내 마나 수정들을 2/2\n나무정령으로 변신시킵니다.\n그 나무정령들이 죽으면\n빈 마나 수정을 얻습니다.",
-    "nativeTextBuilder": 0
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified"
   },
   "nativeTagsTimelineStatus": "complete",
   "historyIncompleteFields": [

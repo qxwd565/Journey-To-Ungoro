@@ -190,7 +190,9 @@
       }
     ],
     "nativeRawText": "내 하수인들을 <b>적응</b>시킵니다.",
-    "nativeTextBuilder": 0
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified"
   },
   "nativeTagsTimelineStatus": "complete",
   "historyIncompleteFields": [],

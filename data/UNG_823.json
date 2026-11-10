@@ -188,7 +188,9 @@
       }
     ],
     "nativeRawText": "내 무기에 <b>독성</b>을 부여합니다.",
-    "nativeTextBuilder": 0
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified"
   },
   "nativeTagsTimelineStatus": "complete",
   "historyIncompleteFields": [],
