@@ -37,7 +37,7 @@ SPEC_FIELDS = (
     "cost", "attack", "health", "durability", "armor", "text",
     "races", "race", "spellSchool", "mechanics", "nativeTags",
 )
-HISTORY_ONLY_FIELDS = ("nativeRawText",)
+HISTORY_ONLY_FIELDS = ("nativeRawText", "nativeTextBuilder")
 PATCH_FIELDS = SPEC_FIELDS + HISTORY_ONLY_FIELDS
 PATCH_FIELD_SET = set(PATCH_FIELDS)
 TAXONOMY_RULE = "taxonomy-introduction"
@@ -118,6 +118,9 @@ def normalize_date_keyed_source(data: dict, record: dict):
     if not isinstance(initial, dict):
         raise ValueError(f"{cid}: invalid initial date snapshot")
     patches = []
+    patch_sources = {}
+    patch_confidence = {}
+    patch_notes = {}
     metadata_keys = {"source", "confidence", "note", "remove", "status"}
     for day in date_keys[1:]:
         event = data[day]
@@ -128,6 +131,12 @@ def normalize_date_keyed_source(data: dict, record: dict):
         patch = {"date": day, "changes": changes}
         if "remove" in event:
             patch["remove"] = copy.deepcopy(event["remove"])
+        if "source" in event:
+            patch_sources[day] = copy.deepcopy(event["source"])
+        if "confidence" in event:
+            patch_confidence[day] = copy.deepcopy(event["confidence"])
+        if "note" in event:
+            patch_notes[day] = copy.deepcopy(event["note"])
         patches.append(patch)
     current_cache = data.get("current", {})
     if not isinstance(current_cache, dict):
@@ -138,6 +147,9 @@ def normalize_date_keyed_source(data: dict, record: dict):
         "dbfId": data.get("dbfId"),
         "releasedAt": record.get("releasedAt"),
         "patches": patches,
+        "patchSources": patch_sources,
+        "patchConfidence": patch_confidence,
+        "patchNotes": patch_notes,
         "currentCache": current_cache,
         "historyIncompleteFields": data.get("historyIncompleteFields", []),
         "nativeTagsTimelineStatus": data.get("nativeTagsTimelineStatus", "partial"),
