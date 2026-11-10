@@ -18,7 +18,7 @@
       "ELEMENTAL"
     ],
     "spellSchool": "",
-    "cost": 6,
+    "cost": 7,
     "attack": 1,
     "health": 11,
     "armor": 0,
@@ -79,9 +79,18 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "cost": 6
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    }
   },
   "root": true,
   "relatedIds": [],
