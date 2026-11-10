@@ -58,8 +58,8 @@
     ],
     "nativeRawText": "피해를 $2 줍니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [
       {
         "date": "2021-03-26",
