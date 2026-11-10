@@ -1,7 +1,6 @@
 {
   "schemaVersion": 2,
   "id": "UNG_035",
-  "dbfId": 41177,
   "sourceBaseline": {
     "repository": "HearthSim/hsdata",
     "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
@@ -143,63 +142,6 @@
     "nativeRawText": "<b>전투의 함성:</b> 카드 3장이 제시됩니다. 게임이 시작됐을 때 상대편의 덱에 있던 카드를 맞히면 그 카드를 복사하여 내 손으로 가져옵니다.",
     "nativeTextBuilder": 0
   },
-  "2022-11-30": {
-    "race": "정령, 야수",
-    "races": [
-      "ELEMENTAL",
-      "BEAST"
-    ],
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 3
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 3
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 3
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 6
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 4
-      },
-      {
-        "id": 218,
-        "name": "전투의 함성",
-        "value": 1
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      },
-      {
-        "id": 2542,
-        "name": "게임 태그 2542",
-        "value": 1
-      }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23882860/25-0-patch-notes",
-    "confidence": "high",
-    "note": "25.0 한국 적용일. 기본 CARDRACE=정령 유지, RaceTagMap 추가 야수 TAG2542=1을 추가."
-  },
   "2023-10-18": {
     "health": 4,
     "nativeTags": [
@@ -249,6 +191,9 @@
     "note": "27.6 한국 적용일. 생명력 3→4 및 자체 TAG 45 동기화."
   },
   "nativeTagsTimelineStatus": "complete",
+  "historyKnownFields": [
+    "nativeTags"
+  ],
   "historyIncompleteFields": [
     "text"
   ],
@@ -257,9 +202,6 @@
       "field": "text",
       "reason": "현재 '맞히면'과 2017 원문의 '맞추면' 차이는 날짜가 확인되지 않아 별도 과거 사건으로 만들지 않음."
     }
-  ],
-  "historyKnownFields": [
-    "nativeTags"
   ],
   "referenceTags": [
     {
