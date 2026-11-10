@@ -6,7 +6,7 @@
     "id": "UNG_011",
     "dbfId": 41139,
     "name": "수문학자",
-    "text": "<b>전투의 함성:</b> <b>비밀</b>을 <b>발견</b>하고 시전합니다.",
+    "text": "<b>전투의 함성:</b>\\n<b>비밀</b>을 <b>발견</b>합니다.",
     "type": "MINION",
     "cardClass": "PALADIN",
     "classes": [],
@@ -94,9 +94,18 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "text": "<b>전투의 함성:</b> <b>비밀</b>을 <b>발견</b>하고 시전합니다."
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    }
   },
   "root": true,
   "relatedIds": [],
