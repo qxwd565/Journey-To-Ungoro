@@ -321,7 +321,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 7,
-      "text": "<b>도발, 죽음의 메아리:</b>\n1/1 멀록을 셋 소환합니다.",
+      "text": "<b>도발, 죽음의 메아리:</b><br></br>1/1 멀록을 셋 소환합니다.",
       "attack": 5,
       "health": 8,
       "durability": 0,
@@ -504,7 +504,7 @@
       "rarity": "LEGENDARY",
       "collectible": true,
       "cost": 6,
-      "text": "<b>도발</b>, <b>전투의 함성:</b>\n다른 <b>모든</b> 하수인의 공격력과 생명력을 3으로 만듭니다.",
+      "text": "<b>도발</b>, <b>전투의 함성:</b><br></br>다른 <b>모든</b> 하수인의 공격력과 생명력을 3으로 만듭니다.",
       "attack": 3,
       "health": 7,
       "durability": 0,
@@ -581,7 +581,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 1,
-      "text": "피해를 $2 줍니다.\n1/2 정령을 내 손으로\n가져옵니다.",
+      "text": "피해를 $2 줍니다.<br></br>1/2 정령을 내 손으로<br></br>가져옵니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -970,7 +970,7 @@
       "rarity": "RARE",
       "collectible": true,
       "cost": 3,
-      "text": "<b>비밀:</b> 상대편이 주문을\n시전하면, 그 주문을 복사하여\n내 손으로 가져옵니다.\n그 주문의 비용이 (0)이 됩니다.",
+      "text": "<b>비밀:</b> 상대편이 주문을<br></br>시전하면, 그 주문을 복사하여<br></br>내 손으로 가져옵니다.<br></br>그 주문의 비용이 (0)이 됩니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -1032,7 +1032,7 @@
       "rarity": "RARE",
       "collectible": true,
       "cost": 5,
-      "text": "<b>모든</b> 하수인에게 $15의 피해를 무작위로 나누어 입힙니다.\n<b>과부하:</b> (1)",
+      "text": "<b>모든</b> 하수인에게 $15의 피해를 무작위로 나누어 입힙니다.<br></br><b>과부하:</b> (1)",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -1099,7 +1099,7 @@
       "rarity": "LEGENDARY",
       "collectible": true,
       "cost": 2,
-      "text": "<b>죽음의 메아리:</b>\n이 하수인을 비용이 (4)인\n6/6 하수인으로 내 손에\n다시 가져옵니다.",
+      "text": "<b>죽음의 메아리:</b><br></br>이 하수인을 비용이 (4)인<br></br>6/6 하수인으로 내 손에<br></br>다시 가져옵니다.",
       "attack": 2,
       "health": 2,
       "durability": 0,
@@ -1184,7 +1184,7 @@
       "rarity": "LEGENDARY",
       "collectible": false,
       "cost": 4,
-      "text": "<b>죽음의 메아리:</b>\n이 하수인을 비용이 (8)인\n10/10 하수인으로 내 손에\n다시 가져옵니다.",
+      "text": "<b>죽음의 메아리:</b><br></br>이 하수인을 비용이 (8)인<br></br>10/10 하수인으로 내 손에<br></br>다시 가져옵니다.",
       "attack": 6,
       "health": 6,
       "durability": 0,
@@ -1252,8 +1252,8 @@
       "race": "정령, 야수",
       "classes": [],
       "art": "art/UNG_027t2.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_027t4",
@@ -1327,8 +1327,8 @@
       "race": "정령, 야수",
       "classes": [],
       "art": "art/UNG_027t4.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_028",
@@ -1339,7 +1339,7 @@
       "rarity": "LEGENDARY",
       "collectible": true,
       "cost": 1,
-      "text": "<b>퀘스트:</b> 게임이 시작됐을 때 내 덱에 없던 주문을 8회 시전해야 합니다.\n<b>보상:</b> 시간 왜곡",
+      "text": "<b>퀘스트:</b> 게임이 시작됐을 때 내 덱에 없던 주문을 8회 시전해야 합니다.<br></br><b>보상:</b> 시간 왜곡",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -1425,7 +1425,7 @@
       "cardClass": "MAGE",
       "collectible": false,
       "cost": 5,
-      "text": "내 턴이 한 번 더 진행됩니다.\n<i>(게임당 1번만 발동)</i>",
+      "text": "내 턴이 한 번 더 진행됩니다.<br></br><i>(게임당 1번만 발동)</i>",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -1465,8 +1465,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_028t.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_029",
@@ -1544,7 +1544,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 1,
-      "text": "하수인과 내 영웅의 생명력을\n#5 회복시킵니다.",
+      "text": "하수인과 내 영웅의 생명력을<br></br>#5 회복시킵니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -1685,7 +1685,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 2,
-      "text": "내 주문들의 비용이\n(1) 감소합니다.\n<i>(단, 1보다 낮아지진 않습니다.)</i>",
+      "text": "내 주문들의 비용이<br></br>(1) 감소합니다.<br></br><i>(단, 1보다 낮아지진 않습니다.)</i>",
       "attack": 2,
       "health": 3,
       "durability": 0,
@@ -1933,7 +1933,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 3,
-      "text": "<b>전투의 함성:</b> 아군 하수인을 처치하고,\n2번 <b>적응</b>합니다.",
+      "text": "<b>전투의 함성:</b> 아군 하수인을 처치하고,<br></br>2번 <b>적응</b>합니다.",
       "attack": 3,
       "health": 3,
       "durability": 0,
@@ -2207,8 +2207,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_057t1.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_058",
@@ -2219,7 +2219,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 2,
-      "text": "<b>전투의 함성:</b> 피해를\n2 주는 칼날꽃잎을\n내 손으로 가져옵니다.",
+      "text": "<b>전투의 함성:</b> 피해를<br></br>2 주는 칼날꽃잎을<br></br>내 손으로 가져옵니다.",
       "attack": 2,
       "health": 2,
       "durability": 0,
@@ -2291,7 +2291,7 @@
       "rarity": "RARE",
       "collectible": true,
       "cost": 2,
-      "text": "카드를 뽑습니다. 그 카드를 복사하여\n1장 더 내 손으로 가져옵니다.",
+      "text": "카드를 뽑습니다. 그 카드를 복사하여<br></br>1장 더 내 손으로 가져옵니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -2425,7 +2425,7 @@
       "rarity": "EPIC",
       "collectible": true,
       "cost": 2,
-      "text": "<b>연계:</b> 이번 턴에\n앞서 낸 카드 1장당\n+1/+1를 얻습니다.",
+      "text": "<b>연계:</b> 이번 턴에<br></br>앞서 낸 카드 1장당<br></br>+1/+1을 얻습니다.",
       "attack": 1,
       "health": 2,
       "durability": 0,
@@ -2660,7 +2660,7 @@
       "cardClass": "ROGUE",
       "collectible": false,
       "cost": 11,
-      "text": "<b>휴면</b>, 한 턴에 카드를\n4장 이상 내면, 되살아납니다.",
+      "text": "<b>휴면</b>, 한 턴에 카드를<br></br>4장 이상 내면, 되살아납니다.",
       "attack": 0,
       "health": 1,
       "durability": 0,
@@ -2725,8 +2725,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_065t.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_067",
@@ -2737,7 +2737,7 @@
       "rarity": "LEGENDARY",
       "collectible": true,
       "cost": 1,
-      "text": "<b>퀘스트:</b>\n이름이 같은 하수인을 4회 내야 합니다.\n<b>보상:</b> 수정핵",
+      "text": "<b>퀘스트:</b><br></br>이름이 같은 하수인을 4회 내야 합니다.<br></br><b>보상:</b> 수정핵",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -2858,8 +2858,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_067t1.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_070",
@@ -3021,7 +3021,7 @@
       "rarity": "RARE",
       "collectible": true,
       "cost": 3,
-      "text": "<b>도발</b>, <b>전투의 함성:</b>\n<b>도발</b> 하수인을 <b>발견</b>합니다.",
+      "text": "<b>도발</b>, <b>전투의 함성:</b><br></br><b>도발</b> 하수인을 <b>발견</b>합니다.",
       "attack": 1,
       "health": 5,
       "durability": 0,
@@ -3256,7 +3256,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 3,
-      "text": "<b>죽음의 메아리:</b>\n1/1 랩터를 2마리 소환합니다.",
+      "text": "<b>죽음의 메아리:</b><br></br>1/1 랩터를 2마리 소환합니다.",
       "attack": 3,
       "health": 1,
       "durability": 0,
@@ -3374,8 +3374,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_076t1.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_078",
@@ -3621,7 +3621,7 @@
       "rarity": "RARE",
       "collectible": true,
       "cost": 3,
-      "text": "<b>죽음의 메아리:</b>\n5/5 데빌사우루스를 소환합니다.",
+      "text": "<b>죽음의 메아리:</b><br></br>5/5 데빌사우루스를 소환합니다.",
       "attack": 0,
       "health": 3,
       "durability": 0,
@@ -3734,8 +3734,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_083t1.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_084",
@@ -3746,7 +3746,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 4,
-      "text": "<b>전투의 함성:</b>\n피해를 3 줍니다.",
+      "text": "<b>전투의 함성:</b><br></br>피해를 3 줍니다.",
       "attack": 3,
       "health": 4,
       "durability": 0,
@@ -3826,7 +3826,7 @@
       "rarity": "EPIC",
       "collectible": true,
       "cost": 1,
-      "text": "내 하수인들의 비용이\n(2) 증가합니다.",
+      "text": "내 하수인들의 비용이<br></br>(2) 증가합니다.",
       "attack": 3,
       "health": 3,
       "durability": 0,
@@ -3910,7 +3910,7 @@
       "rarity": "EPIC",
       "collectible": true,
       "cost": 7,
-      "text": "<b>도발</b>, <b>죽음의 메아리:</b>\n내 손에 있는 공격력이\n5 이상인 하수인을 소환합니다.",
+      "text": "<b>도발</b>, <b>죽음의 메아리:</b><br></br>내 손에 있는 공격력이<br></br>5 이상인 하수인을 소환합니다.",
       "attack": 5,
       "health": 3,
       "durability": 0,
@@ -4063,7 +4063,7 @@
       "rarity": "EPIC",
       "collectible": true,
       "cost": 8,
-      "text": "<b>전투의 함성:</b>\n주문을 <b>발견</b>하여 무작위\n대상에게 시전합니다.",
+      "text": "<b>전투의 함성:</b><br></br>주문을 <b>발견</b>하여 무작위<br></br>대상에게 시전합니다.",
       "attack": 5,
       "health": 5,
       "durability": 0,
@@ -4219,7 +4219,7 @@
       "rarity": "EPIC",
       "collectible": true,
       "cost": 7,
-      "text": "<b>돌진</b>, <b>전투의 함성:</b>\n이번 턴에 영웅을\n공격할 수 없습니다.",
+      "text": "<b>돌진</b>, <b>전투의 함성:</b><br></br>이번 턴에 영웅을<br></br>공격할 수 없습니다.",
       "attack": 7,
       "health": 7,
       "durability": 0,
@@ -4383,7 +4383,7 @@
       "rarity": "RARE",
       "collectible": true,
       "cost": 4,
-      "text": "<b>선택 -</b> 5/3 <b>은신</b> 하수인\n또는 3/5 <b>도발</b> 하수인으로\n변신합니다.",
+      "text": "<b>선택 -</b> 5/3 <b>은신</b> 하수인<br></br>또는 3/5 <b>도발</b> 하수인으로<br></br>변신합니다.",
       "attack": 3,
       "health": 3,
       "durability": 0,
@@ -4517,8 +4517,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_101a.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_101b",
@@ -4586,8 +4586,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_101b.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_101t",
@@ -4655,8 +4655,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_101t.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_101t2",
@@ -4724,8 +4724,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_101t2.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_101t3",
@@ -4736,7 +4736,7 @@
       "rarity": "RARE",
       "collectible": false,
       "cost": 4,
-      "text": "<b>은신</b>\n<b>도발</b>",
+      "text": "<b>은신</b><br></br><b>도발</b>",
       "attack": 5,
       "health": 5,
       "durability": 0,
@@ -4798,8 +4798,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_101t3.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_103",
@@ -4872,7 +4872,7 @@
       "rarity": "RARE",
       "collectible": true,
       "cost": 2,
-      "text": "아군 하수인에게 +1/+1을 부여하고,\n그 하수인의 공격력만큼 방어도를 얻습니다.",
+      "text": "아군 하수인에게 +1/+1을 부여하고,<br></br>그 하수인의 공격력만큼 방어도를 얻습니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -5023,7 +5023,7 @@
       "rarity": "EPIC",
       "collectible": true,
       "cost": 5,
-      "text": "내 마나 수정들을 2/2\n나무정령으로 변신시킵니다.\n그 나무정령들이 죽으면\n빈 마나 수정을 얻습니다.",
+      "text": "내 마나 수정들을 2/2<br></br>나무정령으로 변신시킵니다.<br></br>그 나무정령들이 죽으면<br></br>빈 마나 수정을 얻습니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -5134,8 +5134,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_111t1.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_113",
@@ -5213,7 +5213,7 @@
       "rarity": "LEGENDARY",
       "collectible": true,
       "cost": 1,
-      "text": "<b>퀘스트:</b> 공격력이 5 이상인 하수인을 4회 소환해야 합니다.\n<b>보상:</b> 바르나부스",
+      "text": "<b>퀘스트:</b> 공격력이 5 이상인 하수인을 4회 소환해야 합니다.<br></br><b>보상:</b> 바르나부스",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -5299,7 +5299,7 @@
       "cardClass": "DRUID",
       "collectible": false,
       "cost": 5,
-      "text": "<b>전투의 함성:</b>\n내 덱에 있는 하수인들의\n비용이 (0)이 됩니다.",
+      "text": "<b>전투의 함성:</b><br></br>내 덱에 있는 하수인들의<br></br>비용이 (0)이 됩니다.",
       "attack": 8,
       "health": 8,
       "durability": 0,
@@ -5356,8 +5356,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_116t.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_201",
@@ -5368,7 +5368,7 @@
       "rarity": "RARE",
       "collectible": true,
       "cost": 2,
-      "text": "내 턴이 끝날 때,\n1/1 멀록을 소환합니다.",
+      "text": "내 턴이 끝날 때,<br></br>1/1 멀록을 소환합니다.",
       "attack": 0,
       "health": 3,
       "durability": 0,
@@ -5493,8 +5493,8 @@
       "race": "멀록",
       "classes": [],
       "art": "art/UNG_201t.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_202",
@@ -5793,8 +5793,8 @@
       "race": "정령",
       "classes": [],
       "art": "art/UNG_208t.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_211",
@@ -5883,7 +5883,7 @@
       "cardClass": "SHAMAN",
       "collectible": false,
       "cost": 0,
-      "text": "내 전장을\n1/1 정령으로\n가득 채웁니다.",
+      "text": "내 전장을<br></br>1/1 정령으로<br></br>가득 채웁니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -5918,8 +5918,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_211a.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_211aa",
@@ -5986,8 +5986,8 @@
       "race": "정령",
       "classes": [],
       "art": "art/UNG_211aa.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_211b",
@@ -5997,7 +5997,7 @@
       "cardClass": "SHAMAN",
       "collectible": false,
       "cost": 0,
-      "text": "내 영웅의 생명력을\n12 회복시킵니다.",
+      "text": "내 영웅의 생명력을<br></br>12 회복시킵니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -6032,8 +6032,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_211b.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_211c",
@@ -6083,8 +6083,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_211c.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_211d",
@@ -6094,7 +6094,7 @@
       "cardClass": "SHAMAN",
       "collectible": false,
       "cost": 0,
-      "text": "모든 적 하수인에게\n피해를 3 줍니다.",
+      "text": "모든 적 하수인에게<br></br>피해를 3 줍니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -6134,8 +6134,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_211d.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_800",
@@ -6549,7 +6549,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 2,
-      "text": "<b>도발</b>\n<b>독성</b>",
+      "text": "<b>도발</b><br></br><b>독성</b>",
       "attack": 1,
       "health": 3,
       "durability": 0,
@@ -6783,8 +6783,8 @@
       "race": "정령",
       "classes": [],
       "art": "art/UNG_809t1.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_810",
@@ -7052,7 +7052,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 3,
-      "text": "<b>은신</b>\n<b>독성</b>",
+      "text": "<b>은신</b><br></br><b>독성</b>",
       "attack": 2,
       "health": 2,
       "durability": 0,
@@ -7240,7 +7240,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 3,
-      "text": "<b>생명력 흡수</b>\n하수인에게 피해를\n$5 줍니다.",
+      "text": "<b>생명력 흡수</b><br></br>하수인에게 피해를<br></br>$5 줍니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -7312,7 +7312,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 2,
-      "text": "<b>죽음의 메아리:</b>\n무작위 적 하수인에게\n피해를 3 줍니다.",
+      "text": "<b>죽음의 메아리:</b><br></br>무작위 적 하수인에게<br></br>피해를 3 줍니다.",
       "attack": 3,
       "health": 1,
       "durability": 0,
@@ -7463,7 +7463,7 @@
       "rarity": "LEGENDARY",
       "collectible": true,
       "cost": 1,
-      "text": "<b>퀘스트:</b> 카드를 6장 버려야 합니다.\n<b>보상:</b> 황천의 차원문",
+      "text": "<b>퀘스트:</b> 카드를 6장 버려야 합니다.<br></br><b>보상:</b> 황천의 차원문",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -7589,8 +7589,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_829t1.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_829t2",
@@ -7655,8 +7655,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_829t2.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_829t3",
@@ -7718,8 +7718,8 @@
       "race": "악마",
       "classes": [],
       "art": "art/UNG_829t3.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_830",
@@ -7730,7 +7730,7 @@
       "rarity": "RARE",
       "collectible": true,
       "cost": 5,
-      "text": "<b>죽음의 메아리:</b>\n이번 게임에서 내가 버린 무작위 하수인을 소환합니다.",
+      "text": "<b>죽음의 메아리:</b><br></br>이번 게임에서 내가 버린 무작위 하수인을 소환합니다.",
       "attack": 5,
       "health": 5,
       "durability": 0,
@@ -7807,7 +7807,7 @@
       "rarity": "RARE",
       "collectible": true,
       "cost": 2,
-      "text": "<b>모든</b> 하수인을 저주합니다.\n내 턴이 시작될 때, 그 하수인들을 처치합니다.",
+      "text": "<b>모든</b> 하수인을 저주합니다.<br></br>내 턴이 시작될 때, 그 하수인들을 처치합니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -7936,7 +7936,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 4,
-      "text": "<b>도발</b>, <b>전투의 함성:</b>\n비용이 가장 낮은 카드를\n2장 버립니다.",
+      "text": "<b>도발</b>, <b>전투의 함성:</b><br></br>비용이 가장 낮은 카드를<br></br>2장 버립니다.",
       "attack": 3,
       "health": 8,
       "durability": 0,
@@ -8143,8 +8143,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_834t1.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_835",
@@ -8239,7 +8239,7 @@
       "rarity": "LEGENDARY",
       "collectible": true,
       "cost": 2,
-      "text": "이 하수인을 버릴 때마다\n+2/+2를 부여하고\n내 손으로 다시 가져옵니다.",
+      "text": "이 하수인을 버릴 때마다<br></br>+2/+2를 부여하고<br></br>내 손으로 다시 가져옵니다.",
       "attack": 2,
       "health": 2,
       "durability": 0,
@@ -8464,7 +8464,7 @@
       "rarity": "LEGENDARY",
       "collectible": true,
       "cost": 3,
-      "text": "내가 이 하수인에게 주문을\n시전한 후에 1/1 식물을\n소환하여 그 하수인에게 동일한\n주문을 시전합니다.",
+      "text": "내가 이 하수인에게 주문을<br></br>시전한 후에 1/1 식물을<br></br>소환하여 그 하수인에게 동일한<br></br>주문을 시전합니다.",
       "attack": 3,
       "health": 4,
       "durability": 0,
@@ -8613,7 +8613,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 3,
-      "text": "<b>죽음의 메아리:</b>\n1/2 화염 정령 둘을\n내 손으로 가져옵니다.",
+      "text": "<b>죽음의 메아리:</b><br></br>1/2 화염 정령 둘을<br></br>내 손으로 가져옵니다.",
       "attack": 3,
       "health": 3,
       "durability": 0,
@@ -8692,7 +8692,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 2,
-      "text": "<b>전투의 함성:</b>\n무작위 마법사 주문을\n내 손으로 가져옵니다.",
+      "text": "<b>전투의 함성:</b><br></br>무작위 마법사 주문을<br></br>내 손으로 가져옵니다.",
       "attack": 2,
       "health": 2,
       "durability": 0,
@@ -8924,7 +8924,7 @@
       "rarity": "LEGENDARY",
       "collectible": true,
       "cost": 5,
-      "text": "<b>전투의 함성:</b> 개봉하지 않은\n<b>운고로</b> 팩을 내 덱에 섞어\n넣습니다. 내 덱에 똑같은 카드가\n없으면, 그 카드를 뽑습니다.",
+      "text": "<b>전투의 함성:</b> 개봉하지 않은<br></br><b>운고로</b> 팩을 내 덱에 섞어<br></br>넣습니다. 내 덱에 똑같은 카드가<br></br>없으면, 그 카드를 뽑습니다.",
       "attack": 5,
       "health": 5,
       "durability": 0,
@@ -9000,7 +9000,7 @@
       "cardClass": "NEUTRAL",
       "collectible": false,
       "cost": 2,
-      "text": "<b>운고로를 향한 여정</b> 카드 5장을\n내 손으로 가져옵니다.",
+      "text": "<b>운고로를 향한 여정</b> 카드 5장을<br></br>내 손으로 가져옵니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -9030,8 +9030,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_851t1.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_852",
@@ -9126,7 +9126,7 @@
       "rarity": "RARE",
       "collectible": true,
       "cost": 7,
-      "text": "비용이 (8) 이상인\n하수인을 <b>발견</b>하여 소환합니다.",
+      "text": "비용이 (8) 이상인<br></br>하수인을 <b>발견</b>하여 소환합니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -9270,7 +9270,7 @@
       "rarity": "LEGENDARY",
       "collectible": true,
       "cost": 5,
-      "text": "내 하수인이 소환된\n후에, 그 하수인의\n<b>죽음의 메아리</b>를\n발동시킵니다.",
+      "text": "내 하수인이 소환된<br></br>후에, 그 하수인의<br></br><b>죽음의 메아리</b>를<br></br>발동시킵니다.",
       "attack": 3,
       "health": 4,
       "durability": 0,
@@ -9431,7 +9431,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 2,
-      "text": "하수인에게 피해를 $3 주고\n그 양옆의 하수인들에게 피해를 $1 줍니다.",
+      "text": "하수인에게 피해를 $3 주고<br></br>그 양옆의 하수인들에게 피해를 $1 줍니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -9562,7 +9562,7 @@
       "rarity": "RARE",
       "collectible": true,
       "cost": 4,
-      "text": "<b>전투의 함성:</b> 내 덱에서\n비용이 1인 하수인을\n둘 뽑습니다.",
+      "text": "<b>전투의 함성:</b> 내 덱에서<br></br>비용이 1인 하수인을<br></br>둘 뽑습니다.",
       "attack": 3,
       "health": 4,
       "durability": 0,
@@ -9754,8 +9754,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_914t1.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_915",
@@ -9978,8 +9978,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_917t1.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_919",
@@ -9990,7 +9990,7 @@
       "rarity": "LEGENDARY",
       "collectible": true,
       "cost": 6,
-      "text": "상대편이 하수인을 낸 후에,\n그 하수인을 공격합니다.",
+      "text": "상대편이 하수인을 낸 후에,<br></br>그 하수인을 공격합니다.",
       "attack": 9,
       "health": 9,
       "durability": 0,
@@ -10069,7 +10069,7 @@
       "rarity": "LEGENDARY",
       "collectible": true,
       "cost": 1,
-      "text": "<b>퀘스트:</b>\n비용이 1인 하수인을\n7회 내야 합니다.\n<b>보상:</b> 여왕 칼나사",
+      "text": "<b>퀘스트:</b><br></br>비용이 1인 하수인을<br></br>7회 내야 합니다.<br></br><b>보상:</b> 여왕 칼나사",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -10222,8 +10222,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_920t1.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_920t2",
@@ -10233,7 +10233,7 @@
       "cardClass": "HUNTER",
       "collectible": false,
       "cost": 1,
-      "text": "<b>전투의 함성:</b>\n카드를 뽑습니다.",
+      "text": "<b>전투의 함성:</b><br></br>카드를 뽑습니다.",
       "attack": 3,
       "health": 2,
       "durability": 0,
@@ -10285,8 +10285,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_920t2.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_922",
@@ -10297,7 +10297,7 @@
       "rarity": "EPIC",
       "collectible": true,
       "cost": 2,
-      "text": "내 덱에 있는\n모든 카드를 \"카드를 <b>발견</b>합니다.\"로 교체합니다.",
+      "text": "내 덱에 있는<br></br>모든 카드를 \"카드를 <b>발견</b>합니다.\"로 교체합니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -10388,8 +10388,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_922t1.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_923",
@@ -10457,7 +10457,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 6,
-      "text": "<b>도발</b>\n<b>전투의 함성:</b> <b>적응</b>",
+      "text": "<b>도발</b><br></br><b>전투의 함성:</b> <b>적응</b>",
       "attack": 6,
       "health": 6,
       "durability": 0,
@@ -10756,7 +10756,7 @@
       "rarity": "RARE",
       "collectible": true,
       "cost": 1,
-      "text": "내 손에 있으면\n매 턴마다 무작위\n무기로 변신합니다.",
+      "text": "내 손에 있으면<br></br>매 턴마다 무작위<br></br>무기로 변신합니다.",
       "attack": 1,
       "health": 1,
       "durability": 1,
@@ -10818,7 +10818,7 @@
       "rarity": "LEGENDARY",
       "collectible": true,
       "cost": 7,
-      "text": "<b>전투의 함성:</b>\n피해를 받은 <b>모든</b> 하수인을 처치합니다.",
+      "text": "<b>전투의 함성:</b><br></br>피해를 받은 <b>모든</b> 하수인을 처치합니다.",
       "attack": 9,
       "health": 7,
       "durability": 0,
@@ -10907,7 +10907,7 @@
       "rarity": "LEGENDARY",
       "collectible": true,
       "cost": 1,
-      "text": "<b>퀘스트:</b>\n<b>도발</b> 하수인을\n7회 내야 합니다.\n<b>보상:</b> 설퍼라스",
+      "text": "<b>퀘스트:</b><br></br><b>도발</b> 하수인을<br></br>7회 내야 합니다.<br></br><b>보상:</b> 설퍼라스",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -10998,7 +10998,7 @@
       "cardClass": "WARRIOR",
       "collectible": false,
       "cost": 3,
-      "text": "<b>전투의 함성:</b>\n내 영웅 능력이 '무작위 적에게 피해를 8 줍니다.'로 바뀝니다.",
+      "text": "<b>전투의 함성:</b><br></br>내 영웅 능력이 '무작위 적에게 피해를 8 줍니다.'로 바뀝니다.",
       "attack": 4,
       "health": 2,
       "durability": 2,
@@ -11048,8 +11048,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_934t1.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_934t2",
@@ -11089,8 +11089,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_934t2.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_937",
@@ -11185,7 +11185,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 3,
-      "text": "<b>도발</b>, <b>전투의 함성:</b>\n생명력을 #3 회복시킵니다.",
+      "text": "<b>도발</b>, <b>전투의 함성:</b><br></br>생명력을 #3 회복시킵니다.",
       "attack": 2,
       "health": 4,
       "durability": 0,
@@ -11264,7 +11264,7 @@
       "rarity": "LEGENDARY",
       "collectible": true,
       "cost": 1,
-      "text": "<b>퀘스트:</b>\n<b>죽음의 메아리</b> 하수인을 6회 소환해야 합니다.\n<b>보상:</b> 희망의 감시자 아마라",
+      "text": "<b>퀘스트:</b><br></br><b>죽음의 메아리</b> 하수인을 6회 소환해야 합니다.<br></br><b>보상:</b> 희망의 감시자 아마라",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -11355,7 +11355,7 @@
       "cardClass": "PRIEST",
       "collectible": false,
       "cost": 5,
-      "text": "<b>도발</b>, <b>전투의 함성:</b>\n내 영웅의 생명력을 40으로 만듭니다.",
+      "text": "<b>도발</b>, <b>전투의 함성:</b><br></br>내 영웅의 생명력을 40으로 만듭니다.",
       "attack": 8,
       "health": 8,
       "durability": 0,
@@ -11410,8 +11410,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_940t8.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_941",
@@ -11422,7 +11422,7 @@
       "rarity": "EPIC",
       "collectible": true,
       "cost": 2,
-      "text": "주문을 <b>발견</b>합니다.\n그 카드의 비용이\n(2) 감소합니다.",
+      "text": "주문을 <b>발견</b>합니다.<br></br>그 카드의 비용이<br></br>(2) 감소합니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -11489,7 +11489,7 @@
       "rarity": "LEGENDARY",
       "collectible": true,
       "cost": 1,
-      "text": "<b>퀘스트:</b> 멀록을 8마리 소환해야 합니다.\n<b>보상:</b> 대왕아가미",
+      "text": "<b>퀘스트:</b> 멀록을 8마리 소환해야 합니다.<br></br><b>보상:</b> 대왕아가미",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -11575,7 +11575,7 @@
       "cardClass": "SHAMAN",
       "collectible": false,
       "cost": 5,
-      "text": "<b>전투의 함성:</b> 내 손을 무작위 멀록으로\n가득 채웁니다.",
+      "text": "<b>전투의 함성:</b> 내 손을 무작위 멀록으로<br></br>가득 채웁니다.",
       "attack": 8,
       "health": 8,
       "durability": 0,
@@ -11632,8 +11632,8 @@
       "race": "멀록",
       "classes": [],
       "art": "art/UNG_942t.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_946",
@@ -11855,7 +11855,7 @@
       "rarity": "RARE",
       "collectible": true,
       "cost": 5,
-      "text": "하수인에게 +2/+6과 <b>도발</b>을 부여합니다.\n그 하수인이 죽으면, 스테고돈을 소환합니다.",
+      "text": "하수인에게 +2/+6과 <b>도발</b>을 부여합니다.<br></br>그 하수인이 죽으면, 스테고돈을 소환합니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -11922,7 +11922,7 @@
       "rarity": "EPIC",
       "collectible": true,
       "cost": 2,
-      "text": "<b>죽음의 메아리:</b>\n내가 이 하수인에게\n시전한 모든 주문을 내 손으로 가져옵니다.",
+      "text": "<b>죽음의 메아리:</b><br></br>내가 이 하수인에게<br></br>시전한 모든 주문을 내 손으로 가져옵니다.",
       "attack": 1,
       "health": 3,
       "durability": 0,
@@ -12001,7 +12001,7 @@
       "rarity": "LEGENDARY",
       "collectible": true,
       "cost": 1,
-      "text": "<b>퀘스트:</b>\n내 하수인에게 주문을 5회 시전해야 합니다.\n<b>보상:</b> 갈바돈",
+      "text": "<b>퀘스트:</b><br></br>내 하수인에게 주문을 5회 시전해야 합니다.<br></br><b>보상:</b> 갈바돈",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -12087,7 +12087,7 @@
       "cardClass": "PALADIN",
       "collectible": false,
       "cost": 5,
-      "text": "<b>전투의 함성:</b>\n5번 <b>적응</b>합니다.",
+      "text": "<b>전투의 함성:</b><br></br>5번 <b>적응</b>합니다.",
       "attack": 8,
       "health": 8,
       "durability": 0,
@@ -12149,8 +12149,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_954t1.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_955",
@@ -12161,7 +12161,7 @@
       "rarity": "EPIC",
       "collectible": true,
       "cost": 6,
-      "text": "하수인에게\n피해를 $15 주고\n그 양옆의 하수인들에게\n피해를 $4 줍니다.",
+      "text": "하수인에게<br></br>피해를 $15 주고<br></br>그 양옆의 하수인들에게<br></br>피해를 $4 줍니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -12280,7 +12280,7 @@
       "rarity": "RARE",
       "collectible": true,
       "cost": 5,
-      "text": "<b>도발</b>, <b>죽음의 메아리:</b>\n<b>도발</b> 능력이 있는\n8/12 공포뿔을 내 덱에 섞어 넣습니다.",
+      "text": "<b>도발</b>, <b>죽음의 메아리:</b><br></br><b>도발</b> 능력이 있는<br></br>8/12 공포뿔을 내 덱에 섞어 넣습니다.",
       "attack": 4,
       "health": 6,
       "durability": 0,
@@ -12415,8 +12415,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_957t1.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_960",
@@ -12427,7 +12427,7 @@
       "rarity": "COMMON",
       "collectible": true,
       "cost": 1,
-      "text": "1/1 은빛 성기사단 신병을\n2명 소환합니다.",
+      "text": "1/1 은빛 성기사단 신병을<br></br>2명 소환합니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -12748,8 +12748,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t10.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_999t13",
@@ -12799,8 +12799,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t13.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_999t14",
@@ -12845,8 +12845,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t14.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_999t2",
@@ -12856,7 +12856,7 @@
       "cardClass": "NEUTRAL",
       "collectible": false,
       "cost": 0,
-      "text": "<b>죽음의 메아리:</b>\n1/1 식물을\n둘 소환합니다.",
+      "text": "<b>죽음의 메아리:</b><br></br>1/1 식물을<br></br>둘 소환합니다.",
       "attack": 0,
       "health": 0,
       "durability": 0,
@@ -12896,8 +12896,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t2.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_999t2t1",
@@ -12952,8 +12952,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t2t1.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_999t3",
@@ -12998,8 +12998,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t3.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_999t4",
@@ -13044,8 +13044,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t4.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_999t5",
@@ -13095,8 +13095,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t5.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_999t6",
@@ -13146,8 +13146,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t6.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_999t7",
@@ -13197,8 +13197,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t7.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     },
     {
       "id": "UNG_999t8",
@@ -13248,8 +13248,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t8.png",
-      "releasedAt": "2017-04-07",
-      "releaseStatus": "verified"
+      "releasedAt": null,
+      "releaseStatus": "pending"
     }
   ]
 }
