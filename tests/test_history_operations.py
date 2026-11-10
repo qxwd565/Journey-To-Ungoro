@@ -955,7 +955,7 @@ class HistoryOperationsTest(unittest.TestCase):
         for cid, (day, expected) in expected_text.items():
             source = BUILD.load(ROOT / "data" / (cid + ".json"))
             self.assertEqual(source[day]["text"], expected, cid)
-            self.assertEqual(source[day]["nativeRawText"].count("\\n"),
+            self.assertEqual(source[day]["nativeRawText"].count("\n"),
                              source[day]["text"].count("<br></br>"), cid)
 
         # Weapon and hero-power records retain type-specific field absence.
