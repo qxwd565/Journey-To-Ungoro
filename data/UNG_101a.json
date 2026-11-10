@@ -167,7 +167,9 @@
       }
     ],
     "nativeRawText": "공격력 +2, <b>은신</b>",
-    "nativeTextBuilder": 0
+    "nativeTextBuilder": 0,
+    "releasedAt": null,
+    "releaseStatus": "pending"
   },
   "nativeTagsTimelineStatus": "partial",
   "historyIncompleteFields": [

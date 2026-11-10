@@ -167,7 +167,9 @@
       }
     ],
     "nativeRawText": "생명력 +2, <b>도발</b>",
-    "nativeTextBuilder": 0
+    "nativeTextBuilder": 0,
+    "releasedAt": null,
+    "releaseStatus": "pending"
   },
   "nativeTagsTimelineStatus": "partial",
   "historyIncompleteFields": [
