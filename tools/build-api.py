@@ -344,7 +344,7 @@ def normalize_history_cache(cache: dict):
         omit.update(("health", "armor", "race", "races"))
     for field in omit:
         result.pop(field, None)
-    for field, empty in (("race", ""), ("races", []), ("spellSchool", "")):
+    for field, empty in (("race", ""), ("races", []), ("spellSchool", ""), ("classes", [])):
         if result.get(field) == empty:
             result.pop(field, None)
     return result
