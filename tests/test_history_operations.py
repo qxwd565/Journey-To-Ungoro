@@ -59,11 +59,9 @@ class HistoryOperationsTest(unittest.TestCase):
         self.assertEqual(revisions[0]["before"], "2020-04-21")
         self.assertEqual(revisions[0]["changes"]["cost"], 2)
         self.assertEqual(revisions[0]["incompleteFields"], ["spellSchool"])
-        self.assertEqual(revisions[1]["before"], "2021-03-26")
-        self.assertEqual(revisions[1]["changes"]["cost"], 4)
-        self.assertEqual(revisions[1]["incompleteFields"], ["spellSchool"])
-        self.assertEqual(len(blocked), 2)
-        self.assertEqual(blocked[-1]["fields"], ["spellSchool"])
+        self.assertEqual(len(revisions), 1)
+        self.assertEqual(len(blocked), 1)
+        self.assertEqual(blocked[0], {"date": "2021-03-26", "fields": ["spellSchool"]})
 
     def test_conflicting_operations_rejected(self):
         card = {"releasedAt": "2017-04-07", "patches": [
