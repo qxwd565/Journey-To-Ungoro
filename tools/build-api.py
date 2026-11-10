@@ -315,6 +315,25 @@ def read_patches(card: dict, name: str) -> list[dict]:
     return patches
 
 
+def normalize_history_cache(cache: dict):
+    """Drop legacy zero/empty placeholders only from historical comparisons."""
+    result = copy.deepcopy(cache)
+    card_type = result.get("type")
+    omit = set()
+    if card_type == "MINION":
+        omit.update(("armor", "durability"))
+    elif card_type in {"SPELL", "HERO_POWER"}:
+        omit.update(("attack", "health", "armor", "durability", "race", "races"))
+    elif card_type == "WEAPON":
+        omit.update(("health", "armor", "race", "races"))
+    for field in omit:
+        result.pop(field, None)
+    for field, empty in (("race", ""), ("races", []), ("spellSchool", "")):
+        if result.get(field) == empty:
+            result.pop(field, None)
+    return result
+
+
 def publish_forward_card(card: dict, current: dict, name: str):
     """Replay dated source and publish only reversible, date-supported history."""
     patches = read_patches(card, name)
@@ -336,12 +355,17 @@ def publish_forward_card(card: dict, current: dict, name: str):
     latest = states[-1]
     current_cache = card.get("currentCache")
     unresolved = set(card.get("historyIncompleteFields", []))
-    effective_latest = current_cache if isinstance(current_cache, dict) else latest
     if current_cache is not None and not isinstance(current_cache, dict):
         raise ValueError(f"{name}: currentCache must be an object")
+    effective_latest = normalize_history_cache(current_cache) if current_cache is not None else latest
     for field in SPEC_FIELDS:
-        if field in effective_latest:
-            current[field] = copy.deepcopy(effective_latest[field])
+        if current_cache is not None:
+            if field in current_cache:
+                current[field] = copy.deepcopy(current_cache[field])
+            else:
+                current.pop(field, None)
+        elif field in latest:
+            current[field] = copy.deepcopy(latest[field])
         else:
             current.pop(field, None)
         if (field in latest) != (field in effective_latest):
