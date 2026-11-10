@@ -6,7 +6,7 @@
     "id": "UNG_846",
     "dbfId": 41927,
     "name": "흐린빛 폭풍정령",
-    "text": "<b>전투의 함성:</b>\n무작위 마법사 주문을\n내 손으로 가져옵니다.",
+    "text": "[x]<b>죽음의 메아리:</b>\\n무작위 마법사 주문을\\n내 손으로 가져옵니다.",
     "type": "MINION",
     "cardClass": "MAGE",
     "classes": [],
@@ -20,7 +20,7 @@
     "spellSchool": "",
     "cost": 2,
     "attack": 2,
-    "health": 2,
+    "health": 1,
     "armor": 0,
     "durability": 0,
     "collectible": true,
@@ -79,9 +79,19 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "health": 2,
+          "text": "<b>전투의 함성:</b>\\n무작위 마법사 주문을\\n내 손으로 가져옵니다."
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    }
   },
   "root": true,
   "relatedIds": [],
