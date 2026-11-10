@@ -54,8 +54,8 @@
     ],
     "nativeRawText": "<b>천상의 보호막</b>",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [],
     "initialSpecStatus": "unverified",
     "patchSources": {}
