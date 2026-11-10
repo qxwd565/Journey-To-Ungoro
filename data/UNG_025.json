@@ -15,7 +15,7 @@
     "name": "화산",
     "type": "SPELL",
     "cardClass": "SHAMAN",
-    "rarity": "EPIC",
+    "rarity": "RARE",
     "collectible": true,
     "cost": 5,
     "text": "<b>모든</b> 하수인에게 $15의 피해를 무작위로 나누어 입힙니다.<br></br><b>과부하:</b> (2)",
@@ -146,10 +146,6 @@
     {
       "field": "nativeTags[296]",
       "reason": "CardDefs baseline has OVERLOAD_OWED=2 but current cache omits this tag; removal date is not established."
-    },
-    {
-      "field": "rarity",
-      "reason": "CardDefs baseline is EPIC while current cache is RARE; no dated rarity-change source is present."
     },
     {
       "field": "nativeTextBuilder",
