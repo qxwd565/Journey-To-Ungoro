@@ -27,6 +27,17 @@ class HistoryOperationsTest(unittest.TestCase):
         BUILD.publish_forward_card(card, current, "TEST")
         self.assertEqual(current, values)
 
+    def test_patch_boundary_before_and_on_date(self):
+        card = {"releasedAt": "2017-04-07", "cost": 2, "patches": [
+            {"date": "2020-01-01", "changes": {"cost": 3}}
+        ]}
+        current = {}
+        revisions, blocked = BUILD.publish_forward_card(card, current, "TEST")
+        self.assertEqual(current["cost"], 3)  # on 2020-01-01
+        self.assertEqual(revisions[0]["from"], "2017-04-07")
+        self.assertEqual(revisions[0]["before"], "2020-01-01")
+        self.assertEqual(revisions[0]["changes"]["cost"], 2)  # immediately before
+
     def test_remove_is_distinct_and_reverse_compatible(self):
         card = {"releasedAt": "2017-04-07", "cost": 2, "patches": [
             {"date": "2020-01-01", "changes": {}, "remove": ["cost"]}
