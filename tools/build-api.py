@@ -303,17 +303,18 @@ def publish_forward_card(card: dict, current: dict, name: str):
         old = states[i]
         # Legacy reverse-override clients cannot express a field that was
         # absent before its introduction. Keep all other reversible fields.
-        introduced = sorted(set(latest) - set(old))
-        if introduced:
-            compatibility_blocked.append({"date": event["date"], "fields": introduced})
+        added_now = sorted(set(states[i + 1]) - set(old))
+        if added_now:
+            compatibility_blocked.append({"date": event["date"], "fields": added_now})
+        incomplete = sorted(set(latest) - set(old))
         differences = {field: copy.deepcopy(value) for field, value in old.items()
-                       if field in SPEC_FIELDS and field in latest and value != latest[field]}
+                       if field in SPEC_FIELDS and (field not in latest or value != latest[field])}
         if not differences:
             continue
         start = card.get("releasedAt") if i == 0 else patches[i - 1]["date"]
         revision = {"before": event["date"], "changes": differences}
-        if introduced:
-            revision["incompleteFields"] = introduced
+        if incomplete:
+            revision["incompleteFields"] = incomplete
         if start:
             revision["from"] = start
         backward.append(revision)
