@@ -108,23 +108,65 @@ def read_history(card: dict, name: str):
     return versions
 
 
+def normalize_date_keyed_source(data: dict, record: dict):
+    """Adapt date-keyed source records to the common history replay model."""
+    cid = record["id"]
+    date_keys = sorted(key for key in data if DATE_RE.fullmatch(key))
+    if not date_keys:
+        raise ValueError(f"{cid}: date-keyed source has no initial snapshot")
+    initial = data[date_keys[0]]
+    if not isinstance(initial, dict):
+        raise ValueError(f"{cid}: invalid initial date snapshot")
+    patches = []
+    metadata_keys = {"source", "confidence", "note", "remove", "status"}
+    for day in date_keys[1:]:
+        event = data[day]
+        if not isinstance(event, dict):
+            raise ValueError(f"{cid}: invalid date event {day}")
+        changes = {key: copy.deepcopy(value) for key, value in event.items()
+                   if key not in metadata_keys}
+        patch = {"date": day, "changes": changes}
+        if "remove" in event:
+            patch["remove"] = copy.deepcopy(event["remove"])
+        patches.append(patch)
+    current_cache = data.get("current", {})
+    if not isinstance(current_cache, dict):
+        raise ValueError(f"{cid}: current cache must be an object")
+    card = copy.deepcopy(initial)
+    card.update({
+        "id": data.get("id"),
+        "dbfId": data.get("dbfId"),
+        "releasedAt": record.get("releasedAt"),
+        "patches": patches,
+        "currentCache": current_cache,
+        "historyIncompleteFields": data.get("historyIncompleteFields", []),
+        "nativeTagsTimelineStatus": data.get("nativeTagsTimelineStatus", "partial"),
+    })
+    return card
+
+
 def read_catalog_source(path: Path, record: dict):
     if not path.is_file():
-        return None
+        return None, None, False
     data = load(path)
-    card = data.get("card") if isinstance(data, dict) else None
     cid = record["id"]
+    if not isinstance(data, dict):
+        raise ValueError(f"{cid}: source document must be an object")
+    if data.get("schemaVersion") == 2:
+        if data.get("id") != cid or data.get("dbfId") != record.get("dbfId"):
+            raise ValueError(f"{cid}: date-keyed source identity mismatch")
+        return data, normalize_date_keyed_source(data, record), True
+    card = data.get("card")
     if not isinstance(card, dict) or card.get("id") != cid:
         raise ValueError(f"{cid}: source card ID mismatch")
     # A separately archived native token is not an asserted DBF mapping. Keep
-    # the approved current catalog, but never attach its archived history to
-    # a numeric ID or manufacture a DBF ID in the source document.
+    # the approved current catalog, but never attach its archived history to a
+    # numeric ID or manufacture a DBF ID in the source document.
     if card.get("dbfId") is None and data.get("apiAvailability", "").startswith("standalone historical source;"):
-        return None
+        return None, None, False
     if card.get("dbfId") != record.get("dbfId"):
         raise ValueError(f"{cid}: source card ID mismatch")
-    return data
-
+    return data, card, False
 
 
 def release_for_card(record: dict, policy: dict):
@@ -274,7 +316,7 @@ def read_patches(card: dict, name: str) -> list[dict]:
 
 
 def publish_forward_card(card: dict, current: dict, name: str):
-    """Compute latest cache and a disjoint reverse-override history for old clients."""
+    """Replay dated source and publish only reversible, date-supported history."""
     patches = read_patches(card, name)
     base = {field: copy.deepcopy(card[field]) for field in PATCH_FIELDS if field in card}
     if "legacyArt" in card:
@@ -292,23 +334,36 @@ def publish_forward_card(card: dict, current: dict, name: str):
             next_state[field] = copy.deepcopy(value)
         states.append(next_state)
     latest = states[-1]
+    current_cache = card.get("currentCache")
+    unresolved = set(card.get("historyIncompleteFields", []))
+    effective_latest = current_cache if isinstance(current_cache, dict) else latest
+    if current_cache is not None and not isinstance(current_cache, dict):
+        raise ValueError(f"{name}: currentCache must be an object")
     for field in SPEC_FIELDS:
-        if field in latest:
-            current[field] = copy.deepcopy(latest[field])
+        if field in effective_latest:
+            current[field] = copy.deepcopy(effective_latest[field])
         else:
             current.pop(field, None)
+        if (field in latest) != (field in effective_latest):
+            unresolved.add(field)
+        elif field in latest and latest[field] != effective_latest[field]:
+            unresolved.add(field)
+    if current_cache is not None and card.get("nativeTagsTimelineStatus") != "complete":
+        unresolved.add("nativeTags")
     backward = []
     compatibility_blocked = []
     for i, event in enumerate(patches):
         old = states[i]
-        # Legacy reverse-override clients cannot express a field that was
-        # absent before its introduction. Keep all other reversible fields.
-        added_now = sorted(set(states[i + 1]) - set(old))
+        added_now = sorted((set(states[i + 1]) - set(old)) & set(SPEC_FIELDS))
         if added_now:
             compatibility_blocked.append({"date": event["date"], "fields": added_now})
-        incomplete = sorted(set(latest) - set(old))
-        differences = {field: copy.deepcopy(value) for field, value in old.items()
-                       if field in SPEC_FIELDS and (field not in latest or value != latest[field])}
+        incomplete = sorted((set(effective_latest) - set(old)) & set(SPEC_FIELDS))
+        differences = {
+            field: copy.deepcopy(value) for field, value in old.items()
+            if field in SPEC_FIELDS
+            and field not in unresolved
+            and (field not in effective_latest or value != effective_latest[field])
+        }
         if not differences:
             continue
         start = card.get("releasedAt") if i == 0 else patches[i - 1]["date"]
@@ -318,8 +373,10 @@ def publish_forward_card(card: dict, current: dict, name: str):
         if start:
             revision["from"] = start
         backward.append(revision)
-    return backward, compatibility_blocked
-
+    incomplete_fields = sorted(unresolved | {
+        field for item in compatibility_blocked for field in item["fields"]
+    })
+    return backward, compatibility_blocked, incomplete_fields
 
 def main():
     source_path = ROOT / "cards.json"
@@ -347,21 +404,22 @@ def main():
         seen.add(cid)
         release_date = release_for_card(record, release_policy)[0] if release_policy is not None else record.get("releasedAt")
         path = detailed / (cid + ".json")
-        data = read_catalog_source(path, record)
+        data, card, date_keyed = read_catalog_source(path, record)
         revisions = []
+        incomplete_fields = []
         if data is None:
             if record.get("history"):
                 raise ValueError(f"{cid}: historical data requires {path.name}")
             # Preserve cards that have no detailed source yet.
             record.pop("history", None)
         else:
-            card = data["card"]
-            # Preserve the approved current card catalogue exactly. Individual
-            # JSON owns historical changes only until current data is reconciled.
+            if not date_keyed:
+                card = data["card"]
+            # The date-keyed source owns history; cards.json remains the current cache.
             if "patches" in card:
                 if "history" in card:
                     raise ValueError(f"{cid}: forward patches cannot coexist with legacy reverse history")
-                revisions, blocked = publish_forward_card(card, record, cid)
+                revisions, blocked, incomplete_fields = publish_forward_card(card, record, cid)
                 if blocked:
                     compatibility_blocked.append({"id": cid, "events": blocked})
             else:
@@ -393,6 +451,8 @@ def main():
         # differences are delivered together. Absence of history means current.
         if data is not None and revisions:
             render_card["history"] = revisions
+        if incomplete_fields:
+            render_card["historyIncompleteFields"] = incomplete_fields
         incomplete = sorted({field for item in compatibility_blocked if item["id"] == cid
                              for event in item["events"] for field in event["fields"]})
         if incomplete:
@@ -406,8 +466,12 @@ def main():
             render_card["releaseStatus"] = release_status
             release_counts[release_status] += 1
             if data is not None:
-                card["releasedAt"] = release_date
-                card["releaseStatus"] = release_status
+                if date_keyed:
+                    data["current"]["releasedAt"] = release_date
+                    data["current"]["releaseStatus"] = release_status
+                else:
+                    card["releasedAt"] = release_date
+                    card["releaseStatus"] = release_status
                 if publish(path, data):
                     changed_individual += 1
         renderer.append(render_card)
