@@ -6,7 +6,7 @@
     "id": "UNG_910",
     "dbfId": 41350,
     "name": "치명적인 이빨",
-    "text": "하수인에게 피해를 $3 주고\n그 양옆의 하수인들에게 피해를 $1 줍니다.",
+    "text": "하수인에게 피해를 $2 주고 그 양옆의 하수인들에게 피해를 $1 줍니다.",
     "type": "SPELL",
     "cardClass": "HUNTER",
     "classes": [],
@@ -57,9 +57,18 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "text": "하수인에게 피해를 $3 주고\\n그 양옆의 하수인들에게 피해를 $1 줍니다."
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    }
   },
   "root": true,
   "relatedIds": [],
