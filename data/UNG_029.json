@@ -62,23 +62,7 @@
     ],
     "triggeredPowerHistory": []
   },
-  "currentReferenceTags": [
-    {
-      "id": 415,
-      "name": "발견",
-      "value": 1
-    },
-    {
-      "id": 1342,
-      "name": "발견 시각 효과",
-      "value": 1
-    },
-    {
-      "id": 1635,
-      "name": "주문 속성",
-      "value": 6
-    }
-  ],
+  "currentReferenceTags": [],
   "current": {
     "name": "암흑의 환영",
     "type": "SPELL",
@@ -198,5 +182,17 @@
     "source": "https://hearthstone.blizzard.com/ko-kr/news/23642550",
     "confidence": "high",
     "note": "공식 주문 속성 도입일. spellSchool과 자체 TAG 1635를 동일 경계에서 추가."
-  }
+  },
+  "currentUndatedNativeTags": [
+    {
+      "id": 415,
+      "name": "발견",
+      "value": 1
+    },
+    {
+      "id": 1342,
+      "name": "발견 시각 효과",
+      "value": 1
+    }
+  ]
 }
