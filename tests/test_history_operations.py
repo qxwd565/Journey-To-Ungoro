@@ -32,7 +32,7 @@ class HistoryOperationsTest(unittest.TestCase):
             {"date": "2020-01-01", "changes": {"cost": 3}}
         ]}
         current = {}
-        revisions, blocked = BUILD.publish_forward_card(card, current, "TEST")
+        revisions, blocked, incomplete = BUILD.publish_forward_card(card, current, "TEST")
         self.assertEqual(current["cost"], 3)  # on 2020-01-01
         self.assertEqual(revisions[0]["from"], "2017-04-07")
         self.assertEqual(revisions[0]["before"], "2020-01-01")
@@ -43,7 +43,7 @@ class HistoryOperationsTest(unittest.TestCase):
             {"date": "2020-01-01", "changes": {}, "remove": ["cost"]}
         ]}
         current = {}
-        revisions, blocked = BUILD.publish_forward_card(card, current, "TEST")
+        revisions, blocked, incomplete = BUILD.publish_forward_card(card, current, "TEST")
         self.assertNotIn("cost", current)
         self.assertEqual(blocked, [])
         self.assertEqual(revisions[0]["changes"]["cost"], 2)
@@ -54,7 +54,7 @@ class HistoryOperationsTest(unittest.TestCase):
             {"date": "2021-03-26", "changes": {"spellSchool": "SHADOW"}}
         ]}
         current = {}
-        revisions, blocked = BUILD.publish_forward_card(card, current, "TEST")
+        revisions, blocked, incomplete = BUILD.publish_forward_card(card, current, "TEST")
         self.assertEqual(current, {"cost": 4, "spellSchool": "SHADOW"})
         self.assertEqual(revisions[0]["before"], "2020-04-21")
         self.assertEqual(revisions[0]["changes"]["cost"], 2)
