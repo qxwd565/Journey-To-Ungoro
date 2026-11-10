@@ -10,7 +10,7 @@
     "path": "CardDefs.xml",
     "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
   },
-  "dateMeaning": "2017-04-04 is a source snapshot date, not a playable date; first playable date remains pending.",
+  "dateMeaning": "2017-04-04 is a CardDefs source snapshot date, not a playable date; first playable date remains pending.",
   "2017-04-04": {
     "name": "대왕아가미",
     "type": "MINION",
@@ -92,22 +92,22 @@
   },
   "currentReferenceTags": [],
   "current": {
+    "id": "UNG_942t",
+    "dbfId": 41498,
     "name": "대왕아가미",
     "type": "MINION",
     "cardClass": "SHAMAN",
-    "classes": [],
     "collectible": false,
     "cost": 5,
+    "text": "<b>전투의 함성:</b> 내 손을 무작위 멀록으로<br></br>가득 채웁니다.",
     "attack": 8,
     "health": 8,
     "durability": 0,
     "armor": 0,
-    "text": "<b>전투의 함성:</b> 내 손을 무작위 멀록으로<br></br>가득 채웁니다.",
-    "races": [
-      "MURLOC"
-    ],
-    "race": "멀록",
+    "flavor": "",
     "spellSchool": "",
+    "portrait": "HS10-175_D.psd:05b96aedd73e36442824b6e86bb86bfe",
+    "set": "UNGORO",
     "nativeTags": [
       {
         "id": 45,
@@ -150,52 +150,37 @@
         "value": 1
       }
     ],
+    "races": [
+      "MURLOC"
+    ],
+    "race": "멀록",
+    "classes": [],
+    "art": "art/UNG_942t.png",
     "releasedAt": null,
     "releaseStatus": "pending",
     "nativeRawText": "<b>전투의 함성:</b> 내 손을 무작위 멀록으로\n가득 채웁니다.",
     "nativeTextBuilder": 0
   },
-  "historyIncompleteFields": [
-    "nativeTextBuilder",
-    "classes",
-    "collectible",
-    "durability",
-    "armor",
-    "text",
-    "spellSchool",
-    "nativeTags"
+  "root": false,
+  "relatedIds": [],
+  "englishName": "Megafin",
+  "expansion": {
+    "id": 27,
+    "slug": "journey-to-ungoro",
+    "name": "운고로를 향한 여정",
+    "type": "expansion",
+    "englishName": "Journey To Ungoro"
+  },
+  "setOrder": 34,
+  "formats": [
+    "wild"
   ],
-  "historyKnownFields": [],
-  "unresolvedSourceFields": [
-    {
-      "field": "classes",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "collectible",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "durability",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "armor",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "text",
-      "reason": "Baseline과 current가 다르나 변경일 근거 미확정."
-    },
-    {
-      "field": "spellSchool",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "nativeTags",
-      "reason": "Baseline/current 태그 차이의 개별 도입일 미확정."
-    }
-  ],
+  "provenance": {
+    "source": "Installed Hearthstone dbf.unity3d",
+    "gameVersion": "6000.3.11.3145967",
+    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+    "locale": "koKR"
+  },
   "referenceTags": [
     {
       "id": 183,
@@ -206,27 +191,39 @@
     }
   ],
   "nativeTagsTimelineStatus": "partial",
-  "relatedIds": [],
-  "catalogMetadata": {
-    "englishName": "Megafin",
-    "root": false,
-    "expansion": {
-      "id": 27,
-      "slug": "journey-to-ungoro",
-      "name": "운고로를 향한 여정",
-      "type": "expansion",
-      "englishName": "Journey To Ungoro"
+  "historyKnownFields": [],
+  "historyIncompleteFields": [
+    "rarity",
+    "collectible",
+    "text",
+    "nativeTags",
+    "nativeRawText",
+    "nativeTextBuilder"
+  ],
+  "unresolvedSourceFields": [
+    {
+      "field": "rarity",
+      "reason": "Baseline 최초 상태와 current cache 차이가 있으나 변경일을 입증하는 원문 사건이 없어 날짜 이벤트로 추정하지 않음."
     },
-    "setOrder": 34,
-    "formats": [
-      "wild"
-    ],
-    "provenance": {
-      "source": "Installed Hearthstone dbf.unity3d",
-      "gameVersion": "6000.3.11.3145967",
-      "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-      "locale": "koKR"
+    {
+      "field": "collectible",
+      "reason": "Baseline 최초 상태와 current cache 차이가 있으나 변경일을 입증하는 원문 사건이 없어 날짜 이벤트로 추정하지 않음."
     },
-    "portrait": "HS10-175_D.psd:05b96aedd73e36442824b6e86bb86bfe"
-  }
+    {
+      "field": "text",
+      "reason": "Baseline 최초 상태와 current cache 차이가 있으나 변경일을 입증하는 원문 사건이 없어 날짜 이벤트로 추정하지 않음."
+    },
+    {
+      "field": "nativeTags",
+      "reason": "Baseline 최초 상태와 current cache 차이가 있으나 변경일을 입증하는 원문 사건이 없어 날짜 이벤트로 추정하지 않음."
+    },
+    {
+      "field": "nativeRawText",
+      "reason": "원문 텍스트 변경일 미확정."
+    },
+    {
+      "field": "nativeTextBuilder",
+      "reason": "도입일 미확정이므로 current cache에만 보존."
+    }
+  ]
 }
