@@ -15,7 +15,6 @@
     "rarity": "EPIC",
     "race": "",
     "races": [],
-    "spellSchool": "",
     "cost": 2,
     "attack": 0,
     "health": 0,
@@ -68,11 +67,18 @@
         "changes": {
           "cost": 4
         }
+      },
+      {
+        "date": "2021-03-26",
+        "changes": {
+          "spellSchool": "SHADOW"
+        }
       }
     ],
     "initialSpecStatus": "unverified",
     "patchSources": {
-      "2020-04-21": "https://kr.forums.blizzard.com/ko/hearthstone/t/1737.json"
+      "2020-04-21": "https://kr.forums.blizzard.com/ko/hearthstone/t/1737.json",
+      "2021-03-26": "https://hearthstone.blizzard.com/ko-kr/news/23642550"
     }
   },
   "root": true,
