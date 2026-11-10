@@ -306,7 +306,12 @@ def publish_forward_card(card: dict, current: dict, name: str):
             compatibility_blocked.append({"date": event["date"], "fields": introduced})
             continue
         differences = {field: copy.deepcopy(value) for field, value in old.items()
-                       if value != latest.get(field)}
+                       if field in SPEC_FIELDS and value != latest.get(field)}
+    # One unrepresentable interval makes the whole card timeline unsafe for
+    # legacy consumers: without it, that consumer would leak a current field
+    # into dates before its introduction. Other cards continue unaffected.
+    if compatibility_blocked:
+        backward = []
         if not differences:
             continue
         start = card.get("releasedAt") if i == 0 else patches[i - 1]["date"]
