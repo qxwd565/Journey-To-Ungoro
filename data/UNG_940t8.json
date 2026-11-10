@@ -69,8 +69,8 @@
     ],
     "nativeRawText": "<b>도발</b>, <b>전투의 함성:</b>\n내 영웅의 생명력을 40으로 만듭니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [],
     "initialSpecStatus": "unverified",
     "patchSources": {}
