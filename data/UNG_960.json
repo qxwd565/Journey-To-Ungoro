@@ -1,31 +1,98 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Lost in the Jungle",
-  "card": {
-    "id": "UNG_960",
-    "dbfId": 41912,
+  "schemaVersion": 2,
+  "id": "UNG_960",
+  "dbfId": 41912,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "길 잃은 신병들",
+    "type": "SPELL",
+    "cardClass": "PALADIN",
+    "rarity": "COMMON",
+    "collectible": true,
+    "cost": 1,
     "text": "1/1 은빛 성기사단 신병을<br></br>2명 소환합니다.",
+    "nativeTags": [
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 5
+      },
+      {
+        "id": 201,
+        "name": "진영",
+        "value": 2
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 5
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 1
+      },
+      {
+        "id": 251,
+        "name": "게임 태그 251",
+        "value": 6
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "1/1 은빛 성기사단 신병을\n2명 소환합니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-ebb9-4ebb-81b4-b55f1201350d"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "그 후, 조지와 칼을 본 사람은 아무도 없었습니다."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-ebb9-4ebb-81b4-b55f1201350d"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "길 잃은 신병들",
     "type": "SPELL",
     "cardClass": "PALADIN",
     "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "COMMON",
-    "race": "",
-    "races": [],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 1,
     "attack": 0,
     "health": 0,
-    "armor": 0,
     "durability": 0,
-    "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-108_D.psd:0c583aa2834bf2b4f9ee98f0f9d6db1d",
-    "flavor": "그 후, 조지와 칼을 본 사람은 아무도 없었습니다.",
+    "armor": 0,
+    "text": "1/1 은빛 성기사단 신병을<br></br>2명 소환합니다.",
+    "races": [],
+    "race": "",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 48,
@@ -68,33 +135,95 @@
         "value": 1652
       }
     ],
-    "nativeRawText": "{0} 은빛 성기사단 신병을\n2명 소환합니다.",
-    "nativeTextBuilder": 46,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
-    "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "nativeRawText": "{0} 은빛 성기사단 신병을\n2명 소환합니다.",
+    "nativeTextBuilder": 46
   },
-  "root": true,
+  "historyIncompleteFields": [
+    "nativeTextBuilder",
+    "classes",
+    "attack",
+    "health",
+    "durability",
+    "armor",
+    "races",
+    "race",
+    "spellSchool",
+    "nativeTags"
+  ],
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [
+    {
+      "field": "classes",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "attack",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "health",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "durability",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "armor",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "races",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "race",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "spellSchool",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "nativeTags",
+      "reason": "Baseline/current 태그 차이의 개별 도입일 미확정."
+    }
+  ],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ],
+  "nativeTagsTimelineStatus": "partial",
   "relatedIds": [
     1652
   ],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
+  "catalogMetadata": {
+    "englishName": "Lost in the Jungle",
+    "root": true,
+    "expansion": {
+      "id": 27,
+      "slug": "journey-to-ungoro",
+      "name": "운고로를 향한 여정",
+      "type": "expansion",
+      "englishName": "Journey To Ungoro"
+    },
+    "setOrder": 34,
+    "formats": [
+      "wild"
+    ],
+    "provenance": {
+      "source": "Installed Hearthstone dbf.unity3d",
+      "gameVersion": "6000.3.11.3145967",
+      "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+      "locale": "koKR"
+    },
+    "portrait": "HS10-108_D.psd:0c583aa2834bf2b4f9ee98f0f9d6db1d"
   }
 }
