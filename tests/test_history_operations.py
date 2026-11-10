@@ -1129,7 +1129,9 @@ class HistoryOperationsTest(unittest.TestCase):
         expected_mode_count = sum(
             "mode" in metadata for metadata in manifest["cards"].values()
         )
-        self.assertEqual(expected_mode_count, 149)
+        self.assertEqual(expected_mode_count, 185)
+        for metadata in manifest["cards"].values():
+            self.assertEqual(metadata.get("mode"), "constructed")
         for path in paths:
             source = BUILD.load(path)
             for field, expected in manifest["cards"][path.stem].items():
