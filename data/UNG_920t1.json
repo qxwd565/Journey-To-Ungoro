@@ -6,7 +6,7 @@
     "id": "UNG_920t1",
     "dbfId": 41367,
     "name": "여왕 칼나사",
-    "text": "<b>속공</b>. <b>전투의 함성:</b> 랩터 20마리를 내 덱에 섞어 넣습니다.",
+    "text": "<b>전투의 함성:</b>\\n랩터 15마리를\\n내 덱에 섞어 넣습니다.",
     "type": "MINION",
     "cardClass": "HUNTER",
     "classes": [],
@@ -83,9 +83,18 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "text": "<b>속공</b>. <b>전투의 함성:</b> 랩터 20마리를 내 덱에 섞어 넣습니다."
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    }
   },
   "root": false,
   "relatedIds": [],
