@@ -219,8 +219,19 @@ class HistoryOperationsTest(unittest.TestCase):
             self.assertEqual(source["current"]["nativeTags"], records[cid]["nativeTags"])
             self.assertEqual(source["sourceBaseline"]["commitDate"], "2017-04-04")
             self.assertNotIn("nativeReferences", initial)
-            self.assertIn("references", source)
-            self.assertEqual(source["nativeTagsTimelineStatus"], "partial")
+            self.assertIn("nativeReferences", source["references"])
+            self.assertEqual([x["id"] for x in source["referenceTags"]], [183])
+            self.assertNotIn(183, {x["id"] for x in initial["nativeTags"]})
+            self.assertEqual(source["nativeTagsTimelineStatus"],
+                             "partial" if cid in ("UNG_025", "UNG_028t", "UNG_029") else "complete")
+
+        for cid, ref_ids in {"UNG_018": [1452], "UNG_057": [1078, 1452]}.items():
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            card = BUILD.normalize_date_keyed_source(source, records[cid])
+            self.assertEqual([x["id"] for x in card["currentReferenceTags"]], ref_ids)
+            current = {}
+            BUILD.publish_forward_card(card, current, cid)
+            self.assertEqual(current["nativeTags"], records[cid]["nativeTags"])
 
         geyser = BUILD.load(ROOT / "data" / "UNG_018.json")
         self.assertEqual(geyser["2017-04-07"]["cost"], 2)
