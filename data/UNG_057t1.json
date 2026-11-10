@@ -113,6 +113,10 @@
     {
       "field": "nativeTextBuilder",
       "reason": "The current client cache contains nativeTextBuilder=0, but the CardDefs 18336 baseline does not expose this field; no dated introduction/change evidence is available."
+    },
+    {
+      "field": "collectible",
+      "reason": "Current cache has collectible=false but CardDefs 18336 omits the field; no dated introduction or explicit false-value transition is established."
     }
   ],
   "2021-03-26": {
