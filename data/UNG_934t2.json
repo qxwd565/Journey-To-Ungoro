@@ -10,7 +10,7 @@
     "path": "CardDefs.xml",
     "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
   },
-  "dateMeaning": "2017-04-04 is a source snapshot date, not a playable date; first playable date remains pending.",
+  "dateMeaning": "2017-04-04 is a CardDefs source snapshot date, not a playable date; first playable date remains pending.",
   "2017-04-04": {
     "name": "죽어라, 벌레 같은 놈!",
     "type": "HERO_POWER",
@@ -55,20 +55,22 @@
   },
   "currentReferenceTags": [],
   "current": {
+    "id": "UNG_934t2",
+    "dbfId": 41940,
     "name": "죽어라, 벌레 같은 놈!",
     "type": "HERO_POWER",
     "cardClass": "NEUTRAL",
-    "classes": [],
     "collectible": false,
     "cost": 2,
+    "text": "무작위 적에게 피해를 $8 줍니다.",
     "attack": 0,
     "health": 0,
     "durability": 0,
     "armor": 0,
-    "text": "무작위 적에게 피해를 $8 줍니다.",
-    "races": [],
-    "race": "",
+    "flavor": "",
     "spellSchool": "",
+    "portrait": "W2_073_D2.psd:4828c12ae0752c84eafef1792c5e61e7",
+    "set": "UNGORO",
     "nativeTags": [
       {
         "id": 48,
@@ -86,67 +88,35 @@
         "value": 10
       }
     ],
+    "races": [],
+    "race": "",
+    "classes": [],
+    "art": "art/UNG_934t2.png",
     "releasedAt": null,
     "releaseStatus": "pending",
     "nativeRawText": "무작위 적에게 피해를 $8 줍니다.",
     "nativeTextBuilder": 0
   },
-  "historyIncompleteFields": [
-    "nativeTextBuilder",
-    "classes",
-    "collectible",
-    "attack",
-    "health",
-    "durability",
-    "armor",
-    "text",
-    "races",
-    "race",
-    "spellSchool"
+  "root": false,
+  "relatedIds": [],
+  "englishName": "DIE, INSECT!",
+  "expansion": {
+    "id": 27,
+    "slug": "journey-to-ungoro",
+    "name": "운고로를 향한 여정",
+    "type": "expansion",
+    "englishName": "Journey To Ungoro"
+  },
+  "setOrder": 34,
+  "formats": [
+    "wild"
   ],
-  "historyKnownFields": [],
-  "unresolvedSourceFields": [
-    {
-      "field": "classes",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "collectible",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "attack",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "health",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "durability",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "armor",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "text",
-      "reason": "Baseline과 current가 다르나 변경일 근거 미확정."
-    },
-    {
-      "field": "races",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "race",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "spellSchool",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    }
-  ],
+  "provenance": {
+    "source": "Installed Hearthstone dbf.unity3d",
+    "gameVersion": "6000.3.11.3145967",
+    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+    "locale": "koKR"
+  },
   "referenceTags": [
     {
       "id": 183,
@@ -156,28 +126,30 @@
       "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
     }
   ],
-  "nativeTagsTimelineStatus": "partial",
-  "relatedIds": [],
-  "catalogMetadata": {
-    "englishName": "DIE, INSECT!",
-    "root": false,
-    "expansion": {
-      "id": 27,
-      "slug": "journey-to-ungoro",
-      "name": "운고로를 향한 여정",
-      "type": "expansion",
-      "englishName": "Journey To Ungoro"
+  "nativeTagsTimelineStatus": "complete",
+  "historyKnownFields": [],
+  "historyIncompleteFields": [
+    "collectible",
+    "text",
+    "nativeRawText",
+    "nativeTextBuilder"
+  ],
+  "unresolvedSourceFields": [
+    {
+      "field": "collectible",
+      "reason": "Baseline 최초 상태와 current cache 차이가 있으나 변경일을 입증하는 원문 사건이 없어 날짜 이벤트로 추정하지 않음."
     },
-    "setOrder": 34,
-    "formats": [
-      "wild"
-    ],
-    "provenance": {
-      "source": "Installed Hearthstone dbf.unity3d",
-      "gameVersion": "6000.3.11.3145967",
-      "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-      "locale": "koKR"
+    {
+      "field": "text",
+      "reason": "Baseline 최초 상태와 current cache 차이가 있으나 변경일을 입증하는 원문 사건이 없어 날짜 이벤트로 추정하지 않음."
     },
-    "portrait": "W2_073_D2.psd:4828c12ae0752c84eafef1792c5e61e7"
-  }
+    {
+      "field": "nativeRawText",
+      "reason": "원문 텍스트 변경일 미확정."
+    },
+    {
+      "field": "nativeTextBuilder",
+      "reason": "도입일 미확정이므로 current cache에만 보존."
+    }
+  ]
 }
