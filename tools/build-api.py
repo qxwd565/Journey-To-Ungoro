@@ -38,7 +38,8 @@ SPEC_FIELDS = (
     "races", "race", "spellSchool", "mechanics", "nativeTags",
 )
 HISTORY_ONLY_FIELDS = ("nativeRawText",)
-PATCH_FIELDS = set(SPEC_FIELDS) | set(HISTORY_ONLY_FIELDS)
+PATCH_FIELDS = SPEC_FIELDS + HISTORY_ONLY_FIELDS
+PATCH_FIELD_SET = set(PATCH_FIELDS)
 TAXONOMY_RULE = "taxonomy-introduction"
 RACE_KOREAN = {
     "BEAST": "야수", "DEMON": "악마", "DRAGON": "용족", "MURLOC": "멀록",
@@ -266,7 +267,7 @@ def read_patches(card: dict, name: str) -> list[dict]:
             raise ValueError(f"{name}: overlapping/unsorted patch dates {prev}, {day}")
         if not changes and not remove:
             raise ValueError(f"{name}: empty operation on {day}")
-        if (set(changes) | set(remove)) - (PATCH_FIELDS | {"legacyArt"}):
+        if (set(changes) | set(remove)) - (PATCH_FIELD_SET | {"legacyArt"}):
             raise ValueError(f"{name}: unknown gameplay patch field")
         prev = day
     return patches
