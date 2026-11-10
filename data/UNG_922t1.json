@@ -49,8 +49,8 @@
     ],
     "nativeRawText": "카드를 <b>발견</b>합니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [
       {
         "date": "2023-10-18",
