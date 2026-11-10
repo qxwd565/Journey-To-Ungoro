@@ -865,7 +865,7 @@ class HistoryOperationsTest(unittest.TestCase):
 
         storm = BUILD.load(ROOT / "data" / "UNG_940.json")
         self.assertNotIn(217, BUILD.native_tag_values(storm["2017-04-07"]))
-        self.assertNotIn("nativeTagUpdates", storm["2023-10-18"])
+        self.assertEqual(storm["2023-10-18"]["nativeTagUpdates"], [{"id": 535, "value": 6}])
         thorns = BUILD.load(ROOT / "data" / "UNG_952.json")
         self.assertNotIn(190, BUILD.native_tag_values(thorns["2017-04-07"]))
         self.assertNotIn(217, BUILD.native_tag_values(thorns["2017-04-07"]))
