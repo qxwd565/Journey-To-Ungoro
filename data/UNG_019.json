@@ -19,7 +19,7 @@
     ],
     "spellSchool": "",
     "cost": 1,
-    "attack": 3,
+    "attack": 2,
     "health": 1,
     "armor": 0,
     "durability": 0,
@@ -94,9 +94,18 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2024-03-29",
+        "changes": {
+          "attack": 3
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2024-03-29": "https://hearthstone.blizzard.com/ko-kr/news/24064739"
+    }
   },
   "root": true,
   "relatedIds": [],
