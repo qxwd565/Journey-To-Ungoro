@@ -252,6 +252,8 @@ class HistoryOperationsTest(unittest.TestCase):
         warp = BUILD.load(ROOT / "data" / "UNG_028t.json")
         self.assertIsNone(warp["current"].get("releasedAt"))
         self.assertIsNone(warp.get("releasedAt"))
+        self.assertTrue(any(x["field"] == "nativeTags[203]/rarity" for x in warp["unresolvedSourceFields"]))
+        self.assertTrue(any(x["field"] == "collectible" for x in warp["unresolvedSourceFields"]))
         self.assertIn("2024-04-26", warp)
         self.assertIn("nativeRawText", warp["2024-04-26"])
 
@@ -259,7 +261,9 @@ class HistoryOperationsTest(unittest.TestCase):
             source = BUILD.load(ROOT / "data" / (cid + ".json"))
             self.assertIn("2023-10-18", source)
             self.assertIn("nativeRawText", source["2023-10-18"])
-        self.assertIsNone(BUILD.load(ROOT / "data" / "UNG_057t1.json").get("releasedAt"))
+        token = BUILD.load(ROOT / "data" / "UNG_057t1.json")
+        self.assertIsNone(token.get("releasedAt"))
+        self.assertTrue(any(x["field"] == "collectible" for x in token["unresolvedSourceFields"]))
 
     def test_known_grammar_correction_has_no_patch_date(self):
         self.assertEqual(BUILD.normalize_display_text("UNG_063", "+1/+1를 얻습니다."), "+1/+1을 얻습니다.")
