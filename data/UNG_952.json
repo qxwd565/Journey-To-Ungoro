@@ -16,7 +16,7 @@
     "race": "",
     "races": [],
     "spellSchool": "",
-    "cost": 5,
+    "cost": 6,
     "attack": 0,
     "health": 0,
     "armor": 0,
@@ -72,9 +72,18 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2025-03-19",
+        "changes": {
+          "cost": 5
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2025-03-19": "https://hearthstone.blizzard.com/ko-kr/news/24187196"
+    }
   },
   "root": true,
   "relatedIds": [
