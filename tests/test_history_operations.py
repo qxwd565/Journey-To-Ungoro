@@ -235,8 +235,8 @@ class HistoryOperationsTest(unittest.TestCase):
         self.assertTrue(any(x["field"] == "nativeTags[296]" for x in volcano["unresolvedSourceFields"]))
 
         warp = BUILD.load(ROOT / "data" / "UNG_028t.json")
-        self.assertEqual(warp["current"]["releaseStatus"], "pending")
-        self.assertNotIn("releasedAt", warp)
+        self.assertIsNone(warp["current"].get("releasedAt"))
+        self.assertIsNone(warp.get("releasedAt"))
         self.assertIn("2024-04-26", warp)
         self.assertIn("nativeRawText", warp["2024-04-26"])
 
@@ -244,7 +244,7 @@ class HistoryOperationsTest(unittest.TestCase):
             source = BUILD.load(ROOT / "data" / (cid + ".json"))
             self.assertIn("2023-10-18", source)
             self.assertIn("nativeRawText", source["2023-10-18"])
-        self.assertEqual(BUILD.load(ROOT / "data" / "UNG_057t1.json")["current"]["releaseStatus"], "pending")
+        self.assertIsNone(BUILD.load(ROOT / "data" / "UNG_057t1.json").get("releasedAt"))
 
     def test_known_grammar_correction_has_no_patch_date(self):
         self.assertEqual(BUILD.normalize_display_text("UNG_063", "+1/+1를 얻습니다."), "+1/+1을 얻습니다.")
