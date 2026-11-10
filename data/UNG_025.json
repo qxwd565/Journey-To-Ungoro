@@ -15,7 +15,6 @@
     "rarity": "RARE",
     "race": "",
     "races": [],
-    "spellSchool": "",
     "cost": 5,
     "attack": 0,
     "health": 0,
@@ -74,6 +73,12 @@
     "releaseStatus": "verified",
     "patches": [
       {
+        "date": "2021-03-26",
+        "changes": {
+          "spellSchool": "FIRE"
+        }
+      },
+      {
         "date": "2023-10-18",
         "changes": {
           "text": "<b>모든</b> 하수인에게 $15의 피해를 무작위로 나누어 입힙니다.\\n<b>과부하:</b> (1)"
@@ -82,7 +87,8 @@
     ],
     "initialSpecStatus": "unverified",
     "patchSources": {
-      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+      "2021-03-26": "https://hearthstone.blizzard.com/ko-kr/news/23642550"
     }
   },
   "root": true,
