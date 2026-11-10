@@ -342,8 +342,16 @@ class HistoryOperationsTest(unittest.TestCase):
         self.assertEqual(tide["2021-05-13"]["cost"], 3)
         self.assertEqual(tide["2023-10-18"]["text"],
                          "<b>생명력 흡수</b><br></br>하수인에게 피해를<br></br>$5 줍니다.")
+        self.assertNotIn("text", tide["historyIncompleteFields"])
+        mana = BUILD.load(ROOT / "data" / "UNG_111.json")
+        self.assertIn(1452, {x["id"] for x in mana["current"]["nativeTags"]})
+        self.assertIn(1452, {x["id"] for x in mana["currentReferenceTags"]})
+        adaptive = BUILD.load(ROOT / "data" / "UNG_103.json")
+        self.assertEqual(adaptive["nativeTagsTimelineStatus"], "partial")
+        self.assertIn("nativeTags", adaptive["historyIncompleteFields"])
         scales = BUILD.load(ROOT / "data" / "UNG_108.json")
         self.assertIn("cost", scales["historyIncompleteFields"])
+        self.assertIn("nativeTags", scales["historyIncompleteFields"])
         self.assertTrue(any(x["field"] == "cost" for x in scales["unresolvedSourceFields"]))
 
 

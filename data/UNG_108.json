@@ -194,10 +194,11 @@
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified"
   },
-  "nativeTagsTimelineStatus": "complete",
+  "nativeTagsTimelineStatus": "partial",
   "historyIncompleteFields": [
     "text",
-    "cost"
+    "cost",
+    "nativeTags"
   ],
   "unresolvedSourceFields": [
     {
@@ -215,6 +216,10 @@
     {
       "field": "cost",
       "reason": "기준 스냅샷 비용 1과 현재 캐시 비용 2 사이의 한국 적용일을 확인하지 못했다. 임의 패치 날짜를 만들지 않는다."
+    },
+    {
+      "field": "nativeTags[48]",
+      "reason": "기준 스냅샷 TAG 48=1과 현재 TAG 48=2의 차이는 있으나 변경일이 확인되지 않았다. 비용 이력과 함께 날짜를 추정하지 않고 nativeTags 이력을 partial로 표시."
     }
   ],
   "referenceTags": [
