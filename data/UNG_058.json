@@ -6,7 +6,7 @@
     "id": "UNG_058",
     "dbfId": 41208,
     "name": "칼날꽃잎 덩굴손",
-    "text": "<b>전투의 함성:</b> 피해를\n2 주는 칼날꽃잎을\n내 손으로 가져옵니다.",
+    "text": "<b>전투의 함성:</b> 피해를 1 주는 칼날꽃잎을 내 손으로 가져옵니다.",
     "type": "MINION",
     "cardClass": "ROGUE",
     "classes": [],
@@ -77,9 +77,18 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "text": "[x]<b>전투의 함성:</b> 피해를\\n2 주는 칼날꽃잎을\\n내 손으로 가져옵니다."
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    }
   },
   "root": true,
   "relatedIds": [
