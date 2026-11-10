@@ -104,6 +104,8 @@
     "historyOperations": "docs/history-operations.md",
     "displayLineBreak": "<br></br>",
     "nativeRawTextPreserved": true,
-    "buildExecution": "not run in this chat; cards.json/render.json/history.json synchronized separately"
+    "buildExecution": "GitHub Actions workflow executed; 9 tests passed; two consecutive post-build no-change checks passed.",
+    "rawInitialTagReconciliation": "pending: the 100 source rows are not converted into dated balance events; original/current tag timing needs a separate evidence-backed baseline reconciliation.",
+    "pendingRawInitialTagRows": 100
   }
 }
