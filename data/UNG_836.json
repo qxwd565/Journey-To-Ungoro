@@ -1,33 +1,30 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Clutchmother Zavas",
-  "card": {
-    "id": "UNG_836",
-    "dbfId": 41876,
+  "schemaVersion": 2,
+  "id": "UNG_836",
+  "dbfId": 41876,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "여왕 자바스",
-    "text": "이 하수인을 버릴 때마다<br></br>+2/+2를 부여하고<br></br>내 손으로 다시 가져옵니다.",
     "type": "MINION",
     "cardClass": "WARLOCK",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "LEGENDARY",
-    "race": "야수",
-    "races": [
-      "BEAST"
-    ],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 2,
     "attack": 2,
     "health": 2,
-    "armor": 0,
-    "durability": 0,
-    "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-133_D.psd:7dba3e5f9abea64439f8f53dca36c830",
-    "flavor": "그녀를 버리는 건 그녀를 강하게 만들 뿐입니다.",
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "text": "이 하수인을 버릴 때마다<br></br>+2/+2를 부여하고<br></br>내 손으로 다시 가져옵니다.",
     "nativeTags": [
       {
         "id": 45,
@@ -81,30 +78,166 @@
       }
     ],
     "nativeRawText": "[x]이 하수인을 버릴 때마다\n+2/+2를 부여하고\n내 손으로 다시 가져옵니다.",
-    "nativeTextBuilder": 0,
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "e33a561f-e9f8-4a75-88fa-7af8726afd36",
+        "00000012-6642-497c-adcf-0839582b5920"
+      ],
+      "triggeredPowerHistory": [
+        "effectIndex=\"0\" showInHistory=\"True\"",
+        "effectIndex=\"1\" showInHistory=\"False\""
+      ]
+    },
+    "nativeSetId": 27,
+    "flavor": "그녀를 버리는 건 그녀를 강하게 만들 뿐입니다."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "e33a561f-e9f8-4a75-88fa-7af8726afd36",
+        "00000012-6642-497c-adcf-0839582b5920"
+      ],
+      "triggeredPowerHistory": [
+        "effectIndex=\"0\" showInHistory=\"True\"",
+        "effectIndex=\"1\" showInHistory=\"False\""
+      ]
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "여왕 자바스",
+    "type": "MINION",
+    "cardClass": "WARLOCK",
+    "classes": [],
+    "rarity": "LEGENDARY",
+    "collectible": true,
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "durability": 0,
+    "armor": 0,
+    "text": "이 하수인을 버릴 때마다<br></br>+2/+2를 부여하고<br></br>내 손으로 다시 가져옵니다.",
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "spellSchool": "",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 2
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 2
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 2
+      },
+      {
+        "id": 114,
+        "name": "전설 속성",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 9
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 20
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 5
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      },
+      {
+        "id": 335,
+        "name": "게임 태그 335",
+        "value": 1
+      }
+    ],
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
-    "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "nativeRawText": "[x]이 하수인을 버릴 때마다\n+2/+2를 부여하고\n내 손으로 다시 가져옵니다.",
+    "nativeTextBuilder": 0
   },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "historyIncompleteFields": [
+    "nativeTextBuilder",
+    "classes",
+    "durability",
+    "armor",
+    "spellSchool"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [
+    {
+      "field": "classes",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "durability",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "armor",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "spellSchool",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    }
+  ],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ],
+  "nativeTagsTimelineStatus": "partial",
+  "relatedIds": [],
+  "catalogMetadata": {
+    "englishName": "Clutchmother Zavas",
+    "root": true,
+    "expansion": {
+      "id": 27,
+      "slug": "journey-to-ungoro",
+      "name": "운고로를 향한 여정",
+      "type": "expansion",
+      "englishName": "Journey To Ungoro"
+    },
+    "setOrder": 34,
+    "formats": [
+      "wild"
+    ],
+    "provenance": {
+      "source": "Installed Hearthstone dbf.unity3d",
+      "gameVersion": "6000.3.11.3145967",
+      "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+      "locale": "koKR"
+    },
+    "portrait": "HS10-133_D.psd:7dba3e5f9abea64439f8f53dca36c830"
   }
 }
