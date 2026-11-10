@@ -1,30 +1,64 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Poison Spit",
-  "card": {
-    "id": "UNG_999t13",
-    "dbfId": 41211,
+  "schemaVersion": 2,
+  "id": "UNG_999t13",
+  "dbfId": 41211,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "2017-04-04 is a source snapshot date, not a playable date; first playable date remains pending.",
+  "2017-04-04": {
     "name": "유독성 타액",
+    "type": "SPELL",
+    "cardClass": "NEUTRAL",
     "text": "<b>독성</b>",
+    "nativeTags": [
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 5
+      }
+    ],
+    "nativeRawText": "<b>독성</b>",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "유독성 타액",
     "type": "SPELL",
     "cardClass": "NEUTRAL",
     "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
-    "race": "",
-    "races": [],
-    "spellSchool": "",
+    "collectible": false,
     "cost": 0,
     "attack": 0,
     "health": 0,
-    "armor": 0,
     "durability": 0,
-    "collectible": false,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-080_S.psd:32db15a22160b05468277164a5484b51",
-    "flavor": "",
+    "armor": 0,
+    "text": "<b>독성</b>",
+    "races": [],
+    "race": "",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 199,
@@ -52,31 +86,103 @@
         "value": 1
       }
     ],
-    "nativeRawText": "<b>독성</b>",
-    "nativeTextBuilder": 0,
     "releasedAt": null,
     "releaseStatus": "pending",
-    "patches": [],
-    "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "nativeRawText": "<b>독성</b>",
+    "nativeTextBuilder": 0
   },
-  "root": false,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "historyIncompleteFields": [
+    "nativeTextBuilder",
+    "classes",
+    "collectible",
+    "cost",
+    "attack",
+    "health",
+    "durability",
+    "armor",
+    "races",
+    "race",
+    "spellSchool",
+    "nativeTags"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [
+    {
+      "field": "classes",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "collectible",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "cost",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "attack",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "health",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "durability",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "armor",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "races",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "race",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "spellSchool",
+      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
+    },
+    {
+      "field": "nativeTags",
+      "reason": "Baseline/current 태그 차이의 개별 도입일 미확정."
+    }
+  ],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ],
+  "nativeTagsTimelineStatus": "partial",
+  "relatedIds": [],
+  "catalogMetadata": {
+    "englishName": "Poison Spit",
+    "root": false,
+    "expansion": {
+      "id": 27,
+      "slug": "journey-to-ungoro",
+      "name": "운고로를 향한 여정",
+      "type": "expansion",
+      "englishName": "Journey To Ungoro"
+    },
+    "setOrder": 34,
+    "formats": [
+      "wild"
+    ],
+    "provenance": {
+      "source": "Installed Hearthstone dbf.unity3d",
+      "gameVersion": "6000.3.11.3145967",
+      "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+      "locale": "koKR"
+    },
+    "portrait": "HS10-080_S.psd:32db15a22160b05468277164a5484b51"
   }
 }
