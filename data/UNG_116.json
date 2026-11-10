@@ -6,7 +6,7 @@
     "id": "UNG_116",
     "dbfId": 41099,
     "name": "밀림의 괴수들",
-    "text": "<b>퀘스트:</b> 공격력이 5 이상인 하수인을 4회 소환해야 합니다.\n<b>보상:</b> 바르나부스",
+    "text": "<b>퀘스트:</b> 공격력이 5 이상인 하수인을\\n5회 소환해야 합니다.\\n<b>보상:</b> 바르나부스",
     "type": "SPELL",
     "cardClass": "DRUID",
     "classes": [],
@@ -92,9 +92,18 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "text": "<b>퀘스트:</b> 공격력이 5 이상인 하수인을 4회 소환해야 합니다.\\n<b>보상:</b> 바르나부스"
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    }
   },
   "root": true,
   "relatedIds": [
