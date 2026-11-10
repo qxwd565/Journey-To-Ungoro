@@ -194,11 +194,9 @@
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified"
   },
-  "nativeTagsTimelineStatus": "partial",
+  "nativeTagsTimelineStatus": "complete",
   "historyIncompleteFields": [
-    "text",
-    "cost",
-    "nativeTags"
+    "text"
   ],
   "unresolvedSourceFields": [
     {
@@ -212,14 +210,6 @@
     {
       "field": "nativeRawText",
       "reason": "기준 스냅샷 nativeRawText와 현재 클라이언트 캐시가 다르지만 중간 변경일이 확인되지 않았다. 최초 원문을 보존하고 최신 원문은 currentCache에만 둔다."
-    },
-    {
-      "field": "cost",
-      "reason": "기준 스냅샷 비용 1과 현재 캐시 비용 2 사이의 한국 적용일을 확인하지 못했다. 임의 패치 날짜를 만들지 않는다."
-    },
-    {
-      "field": "nativeTags[48]",
-      "reason": "기준 스냅샷 TAG 48=1과 현재 TAG 48=2의 차이는 있으나 변경일이 확인되지 않았다. 비용 이력과 함께 날짜를 추정하지 않고 nativeTags 이력을 partial로 표시."
     }
   ],
   "referenceTags": [
@@ -230,5 +220,58 @@
       "sourceSnapshot": "2017-04-04",
       "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
     }
-  ]
+  ],
+  "2022-06-17": {
+    "cost": 2,
+    "nativeTags": [
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 2
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 2
+      },
+      {
+        "id": 201,
+        "name": "진영",
+        "value": 3
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 5
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 3
+      },
+      {
+        "id": 251,
+        "name": "게임 태그 251",
+        "value": 1
+      },
+      {
+        "id": 268,
+        "name": "게임 태그 268",
+        "value": 2
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      },
+      {
+        "id": 1635,
+        "name": "주문 속성",
+        "value": 4
+      }
+    ],
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23817872",
+    "confidence": "high",
+    "note": "23.4.3 패치 한국 적용일. 대지의 비늘 비용 1→2 변경. 당시 HearthSim/hsdata CardDefs.xml (commit bdbccfdb08b8535178575d712f4fbfde13ccbed8)에서 TAG 48=2를 확인; cost와 자체 태그를 같은 경계에서 동기화."
+  }
 }
