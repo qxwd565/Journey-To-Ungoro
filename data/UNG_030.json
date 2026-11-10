@@ -60,13 +60,7 @@
     "powerDefinitions": [],
     "triggeredPowerHistory": []
   },
-  "currentReferenceTags": [
-    {
-      "id": 1635,
-      "name": "주문 속성",
-      "value": 5
-    }
-  ],
+  "currentReferenceTags": [],
   "current": {
     "name": "결속의 치유",
     "type": "SPELL",
