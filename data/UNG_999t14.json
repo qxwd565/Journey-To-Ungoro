@@ -10,7 +10,7 @@
     "path": "CardDefs.xml",
     "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
   },
-  "dateMeaning": "2017-04-04 is a source snapshot date, not a playable date; first playable date remains pending.",
+  "dateMeaning": "2017-04-04 is a CardDefs source snapshot date, not a playable date; first playable date remains pending.",
   "2017-04-04": {
     "name": "화산의 힘",
     "type": "SPELL",
@@ -45,20 +45,22 @@
   },
   "currentReferenceTags": [],
   "current": {
+    "id": "UNG_999t14",
+    "dbfId": 41691,
     "name": "화산의 힘",
     "type": "SPELL",
     "cardClass": "NEUTRAL",
-    "classes": [],
     "collectible": false,
     "cost": 0,
+    "text": "+1/+1",
     "attack": 0,
     "health": 0,
     "durability": 0,
     "armor": 0,
-    "text": "+1/+1",
-    "races": [],
-    "race": "",
+    "flavor": "",
     "spellSchool": "",
+    "portrait": "HS10-081_S_New.psd:9ac01c0038c1c6b4ba24a4c5b9fccf7b",
+    "set": "UNGORO",
     "nativeTags": [
       {
         "id": 199,
@@ -81,72 +83,35 @@
         "value": 1
       }
     ],
+    "races": [],
+    "race": "",
+    "classes": [],
+    "art": "art/UNG_999t14.png",
     "releasedAt": null,
     "releaseStatus": "pending",
     "nativeRawText": "+1/+1",
     "nativeTextBuilder": 0
   },
-  "historyIncompleteFields": [
-    "nativeTextBuilder",
-    "classes",
-    "collectible",
-    "cost",
-    "attack",
-    "health",
-    "durability",
-    "armor",
-    "races",
-    "race",
-    "spellSchool",
-    "nativeTags"
+  "root": false,
+  "relatedIds": [],
+  "englishName": "Volcanic Might",
+  "expansion": {
+    "id": 27,
+    "slug": "journey-to-ungoro",
+    "name": "운고로를 향한 여정",
+    "type": "expansion",
+    "englishName": "Journey To Ungoro"
+  },
+  "setOrder": 34,
+  "formats": [
+    "wild"
   ],
-  "historyKnownFields": [],
-  "unresolvedSourceFields": [
-    {
-      "field": "classes",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "collectible",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "cost",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "attack",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "health",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "durability",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "armor",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "races",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "race",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "spellSchool",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "nativeTags",
-      "reason": "Baseline/current 태그 차이의 개별 도입일 미확정."
-    }
-  ],
+  "provenance": {
+    "source": "Installed Hearthstone dbf.unity3d",
+    "gameVersion": "6000.3.11.3145967",
+    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+    "locale": "koKR"
+  },
   "referenceTags": [
     {
       "id": 183,
@@ -157,27 +122,29 @@
     }
   ],
   "nativeTagsTimelineStatus": "partial",
-  "relatedIds": [],
-  "catalogMetadata": {
-    "englishName": "Volcanic Might",
-    "root": false,
-    "expansion": {
-      "id": 27,
-      "slug": "journey-to-ungoro",
-      "name": "운고로를 향한 여정",
-      "type": "expansion",
-      "englishName": "Journey To Ungoro"
+  "historyKnownFields": [],
+  "historyIncompleteFields": [
+    "collectible",
+    "cost",
+    "nativeTags",
+    "nativeTextBuilder"
+  ],
+  "unresolvedSourceFields": [
+    {
+      "field": "collectible",
+      "reason": "Baseline 최초 상태와 current cache 차이가 있으나 변경일을 입증하는 원문 사건이 없어 날짜 이벤트로 추정하지 않음."
     },
-    "setOrder": 34,
-    "formats": [
-      "wild"
-    ],
-    "provenance": {
-      "source": "Installed Hearthstone dbf.unity3d",
-      "gameVersion": "6000.3.11.3145967",
-      "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-      "locale": "koKR"
+    {
+      "field": "cost",
+      "reason": "Baseline 최초 상태와 current cache 차이가 있으나 변경일을 입증하는 원문 사건이 없어 날짜 이벤트로 추정하지 않음."
     },
-    "portrait": "HS10-081_S_New.psd:9ac01c0038c1c6b4ba24a4c5b9fccf7b"
-  }
+    {
+      "field": "nativeTags",
+      "reason": "Baseline 최초 상태와 current cache 차이가 있으나 변경일을 입증하는 원문 사건이 없어 날짜 이벤트로 추정하지 않음."
+    },
+    {
+      "field": "nativeTextBuilder",
+      "reason": "도입일 미확정이므로 current cache에만 보존."
+    }
+  ]
 }
