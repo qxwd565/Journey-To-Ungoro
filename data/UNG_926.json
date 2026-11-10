@@ -53,11 +53,6 @@
         "value": 10
       },
       {
-        "id": 200,
-        "name": "종족",
-        "value": 2
-      },
-      {
         "id": 202,
         "name": "카드 유형",
         "value": 4
@@ -94,13 +89,70 @@
           "race": "드레나이",
           "races": [
             "DRAENEI"
+          ],
+          "nativeTags": [
+            {
+              "id": 45,
+              "name": "생명력",
+              "value": 6
+            },
+            {
+              "id": 47,
+              "name": "공격력",
+              "value": 2
+            },
+            {
+              "id": 48,
+              "name": "마나 비용",
+              "value": 2
+            },
+            {
+              "id": 190,
+              "name": "도발",
+              "value": 1
+            },
+            {
+              "id": 199,
+              "name": "직업",
+              "value": 10
+            },
+            {
+              "id": 200,
+              "name": "종족",
+              "value": 2
+            },
+            {
+              "id": 202,
+              "name": "카드 유형",
+              "value": 4
+            },
+            {
+              "id": 203,
+              "name": "희귀도",
+              "value": 3
+            },
+            {
+              "id": 218,
+              "name": "전투의 함성",
+              "value": 1
+            },
+            {
+              "id": 321,
+              "name": "수집 가능",
+              "value": 1
+            },
+            {
+              "id": 1452,
+              "name": "수집품 관련 카드 데이터베이스 ID",
+              "value": 41248
+            }
           ]
         }
       }
     ],
     "initialSpecStatus": "unverified",
     "patchSources": {
-      "2024-10-30": "https://hearthstone.blizzard.com/ko-kr/news/24149104"
+      "2024-10-30": "https://github.com/HearthSim/hsdata/blob/0a387d653f339297339625710e4df91f0c62b67b/CardDefs.xml"
     }
   },
   "root": true,
