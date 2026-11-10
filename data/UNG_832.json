@@ -202,7 +202,9 @@
       }
     ],
     "nativeRawText": "이번 턴에 내가 시전하는 다음 주문은 마나 대신 생명력을 비용으로 사용합니다.",
-    "nativeTextBuilder": 0
+    "nativeTextBuilder": 0,
+    "releasedAt": "2017-04-07",
+    "releaseStatus": "verified"
   },
   "nativeTagsTimelineStatus": "partial",
   "historyIncompleteFields": [
