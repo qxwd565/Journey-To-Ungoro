@@ -44,8 +44,8 @@
     ],
     "nativeRawText": "<b>운고로를 향한 여정</b> 카드 5장을\n내 손으로 가져옵니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [],
     "initialSpecStatus": "unverified",
     "patchSources": {}
