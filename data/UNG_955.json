@@ -15,7 +15,6 @@
     "rarity": "EPIC",
     "race": "",
     "races": [],
-    "spellSchool": "",
     "cost": 6,
     "attack": 0,
     "health": 0,
@@ -64,6 +63,12 @@
     "releaseStatus": "verified",
     "patches": [
       {
+        "date": "2021-03-26",
+        "changes": {
+          "spellSchool": "FIRE"
+        }
+      },
+      {
         "date": "2023-10-18",
         "changes": {
           "text": "하수인에게\\n피해를 $15 주고\\n그 양옆의 하수인들에게\\n피해를 $4 줍니다."
@@ -72,7 +77,8 @@
     ],
     "initialSpecStatus": "unverified",
     "patchSources": {
-      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+      "2021-03-26": "https://hearthstone.blizzard.com/ko-kr/news/23642550"
     }
   },
   "root": true,
