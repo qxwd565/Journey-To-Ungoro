@@ -6,7 +6,7 @@
     "id": "UNG_022",
     "dbfId": 41155,
     "name": "신기루 소환사",
-    "text": "<b>전투의 함성:</b> 하수인을 선택합니다. 그 하수인을 복사하여 1/1 하수인으로 소환합니다.",
+    "text": "<b>전투의 함성:</b> 아군 하수인을 선택합니다. 그 하수인을 복사하여 1/1 하수인으로 소환합니다.",
     "type": "MINION",
     "cardClass": "PRIEST",
     "classes": [],
@@ -72,9 +72,18 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "text": "<b>전투의 함성:</b> 하수인을 선택합니다. 그 하수인을 복사하여 1/1 하수인으로 소환합니다."
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    }
   },
   "root": true,
   "relatedIds": [],
