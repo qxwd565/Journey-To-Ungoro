@@ -26,11 +26,6 @@
         "value": 5
       },
       {
-        "id": 183,
-        "name": "CARD_SET",
-        "value": 27
-      },
-      {
         "id": 199,
         "name": "직업",
         "value": 8
@@ -71,11 +66,13 @@
     "flavor": "많은 수습 주술사들은 첫 번째 과제로 화산을 소환합니다."
   },
   "references": {
-    "entourageCardIds": [],
-    "powerDefinitions": [
-      "be1a74c0-a313-4ab2-9388-c3b3416bf362"
-    ],
-    "triggeredPowerHistory": []
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "be1a74c0-a313-4ab2-9388-c3b3416bf362"
+      ],
+      "triggeredPowerHistory": []
+    }
   },
   "currentReferenceTags": [],
   "current": {
@@ -153,6 +150,10 @@
     {
       "field": "rarity",
       "reason": "CardDefs baseline is EPIC while current cache is RARE; no dated rarity-change source is present."
+    },
+    {
+      "field": "nativeTextBuilder",
+      "reason": "The current client cache contains nativeTextBuilder=0, but the CardDefs 18336 baseline does not expose this field; no dated introduction/change evidence is available."
     }
   ],
   "2021-03-26": {
@@ -162,11 +163,6 @@
         "id": 48,
         "name": "마나 비용",
         "value": 5
-      },
-      {
-        "id": 183,
-        "name": "CARD_SET",
-        "value": 27
       },
       {
         "id": 199,
@@ -223,11 +219,6 @@
         "value": 5
       },
       {
-        "id": 183,
-        "name": "CARD_SET",
-        "value": 27
-      },
-      {
         "id": 199,
         "name": "직업",
         "value": 8
@@ -271,5 +262,14 @@
     "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
     "confidence": "high",
     "note": "과부하 (2)→(1) 텍스트 변경. 자체 TAG 215도 2→1로 동기화."
-  }
+  },
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }
