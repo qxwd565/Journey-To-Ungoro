@@ -272,6 +272,7 @@ def normalize_date_keyed_source(data: dict, record: dict):
         "currentCache": current_cache,
         "currentReferenceTags": current_reference_tags,
         "historyIncompleteFields": data.get("historyIncompleteFields", []),
+        "historyKnownFields": data.get("historyKnownFields", []),
         "nativeTagsTimelineStatus": data.get("nativeTagsTimelineStatus", "partial"),
     })
     return card
