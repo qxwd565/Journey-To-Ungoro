@@ -6,7 +6,7 @@
     "id": "UNG_914",
     "dbfId": 41357,
     "name": "새끼 랩터",
-    "text": "<b>죽음의 메아리:</b> 4/5 랩터를 내 덱에 섞어 넣습니다.",
+    "text": "<b>죽음의_메아리:</b> 4/3 랩터를 내 덱에 섞어 넣습니다.",
     "type": "MINION",
     "cardClass": "HUNTER",
     "classes": [],
@@ -84,9 +84,18 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "text": "<b>죽음의 메아리:</b> 4/5 랩터를 내 덱에 섞어 넣습니다."
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    }
   },
   "root": true,
   "relatedIds": [
