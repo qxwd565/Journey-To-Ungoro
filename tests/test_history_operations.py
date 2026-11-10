@@ -83,6 +83,12 @@ class HistoryOperationsTest(unittest.TestCase):
         self.assertEqual(card["text"], "first<br></br>second")
         self.assertEqual(card["nativeRawText"], "first\\nsecond")
 
+    def test_type_inapplicable_zero_placeholders_are_ignored_in_history(self):
+        cache = {"type": "SPELL", "cost": 2, "attack": 0, "health": 0,
+                 "armor": 0, "durability": 0, "race": "", "races": [],
+                 "spellSchool": ""}
+        self.assertEqual(BUILD.normalize_history_cache(cache), {"type": "SPELL", "cost": 2})
+
     def test_date_keyed_source_normalizes_without_losing_current_cache(self):
         data = {
             "schemaVersion": 2, "id": "UNG_832", "dbfId": 41872,
