@@ -1,14 +1,13 @@
 # History operation contract (schema 1)
 
-Canonical dated card histories use forward events. An event has `date`, `changes`, and optional `remove`.
+Canonical dated card histories use forward events with `date`, `changes`, and optional `remove`.
 
-- A key omitted from both `changes` and `remove` is unchanged (inherit the previous value).
-- A key in `changes` is assigned exactly as supplied. The values `0`, `false`, `null`, `""`, and `[]` are ordinary values and MUST NOT mean deletion.
-- A key in `remove` is deleted from the state. It MUST NOT also occur in `changes`.
-- A key may be removed only if it exists immediately before the event. Re-adding it later is an ordinary assignment.
-- Empty `changes` is allowed only when `remove` is non-empty.
-- Events are strictly increasing by Korean-local calendar date (Asia/Seoul).
+- Omitted keys inherit the previous state.
+- Keys in `changes` are assigned exactly, including `0`, `false`, `null`, `""`, and `[]`.
+- Keys in `remove` are deleted. A key cannot appear in both operations; removing an absent key is invalid.
+- An event must contain at least one assignment or removal. Dates are strictly increasing Korea-local calendar dates (Asia/Seoul).
+- The allow-list includes gameplay fields and the native tag/raw-text fields required for historical taxonomy reconstruction.
 
-The operation is canonical/editor-facing only. It is never copied verbatim to `cards.json`, `render.json`, or `history.json`. Existing consumers continue to receive the established sparse reverse-override history shape. If an old consumer cannot represent a removed field without changing semantics, that card/date is held out of compatibility publication and reported as blocked; no empty-value sentinel is synthesized.
+This is a canonical internal format only. The builder does not expose `remove` to existing consumers. Reverse-override compatibility can represent value changes, but not a field that existed in the latest object and was absent in an earlier state. Such card/date histories are reported under `compatibilityBlocked` and omitted from legacy history publication rather than encoded as null, empty string, zero, or an empty array. Current card metadata remains published.
 
-Release policy distinguishes verified, estimated, and pending. Pending entries have `date: null`; candidate dates remain explanatory metadata and are never treated as playable dates.
+Release-policy entries with `status: pending` and `date: null` are not playable dates. Candidate dates are explanatory only.

@@ -35,7 +35,7 @@ DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 SPEC_FIELDS = (
     "name", "type", "cardClass", "classes", "rarity", "collectible",
     "cost", "attack", "health", "durability", "armor", "text",
-    "races", "race", "spellSchool", "mechanics",
+    "races", "race", "spellSchool", "mechanics", "nativeTags", "nativeRawText",
 )
 TAXONOMY_RULE = "taxonomy-introduction"
 RACE_KOREAN = {
@@ -221,18 +221,25 @@ def read_patches(card: dict, name: str) -> list[dict]:
         raise ValueError(f"{name}: patches must be an array")
     prev = card.get("releasedAt")
     for event in patches:
-        if not isinstance(event, dict) or set(event) != {"date", "changes"}:
+        if not isinstance(event, dict) or set(event) - {"date", "changes", "remove"} or not {"date", "changes"} <= set(event):
             raise ValueError(f"{name}: invalid forward patch shape")
         day, changes = event["date"], event["changes"]
+        remove = event.get("remove", [])
+        if not isinstance(remove, list) or any(not isinstance(k, str) for k in remove) or len(remove) != len(set(remove)):
+            raise ValueError(f"{name}: remove must be a unique list of field names")
+        if not isinstance(changes, dict) or any(not isinstance(k, str) for k in changes):
+            raise ValueError(f"{name}: changes must be an object")
+        if set(changes) & set(remove):
+            raise ValueError(f"{name}: a field cannot be assigned and removed together")
         if not isinstance(day, str) or not DATE_RE.fullmatch(day):
             raise ValueError(f"{name}: invalid patch date")
         from datetime import date
         date.fromisoformat(day)
         if prev is not None and day <= prev:
             raise ValueError(f"{name}: overlapping/unsorted patch dates {prev}, {day}")
-        if not isinstance(changes, dict) or not changes:
-            raise ValueError(f"{name}: empty changes on {day}")
-        if set(changes) - (set(SPEC_FIELDS) | {"legacyArt"}):
+        if not changes and not remove:
+            raise ValueError(f"{name}: empty operation on {day}")
+        if (set(changes) | set(remove)) - (set(SPEC_FIELDS) | {"legacyArt"}):
             raise ValueError(f"{name}: unknown gameplay patch field")
         prev = day
     return patches
@@ -247,10 +254,12 @@ def publish_forward_card(card: dict, current: dict, name: str):
     states = [base]
     for event in patches:
         next_state = copy.deepcopy(states[-1])
-        for field, value in event["changes"].items():
+        for field in event.get("remove", []):
             if field not in next_state:
-                raise ValueError(f"{name}: {field} changed but no release baseline")
-            if next_state[field] == value:
+                raise ValueError(f"{name}: cannot remove absent field {field} on {event['date']}")
+            del next_state[field]
+        for field, value in event["changes"].items():
+            if field in next_state and next_state[field] == value:
                 raise ValueError(f"{name}: redundant patch for {field} on {event['date']}")
             next_state[field] = copy.deepcopy(value)
         states.append(next_state)
@@ -261,10 +270,17 @@ def publish_forward_card(card: dict, current: dict, name: str):
         else:
             current.pop(field, None)
     backward = []
+    compatibility_blocked = []
     for i, event in enumerate(patches):
         old = states[i]
+        # Legacy reverse-override clients cannot express deleting a field from
+        # the current object. Never fake deletion with null/empty/zero values.
+        introduced = sorted(set(latest) - set(old))
+        if introduced:
+            compatibility_blocked.append({"date": event["date"], "fields": introduced})
+            continue
         differences = {field: copy.deepcopy(value) for field, value in old.items()
-                       if value != latest.get(field)}
+                       if field in latest and value != latest[field]}
         if not differences:
             continue
         start = card.get("releasedAt") if i == 0 else patches[i - 1]["date"]
@@ -272,7 +288,7 @@ def publish_forward_card(card: dict, current: dict, name: str):
         if start:
             revision["from"] = start
         backward.append(revision)
-    return backward
+    return backward, compatibility_blocked
 
 
 def main():
@@ -288,6 +304,7 @@ def main():
         raise ValueError("Release dates must use Korea (Asia/Seoul)")
     release_counts = {"verified": 0, "estimated": 0, "pending": 0}
     changed_individual = 0
+    compatibility_blocked = []
     history = {}
     renderer = []
     seen = set()
@@ -314,7 +331,9 @@ def main():
             if "patches" in card:
                 if "history" in card:
                     raise ValueError(f"{cid}: forward patches cannot coexist with legacy reverse history")
-                revisions = publish_forward_card(card, record, cid)
+                revisions, blocked = publish_forward_card(card, record, cid)
+                if blocked:
+                    compatibility_blocked.append({"id": cid, "events": blocked})
             else:
                 # Transitional support for un-migrated cards only.
                 revisions = read_history(card, cid)
@@ -361,6 +380,7 @@ def main():
         "datedCards": len(history),
         "published": changed, "releaseDates": release_counts,
         "individualCardsUpdated": changed_individual,
+        "compatibilityBlocked": compatibility_blocked,
     }, ensure_ascii=False))
 
 if __name__ == "__main__":
