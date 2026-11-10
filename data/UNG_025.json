@@ -6,7 +6,7 @@
     "id": "UNG_025",
     "dbfId": 41159,
     "name": "화산",
-    "text": "<b>모든</b> 하수인에게 $15의 피해를 무작위로 나누어 입힙니다.\n<b>과부하:</b> (1)",
+    "text": "<b>모든</b> 하수인에게 $15의 피해를 무작위로 나누어 입힙니다.\\n<b>과부하:</b> (2)",
     "type": "SPELL",
     "cardClass": "SHAMAN",
     "classes": [],
@@ -74,15 +74,15 @@
     "releaseStatus": "verified",
     "patches": [
       {
-        "date": "2021-03-26",
+        "date": "2023-10-18",
         "changes": {
-          "spellSchool": "FIRE"
+          "text": "<b>모든</b> 하수인에게 $15의 피해를 무작위로 나누어 입힙니다.\\n<b>과부하:</b> (1)"
         }
       }
     ],
     "initialSpecStatus": "unverified",
     "patchSources": {
-      "2021-03-26": "taxonomy introduction"
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
     }
   },
   "root": true,
