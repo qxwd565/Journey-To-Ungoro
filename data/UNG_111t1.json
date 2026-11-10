@@ -64,8 +64,8 @@
     ],
     "nativeRawText": "<b>죽음의 메아리:</b> 빈 마나 수정을 얻습니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [],
     "initialSpecStatus": "unverified",
     "patchSources": {}
