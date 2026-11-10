@@ -10,7 +10,7 @@
     "path": "CardDefs.xml",
     "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
   },
-  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "dateMeaning": "2017-04-04 is a CardDefs source snapshot date, not a playable date; first playable date is 2017-04-07.",
   "2017-04-07": {
     "name": "여왕 자바스",
     "type": "MINION",
@@ -107,23 +107,23 @@
   },
   "currentReferenceTags": [],
   "current": {
+    "id": "UNG_836",
+    "dbfId": 41876,
     "name": "여왕 자바스",
     "type": "MINION",
     "cardClass": "WARLOCK",
-    "classes": [],
     "rarity": "LEGENDARY",
     "collectible": true,
     "cost": 2,
+    "text": "이 하수인을 버릴 때마다<br></br>+2/+2를 부여하고<br></br>내 손으로 다시 가져옵니다.",
     "attack": 2,
     "health": 2,
     "durability": 0,
     "armor": 0,
-    "text": "이 하수인을 버릴 때마다<br></br>+2/+2를 부여하고<br></br>내 손으로 다시 가져옵니다.",
-    "races": [
-      "BEAST"
-    ],
-    "race": "야수",
+    "flavor": "그녀를 버리는 건 그녀를 강하게 만들 뿐입니다.",
     "spellSchool": "",
+    "portrait": "HS10-133_D.psd:7dba3e5f9abea64439f8f53dca36c830",
+    "set": "UNGORO",
     "nativeTags": [
       {
         "id": 45,
@@ -176,37 +176,37 @@
         "value": 1
       }
     ],
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "classes": [],
+    "art": "art/UNG_836.png",
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
     "nativeRawText": "[x]이 하수인을 버릴 때마다\n+2/+2를 부여하고\n내 손으로 다시 가져옵니다.",
     "nativeTextBuilder": 0
   },
-  "historyIncompleteFields": [
-    "nativeTextBuilder",
-    "classes",
-    "durability",
-    "armor",
-    "spellSchool"
+  "root": true,
+  "relatedIds": [],
+  "englishName": "Clutchmother Zavas",
+  "expansion": {
+    "id": 27,
+    "slug": "journey-to-ungoro",
+    "name": "운고로를 향한 여정",
+    "type": "expansion",
+    "englishName": "Journey To Ungoro"
+  },
+  "setOrder": 34,
+  "formats": [
+    "wild"
   ],
-  "historyKnownFields": [],
-  "unresolvedSourceFields": [
-    {
-      "field": "classes",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "durability",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "armor",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    },
-    {
-      "field": "spellSchool",
-      "reason": "Baseline에 없는 current 필드이며 최초 도입일 미확정."
-    }
-  ],
+  "provenance": {
+    "source": "Installed Hearthstone dbf.unity3d",
+    "gameVersion": "6000.3.11.3145967",
+    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+    "locale": "koKR"
+  },
   "referenceTags": [
     {
       "id": 183,
@@ -216,28 +216,15 @@
       "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
     }
   ],
-  "nativeTagsTimelineStatus": "partial",
-  "relatedIds": [],
-  "catalogMetadata": {
-    "englishName": "Clutchmother Zavas",
-    "root": true,
-    "expansion": {
-      "id": 27,
-      "slug": "journey-to-ungoro",
-      "name": "운고로를 향한 여정",
-      "type": "expansion",
-      "englishName": "Journey To Ungoro"
-    },
-    "setOrder": 34,
-    "formats": [
-      "wild"
-    ],
-    "provenance": {
-      "source": "Installed Hearthstone dbf.unity3d",
-      "gameVersion": "6000.3.11.3145967",
-      "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-      "locale": "koKR"
-    },
-    "portrait": "HS10-133_D.psd:7dba3e5f9abea64439f8f53dca36c830"
-  }
+  "nativeTagsTimelineStatus": "complete",
+  "historyKnownFields": [],
+  "historyIncompleteFields": [
+    "nativeTextBuilder"
+  ],
+  "unresolvedSourceFields": [
+    {
+      "field": "nativeTextBuilder",
+      "reason": "도입일 미확정이므로 current cache에만 보존."
+    }
+  ]
 }
