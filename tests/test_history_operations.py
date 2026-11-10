@@ -869,7 +869,7 @@ class HistoryOperationsTest(unittest.TestCase):
         thorns = BUILD.load(ROOT / "data" / "UNG_952.json")
         self.assertNotIn(190, BUILD.native_tag_values(thorns["2017-04-07"]))
         self.assertNotIn(217, BUILD.native_tag_values(thorns["2017-04-07"]))
-        self.assertNotIn("nativeTagUpdates", thorns["2025-03-19"])
+        self.assertEqual(thorns["2025-03-19"]["nativeTagUpdates"], [{"id": 48, "value": 5}])
         for cid, tag_id in (("UNG_934", 190), ("UNG_940", 217),
                             ("UNG_952", 190), ("UNG_952", 217),
                             ("UNG_999t2", 217), ("UNG_999t6", 190)):
