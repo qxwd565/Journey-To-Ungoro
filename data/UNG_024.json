@@ -15,7 +15,7 @@
     "name": "마나 결속",
     "type": "SPELL",
     "cardClass": "MAGE",
-    "rarity": "EPIC",
+    "rarity": "RARE",
     "collectible": true,
     "cost": 3,
     "text": "<b>비밀:</b> 상대편이 주문을<br></br>시전하면, 그 주문을 복사하여<br></br>내 손으로 가져옵니다.<br></br>그 주문의 비용이 (0)이 됩니다.",
@@ -128,10 +128,6 @@
   "nativeTagsTimelineStatus": "complete",
   "historyIncompleteFields": [],
   "unresolvedSourceFields": [
-    {
-      "field": "rarity",
-      "reason": "CardDefs baseline is EPIC while current cache is RARE; no dated rarity-change source is present."
-    },
     {
       "field": "nativeTextBuilder",
       "reason": "The current client cache contains nativeTextBuilder=0, but the CardDefs 18336 baseline does not expose this field; no dated introduction/change evidence is available."
