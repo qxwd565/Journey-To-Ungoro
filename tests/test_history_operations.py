@@ -1114,6 +1114,29 @@ class HistoryOperationsTest(unittest.TestCase):
                 self.assertIsNone(source["current"]["releasedAt"], cid)
 
 
+    def test_all_185_cards_preserve_original_stable_top_level_metadata(self):
+        manifest = BUILD.load(ROOT / "sources" / "card-metadata-baseline.json")
+        self.assertEqual(
+            manifest["sourceCommit"],
+            "9f603273aa2a03a57fe9066927090818ada4af31",
+        )
+        paths = sorted((ROOT / "data").glob("UNG_*.json"))
+        self.assertEqual(len(paths), 185)
+        self.assertEqual(
+            {path.stem for path in paths},
+            set(manifest["cards"]),
+        )
+        expected_mode_count = sum(
+            "mode" in metadata for metadata in manifest["cards"].values()
+        )
+        self.assertEqual(expected_mode_count, 149)
+        for path in paths:
+            source = BUILD.load(path)
+            for field, expected in manifest["cards"][path.stem].items():
+                self.assertIn(field, source, f"{path.stem}:{field}")
+                self.assertEqual(source[field], expected, f"{path.stem}:{field}")
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
 
