@@ -16,7 +16,7 @@
     "race": "",
     "races": [],
     "spellSchool": "",
-    "cost": 2,
+    "cost": 3,
     "attack": 0,
     "health": 0,
     "armor": 0,
@@ -69,15 +69,15 @@
     "releaseStatus": "verified",
     "patches": [
       {
-        "date": "2021-03-26",
+        "date": "2023-10-18",
         "changes": {
-          "spellSchool": "NATURE"
+          "cost": 2
         }
       }
     ],
     "initialSpecStatus": "unverified",
     "patchSources": {
-      "2021-03-26": "taxonomy introduction"
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
     }
   },
   "root": true,
