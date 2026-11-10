@@ -22,7 +22,7 @@
         "attack": 2,
         "health": 2,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b> <b>적응</b>",
@@ -102,7 +102,7 @@
         "attack": 5,
         "health": 6,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b> <b>적응</b>한 후, 다시 <b>적응</b>합니다.",
@@ -249,7 +249,7 @@
         "attack": 2,
         "health": 2,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b> 내 전장에 다른 하수인이 둘 이상 있으면, <b>적응</b>합니다.",
@@ -330,7 +330,7 @@
         "attack": 5,
         "health": 7,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>죽음의 메아리:</b><br></br>1/1 멀록을<br></br>3마리 소환합니다.",
@@ -412,7 +412,7 @@
         "attack": 2,
         "health": 2,
         "races": [
-          "BEAST"
+          "MURLOC"
         ],
         "race": "멀록",
         "text": "<b>전투의 함성:</b><br></br>비밀 카드를<br></br>1장 <b>발견</b>합니다.",
@@ -1916,7 +1916,7 @@
         "attack": 4,
         "health": 4,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b> 아군<br></br>하수인 하나를 처치하고,<br></br>2번 <b>적응</b>합니다.",
@@ -2905,7 +2905,7 @@
         "attack": 6,
         "health": 10,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>도발</b>",
@@ -3062,7 +3062,7 @@
         "attack": 2,
         "health": 3,
         "races": [
-          "BEAST"
+          "MURLOC"
         ],
         "race": "멀록",
         "text": "<b>전투의 함성:</b><br></br>아군 멀록 1마리에게<br></br>+1/+1을 부여합니다.",
@@ -3142,7 +3142,7 @@
         "attack": 3,
         "health": 3,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "이 하수인은 영웅을 공격한 후에 <b>적응</b>합니다.",
@@ -3295,7 +3295,7 @@
         "attack": 1,
         "health": 1,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "",
@@ -3509,7 +3509,7 @@
         "attack": 3,
         "health": 3,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b> 내가 이전 턴에 정령을 냈다면, <b>적응</b>합니다.",
@@ -3665,7 +3665,7 @@
         "attack": 5,
         "health": 5,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "",
@@ -3804,7 +3804,7 @@
         "attack": 2,
         "health": 3,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "내 하수인들의 비용이<br></br>(2) 증가합니다.",
@@ -3894,7 +3894,7 @@
         "attack": 5,
         "health": 3,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>죽음의 메아리:</b> 내 손에 있는 공격력이 5 이상인 하수인 하나를 소환합니다.",
@@ -3976,7 +3976,7 @@
         "attack": 8,
         "health": 8,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "이 하수인은 피해를 입을 때마다 내 영웅에게 피해를 3 줍니다.",
@@ -4129,7 +4129,7 @@
         "attack": 5,
         "health": 4,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b> 내 멀록들을 <b>적응</b>시킵니다.",
@@ -4210,7 +4210,7 @@
         "attack": 7,
         "health": 7,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>돌진</b>, <b>전투의 함성:</b><br></br>이번 턴에 영웅을<br></br>공격할 수 없습니다.",
@@ -4296,7 +4296,7 @@
         "attack": 5,
         "health": 4,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b> <b>적응</b>",
@@ -4528,7 +4528,7 @@
         "attack": 5,
         "health": 3,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>은신</b>",
@@ -4601,7 +4601,7 @@
         "attack": 3,
         "health": 5,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>도발</b>",
@@ -4674,7 +4674,7 @@
         "attack": 5,
         "health": 5,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>은신</b><br></br><b>도발</b>",
@@ -4875,7 +4875,7 @@
         "attack": 5,
         "health": 1,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b> 내 손에 공격력이 5 이상인 하수인이 있으면, <b>적응</b>합니다.",
@@ -5230,7 +5230,7 @@
         "attack": 8,
         "health": 8,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b><br></br>내 덱에 있는 하수인들의<br></br>비용이 (0)이 됩니다.",
@@ -5383,7 +5383,7 @@
         "attack": 1,
         "health": 1,
         "races": [
-          "BEAST"
+          "MURLOC"
         ],
         "race": "멀록",
         "text": "",
@@ -6128,7 +6128,7 @@
         "attack": 4,
         "health": 7,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b><br></br>내 전장에 다른 하수인이 둘 이상 있으면, <b>도발</b>을 얻습니다.",
@@ -6209,7 +6209,7 @@
         "attack": 2,
         "health": 1,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b> 각 영웅에게 피해를 1씩 줍니다.",
@@ -6289,7 +6289,7 @@
         "attack": 7,
         "health": 14,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "",
@@ -6376,7 +6376,7 @@
         "attack": 2,
         "health": 3,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b><br></br>해적 하나를 처치하고<br></br>+1/+1을 얻습니다.",
@@ -6471,7 +6471,7 @@
         "attack": 1,
         "health": 2,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>도발</b><br></br><b>독성</b>",
@@ -6726,7 +6726,7 @@
         "attack": 2,
         "health": 6,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>도발</b>",
@@ -6821,7 +6821,7 @@
         "attack": 8,
         "health": 2,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>은신</b>",
@@ -6996,7 +6996,7 @@
         "attack": 2,
         "health": 2,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>은신</b><br></br><b>독성</b>",
@@ -8028,7 +8028,7 @@
         "attack": 1,
         "health": 1,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "",
@@ -8089,7 +8089,7 @@
         "attack": 3,
         "health": 3,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b> 주문을 하나 <b>발견</b>합니다. 그 카드의 비용만큼 내 영웅에게 피해를 줍니다.",
@@ -8169,7 +8169,7 @@
         "attack": 2,
         "health": 2,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "이 하수인을 버릴 때마다<br></br>+2/+2를 부여하고<br></br>내 손으로 다시 가져옵니다.",
@@ -8824,7 +8824,7 @@
         "attack": 4,
         "health": 8,
         "races": [
-          "QUILBOAR"
+          "DRAGON"
         ],
         "race": "용족",
         "text": "<b>도발</b>, <b>전투의 함성:</b><br></br>다른 <b>모든</b> 하수인에게 피해를 2 줍니다.",
@@ -9027,7 +9027,7 @@
         "attack": 12,
         "health": 12,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "이 하수인은 주문이나 영웅 능력의 대상으로 지정되지 않습니다.",
@@ -9460,7 +9460,7 @@
         "attack": 1,
         "health": 1,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b><br></br>무작위 야수 카드 1장을<br></br>내 손으로 가져옵니다.",
@@ -9611,7 +9611,7 @@
         "attack": 2,
         "health": 1,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>죽음의 메아리:</b><br></br>4/3 랩터 1마리를<br></br>내 덱에 섞어 넣습니다.",
@@ -9691,7 +9691,7 @@
         "attack": 4,
         "health": 3,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "",
@@ -9752,7 +9752,7 @@
         "attack": 3,
         "health": 2,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b> 아군 야수 1마리를 <b>적응</b>시킵니다.",
@@ -9979,7 +9979,7 @@
         "attack": 9,
         "health": 9,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "상대편이 하수인을 낸 후에,<br></br>그 하수인을 공격합니다.",
@@ -10144,7 +10144,7 @@
         "attack": 8,
         "health": 8,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b><br></br>랩터 15마리를<br></br>내 덱에 섞어 넣습니다.",
@@ -10221,7 +10221,7 @@
         "attack": 3,
         "health": 2,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b><br></br>카드를 1장 뽑습니다.",
@@ -10444,7 +10444,7 @@
         "attack": 5,
         "health": 5,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>도발</b><br></br><b>전투의 함성:</b> <b>적응</b>",
@@ -10815,7 +10815,7 @@
         "attack": 9,
         "health": 7,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b><br></br>피해를 입은 <b>모든</b> 하수인을 처치합니다.",
@@ -11094,7 +11094,7 @@
         "attack": 3,
         "health": 2,
         "races": [
-          "BEAST"
+          "MURLOC"
         ],
         "race": "멀록",
         "text": "<b>전투의 함성:</b> 내 전장에 다른 멀록이 있으면, 멀록을 1마리 <b>발견</b>합니다.",
@@ -11546,7 +11546,7 @@
         "attack": 8,
         "health": 8,
         "races": [
-          "BEAST"
+          "MURLOC"
         ],
         "race": "멀록",
         "text": "<b>전투의 함성:</b> 내 손이 다 찰 때까지 무작위 멀록을 내 손으로 가져옵니다.",
@@ -11886,7 +11886,7 @@
         "attack": 1,
         "health": 2,
         "races": [
-          "BEAST"
+          "MURLOC"
         ],
         "race": "멀록",
         "text": "<b>죽음의 메아리:</b><br></br>내가 이 하수인에게<br></br>시전한 모든 주문을 내 손으로 가져옵니다.",
@@ -12058,7 +12058,7 @@
         "attack": 5,
         "health": 5,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b><br></br>5번 <b>적응</b>합니다.",
@@ -12243,7 +12243,7 @@
         "attack": 3,
         "health": 6,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>도발</b>, <b>죽음의 메아리:</b><br></br><b>도발</b> 능력이 있는<br></br>6/9 공포뿔 1마리를<br></br>내 덱에 섞어 넣습니다.",
@@ -12329,7 +12329,7 @@
         "attack": 6,
         "health": 9,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>도발</b>",
@@ -12514,7 +12514,7 @@
         "attack": 3,
         "health": 4,
         "races": [
-          "PIRATE"
+          "BEAST"
         ],
         "race": "야수",
         "text": "<b>전투의 함성:</b> 내 은빛 성기사단 신병들을 <b>적응</b>시킵니다.",

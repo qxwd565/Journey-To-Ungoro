@@ -114,6 +114,12 @@ def validate_baseline_enum_mappings(baseline: dict) -> dict:
                 f"{cid}: CardDefs race={state['race']!r} disagrees with "
                 f"CARDRACE={tags[200]} (expected {expected_race!r})"
             )
+        expected_races = [RACE_BY_TAG[tags[200]]] if tags.get(200) in RACE_BY_TAG else []
+        if tags.get(200) in RACE_BY_TAG and "races" in state and state.get("races", []) != expected_races:
+            raise ValueError(
+                f"{cid}: CardDefs races={state.get('races')!r} disagrees with "
+                f"CARDRACE={tags.get(200)!r} (expected {expected_races!r})"
+            )
         if expected_race is not None and state.get("race"):
             counts["race"] += 1
     return counts

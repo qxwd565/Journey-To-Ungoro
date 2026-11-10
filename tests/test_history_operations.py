@@ -365,3 +365,24 @@ class HistoryOperationsTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main(verbosity=2)
+
+
+    def test_all_baseline_races_match_native_tag_200(self):
+        baseline = BUILD.load(ROOT / "sources" / "carddefs-18336-baseline.json")
+        expected = {14: "MURLOC", 20: "BEAST", 24: "DRAGON"}
+        checked = 0
+        for cid, entry in baseline["cards"].items():
+            state = entry["state"]
+            tags = BUILD.native_tag_values(state)
+            if tags.get(200) in expected:
+                self.assertEqual(state.get("races"), [expected[tags[200]]], cid)
+                checked += 1
+        self.assertEqual(checked, 53)
+
+    def test_baseline_race_conversion_regressions_are_rejected(self):
+        baseline = {"cards": {"BAD": {"state": {
+            "race": "야수", "races": ["PIRATE"],
+            "nativeTags": [{"id": 200, "value": 20}]
+        }}}}
+        with self.assertRaisesRegex(ValueError, "races=.*CARDRACE"):
+            BUILD.validate_baseline_enum_mappings(baseline)
