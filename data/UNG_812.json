@@ -1,33 +1,131 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Sabretooth Stalker",
-  "card": {
-    "id": "UNG_812",
-    "dbfId": 41415,
+  "schemaVersion": 2,
+  "id": "UNG_812",
+  "dbfId": 41415,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "서슬니 호랑이",
-    "text": "<b>은신</b>",
     "type": "MINION",
     "cardClass": "NEUTRAL",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "COMMON",
-    "race": "야수",
-    "races": [
-      "BEAST"
-    ],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 6,
     "attack": 8,
     "health": 2,
-    "armor": 0,
-    "durability": 0,
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "text": "<b>은신</b>",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 2
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 8
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 6
+      },
+      {
+        "id": 191,
+        "name": "은신",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 20
+      },
+      {
+        "id": 201,
+        "name": "진영",
+        "value": 3
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 1
+      },
+      {
+        "id": 251,
+        "name": "게임 태그 251",
+        "value": 6
+      },
+      {
+        "id": 268,
+        "name": "게임 태그 268",
+        "value": 2
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>은신</b>",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "9ae279b5-5434-4857-9145-14902ec995ac"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "저런, 덧니가 심하게 나셨네요."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "9ae279b5-5434-4857-9145-14902ec995ac"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "서슬니 호랑이",
+    "type": "MINION",
+    "cardClass": "NEUTRAL",
+    "classes": [],
+    "rarity": "COMMON",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-145_D.psd:4cd8b65f272132242a3ce2c0ae12e118",
-    "flavor": "저런, 덧니가 심하게 나셨네요.",
+    "cost": 6,
+    "attack": 8,
+    "health": 2,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>은신</b>",
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -95,31 +193,73 @@
         "value": 1
       }
     ],
-    "nativeRawText": "<b>은신</b>",
-    "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
-    "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "nativeRawText": "<b>은신</b>",
+    "nativeTextBuilder": 0
   },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "historyIncompleteFields": [
+    "nativeTextBuilder",
+    "classes",
+    "durability",
+    "armor",
+    "spellSchool",
+    "nativeTags"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [
+    {
+      "field": "classes",
+      "reason": "2017-04-04 CardDefs baseline에 없고 현재 캐시에만 존재하지만 최초 도입일이 입증되지 않음."
+    },
+    {
+      "field": "durability",
+      "reason": "2017-04-04 CardDefs baseline에 없고 현재 캐시에만 존재하지만 최초 도입일이 입증되지 않음."
+    },
+    {
+      "field": "armor",
+      "reason": "2017-04-04 CardDefs baseline에 없고 현재 캐시에만 존재하지만 최초 도입일이 입증되지 않음."
+    },
+    {
+      "field": "spellSchool",
+      "reason": "2017-04-04 CardDefs baseline에 없고 현재 캐시에만 존재하지만 최초 도입일이 입증되지 않음."
+    },
+    {
+      "field": "nativeTags",
+      "reason": "최초 태그와 현재 태그의 차이 중 날짜가 입증되지 않은 부분은 미確定으로 유지."
+    }
+  ],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ],
+  "nativeTagsTimelineStatus": "partial",
+  "relatedIds": [],
+  "catalogMetadata": {
+    "englishName": "Sabretooth Stalker",
+    "root": true,
+    "expansion": {
+      "id": 27,
+      "slug": "journey-to-ungoro",
+      "name": "운고로를 향한 여정",
+      "type": "expansion",
+      "englishName": "Journey To Ungoro"
+    },
+    "setOrder": 34,
+    "formats": [
+      "wild"
+    ],
+    "provenance": {
+      "source": "Installed Hearthstone dbf.unity3d",
+      "gameVersion": "6000.3.11.3145967",
+      "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+      "locale": "koKR"
+    },
+    "portrait": "HS10-145_D.psd:4cd8b65f272132242a3ce2c0ae12e118"
   }
 }
