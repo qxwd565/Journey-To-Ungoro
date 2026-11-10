@@ -6,21 +6,16 @@
     "id": "UNG_101a",
     "dbfId": 40977,
     "name": "랩터 형상",
-    "text": "<b>은신</b>",
-    "type": "MINION",
+    "text": "공격력 +2, <b>은신</b>",
+    "type": "SPELL",
     "cardClass": "DRUID",
     "classes": [],
     "nativeSetId": 27,
     "set": "UNGORO",
     "rarity": "RARE",
-    "race": "야수",
-    "races": [
-      "BEAST"
-    ],
+    "race": "",
+    "races": [],
     "spellSchool": "",
-    "cost": 4,
-    "attack": 5,
-    "health": 3,
     "armor": 0,
     "durability": 0,
     "collectible": false,
@@ -29,21 +24,6 @@
     "portrait": "HS10-003_S.psd:81e412d807ea60847a08ff7c22e6bebc",
     "flavor": "",
     "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 3
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 5
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 4
-      },
       {
         "id": 191,
         "name": "은신",
@@ -55,14 +35,9 @@
         "value": 2
       },
       {
-        "id": 200,
-        "name": "종족",
-        "value": 20
-      },
-      {
         "id": 202,
         "name": "카드 유형",
-        "value": 4
+        "value": 5
       },
       {
         "id": 203,
@@ -70,13 +45,73 @@
         "value": 3
       }
     ],
-    "nativeRawText": "<b>은신</b>",
+    "nativeRawText": "공격력 +2, <b>은신</b>",
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2018-11-30",
+        "changes": {
+          "type": "MINION",
+          "text": "<b>은신</b>",
+          "nativeRawText": "<b>은신</b>",
+          "cost": 4,
+          "attack": 5,
+          "health": 3,
+          "race": "야수",
+          "races": [
+            "BEAST"
+          ],
+          "nativeTags": [
+            {
+              "id": 45,
+              "name": "생명력",
+              "value": 3
+            },
+            {
+              "id": 47,
+              "name": "공격력",
+              "value": 5
+            },
+            {
+              "id": 48,
+              "name": "마나 비용",
+              "value": 4
+            },
+            {
+              "id": 191,
+              "name": "은신",
+              "value": 1
+            },
+            {
+              "id": 199,
+              "name": "직업",
+              "value": 2
+            },
+            {
+              "id": 200,
+              "name": "종족",
+              "value": 20
+            },
+            {
+              "id": 202,
+              "name": "카드 유형",
+              "value": 4
+            },
+            {
+              "id": 203,
+              "name": "희귀도",
+              "value": 3
+            }
+          ]
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2018-11-30": "https://hearthstone.blizzard.com/ko-kr/news/22788307"
+    }
   },
   "root": false,
   "relatedIds": [],
