@@ -71,8 +71,8 @@
     ],
     "nativeRawText": "[x]<b>전투의 함성:</b>\n내 덱에 있는 하수인들의\n비용이 (0)이 됩니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [],
     "initialSpecStatus": "unverified",
     "patchSources": {}
