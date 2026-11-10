@@ -55,20 +55,22 @@
       {
         "date": "2018-05-23",
         "changes": {
-          "text": "이번 게임 동안 내 하수인들의 능력치가 4/4가 됩니다."
+          "text": "이번 게임 동안 내 하수인들의 능력치가 4/4가 됩니다.",
+          "nativeRawText": "이번 게임 동안 내 하수인들의 능력치가 4/4가 됩니다."
         }
       },
       {
         "date": "2021-03-26",
         "changes": {
-          "text": "이번 게임 동안 내 하수인들의 능력치가 5/5가 됩니다."
+          "text": "이번 게임 동안 내 하수인들의 능력치가 5/5가 됩니다.",
+          "nativeRawText": "이번 게임 동안 내 하수인들의 능력치가 5/5가 됩니다."
         }
       }
     ],
     "initialSpecStatus": "partially_verified",
     "patchSources": {
       "2018-05-23": "https://hearthstone.blizzard.com/ko-kr/news/21758133/2018-5",
-      "2021-03-26": "https://hearthstone.blizzard.com/en-us/news/23642550"
+      "2021-03-26": "https://hearthstone.blizzard.com/ko-kr/news/23642550"
     }
   },
   "root": false,
