@@ -54,8 +54,8 @@
     ],
     "nativeRawText": "적 영웅에게 피해를 6 줍니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [],
     "initialSpecStatus": "unverified",
     "patchSources": {}
