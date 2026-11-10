@@ -1057,6 +1057,58 @@ class HistoryOperationsTest(unittest.TestCase):
             self.assertNotIn("armor", source["historyIncompleteFields"])
 
 
+
+    def test_final_thirty_six_ungoro_sources_preserve_baseline_and_full_current_cache(self):
+        ids = (
+            "UNG_809", "UNG_809t1", "UNG_810", "UNG_812", "UNG_813", "UNG_814",
+            "UNG_829", "UNG_829t2", "UNG_829t3", "UNG_834t1", "UNG_836", "UNG_840",
+            "UNG_844", "UNG_848", "UNG_851t1", "UNG_915", "UNG_920", "UNG_920t2",
+            "UNG_922", "UNG_923", "UNG_928", "UNG_934t1", "UNG_934t2", "UNG_938",
+            "UNG_940t8", "UNG_942t", "UNG_946", "UNG_960", "UNG_999t10",
+            "UNG_999t13", "UNG_999t14", "UNG_999t2t1", "UNG_999t3", "UNG_999t4",
+            "UNG_999t7", "UNG_999t8",
+        )
+        baseline = BUILD.load(ROOT / "sources" / "carddefs-18336-baseline.json")
+        catalog = BUILD.load(ROOT / "cards.json")
+        policy = BUILD.load(ROOT / "release-policy.json")
+        records = {x["id"]: x for x in catalog["cards"]}
+        self.assertEqual(len(ids), 36)
+        for cid in ids:
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            record = records[cid]
+            release = policy.get("cards", {}).get(cid, policy["default"])
+            initial_day = "2017-04-04" if release["status"] == "pending" else release["date"]
+            expected = dict(baseline["cards"][cid]["state"])
+            expected["nativeTags"] = [x for x in expected["nativeTags"] if x["id"] != 183]
+            self.assertEqual(source["schemaVersion"], 2, cid)
+            self.assertEqual(source["dbfId"], record["dbfId"], cid)
+            self.assertEqual(source[initial_day], expected, cid)
+            self.assertEqual(source["current"]["id"], cid)
+            self.assertEqual(source["current"]["dbfId"], record["dbfId"], cid)
+            for field, value in record.items():
+                self.assertEqual(source["current"].get(field), value, f"{cid}:{field}")
+            self.assertEqual(source["current"]["releaseStatus"], release["status"], cid)
+            self.assertEqual(source["current"]["releasedAt"], release["date"], cid)
+            self.assertEqual(source["current"]["nativeTextBuilder"], 0, cid)
+            self.assertNotIn("nativeTextBuilder", source[initial_day], cid)
+            self.assertEqual([x["id"] for x in source["referenceTags"]], [183], cid)
+            self.assertNotIn(183, BUILD.native_tag_values(source[initial_day]), cid)
+            self.assertEqual(source["historyKnownFields"], [], cid)
+            self.assertEqual(source["sourceBaseline"]["commitDate"], "2017-04-04", cid)
+            date_keys = sorted(k for k in source if BUILD.DATE_RE.fullmatch(k))
+            self.assertEqual(date_keys, [initial_day], cid)
+            card = BUILD.normalize_date_keyed_source(
+                source, {"id": cid, "releasedAt": record.get("releasedAt")}
+            )
+            patches, states = BUILD.replay_forward_states(card, cid)
+            self.assertEqual(patches, [], cid)
+            expected_replay = {k: v for k, v in expected.items() if k in BUILD.PATCH_FIELD_SET}
+            self.assertEqual(states, [expected_replay], cid)
+            if release["status"] == "pending":
+                self.assertEqual(initial_day, "2017-04-04", cid)
+                self.assertIsNone(source["current"]["releasedAt"], cid)
+
+
 if __name__ == "__main__":
     unittest.main(verbosity=2)
 
