@@ -1,33 +1,126 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Fire Fly",
-  "card": {
-    "id": "UNG_809",
-    "dbfId": 41323,
+  "schemaVersion": 2,
+  "id": "UNG_809",
+  "dbfId": 41323,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "반딧불 정령",
-    "text": "<b>전투의 함성:</b> 1/2 정령을 내 손으로 가져옵니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "COMMON",
-    "race": "정령",
-    "races": [
-      "ELEMENTAL"
-    ],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 1,
     "attack": 1,
     "health": 2,
-    "armor": 0,
-    "durability": 0,
+    "races": [
+      "ELEMENTAL"
+    ],
+    "race": "정령",
+    "text": "<b>전투의 함성:</b> 1/2 정령 하나를 내 손으로 가져옵니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 2
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 1
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 18
+      },
+      {
+        "id": 201,
+        "name": "진영",
+        "value": 2
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 1
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 251,
+        "name": "게임 태그 251",
+        "value": 6
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>전투의 함성:</b> 1/2 정령 하나를 내 손으로 가져옵니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-4fd1-4786-9a64-3de7b453ca1d"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "유리병을 든 아이들과는 오랜 숙적입니다."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-4fd1-4786-9a64-3de7b453ca1d"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "반딧불 정령",
+    "type": "MINION",
+    "cardClass": "NEUTRAL",
+    "classes": [],
+    "rarity": "COMMON",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-149_D.psd:01ee9d4bb5930eb44a0af97cba6134d4",
-    "flavor": "유리병을 든 아이들과는 오랜 숙적입니다.",
+    "cost": 1,
+    "attack": 1,
+    "health": 2,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>전투의 함성:</b> 1/2 정령을 내 손으로 가져옵니다.",
+    "races": [
+      "ELEMENTAL"
+    ],
+    "race": "정령",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -90,33 +183,80 @@
         "value": 42044
       }
     ],
-    "nativeRawText": "<b>전투의 함성:</b> 1/2 정령을 내 손으로 가져옵니다.",
-    "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
-    "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "nativeRawText": "<b>전투의 함성:</b> 1/2 정령을 내 손으로 가져옵니다.",
+    "nativeTextBuilder": 0
   },
-  "root": true,
+  "historyIncompleteFields": [
+    "nativeTextBuilder",
+    "classes",
+    "durability",
+    "armor",
+    "text",
+    "spellSchool",
+    "nativeTags"
+  ],
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [
+    {
+      "field": "classes",
+      "reason": "2017-04-04 CardDefs baseline에 필드가 없고 현재 캐시에는 존재하지만, 최초 도입일을 입증하는 자료가 없어 날짜 사건으로 만들지 않음."
+    },
+    {
+      "field": "durability",
+      "reason": "2017-04-04 CardDefs baseline에 필드가 없고 현재 캐시에는 존재하지만, 최초 도입일을 입증하는 자료가 없어 날짜 사건으로 만들지 않음."
+    },
+    {
+      "field": "armor",
+      "reason": "2017-04-04 CardDefs baseline에 필드가 없고 현재 캐시에는 존재하지만, 최초 도입일을 입증하는 자료가 없어 날짜 사건으로 만들지 않음."
+    },
+    {
+      "field": "text",
+      "reason": "최초 CardDefs 상태와 현재 캐시가 다르지만 변경일 근거가 없어 가짜 이력으로 기록하지 않음."
+    },
+    {
+      "field": "spellSchool",
+      "reason": "2017-04-04 CardDefs baseline에 필드가 없고 현재 캐시에는 존재하지만, 최초 도입일을 입증하는 자료가 없어 날짜 사건으로 만들지 않음."
+    },
+    {
+      "field": "nativeTags",
+      "reason": "최초 원시 태그와 현재 캐시 태그가 다르나 개별 도입·변경일이 입증되지 않은 태그는 날짜 이벤트에 소급하지 않음."
+    }
+  ],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ],
+  "nativeTagsTimelineStatus": "partial",
   "relatedIds": [
     42044
   ],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
+  "catalogMetadata": {
+    "englishName": "Fire Fly",
+    "root": true,
+    "expansion": {
+      "id": 27,
+      "slug": "journey-to-ungoro",
+      "name": "운고로를 향한 여정",
+      "type": "expansion",
+      "englishName": "Journey To Ungoro"
+    },
+    "setOrder": 34,
+    "formats": [
+      "wild"
+    ],
+    "provenance": {
+      "source": "Installed Hearthstone dbf.unity3d",
+      "gameVersion": "6000.3.11.3145967",
+      "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+      "locale": "koKR"
+    },
+    "portrait": "HS10-149_D.psd:01ee9d4bb5930eb44a0af97cba6134d4"
   }
 }
