@@ -95,6 +95,9 @@
     "initialSpecStatus": "unverified",
     "patchSources": {
       "2023-04-05": "https://hearthstone.blizzard.com/ko-kr/news/23934449"
+    },
+    "patchConfidence": {
+      "2023-04-05": "high"
     }
   },
   "root": true,
