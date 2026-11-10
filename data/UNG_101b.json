@@ -63,6 +63,11 @@
     ],
     "nativeTags": [
       {
+        "id": 183,
+        "name": "CARD_SET",
+        "value": 27
+      },
+      {
         "id": 45,
         "name": "생명력",
         "value": 5
@@ -171,7 +176,7 @@
     "releasedAt": null,
     "releaseStatus": "pending"
   },
-  "nativeTagsTimelineStatus": "partial",
+  "nativeTagsTimelineStatus": "complete",
   "historyIncompleteFields": [
     "collectible",
     "nativeTags"
