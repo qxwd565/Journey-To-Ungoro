@@ -26,11 +26,6 @@
         "value": 1
       },
       {
-        "id": 183,
-        "name": "CARD_SET",
-        "value": 27
-      },
-      {
         "id": 199,
         "name": "직업",
         "value": 6
@@ -56,9 +51,11 @@
     "flavor": "이 치유를 수락함으로써 다음 약관에 동의하고..."
   },
   "references": {
-    "entourageCardIds": [],
-    "powerDefinitions": [],
-    "triggeredPowerHistory": []
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [],
+      "triggeredPowerHistory": []
+    }
   },
   "currentReferenceTags": [],
   "current": {
@@ -114,14 +111,16 @@
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified"
   },
-  "nativeTagsTimelineStatus": "partial",
-  "historyIncompleteFields": [
-    "nativeTags"
-  ],
+  "nativeTagsTimelineStatus": "complete",
+  "historyIncompleteFields": [],
   "unresolvedSourceFields": [
     {
       "field": "text/nativeRawText",
       "reason": "CardDefs baseline wording differs from current client wording; no dated wording-change source is present."
+    },
+    {
+      "field": "nativeTextBuilder",
+      "reason": "The current client cache contains nativeTextBuilder=0, but the CardDefs 18336 baseline does not expose this field; no dated introduction/change evidence is available."
     }
   ],
   "2021-03-26": {
@@ -131,11 +130,6 @@
         "id": 48,
         "name": "마나 비용",
         "value": 1
-      },
-      {
-        "id": 183,
-        "name": "CARD_SET",
-        "value": 27
       },
       {
         "id": 199,
@@ -166,5 +160,14 @@
     "source": "https://hearthstone.blizzard.com/ko-kr/news/23642550",
     "confidence": "high",
     "note": "공식 주문 속성 도입일. spellSchool과 자체 TAG 1635를 동일 경계에서 추가."
-  }
+  },
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }
