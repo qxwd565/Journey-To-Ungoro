@@ -321,5 +321,10 @@
     "previousMain": "https://hearthstone.blizzard.com/ko-kr/news/20643472",
     "volcanosaurFirstPlayable": "https://hearthstone.blizzard.com/ko-kr/news/20567513",
     "volcanosaurAsiaUse": "https://www.hearthpwn.com/forums/hearthstone-general/general-discussion/189928-volcanosaur-ungoro-are-already-playable-on-asia"
-  }
+  },
+  "candidateCounts": {
+    "2017-04-05": 11,
+    "2017-04-07": 39
+  },
+  "candidatePolicy": "Counts only; no individual token/choice card is assigned either candidate date without card-specific first-use evidence."
 }
