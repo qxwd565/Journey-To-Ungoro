@@ -172,6 +172,28 @@ class HistoryOperationsTest(unittest.TestCase):
             self.assertEqual(source["current"]["nativeTextBuilder"], 0)
             self.assertNotIn("releasedAt", source)
 
+    def test_focused_cards_report_filtered_native_tag_history_as_incomplete(self):
+        catalogue = BUILD.load(ROOT / "cards.json")
+        records = {x["id"]: x for x in catalogue["cards"]}
+        for cid in ("UNG_832", "UNG_101a", "UNG_101b"):
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            card = BUILD.normalize_date_keyed_source(source, records[cid])
+            current = {}
+            revisions, blocked, incomplete = BUILD.publish_forward_card(card, current, cid)
+            self.assertIn("nativeTags", incomplete)
+            self.assertEqual(card["currentCache"]["nativeTags"],
+                             records[cid]["nativeTags"])
+            self.assertNotIn("currentCache", card)
+            self.assertNotIn("nativeTags", source[sorted(
+                k for k in source if BUILD.DATE_RE.fullmatch(k))[0]] if False else {})
+            if cid == "UNG_832":
+                self.assertIn("spellSchool", incomplete)
+                self.assertEqual(current["cost"], 4)
+                self.assertEqual(revisions[0]["changes"]["cost"], 2)
+            else:
+                self.assertIn("collectible", incomplete)
+                self.assertTrue(any("attack" in x["fields"] for x in blocked))
+
     def test_known_grammar_correction_has_no_patch_date(self):
         self.assertEqual(BUILD.normalize_display_text("UNG_063", "+1/+1를 얻습니다."), "+1/+1을 얻습니다.")
 
