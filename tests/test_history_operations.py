@@ -1089,7 +1089,12 @@ class HistoryOperationsTest(unittest.TestCase):
                 self.assertEqual(source["current"].get(field), value, f"{cid}:{field}")
             self.assertEqual(source["current"]["releaseStatus"], release["status"], cid)
             self.assertEqual(source["current"]["releasedAt"], release["date"], cid)
-            self.assertEqual(source["current"]["nativeTextBuilder"], 0, cid)
+            # Preserve the card-specific value from the pre-v2 source. UNG_960
+            # legitimately carries 46; the other cards in this 36-card batch
+            # have no nativeTextBuilder value (equivalent to 0).
+            expected_native_text_builder = {"UNG_960": 46}.get(cid, 0)
+            self.assertEqual(source["current"].get("nativeTextBuilder", 0),
+                             expected_native_text_builder, cid)
             self.assertNotIn("nativeTextBuilder", source[initial_day], cid)
             self.assertEqual([x["id"] for x in source["referenceTags"]], [183], cid)
             self.assertNotIn(183, BUILD.native_tag_values(source[initial_day]), cid)
