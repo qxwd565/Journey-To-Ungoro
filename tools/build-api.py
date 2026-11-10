@@ -144,10 +144,6 @@ def normalize_date_keyed_source(data: dict, record: dict):
     current_reference_tags = data.get("currentReferenceTags", [])
     if not isinstance(current_reference_tags, list) or any(not isinstance(x, dict) or not isinstance(x.get("id"), int) for x in current_reference_tags):
         raise ValueError(f"{cid}: currentReferenceTags must be an array of tag objects")
-    comparison_cache = copy.deepcopy(current_cache)
-    if isinstance(comparison_cache.get("nativeTags"), list):
-        reference_ids = {x["id"] for x in current_reference_tags}
-        comparison_cache["nativeTags"] = [x for x in comparison_cache["nativeTags"] if x.get("id") not in reference_ids]
     card = copy.deepcopy(initial)
     card.update({
         "id": data.get("id"),
@@ -157,7 +153,7 @@ def normalize_date_keyed_source(data: dict, record: dict):
         "patchSources": patch_sources,
         "patchConfidence": patch_confidence,
         "patchNotes": patch_notes,
-        "currentCache": comparison_cache,
+        "currentCache": current_cache,
         "currentReferenceTags": current_reference_tags,
         "historyIncompleteFields": data.get("historyIncompleteFields", []),
         "nativeTagsTimelineStatus": data.get("nativeTagsTimelineStatus", "partial"),
@@ -378,6 +374,11 @@ def publish_forward_card(card: dict, current: dict, name: str):
     if current_cache is not None and not isinstance(current_cache, dict):
         raise ValueError(f"{name}: currentCache must be an object")
     effective_latest = normalize_history_cache(current_cache) if current_cache is not None else latest
+    reference_ids = {x["id"] for x in card.get("currentReferenceTags", [])}
+    if reference_ids and isinstance(effective_latest.get("nativeTags"), list):
+        effective_latest["nativeTags"] = [
+            tag for tag in effective_latest["nativeTags"] if tag.get("id") not in reference_ids
+        ]
     for field in SPEC_FIELDS:
         if current_cache is not None:
             if field in current_cache:
@@ -392,11 +393,6 @@ def publish_forward_card(card: dict, current: dict, name: str):
             unresolved.add(field)
         elif field in latest and latest[field] != effective_latest[field]:
             unresolved.add(field)
-    if card.get("currentReferenceTags") and isinstance(current.get("nativeTags"), list):
-        present = {tag.get("id") for tag in current["nativeTags"] if isinstance(tag, dict)}
-        for tag in card["currentReferenceTags"]:
-            if tag["id"] not in present:
-                current["nativeTags"].append(copy.deepcopy(tag))
     if current_cache is not None and card.get("nativeTagsTimelineStatus") != "complete":
         unresolved.add("nativeTags")
     backward = []
