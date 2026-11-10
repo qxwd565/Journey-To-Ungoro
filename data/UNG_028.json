@@ -197,7 +197,8 @@
     "2020-04-21": {
       "patchNotes": "https://kr.forums.blizzard.com/ko/hearthstone/t/1737.json",
       "cardDefsCommit": "aabc9af539d7c540539f2678b16bcc5007c9f6dd",
-      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/aabc9af539d7c540539f2678b16bcc5007c9f6dd/CardDefs.xml"
+      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/aabc9af539d7c540539f2678b16bcc5007c9f6dd/CardDefs.xml",
+      "crossCheck": "https://www.inven.co.kr/board/hs/3508/16197?p=89"
     }
   },
   "nativeTagsTimelineStatus": "partial",

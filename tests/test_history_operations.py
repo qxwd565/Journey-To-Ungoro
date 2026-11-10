@@ -836,6 +836,27 @@ class HistoryOperationsTest(unittest.TestCase):
             self.assertEqual(BUILD.native_tag_values(states[-1])[535], new_count, cid)
         self.assertNotIn("2023-10-18", BUILD.load(ROOT / "data" / "UNG_934.json"))
 
+        exact_texts = {
+            "UNG_004": "하수인의 능력치를 7/14로 만듭니다.",
+            "UNG_834": "하수인에게 피해를 $3 줍니다. 1/1 테러닥스를 셋 소환하고 <b>적응</b>시킵니다.",
+            "UNG_940": "<b>퀘스트:</b><br></br><b>죽음의 메아리</b> 하수인을 6회 소환해야 합니다.<br></br><b>보상:</b> 희망의 감시자 아마라",
+            "UNG_942": "<b>퀘스트:</b> 멀록을 8마리 소환해야 합니다.<br></br><b>보상:</b> 대왕아가미",
+            "UNG_954": "<b>퀘스트:</b><br></br>내 하수인에게 주문을 5회 시전해야 합니다.<br></br><b>보상:</b> 갈바돈",
+            "UNG_957": "<b>도발</b>, <b>죽음의 메아리:</b><br></br><b>도발</b> 능력이 있는<br></br>8/12 공포뿔을 내 덱에 섞어 넣습니다.",
+        }
+        for cid, expected_text in exact_texts.items():
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            day = "2020-04-21" if cid == "UNG_028" else "2023-10-18"
+            if cid == "UNG_028":
+                expected_text = "<b>퀘스트:</b> 게임이 시작됐을 때 내 덱에 없던 주문을 8회 시전해야 합니다.<br></br><b>보상:</b> 시간 왜곡"
+            self.assertEqual(source[day]["text"], expected_text, cid)
+            self.assertEqual(source[day]["nativeRawText"].count("\n"),
+                             source[day]["text"].count("<br></br>"), cid)
+        self.assertEqual(BUILD.load(ROOT / "data" / "UNG_004.json")["2023-10-18"]["nativeRawText"],
+                         "하수인의 능력치를 7/14로 만듭니다.")
+        self.assertEqual(BUILD.load(ROOT / "data" / "UNG_028.json")["sourceEvidence"]["2020-04-21"]["crossCheck"],
+                         "https://www.inven.co.kr/board/hs/3508/16197?p=89")
+
         for cid in ("UNG_916", "UNG_922t1", "UNG_961"):
             source = BUILD.load(ROOT / "data" / (cid + ".json"))
             day = "2017-04-04" if cid == "UNG_922t1" else "2017-04-07"
