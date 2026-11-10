@@ -442,7 +442,7 @@ def read_patches(card: dict, name: str) -> list[dict]:
             raise ValueError(f"{name}: overlapping/unsorted patch dates {prev}, {day}")
         if not changes and not remove:
             raise ValueError(f"{name}: empty operation on {day}")
-        if (set(changes) | set(remove)) - (PATCH_FIELD_SET | {"legacyArt", "nativeTagUpdates"}):
+        if (set(changes) | set(remove)) - (PATCH_FIELD_SET | {"legacyArt", "nativeTagUpdates", "nativeTagRemovals"}):
             raise ValueError(f"{name}: unknown gameplay patch field")
         if "nativeTagUpdates" in changes:
             updates = changes["nativeTagUpdates"]
@@ -456,6 +456,12 @@ def read_patches(card: dict, name: str) -> list[dict]:
                            for item in updates)
                     or len({item["id"] for item in updates}) != len(updates)):
                 raise ValueError(f"{name}: nativeTagUpdates must contain unique integer id/value pairs")
+        if "nativeTagRemovals" in changes:
+            removals = changes["nativeTagRemovals"]
+            if (not isinstance(removals, list)
+                    or any(not isinstance(tag_id, int) for tag_id in removals)
+                    or len(set(removals)) != len(removals)):
+                raise ValueError(f"{name}: nativeTagRemovals must contain unique integer IDs")
         prev = day
     return patches
 
@@ -506,6 +512,19 @@ def replay_forward_states(card: dict, name: str):
                         }
                     else:
                         tags[update["id"]]["value"] = update["value"]
+                next_state["nativeTags"] = [tags[key] for key in sorted(tags)]
+                continue
+            if field == "nativeTagRemovals":
+                remove_ids = value
+                if (not isinstance(remove_ids, list)
+                        or any(not isinstance(tag_id, int) for tag_id in remove_ids)
+                        or len(set(remove_ids)) != len(remove_ids)):
+                    raise ValueError(f"{name}: nativeTagRemovals must be unique integer IDs")
+                tags = {item["id"]: copy.deepcopy(item) for item in next_state.get("nativeTags", [])}
+                for tag_id in remove_ids:
+                    if tag_id not in tags:
+                        raise ValueError(f"{name}: cannot remove absent native tag {tag_id} on {event['date']}")
+                    del tags[tag_id]
                 next_state["nativeTags"] = [tags[key] for key in sorted(tags)]
                 continue
             if field in next_state and next_state[field] == value:

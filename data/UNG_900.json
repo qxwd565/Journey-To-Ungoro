@@ -1,31 +1,114 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Spiritsinger Umbra",
-  "card": {
-    "id": "UNG_900",
-    "dbfId": 41289,
+  "schemaVersion": 2,
+  "id": "UNG_900",
+  "dbfId": 41289,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "영혼노래꾼 움브라",
-    "text": "내 하수인이 소환된<br></br>후에, 그 하수인의<br></br><b>죽음의 메아리</b>를<br></br>발동시킵니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "LEGENDARY",
-    "race": "",
-    "races": [],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 4,
     "attack": 3,
     "health": 4,
-    "armor": 0,
-    "durability": 0,
+    "text": "내 하수인이 소환된 후에,<br></br>그 하수인의 <b>죽음의_메아리</b><br></br>능력을 발동시킵니다.",
+    "nativeTags": [
+      {
+        "id": 32,
+        "name": "발동 효과 표시",
+        "value": 1
+      },
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 4
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 3
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 4
+      },
+      {
+        "id": 114,
+        "name": "전설 속성",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 5
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "[x]내 하수인이 소환된 후에,\n그 하수인의 <b>죽음의_메아리</b>\n능력을 발동시킵니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "2a62d4d2-dc5c-4e52-91e2-cd86ef2f3086"
+      ],
+      "triggeredPowerHistory": [
+        "effectIndex=\"0\" showInHistory=\"False\""
+      ]
+    },
+    "nativeSetId": 27,
+    "flavor": "\"네 미래가 보인다... 너는... 공룡에게 잡아먹힐 것이다.\""
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "2a62d4d2-dc5c-4e52-91e2-cd86ef2f3086"
+      ],
+      "triggeredPowerHistory": [
+        "effectIndex=\"0\" showInHistory=\"False\""
+      ]
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "영혼노래꾼 움브라",
+    "type": "MINION",
+    "cardClass": "NEUTRAL",
+    "classes": [],
+    "rarity": "LEGENDARY",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-172_D.psd:f9e12efe087815b4b92f14ecd2eccb96",
-    "flavor": "\"네 미래가 보인다... 너는... 공룡에게 잡아먹힐 것이다.\"",
+    "cost": 5,
+    "attack": 3,
+    "health": 4,
+    "durability": 0,
+    "armor": 0,
+    "text": "내 하수인이 소환된<br></br>후에, 그 하수인의<br></br><b>죽음의 메아리</b>를<br></br>발동시킵니다.",
+    "races": [],
+    "race": "",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 32,
@@ -78,40 +161,58 @@
         "value": 1
       }
     ],
-    "nativeRawText": "내 하수인이 소환된\n후에, 그 하수인의\n<b>죽음의 메아리</b>를\n발동시킵니다.",
-    "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [
+    "nativeRawText": "내 하수인이 소환된\n후에, 그 하수인의\n<b>죽음의 메아리</b>를\n발동시킵니다.",
+    "nativeTextBuilder": 0
+  },
+  "2026-02-25": {
+    "cost": 5,
+    "nativeTagUpdates": [
       {
-        "date": "2026-02-25",
-        "changes": {
-          "cost": 5
-        }
+        "id": 48,
+        "value": 5
       }
     ],
-    "initialSpecStatus": "unverified",
-    "patchSources": {
-      "2026-02-25": "https://hearthstone.blizzard.com/ko-kr/news/24242744"
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/24242744",
+    "confidence": "high",
+    "note": "34.6.2 한국 적용일. 비용 4→5 및 TAG48 동기화. 현재 TAG217은 카드 자체 죽음의 메아리 능력을 뜻하지 않으며, 그 도입일은 미확정."
+  },
+  "sourceEvidence": {
+    "2026-02-25": {
+      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/24242744",
+      "cardDefsCommit": "0a5a61e3867ae9eea535bdbd4df714671ff87910",
+      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/0a5a61e3867ae9eea535bdbd4df714671ff87910/CardDefs.xml"
     }
   },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "nativeTagsTimelineStatus": "partial",
+  "historyIncompleteFields": [
+    "nativeTags",
+    "text",
+    "nativeTextBuilder"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  }
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [
+    {
+      "field": "nativeTags",
+      "reason": "current cache includes tags whose exact introduction dates are not established; only individually confirmed tag updates/removals are recorded."
+    },
+    {
+      "field": "text",
+      "reason": "differences between source snapshot and current display text not tied to a confirmed dated change remain undated."
+    },
+    {
+      "field": "nativeTags[217]",
+      "reason": "TAG217 is present in current data but does not mean this card itself has a Deathrattle. Its introduction date is unknown and is not backdated to the cost change."
+    }
+  ],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }

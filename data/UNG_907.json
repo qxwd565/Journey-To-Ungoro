@@ -1,33 +1,130 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Ozruk",
-  "card": {
-    "id": "UNG_907",
-    "dbfId": 41294,
+  "schemaVersion": 2,
+  "id": "UNG_907",
+  "dbfId": 41294,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "오즈룩",
-    "text": "<b>도발</b>, <b>전투의 함성:</b> 내가 이전 턴에 낸 정령 하나당 생명력을 +5 얻습니다.",
     "type": "MINION",
     "cardClass": "NEUTRAL",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "LEGENDARY",
-    "race": "정령",
-    "races": [
-      "ELEMENTAL"
-    ],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 9,
     "attack": 5,
     "health": 5,
-    "armor": 0,
-    "durability": 0,
+    "races": [
+      "ELEMENTAL"
+    ],
+    "race": "정령",
+    "text": "<b>도발</b>, <b>전투의 함성:</b> 내가 이전 턴에 낸 정령 하나당 생명력을 +5 얻습니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 5
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 5
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 9
+      },
+      {
+        "id": 114,
+        "name": "전설 속성",
+        "value": 1
+      },
+      {
+        "id": 190,
+        "name": "도발",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 18
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 5
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>도발</b>, <b>전투의 함성:</b> 내가 이전 턴에 낸 정령 하나당 생명력을 +5 얻습니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "92ce20ff-f83c-469a-a816-207309184199",
+        "00000012-ee7d-4b2b-ad6b-3822f2c10ccb",
+        "3fca1baf-991b-4645-88a9-14918b4244cd"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "심심할 때에는 혼자서 벽에 몸을 부딪는다고 하더군요."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "92ce20ff-f83c-469a-a816-207309184199",
+        "00000012-ee7d-4b2b-ad6b-3822f2c10ccb",
+        "3fca1baf-991b-4645-88a9-14918b4244cd"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "오즈룩",
+    "type": "MINION",
+    "cardClass": "NEUTRAL",
+    "classes": [],
+    "rarity": "LEGENDARY",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-169_M.psd:5d0715701a48bbb49a5da0505282865b",
-    "flavor": "심심할 때에는 혼자서 벽에 몸을 부딪는다고 하더군요.",
+    "cost": 8,
+    "attack": 8,
+    "health": 8,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>도발</b>, <b>전투의 함성:</b> 내가 이전 턴에 낸 정령 하나당 생명력을 +5 얻습니다.",
+    "races": [
+      "ELEMENTAL"
+    ],
+    "race": "정령",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -85,42 +182,53 @@
         "value": 1
       }
     ],
-    "nativeRawText": "<b>도발</b>, <b>전투의 함성:</b> 내가 이전 턴에 낸 정령 하나당 생명력을 +5 얻습니다.",
-    "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [
+    "nativeRawText": "<b>도발</b>, <b>전투의 함성:</b> 내가 이전 턴에 낸 정령 하나당 생명력을 +5 얻습니다.",
+    "nativeTextBuilder": 0
+  },
+  "2023-10-18": {
+    "cost": 8,
+    "attack": 8,
+    "health": 8,
+    "nativeTagUpdates": [
       {
-        "date": "2023-10-18",
-        "changes": {
-          "cost": 8,
-          "attack": 8,
-          "health": 8
-        }
+        "id": 48,
+        "value": 8
+      },
+      {
+        "id": 47,
+        "value": 8
+      },
+      {
+        "id": 45,
+        "value": 8
       }
     ],
-    "initialSpecStatus": "unverified",
-    "patchSources": {
-      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+    "confidence": "high",
+    "note": "27.6 한국 적용일. 비용 9→8, 공격력·생명력 5→8 및 TAG48·47·45 동기화."
+  },
+  "sourceEvidence": {
+    "2023-10-18": {
+      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
+      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
     }
   },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "nativeTagsTimelineStatus": "complete",
+  "historyIncompleteFields": [
+    "nativeTextBuilder"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  }
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }

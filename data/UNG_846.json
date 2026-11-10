@@ -1,33 +1,120 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Shimmering Tempest",
-  "card": {
-    "id": "UNG_846",
-    "dbfId": 41927,
+  "schemaVersion": 2,
+  "id": "UNG_846",
+  "dbfId": 41927,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "흐린빛 폭풍정령",
-    "text": "[x]<b>죽음의 메아리:</b><br></br>무작위 마법사 주문을<br></br>내 손으로 가져옵니다.",
     "type": "MINION",
     "cardClass": "MAGE",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "COMMON",
-    "race": "정령",
-    "races": [
-      "ELEMENTAL"
-    ],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 2,
     "attack": 2,
     "health": 1,
-    "armor": 0,
-    "durability": 0,
+    "races": [
+      "ELEMENTAL"
+    ],
+    "race": "정령",
+    "text": "<b>죽음의 메아리:</b> 무작위 마법사 주문 카드 1장을 내 손으로 가져옵니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 1
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 2
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 2
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 4
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 18
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 1
+      },
+      {
+        "id": 217,
+        "name": "죽음의 메아리",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "<b>죽음의 메아리:</b> 무작위 마법사 주문 카드 1장을 내 손으로 가져옵니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "6eaffa50-78d9-4fa5-9419-8ef5a42bc305"
+      ],
+      "triggeredPowerHistory": [
+        "effectIndex=\"0\" showInHistory=\"False\""
+      ]
+    },
+    "nativeSetId": 27,
+    "flavor": "가끔 키린 토가 개최하는 파티에서 조명을 담당하기도 합니다."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "6eaffa50-78d9-4fa5-9419-8ef5a42bc305"
+      ],
+      "triggeredPowerHistory": [
+        "effectIndex=\"0\" showInHistory=\"False\""
+      ]
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "흐린빛 폭풍정령",
+    "type": "MINION",
+    "cardClass": "MAGE",
+    "classes": [],
+    "rarity": "COMMON",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-114_D.psd:da14e1082810c6240a0d535bc9ec0acd",
-    "flavor": "가끔 키린 토가 개최하는 파티에서 조명을 담당하기도 합니다.",
+    "cost": 2,
+    "attack": 2,
+    "health": 2,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>전투의 함성:</b><br></br>무작위 마법사 주문을<br></br>내 손으로 가져옵니다.",
+    "races": [
+      "ELEMENTAL"
+    ],
+    "race": "정령",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -75,41 +162,53 @@
         "value": 1
       }
     ],
-    "nativeRawText": "[x]<b>전투의 함성:</b>\n무작위 마법사 주문을\n내 손으로 가져옵니다.",
-    "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [
+    "nativeRawText": "[x]<b>전투의 함성:</b>\n무작위 마법사 주문을\n내 손으로 가져옵니다.",
+    "nativeTextBuilder": 0
+  },
+  "2023-10-18": {
+    "health": 2,
+    "text": "<b>전투의 함성:</b><br></br>무작위 마법사 주문을<br></br>내 손으로 가져옵니다.",
+    "nativeRawText": "[x]<b>전투의 함성:</b>\n무작위 마법사 주문을\n내 손으로 가져옵니다.",
+    "nativeTagUpdates": [
       {
-        "date": "2023-10-18",
-        "changes": {
-          "health": 2,
-          "text": "<b>전투의 함성:</b><br></br>무작위 마법사 주문을<br></br>내 손으로 가져옵니다."
-        }
+        "id": 45,
+        "value": 2
+      },
+      {
+        "id": 218,
+        "value": 1,
+        "name": "전투의 함성"
       }
     ],
-    "initialSpecStatus": "unverified",
-    "patchSources": {
-      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    "nativeTagRemovals": [
+      217
+    ],
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+    "confidence": "high",
+    "note": "27.6 한국 적용일. 생명력 1→2, 죽음의 메아리에서 전투의 함성으로 실제 능력 변경. TAG217 제거 및 TAG218 추가."
+  },
+  "sourceEvidence": {
+    "2023-10-18": {
+      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
+      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
     }
   },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "nativeTagsTimelineStatus": "complete",
+  "historyIncompleteFields": [
+    "nativeTextBuilder"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  }
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }

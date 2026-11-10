@@ -177,7 +177,13 @@
     "nativeRawText": "<b>도발</b>, <b>죽음의 메아리:</b>\n내 손에 있는 공격력이\n5 이상인 하수인을 소환합니다.",
     "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
     "confidence": "high",
-    "note": "27.6 한국 적용일. 도발 및 죽음의 메아리 설명 변경. TAG190은 실제 도입일이 미확정이므로 추가하지 않음."
+    "note": "27.6 한국 적용일. 거대한 아나콘다는 이 날짜에 실제 무조건부 도발을 얻음. 설명 변경과 TAG190=1을 함께 반영.",
+    "nativeTagUpdates": [
+      {
+        "id": 190,
+        "value": 1
+      }
+    ]
   },
   "sourceEvidence": {
     "2023-10-18": {
@@ -186,12 +192,13 @@
       "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
     }
   },
-  "nativeTagsTimelineStatus": "partial",
+  "nativeTagsTimelineStatus": "complete",
   "historyIncompleteFields": [
-    "nativeTags",
     "nativeTextBuilder"
   ],
-  "historyKnownFields": [],
+  "historyKnownFields": [
+    "nativeTags"
+  ],
   "unresolvedSourceFields": [
     {
       "field": "nativeTags",

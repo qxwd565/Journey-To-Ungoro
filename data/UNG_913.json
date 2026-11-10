@@ -1,31 +1,105 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Tol'vir Warden",
-  "card": {
-    "id": "UNG_913",
-    "dbfId": 41354,
+  "schemaVersion": 2,
+  "id": "UNG_913",
+  "dbfId": 41354,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "톨비르 감시자",
-    "text": "<b>전투의 함성:</b> 내 덱에서<br></br>비용이 1인 하수인을<br></br>둘 뽑습니다.",
     "type": "MINION",
     "cardClass": "HUNTER",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "RARE",
-    "race": "",
-    "races": [],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 5,
     "attack": 3,
     "health": 5,
-    "armor": 0,
-    "durability": 0,
+    "text": "<b>전투의 함성:</b> 내 덱에서<br></br>비용이 1인 하수인을<br></br>둘 뽑습니다.",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 5
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 3
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 5
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 3
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 3
+      },
+      {
+        "id": 218,
+        "name": "전투의 함성",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      }
+    ],
+    "nativeRawText": "[x]<b>전투의 함성:</b> 내 덱에서\n비용이 1인 하수인을\n둘 뽑습니다.",
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-cb56-4c67-8fa2-350afa9e76fd"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "전투에서 정말 사납습니다... 애완동물 대전에선 더더욱 사납죠."
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-cb56-4c67-8fa2-350afa9e76fd"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "톨비르 감시자",
+    "type": "MINION",
+    "cardClass": "HUNTER",
+    "classes": [],
+    "rarity": "RARE",
     "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-017_M.psd:30210c8f4d8edb24d8051eaf7707c396",
-    "flavor": "전투에서 정말 사납습니다... 애완동물 대전에선 더더욱 사납죠.",
+    "cost": 4,
+    "attack": 3,
+    "health": 4,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>전투의 함성:</b> 내 덱에서<br></br>비용이 1인 하수인을<br></br>둘 뽑습니다.",
+    "races": [],
+    "race": "",
+    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -68,41 +142,48 @@
         "value": 1
       }
     ],
-    "nativeRawText": "[x]<b>전투의 함성:</b> 내 덱에서\n비용이 1인 하수인을\n둘 뽑습니다.",
-    "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [
+    "nativeRawText": "[x]<b>전투의 함성:</b> 내 덱에서\n비용이 1인 하수인을\n둘 뽑습니다.",
+    "nativeTextBuilder": 0
+  },
+  "2023-10-18": {
+    "cost": 4,
+    "health": 4,
+    "nativeTagUpdates": [
       {
-        "date": "2023-10-18",
-        "changes": {
-          "cost": 4,
-          "health": 4
-        }
+        "id": 48,
+        "value": 4
+      },
+      {
+        "id": 45,
+        "value": 4
       }
     ],
-    "initialSpecStatus": "unverified",
-    "patchSources": {
-      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+    "confidence": "high",
+    "note": "27.6 한국 적용일. 비용 5→4, 생명력 5→4 및 TAG48·45 동기화."
+  },
+  "sourceEvidence": {
+    "2023-10-18": {
+      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
+      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
+      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
     }
   },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "nativeTagsTimelineStatus": "complete",
+  "historyIncompleteFields": [
+    "nativeTextBuilder"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  }
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }
