@@ -14,7 +14,7 @@ class HistoryOperationsTest(unittest.TestCase):
             {"date": "2020-01-01", "changes": {"attack": 4}}
         ]}
         current = {}
-        revisions, blocked = BUILD.publish_forward_card(card, current, "TEST")
+        revisions, blocked, incomplete = BUILD.publish_forward_card(card, current, "TEST")
         self.assertEqual(current, {"cost": 3, "attack": 4})
         self.assertEqual(blocked, [])
 
@@ -82,6 +82,20 @@ class HistoryOperationsTest(unittest.TestCase):
         BUILD.normalize_card_display("TEST", card)
         self.assertEqual(card["text"], "first<br></br>second")
         self.assertEqual(card["nativeRawText"], "first\\nsecond")
+
+    def test_date_keyed_source_normalizes_without_losing_current_cache(self):
+        data = {
+            "schemaVersion": 2, "id": "UNG_832", "dbfId": 41872,
+            "current": {"cost": 4, "spellSchool": "SHADOW"},
+            "2017-04-04": {"cost": 2, "nativeTags": [{"id": 48, "value": 2}]},
+            "2020-04-21": {"cost": 4},
+            "2021-03-26": {"spellSchool": "SHADOW"},
+        }
+        card = BUILD.normalize_date_keyed_source(data, {"id": "UNG_832", "releasedAt": "2017-04-07"})
+        self.assertEqual(card["cost"], 2)
+        self.assertEqual(card["patches"][0]["changes"]["cost"], 4)
+        self.assertEqual(card["currentCache"]["cost"], 4)
+        self.assertEqual(card["patches"][1]["changes"]["spellSchool"], "SHADOW")
 
     def test_known_grammar_correction_has_no_patch_date(self):
         self.assertEqual(BUILD.normalize_display_text("UNG_063", "+1/+1를 얻습니다."), "+1/+1을 얻습니다.")
