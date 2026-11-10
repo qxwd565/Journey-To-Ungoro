@@ -6,7 +6,7 @@
     "id": "UNG_004",
     "dbfId": 41130,
     "name": "공룡의 몸집",
-    "text": "하수인의 능력치를 7/14로 만듭니다.",
+    "text": "하수인의 공격력과 생명력을 10으로 만듭니다.",
     "type": "SPELL",
     "cardClass": "PALADIN",
     "classes": [],
@@ -16,7 +16,7 @@
     "race": "",
     "races": [],
     "spellSchool": "",
-    "cost": 7,
+    "cost": 8,
     "attack": 0,
     "health": 0,
     "armor": 0,
@@ -72,9 +72,19 @@
     "nativeTextBuilder": 0,
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
+    "patches": [
+      {
+        "date": "2023-10-18",
+        "changes": {
+          "cost": 7,
+          "text": "하수인의 능력치를 7/14로 만듭니다."
+        }
+      }
+    ],
     "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "patchSources": {
+      "2023-10-18": "https://hearthstone.blizzard.com/ko-kr/news/23989479"
+    }
   },
   "root": true,
   "relatedIds": [],
