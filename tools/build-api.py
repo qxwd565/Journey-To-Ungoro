@@ -487,6 +487,9 @@ def publish_forward_card(card: dict, current: dict, name: str):
     latest = states[-1]
     current_cache = card.get("currentCache")
     unresolved = set(card.get("historyIncompleteFields", []))
+    history_known_fields = set(card.get("historyKnownFields", []))
+    if not history_known_fields.issubset(PATCH_FIELD_SET):
+        raise ValueError(f"{name}: historyKnownFields contains an unsupported field")
     if current_cache is not None and not isinstance(current_cache, dict):
         raise ValueError(f"{name}: currentCache must be an object")
     effective_latest = normalize_history_cache(current_cache) if current_cache is not None else latest
@@ -522,7 +525,7 @@ def publish_forward_card(card: dict, current: dict, name: str):
         differences = {
             field: copy.deepcopy(value) for field, value in old.items()
             if field in SPEC_FIELDS
-            and field not in unresolved
+            and (field not in unresolved or field in history_known_fields)
             and (field not in effective_latest or value != effective_latest[field])
         }
         if not differences:

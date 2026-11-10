@@ -268,5 +268,9 @@
       "sourceSnapshot": "2017-04-04",
       "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
     }
+  ],
+  "historyKnownFields": [
+    "text",
+    "nativeTags"
   ]
 }
