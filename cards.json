@@ -12745,8 +12745,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t10.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-05",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_999t13",
@@ -12796,8 +12796,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t13.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-05",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_999t14",
@@ -12842,8 +12842,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t14.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-05",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_999t2",
@@ -12893,8 +12893,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t2.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-05",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_999t2t1",
@@ -12949,8 +12949,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t2t1.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-05",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_999t3",
@@ -12995,8 +12995,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t3.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-05",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_999t4",
@@ -13041,8 +13041,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t4.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-05",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_999t5",
@@ -13092,8 +13092,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t5.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-05",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_999t6",
@@ -13143,8 +13143,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t6.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-05",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_999t7",
@@ -13194,8 +13194,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t7.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-05",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_999t8",
@@ -13245,8 +13245,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_999t8.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-05",
+      "releaseStatus": "verified"
     }
   ]
 }

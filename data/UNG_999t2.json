@@ -10,8 +10,8 @@
     "path": "CardDefs.xml",
     "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
   },
-  "dateMeaning": "2017-04-04 is a source snapshot date, not a playable date; first playable date remains pending.",
-  "2017-04-04": {
+  "dateMeaning": "The 2017-04-04 sourceBaseline is an archived CardDefs snapshot, not a release date. The first playable Korean date is 2017-04-05, by the immediately playable Volcanosaur (UNG_002), which explicitly generates this adaptation or plant token. Source: April 5 2017 Korean first-playable: Volcanosaur UNG_002 immediate login reward; its explicit relatedIds includes this token dbfId; Blizzard https://hearthstone.blizzard.com/ko-kr/news/20567513; https://hearthstone.wiki.gg/wiki/Volcanosaur",
+  "2017-04-05": {
     "name": "살아있는 포자",
     "type": "SPELL",
     "cardClass": "NEUTRAL",
@@ -86,8 +86,8 @@
         "value": 1
       }
     ],
-    "releasedAt": null,
-    "releaseStatus": "pending",
+    "releasedAt": "2017-04-05",
+    "releaseStatus": "verified",
     "nativeRawText": "<b>죽음의 메아리:</b>\n1/1 식물을\n둘 소환합니다.",
     "nativeTextBuilder": 0
   },

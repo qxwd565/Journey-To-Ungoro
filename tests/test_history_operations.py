@@ -693,7 +693,7 @@ class HistoryOperationsTest(unittest.TestCase):
             source = BUILD.load(ROOT / "data" / (cid + ".json"))
             self.assertEqual(source["schemaVersion"], 2, cid)
             self.assertEqual(source["dbfId"], records[cid]["dbfId"], cid)
-            initial_day = "2017-04-04" if records[cid].get("releasedAt") is None else "2017-04-07"
+            initial_day = records[cid].get("releasedAt") or "2017-04-04"
             self.assertEqual(source[initial_day]["nativeTags"],
                              [x for x in baseline["cards"][cid]["state"]["nativeTags"] if x["id"] != 183], cid)
             card = BUILD.normalize_date_keyed_source(
@@ -787,7 +787,7 @@ class HistoryOperationsTest(unittest.TestCase):
             source = BUILD.load(ROOT / "data" / (cid + ".json"))
             self.assertEqual(source["schemaVersion"], 2, cid)
             self.assertEqual(source["dbfId"], records[cid]["dbfId"], cid)
-            initial_day = "2017-04-04" if records[cid].get("releasedAt") is None else "2017-04-07"
+            initial_day = records[cid].get("releasedAt") or "2017-04-04"
             self.assertEqual(
                 source[initial_day]["nativeTags"],
                 [x for x in baseline["cards"][cid]["state"]["nativeTags"] if x["id"] != 183],
@@ -899,17 +899,22 @@ class HistoryOperationsTest(unittest.TestCase):
             self.assertTrue(any(x["field"] == "nativeTags" for x in source["unresolvedSourceFields"]), cid)
 
         liquid = BUILD.load(ROOT / "data" / "UNG_999t5.json")
-        self.assertIn(311, BUILD.native_tag_values(liquid["2017-04-04"]))
-        self.assertIn(332, BUILD.native_tag_values(liquid["2017-04-04"]))
-        self.assertNotIn(1211, BUILD.native_tag_values(liquid["2017-04-04"]))
+        self.assertIn(311, BUILD.native_tag_values(liquid["2017-04-05"]))
+        self.assertIn(332, BUILD.native_tag_values(liquid["2017-04-05"]))
+        self.assertNotIn(1211, BUILD.native_tag_values(liquid["2017-04-05"]))
         self.assertIn("nativeTags[311,332,1211]",
                       [x["field"] for x in liquid["unresolvedSourceFields"]])
         self.assertEqual(liquid["nativeTagsTimelineStatus"], "partial")
 
-        for cid in ("UNG_922t1", "UNG_954t1", "UNG_957t1", "UNG_999t2", "UNG_999t5", "UNG_999t6"):
+        for cid in ("UNG_922t1", "UNG_954t1", "UNG_957t1"):
             source = BUILD.load(ROOT / "data" / (cid + ".json"))
             self.assertIsNone(source["current"]["releasedAt"], cid)
             self.assertEqual(source["current"]["releaseStatus"], "pending", cid)
+        # 2017-04-05 Korean pre-release Volcanosaur generated the Adapt choices.
+        for cid in ("UNG_999t2", "UNG_999t5", "UNG_999t6"):
+            source = BUILD.load(ROOT / "data" / (cid + ".json"))
+            self.assertEqual(source["current"]["releasedAt"], "2017-04-05", cid)
+            self.assertEqual(source["current"]["releaseStatus"], "verified", cid)
 
 
     def test_fourteen_additional_ungoro_cards_replay_original_dates_and_sparse_tags(self):
@@ -926,7 +931,7 @@ class HistoryOperationsTest(unittest.TestCase):
             source = BUILD.load(ROOT / "data" / (cid + ".json"))
             self.assertEqual(source["schemaVersion"], 2, cid)
             self.assertEqual(source["dbfId"], records[cid]["dbfId"], cid)
-            initial_day = "2017-04-04" if records[cid].get("releasedAt") is None else "2017-04-07"
+            initial_day = records[cid].get("releasedAt") or "2017-04-04"
             self.assertEqual(
                 source[initial_day]["nativeTags"],
                 [x for x in baseline["cards"][cid]["state"]["nativeTags"] if x["id"] != 183],
