@@ -76,8 +76,8 @@
     ],
     "nativeRawText": "<b>전투의 함성:</b>\n5번 <b>적응</b>합니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [
       {
         "date": "2023-10-18",
