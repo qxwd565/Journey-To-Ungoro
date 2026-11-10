@@ -53,8 +53,8 @@
     ],
     "nativeRawText": "3/2 임프들을 소환하는 차원문을 영구히 엽니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [
       {
         "date": "2021-03-26",
