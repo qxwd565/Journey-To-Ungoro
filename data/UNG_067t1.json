@@ -49,8 +49,8 @@
     ],
     "nativeRawText": "이번 게임 동안 내 하수인들의 능력치가 5/5가 됩니다.",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [
       {
         "date": "2018-05-23",
