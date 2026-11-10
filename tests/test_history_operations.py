@@ -420,6 +420,32 @@ class HistoryOperationsTest(unittest.TestCase):
         card_index = next(i for i, x in enumerate(cards["cards"]) if x["id"] == "UNG_955")
         self.assertEqual(cards["cards"][card_index]["text"], meteor["current"]["text"])
         self.assertIn("41954", history["cards"])
+        h852 = history["cards"]["41954"]["history"][0]
+        self.assertEqual(h852["before"], "2023-10-18")
+        self.assertEqual((h852["changes"]["attack"], h852["changes"]["health"]), (12, 12))
+        self.assertIn("대상으로 지정되지 않습니다", h852["changes"]["text"])
+        self.assertTrue({311, 332}.issubset({x["id"] for x in h852["changes"]["nativeTags"]}))
+        self.assertEqual(by_id["UNG_852"]["history"], history["cards"]["41954"]["history"])
+
+        h950 = history["cards"]["41859"]["history"][0]
+        self.assertEqual((h950["before"], h950["changes"]["cost"]), ("2023-10-18", 7))
+        self.assertEqual({x["id"]: x["value"] for x in h950["changes"]["nativeTags"]}[48], 7)
+        h927 = history["cards"]["41407"]["history"]
+        self.assertEqual(next(x for x in h927 if x["before"] == "2023-10-18")["changes"]["cost"], 5)
+        h956 = history["cards"]["41879"]["history"]
+        rev956 = next(x for x in h956 if x["before"] == "2023-10-18")
+        self.assertEqual(rev956["changes"]["cost"], 3)
+        self.assertEqual({x["id"]: x["value"] for x in rev956["changes"]["nativeTags"]}[1635], 4)
+        h955 = history["cards"]["41878"]["history"]
+        rev955 = next(x for x in h955 if x["before"] == "2023-10-18")
+        self.assertIn("$3", rev955["changes"]["text"])
+        self.assertIn("$4", meteor["2023-10-18"]["nativeRawText"])
+        for cid, dbf in (("UNG_856", "42011"), ("UNG_927", "41407"),
+                         ("UNG_941", "41496"), ("UNG_948", "41690"),
+                         ("UNG_955", "41878"), ("UNG_956", "41879")):
+            old_state = history["cards"][dbf]["history"][0]["changes"]
+            self.assertNotIn(1635, {x["id"] for x in old_state["nativeTags"]}, cid)
+        self.assertEqual(by_id["UNG_955"]["text"], cards["cards"][card_index]["text"])
 
 
 if __name__ == "__main__":
