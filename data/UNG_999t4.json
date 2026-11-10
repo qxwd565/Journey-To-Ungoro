@@ -49,8 +49,8 @@
     ],
     "nativeRawText": "생명력 +3",
     "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
+    "releasedAt": null,
+    "releaseStatus": "pending",
     "patches": [],
     "initialSpecStatus": "unverified",
     "patchSources": {}
