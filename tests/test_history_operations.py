@@ -514,7 +514,7 @@ class HistoryOperationsTest(unittest.TestCase):
         self.assertNotIn(190, BUILD.native_tag_values(trex["2017-04-07"]))
         self.assertEqual(trex["2023-10-18"]["health"], 8)
         self.assertEqual(BUILD.native_tag_values(trex["2023-10-18"])[190], 1)
-        self.assertIn("\\n", trex["2023-10-18"]["nativeRawText"])
+        self.assertIn("\n", trex["2023-10-18"]["nativeRawText"])
         self.assertEqual(trex["current"]["text"], records["UNG_010"]["text"])
 
         wind = BUILD.load(ROOT / "data" / "UNG_019.json")
