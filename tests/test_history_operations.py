@@ -183,9 +183,8 @@ class HistoryOperationsTest(unittest.TestCase):
             self.assertIn("nativeTags", incomplete)
             self.assertEqual(card["currentCache"]["nativeTags"],
                              records[cid]["nativeTags"])
-            self.assertNotIn("currentCache", card)
-            self.assertNotIn("nativeTags", source[sorted(
-                k for k in source if BUILD.DATE_RE.fullmatch(k))[0]] if False else {})
+            first_day = sorted(k for k in source if BUILD.DATE_RE.fullmatch(k))[0]
+            self.assertNotIn("currentCache", source[first_day])
             if cid == "UNG_832":
                 self.assertIn("spellSchool", incomplete)
                 self.assertEqual(current["cost"], 4)
