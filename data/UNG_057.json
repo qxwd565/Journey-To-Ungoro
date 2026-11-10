@@ -26,11 +26,6 @@
         "value": 2
       },
       {
-        "id": 183,
-        "name": "CARD_SET",
-        "value": 27
-      },
-      {
         "id": 199,
         "name": "직업",
         "value": 7
@@ -56,11 +51,13 @@
     "flavor": "옛말에 꽃으로도 때리지 말라고 했거늘..."
   },
   "references": {
-    "entourageCardIds": [],
-    "powerDefinitions": [
-      "d1ff1769-5763-46b9-99b3-c48715ff42b2"
-    ],
-    "triggeredPowerHistory": []
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "d1ff1769-5763-46b9-99b3-c48715ff42b2"
+      ],
+      "triggeredPowerHistory": []
+    }
   },
   "currentReferenceTags": [
     {
@@ -137,14 +134,16 @@
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified"
   },
-  "nativeTagsTimelineStatus": "partial",
-  "historyIncompleteFields": [
-    "nativeTags"
-  ],
+  "nativeTagsTimelineStatus": "complete",
+  "historyIncompleteFields": [],
   "unresolvedSourceFields": [
     {
       "field": "nativeTags[1078,1452]",
       "reason": "Current tags point to DBF 41206; their first appearance date is not established by the baseline or dated patch sources."
+    },
+    {
+      "field": "nativeTextBuilder",
+      "reason": "The current client cache contains nativeTextBuilder=0, but the CardDefs 18336 baseline does not expose this field; no dated introduction/change evidence is available."
     }
   ],
   "2021-03-26": {
@@ -154,11 +153,6 @@
         "id": 48,
         "name": "마나 비용",
         "value": 2
-      },
-      {
-        "id": 183,
-        "name": "CARD_SET",
-        "value": 27
       },
       {
         "id": 199,
@@ -196,5 +190,14 @@
     "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
     "confidence": "high",
     "note": "칼날꽃잎 피해량 변경 1→2."
-  }
+  },
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ]
 }
