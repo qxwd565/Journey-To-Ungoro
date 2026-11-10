@@ -15,7 +15,6 @@
     "rarity": "COMMON",
     "race": "",
     "races": [],
-    "spellSchool": "",
     "cost": 4,
     "attack": 0,
     "health": 0,
@@ -81,7 +80,8 @@
       {
         "date": "2021-03-26",
         "changes": {
-          "text": "<b>생명력 흡수</b>\\n하수인에게 피해를\\n$4 줍니다."
+          "text": "<b>생명력 흡수</b>\\n하수인에게 피해를\\n$4 줍니다.",
+          "spellSchool": "NATURE"
         }
       },
       {
