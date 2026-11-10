@@ -1,33 +1,30 @@
 {
-  "schemaVersion": 1,
-  "mode": "constructed",
-  "englishName": "Giant Wasp",
-  "card": {
-    "id": "UNG_814",
-    "dbfId": 41328,
+  "schemaVersion": 2,
+  "id": "UNG_814",
+  "dbfId": 41328,
+  "sourceBaseline": {
+    "repository": "HearthSim/hsdata",
+    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
+    "commitDate": "2017-04-04",
+    "build": 18336,
+    "path": "CardDefs.xml",
+    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
+  },
+  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
+  "2017-04-07": {
     "name": "커다란 말벌",
-    "text": "<b>은신</b><br></br><b>독성</b>",
     "type": "MINION",
     "cardClass": "NEUTRAL",
-    "classes": [],
-    "nativeSetId": 27,
-    "set": "UNGORO",
     "rarity": "COMMON",
-    "race": "야수",
-    "races": [
-      "BEAST"
-    ],
-    "spellSchool": "",
+    "collectible": true,
     "cost": 3,
     "attack": 2,
     "health": 2,
-    "armor": 0,
-    "durability": 0,
-    "collectible": true,
-    "chooseOne": false,
-    "installed": true,
-    "portrait": "HS10-051_M.psd:8d6629266468642418ef42e3f58a3845",
-    "flavor": "나비처럼 날아서 말벌처럼 쏜다!",
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "text": "<b>은신</b><br></br><b>독성</b>",
     "nativeTags": [
       {
         "id": 45,
@@ -91,30 +88,170 @@
       }
     ],
     "nativeRawText": "<b>은신</b>\n<b>독성</b>",
-    "nativeTextBuilder": 0,
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-7647-4087-9d94-b88d35081810",
+        "00000012-5f34-4929-aa48-0f2fc96bf49a"
+      ],
+      "triggeredPowerHistory": []
+    },
+    "nativeSetId": 27,
+    "flavor": "나비처럼 날아서 말벌처럼 쏜다!"
+  },
+  "references": {
+    "nativeReferences": {
+      "entourageCardIds": [],
+      "powerDefinitions": [
+        "00000012-7647-4087-9d94-b88d35081810",
+        "00000012-5f34-4929-aa48-0f2fc96bf49a"
+      ],
+      "triggeredPowerHistory": []
+    }
+  },
+  "currentReferenceTags": [],
+  "current": {
+    "name": "커다란 말벌",
+    "type": "MINION",
+    "cardClass": "NEUTRAL",
+    "classes": [],
+    "rarity": "COMMON",
+    "collectible": true,
+    "cost": 3,
+    "attack": 2,
+    "health": 2,
+    "durability": 0,
+    "armor": 0,
+    "text": "<b>은신</b><br></br><b>독성</b>",
+    "races": [
+      "BEAST"
+    ],
+    "race": "야수",
+    "spellSchool": "",
+    "nativeTags": [
+      {
+        "id": 45,
+        "name": "생명력",
+        "value": 2
+      },
+      {
+        "id": 47,
+        "name": "공격력",
+        "value": 2
+      },
+      {
+        "id": 48,
+        "name": "마나 비용",
+        "value": 3
+      },
+      {
+        "id": 191,
+        "name": "은신",
+        "value": 1
+      },
+      {
+        "id": 199,
+        "name": "직업",
+        "value": 12
+      },
+      {
+        "id": 200,
+        "name": "종족",
+        "value": 20
+      },
+      {
+        "id": 201,
+        "name": "진영",
+        "value": 3
+      },
+      {
+        "id": 202,
+        "name": "카드 유형",
+        "value": 4
+      },
+      {
+        "id": 203,
+        "name": "희귀도",
+        "value": 1
+      },
+      {
+        "id": 251,
+        "name": "게임 태그 251",
+        "value": 1
+      },
+      {
+        "id": 321,
+        "name": "수집 가능",
+        "value": 1
+      },
+      {
+        "id": 363,
+        "name": "독성",
+        "value": 1
+      }
+    ],
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified",
-    "patches": [],
-    "initialSpecStatus": "unverified",
-    "patchSources": {}
+    "nativeRawText": "<b>은신</b>\n<b>독성</b>",
+    "nativeTextBuilder": 0
   },
-  "root": true,
-  "relatedIds": [],
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
+  "historyIncompleteFields": [
+    "nativeTextBuilder",
+    "classes",
+    "durability",
+    "armor",
+    "spellSchool"
   ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
+  "historyKnownFields": [],
+  "unresolvedSourceFields": [
+    {
+      "field": "classes",
+      "reason": "2017-04-04 CardDefs baseline에 없고 현재 캐시에만 존재하지만 최초 도입일이 입증되지 않음."
+    },
+    {
+      "field": "durability",
+      "reason": "2017-04-04 CardDefs baseline에 없고 현재 캐시에만 존재하지만 최초 도입일이 입증되지 않음."
+    },
+    {
+      "field": "armor",
+      "reason": "2017-04-04 CardDefs baseline에 없고 현재 캐시에만 존재하지만 최초 도입일이 입증되지 않음."
+    },
+    {
+      "field": "spellSchool",
+      "reason": "2017-04-04 CardDefs baseline에 없고 현재 캐시에만 존재하지만 최초 도입일이 입증되지 않음."
+    }
+  ],
+  "referenceTags": [
+    {
+      "id": 183,
+      "name": "CARD_SET",
+      "value": 27,
+      "sourceSnapshot": "2017-04-04",
+      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
+    }
+  ],
+  "nativeTagsTimelineStatus": "partial",
+  "relatedIds": [],
+  "catalogMetadata": {
+    "englishName": "Giant Wasp",
+    "root": true,
+    "expansion": {
+      "id": 27,
+      "slug": "journey-to-ungoro",
+      "name": "운고로를 향한 여정",
+      "type": "expansion",
+      "englishName": "Journey To Ungoro"
+    },
+    "setOrder": 34,
+    "formats": [
+      "wild"
+    ],
+    "provenance": {
+      "source": "Installed Hearthstone dbf.unity3d",
+      "gameVersion": "6000.3.11.3145967",
+      "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
+      "locale": "koKR"
+    },
+    "portrait": "HS10-051_M.psd:8d6629266468642418ef42e3f58a3845"
   }
 }
