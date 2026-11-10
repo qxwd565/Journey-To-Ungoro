@@ -361,8 +361,6 @@ class HistoryOperationsTest(unittest.TestCase):
         self.assertNotIn("cost", scales["historyIncompleteFields"])
         self.assertNotIn("nativeTags", scales["historyIncompleteFields"])
         self.assertFalse(any(x["field"] in ("cost", "nativeTags[48]") for x in scales["unresolvedSourceFields"]))
-        self.assertIn("nativeTags", scales["historyIncompleteFields"])
-        self.assertTrue(any(x["field"] == "cost" for x in scales["unresolvedSourceFields"]))
 
 
 if __name__ == "__main__":
