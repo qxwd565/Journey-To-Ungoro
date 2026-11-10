@@ -206,7 +206,7 @@
     "releasedAt": "2017-04-07",
     "releaseStatus": "verified"
   },
-  "nativeTagsTimelineStatus": "partial",
+  "nativeTagsTimelineStatus": "complete",
   "historyIncompleteFields": [
     "nativeTags"
   ]
