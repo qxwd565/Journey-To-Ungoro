@@ -16,238 +16,316 @@
       "note": "Korean first-playable date; exact first-play timestamp not asserted."
     },
     "UNG_027t2": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_027의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_027"
     },
     "UNG_027t4": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_027의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_027"
     },
     "UNG_028t": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_028의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_028"
     },
     "UNG_057t1": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_057의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_057"
     },
     "UNG_065t": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_065의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_065"
     },
     "UNG_067t1": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_067의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_067"
     },
     "UNG_076t1": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_076의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_076"
     },
     "UNG_083t1": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_083의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_083"
     },
     "UNG_101a": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_101의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_101"
     },
     "UNG_101b": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_101의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_101"
     },
     "UNG_101t": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_101의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_101"
     },
     "UNG_101t2": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_101t의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_101t"
     },
     "UNG_101t3": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_101t의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_101t"
     },
     "UNG_111t1": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_111의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_111"
     },
     "UNG_116t": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_116의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_116"
     },
     "UNG_201t": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_201의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_201"
     },
     "UNG_208t": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_208의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_208"
     },
     "UNG_211a": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_211의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_211"
     },
     "UNG_211aa": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_211a의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_211a"
     },
     "UNG_211b": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_211의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_211"
     },
     "UNG_211c": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_211의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_211"
     },
     "UNG_211d": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_211의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_211"
     },
     "UNG_809t1": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_809의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_809"
     },
     "UNG_829t1": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_829의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_829"
     },
     "UNG_829t2": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_829의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_829"
     },
     "UNG_829t3": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_829의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_829"
     },
     "UNG_834t1": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_834의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_834"
     },
     "UNG_851t1": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_851의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_851"
     },
     "UNG_914t1": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_914의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_914"
     },
     "UNG_917t1": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_917의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_917"
     },
     "UNG_920t1": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_920의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_920"
     },
     "UNG_920t2": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_920의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_920"
     },
     "UNG_922t1": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_922의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_922"
     },
     "UNG_934t1": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_934의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_934"
     },
     "UNG_934t2": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_934의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_934"
     },
     "UNG_940t8": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_940의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_940"
     },
     "UNG_942t": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_942의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_942"
     },
     "UNG_954t1": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_954의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_954"
     },
     "UNG_957t1": {
-      "date": null,
-      "status": "pending",
-      "confidence": "unconfirmed",
-      "note": "Generated/choice card; first real-use date not established. 2017-04-07 and 2017-04-05 are candidates only."
+      "date": "2017-04-07",
+      "status": "verified",
+      "confidence": "high",
+      "note": "기존 2017-04-04는 클라이언트 데이터 시점. 부모 UNG_957의 실제 출시일에 처음 생성·선택 가능. 원본 스탯 검증과 구분.",
+      "source": "https://hearthstone.blizzard.com/en-gb/news/20659262/the-journey-begins-april-7-31-03-2017",
+      "parentCardId": "UNG_957"
     },
     "UNG_999t10": {
       "date": "2017-04-05",

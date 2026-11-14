@@ -1252,8 +1252,8 @@
       "race": "정령, 야수",
       "classes": [],
       "art": "art/UNG_027t2.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_027t4",
@@ -1327,8 +1327,8 @@
       "race": "정령, 야수",
       "classes": [],
       "art": "art/UNG_027t4.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_028",
@@ -1465,8 +1465,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_028t.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_029",
@@ -2207,8 +2207,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_057t1.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_058",
@@ -2725,8 +2725,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_065t.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_067",
@@ -2858,8 +2858,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_067t1.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_070",
@@ -3374,8 +3374,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_076t1.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_078",
@@ -3734,8 +3734,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_083t1.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_084",
@@ -4516,8 +4516,8 @@
       ],
       "race": "야수",
       "art": "art/UNG_101a.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_101b",
@@ -4584,8 +4584,8 @@
       ],
       "race": "야수",
       "art": "art/UNG_101b.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_101t",
@@ -4653,8 +4653,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_101t.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_101t2",
@@ -4722,8 +4722,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_101t2.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_101t3",
@@ -4796,8 +4796,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_101t3.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_103",
@@ -5132,8 +5132,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_111t1.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_113",
@@ -5354,8 +5354,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_116t.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_201",
@@ -5491,8 +5491,8 @@
       "race": "멀록",
       "classes": [],
       "art": "art/UNG_201t.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_202",
@@ -5791,8 +5791,8 @@
       "race": "정령",
       "classes": [],
       "art": "art/UNG_208t.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_211",
@@ -5916,8 +5916,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_211a.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_211aa",
@@ -5984,8 +5984,8 @@
       "race": "정령",
       "classes": [],
       "art": "art/UNG_211aa.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_211b",
@@ -6030,8 +6030,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_211b.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_211c",
@@ -6081,8 +6081,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_211c.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_211d",
@@ -6132,8 +6132,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_211d.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_800",
@@ -6781,8 +6781,8 @@
       "race": "정령",
       "classes": [],
       "art": "art/UNG_809t1.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_810",
@@ -7587,8 +7587,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_829t1.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_829t2",
@@ -7653,8 +7653,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_829t2.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_829t3",
@@ -7716,8 +7716,8 @@
       "race": "악마",
       "classes": [],
       "art": "art/UNG_829t3.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_830",
@@ -8140,8 +8140,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_834t1.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_835",
@@ -9027,8 +9027,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_851t1.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_852",
@@ -9751,8 +9751,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_914t1.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_915",
@@ -9975,8 +9975,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_917t1.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_919",
@@ -10219,8 +10219,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_920t1.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_920t2",
@@ -10282,8 +10282,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_920t2.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_922",
@@ -10385,8 +10385,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_922t1.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_923",
@@ -11045,8 +11045,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_934t1.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_934t2",
@@ -11086,8 +11086,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_934t2.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_937",
@@ -11407,8 +11407,8 @@
       "race": "",
       "classes": [],
       "art": "art/UNG_940t8.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_941",
@@ -11629,8 +11629,8 @@
       "race": "멀록",
       "classes": [],
       "art": "art/UNG_942t.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_946",
@@ -12146,8 +12146,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_954t1.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_955",
@@ -12412,8 +12412,8 @@
       "race": "야수",
       "classes": [],
       "art": "art/UNG_957t1.png",
-      "releasedAt": null,
-      "releaseStatus": "pending"
+      "releasedAt": "2017-04-07",
+      "releaseStatus": "verified"
     },
     {
       "id": "UNG_960",
