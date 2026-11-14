@@ -15,14 +15,14 @@ jobs:
           persist-credentials: true
       - name: Verify and normalize all card JSON
         run: |
-          curl -fsSL --retry 3 https://raw.githubusercontent.com/qxwd565/legacy/f1fba1e2c74b3e57e64713c883edb4f7fb2803b8/tools/unify-card-apis.py -o /tmp/unify-card-apis.py
+          curl -fsSL --retry 3 https://raw.githubusercontent.com/qxwd565/legacy/8d3af83a8631b7c9d16cca854857f30ce283d1e3/tools/unify-card-apis.py -o /tmp/unify-card-apis.py
           python3 /tmp/unify-card-apis.py
           python3 /tmp/unify-card-apis.py --apply
           python3 /tmp/unify-card-apis.py
           git diff --check
       - name: Commit verified normalization
         run: |
-          git add data metadata
+          git add cards.json data metadata
           if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
