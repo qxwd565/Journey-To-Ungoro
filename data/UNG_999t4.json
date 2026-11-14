@@ -4,23 +4,7 @@
     "type": "SPELL",
     "cardClass": "NEUTRAL",
     "text": "생명력 +3",
-    "nativeTags": [
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 12
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      }
-    ],
-    "nativeRawText": "생명력 +3",
-    "nativeSetId": 27,
     "id": "UNG_999t4",
-    "dbfId": 41059,
-    "set": "UNGORO",
-    "art": "art/UNG_999t4.png"
+    "dbfId": 41059
   }
 }

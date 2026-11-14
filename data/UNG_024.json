@@ -7,84 +7,10 @@
     "collectible": true,
     "cost": 3,
     "text": "<b>비밀:</b> 상대편이 주문을<br></br>시전하면, 그 주문을 복사하여<br></br>내 손으로 가져옵니다.<br></br>그 주문의 비용이 (0)이 됩니다.",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 3
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 4
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 3
-      },
-      {
-        "id": 219,
-        "name": "비밀",
-        "value": 1
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "[x]<b>비밀:</b> 상대편이 주문을\n시전하면, 그 주문을 복사하여\n내 손으로 가져옵니다.\n그 주문의 비용이 (0)이 됩니다.",
-    "nativeSetId": 27,
-    "flavor": "그 주문, 마음에 드는데... 내가 가져야겠어!",
     "id": "UNG_024",
-    "dbfId": 41158,
-    "set": "UNGORO",
-    "art": "art/UNG_024.png"
+    "dbfId": 41158
   },
   "2021-03-26": {
-    "spellSchool": "ARCANE",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 3
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 4
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 3
-      },
-      {
-        "id": 219,
-        "name": "비밀",
-        "value": 1
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      },
-      {
-        "id": 1635,
-        "name": "주문 속성",
-        "value": 1
-      }
-    ]
+    "spellSchool": "ARCANE"
   }
 }

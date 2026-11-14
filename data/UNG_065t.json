@@ -6,43 +6,7 @@
     "cost": 11,
     "health": 1,
     "text": "한 턴에 카드를 4장 이상 내면, 되살아납니다.",
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 1
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 11
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 7
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 402,
-        "name": "능력치 숨김",
-        "value": 1
-      },
-      {
-        "id": 448,
-        "name": "대상 지정 불가",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "한 턴에 카드를 4장 이상 내면, 되살아납니다.",
-    "nativeSetId": 27,
     "id": "UNG_065t",
-    "dbfId": 42796,
-    "set": "UNGORO",
-    "art": "art/UNG_065t.png"
+    "dbfId": 42796
   }
 }

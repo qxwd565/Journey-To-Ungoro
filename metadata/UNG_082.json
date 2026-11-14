@@ -1,0 +1,78 @@
+{
+  "schema": "hscard-date-metadata-1",
+  "id": "UNG_082",
+  "timezone": "Asia/Seoul",
+  "release": {
+    "date": "2017-04-07",
+    "status": "unverified"
+  },
+  "baselineStatus": "partially-verified",
+  "normalization": {
+    "datedExcludedFields": {
+      "2017-04-07": {
+        "nativeTags": [
+          {
+            "id": 45,
+            "name": "생명력",
+            "value": 3
+          },
+          {
+            "id": 47,
+            "name": "공격력",
+            "value": 3
+          },
+          {
+            "id": 48,
+            "name": "마나 비용",
+            "value": 3
+          },
+          {
+            "id": 199,
+            "name": "직업",
+            "value": 12
+          },
+          {
+            "id": 200,
+            "name": "종족",
+            "value": 20
+          },
+          {
+            "id": 201,
+            "name": "진영",
+            "value": 3
+          },
+          {
+            "id": 202,
+            "name": "카드 유형",
+            "value": 4
+          },
+          {
+            "id": 203,
+            "name": "희귀도",
+            "value": 1
+          },
+          {
+            "id": 218,
+            "name": "전투의 함성",
+            "value": 1
+          },
+          {
+            "id": 251,
+            "name": "게임 태그 251",
+            "value": 1
+          },
+          {
+            "id": 321,
+            "name": "수집 가능",
+            "value": 1
+          }
+        ],
+        "nativeRawText": "<b>전투의 함성:</b> 내가 이전 턴에 정령을 냈다면, <b>적응</b>합니다.",
+        "nativeSetId": 27,
+        "flavor": "오잉!? 천둥도마뱀의 상태가...!",
+        "set": "UNGORO",
+        "art": "art/UNG_082.png"
+      }
+    }
+  }
+}

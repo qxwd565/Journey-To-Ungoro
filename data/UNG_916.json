@@ -7,45 +7,10 @@
     "collectible": true,
     "cost": 1,
     "text": "이번 턴에 내가 야수를 낼 때마다 무작위 야수 카드 1장을 내 손으로 가져옵니다.",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 1
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 3
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 4
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "이번 턴에 내가 야수를 낼 때마다 무작위 야수 카드 1장을 내 손으로 가져옵니다.",
-    "nativeSetId": 27,
-    "flavor": "왠지 천둥도마뱀만 가져올 것 같은 이 느낌은 뭘까요.",
     "id": "UNG_916",
-    "dbfId": 41360,
-    "set": "UNGORO",
-    "art": "art/UNG_916.png"
+    "dbfId": 41360
   },
   "2023-10-18": {
-    "cost": 0,
-    "nativeTagRemovals": [
-      48
-    ]
+    "cost": 0
   }
 }

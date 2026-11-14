@@ -1,0 +1,63 @@
+{
+  "schema": "hscard-date-metadata-1",
+  "id": "UNG_201",
+  "timezone": "Asia/Seoul",
+  "release": {
+    "date": "2017-04-07",
+    "status": "unverified"
+  },
+  "baselineStatus": "partially-verified",
+  "normalization": {
+    "datedExcludedFields": {
+      "2017-04-07": {
+        "nativeTags": [
+          {
+            "id": 32,
+            "name": "발동 효과 표시",
+            "value": 1
+          },
+          {
+            "id": 45,
+            "name": "생명력",
+            "value": 3
+          },
+          {
+            "id": 48,
+            "name": "마나 비용",
+            "value": 2
+          },
+          {
+            "id": 199,
+            "name": "직업",
+            "value": 8
+          },
+          {
+            "id": 200,
+            "name": "종족",
+            "value": 21
+          },
+          {
+            "id": 202,
+            "name": "카드 유형",
+            "value": 4
+          },
+          {
+            "id": 203,
+            "name": "희귀도",
+            "value": 3
+          },
+          {
+            "id": 321,
+            "name": "수집 가능",
+            "value": 1
+          }
+        ],
+        "nativeRawText": "내 턴이 끝날 때,\n1/1 멀록을 1마리 소환합니다.",
+        "nativeSetId": 27,
+        "flavor": "멀록들만 들을 수 있는 소리를 냅니다. 참 다행이죠. 꽤 심기가 불편한 소리거든요.",
+        "set": "UNGORO",
+        "art": "art/UNG_201.png"
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "schema": "hscard-date-metadata-1",
+  "id": "UNG_854",
+  "timezone": "Asia/Seoul",
+  "release": {
+    "date": "2017-04-07",
+    "status": "unverified"
+  },
+  "baselineStatus": "partially-verified",
+  "normalization": {
+    "datedExcludedFields": {
+      "2017-04-07": {
+        "nativeTags": [
+          {
+            "id": 48,
+            "name": "마나 비용",
+            "value": 8
+          },
+          {
+            "id": 199,
+            "name": "직업",
+            "value": 6
+          },
+          {
+            "id": 201,
+            "name": "진영",
+            "value": 3
+          },
+          {
+            "id": 202,
+            "name": "카드 유형",
+            "value": 5
+          },
+          {
+            "id": 203,
+            "name": "희귀도",
+            "value": 3
+          },
+          {
+            "id": 251,
+            "name": "게임 태그 251",
+            "value": 4
+          },
+          {
+            "id": 268,
+            "name": "게임 태그 268",
+            "value": 2
+          },
+          {
+            "id": 321,
+            "name": "수집 가능",
+            "value": 1
+          }
+        ],
+        "nativeRawText": "비용이 (8) 이상인 하수인을 하나 <b>발견</b>하여 소환합니다.",
+        "nativeSetId": 27,
+        "flavor": "짜잔! 하수인 DNA!",
+        "set": "UNGORO",
+        "art": "art/UNG_854.png"
+      },
+      "2023-10-18": {
+        "nativeTags": [
+          {
+            "id": 48,
+            "value": 7
+          },
+          {
+            "id": 199,
+            "name": "직업",
+            "value": 6
+          },
+          {
+            "id": 201,
+            "name": "진영",
+            "value": 3
+          },
+          {
+            "id": 202,
+            "name": "카드 유형",
+            "value": 5
+          },
+          {
+            "id": 203,
+            "name": "희귀도",
+            "value": 3
+          },
+          {
+            "id": 251,
+            "name": "게임 태그 251",
+            "value": 4
+          },
+          {
+            "id": 268,
+            "name": "게임 태그 268",
+            "value": 2
+          },
+          {
+            "id": 321,
+            "name": "수집 가능",
+            "value": 1
+          }
+        ]
+      }
+    }
+  }
+}

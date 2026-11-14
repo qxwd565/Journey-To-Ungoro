@@ -1,0 +1,40 @@
+{
+  "schema": "hscard-date-metadata-1",
+  "id": "UNG_917t1",
+  "timezone": "Asia/Seoul",
+  "release": {
+    "date": "2017-04-07",
+    "status": "unverified"
+  },
+  "baselineStatus": "partially-verified",
+  "normalization": {
+    "datedExcludedFields": {
+      "2017-04-07": {
+        "nativeTags": [
+          {
+            "id": 48,
+            "name": "마나 비용",
+            "value": 2
+          },
+          {
+            "id": 199,
+            "name": "직업",
+            "value": 3
+          },
+          {
+            "id": 202,
+            "name": "카드 유형",
+            "value": 10
+          }
+        ],
+        "nativeRawText": "<b>영웅 능력</b>\n야수 1마리에게 +2/+2를 부여합니다.",
+        "nativeSetId": 27,
+        "set": "UNGORO",
+        "art": "art/UNG_917t1.png"
+      },
+      "2023-10-18": {
+        "nativeRawText": "야수에게 +3/+3을 부여합니다."
+      }
+    }
+  }
+}

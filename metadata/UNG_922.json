@@ -1,0 +1,48 @@
+{
+  "schema": "hscard-date-metadata-1",
+  "id": "UNG_922",
+  "timezone": "Asia/Seoul",
+  "release": {
+    "date": "2017-04-07",
+    "status": "unverified"
+  },
+  "baselineStatus": "partially-verified",
+  "normalization": {
+    "datedExcludedFields": {
+      "2017-04-07": {
+        "nativeTags": [
+          {
+            "id": 48,
+            "name": "마나 비용",
+            "value": 2
+          },
+          {
+            "id": 199,
+            "name": "직업",
+            "value": 10
+          },
+          {
+            "id": 202,
+            "name": "카드 유형",
+            "value": 5
+          },
+          {
+            "id": 203,
+            "name": "희귀도",
+            "value": 4
+          },
+          {
+            "id": 321,
+            "name": "수집 가능",
+            "value": 1
+          }
+        ],
+        "nativeRawText": "내 덱에 있는 모든 카드를 \"카드를 하나 <b>발견</b>합니다.\"로 교체합니다.",
+        "nativeSetId": 27,
+        "flavor": "정말로 카드가 나무에서 열리는군요!",
+        "set": "UNGORO",
+        "art": "art/UNG_922.png"
+      }
+    }
+  }
+}

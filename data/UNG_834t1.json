@@ -11,42 +11,7 @@
     ],
     "race": "야수",
     "text": "",
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 1
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 1
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 1
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 9
-      },
-      {
-        "id": 200,
-        "name": "종족",
-        "value": 20
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      }
-    ],
-    "nativeSetId": 27,
     "id": "UNG_834t1",
-    "dbfId": 41943,
-    "set": "UNGORO",
-    "art": "art/UNG_834t1.png"
+    "dbfId": 41943
   }
 }

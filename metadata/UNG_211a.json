@@ -1,0 +1,32 @@
+{
+  "schema": "hscard-date-metadata-1",
+  "id": "UNG_211a",
+  "timezone": "Asia/Seoul",
+  "release": {
+    "date": "2017-04-07",
+    "status": "unverified"
+  },
+  "baselineStatus": "partially-verified",
+  "normalization": {
+    "datedExcludedFields": {
+      "2017-04-07": {
+        "nativeTags": [
+          {
+            "id": 199,
+            "name": "직업",
+            "value": 8
+          },
+          {
+            "id": 202,
+            "name": "카드 유형",
+            "value": 5
+          }
+        ],
+        "nativeRawText": "내 하수인을 소환할 공간이 다 찰 때까지 1/1 정령을 소환합니다.",
+        "nativeSetId": 27,
+        "set": "UNGORO",
+        "art": "art/UNG_211a.png"
+      }
+    }
+  }
+}

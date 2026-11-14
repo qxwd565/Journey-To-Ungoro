@@ -7,119 +7,13 @@
     "collectible": true,
     "cost": 2,
     "text": "이번 턴에 내가 시전하는 다음 주문은 마나 대신 생명력을 비용으로 사용합니다.",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 2
-      },
-      {
-        "id": 183,
-        "name": "CARD_SET",
-        "value": 27
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 9
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 4
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "이번 턴에 내가 시전하는 다음 주문은 마나 대신 생명력을 비용으로 사용합니다.",
-    "nativeSetId": 27,
-    "flavor": "마나가 여러분의 도움을 필요로 합니다! 오늘 바로 헌혈하세요!",
     "id": "UNG_832",
-    "dbfId": 41872,
-    "set": "UNGORO",
-    "art": "art/UNG_832.png"
+    "dbfId": 41872
   },
   "2020-04-21": {
-    "cost": 4,
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 4
-      },
-      {
-        "id": 183,
-        "name": "CARD_SET",
-        "value": 27
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 9
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 4
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      }
-    ]
+    "cost": 4
   },
   "2021-03-26": {
-    "spellSchool": "SHADOW",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 4
-      },
-      {
-        "id": 183,
-        "name": "CARD_SET",
-        "value": 27
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 9
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 4
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      },
-      {
-        "id": 1635,
-        "name": "주문 속성",
-        "value": 6
-      }
-    ]
+    "spellSchool": "SHADOW"
   }
 }

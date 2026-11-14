@@ -11,48 +11,7 @@
     ],
     "race": "야수",
     "text": "<b>전투의 함성:</b><br></br>카드를 1장 뽑습니다.",
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 2
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 3
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 1
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 3
-      },
-      {
-        "id": 200,
-        "name": "종족",
-        "value": 20
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 218,
-        "name": "전투의 함성",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "<b>전투의 함성:</b>\n카드를 1장 뽑습니다.",
-    "nativeSetId": 27,
     "id": "UNG_920t2",
-    "dbfId": 42013,
-    "set": "UNGORO",
-    "art": "art/UNG_920t2.png"
+    "dbfId": 42013
   }
 }

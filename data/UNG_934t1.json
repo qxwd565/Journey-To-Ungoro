@@ -8,48 +8,7 @@
     "attack": 4,
     "durability": 2,
     "text": "<b>전투의 함성:</b> 내 영웅 능력이<br></br>'무작위 적 하나에게<br></br>피해를 8 줍니다.'로 바뀝니다.",
-    "nativeTags": [
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 4
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 3
-      },
-      {
-        "id": 187,
-        "name": "내구도",
-        "value": 2
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 10
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 7
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 5
-      },
-      {
-        "id": 218,
-        "name": "전투의 함성",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "<b>전투의 함성:</b> 내 영웅 능력이\n'무작위 적 하나에게\n피해를 8 줍니다.'로 바뀝니다.",
-    "nativeSetId": 27,
     "id": "UNG_934t1",
-    "dbfId": 41426,
-    "set": "UNGORO",
-    "art": "art/UNG_934t1.png"
+    "dbfId": 41426
   }
 }

@@ -13,59 +13,7 @@
     ],
     "race": "멀록",
     "text": "<b>전투의 함성:</b><br></br>아군 멀록 1마리에게<br></br>+1/+1을 부여합니다.",
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 3
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 2
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 2
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 12
-      },
-      {
-        "id": 200,
-        "name": "종족",
-        "value": 14
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 1
-      },
-      {
-        "id": 218,
-        "name": "전투의 함성",
-        "value": 1
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "[x]<b>전투의 함성:</b>\n아군 멀록 1마리에게\n+1/+1을 부여합니다.",
-    "nativeSetId": 27,
-    "flavor": "게살을 좋아합니다. 게는 무서워합니다.",
     "id": "UNG_073",
-    "dbfId": 41245,
-    "set": "UNGORO",
-    "art": "art/UNG_073.png"
+    "dbfId": 41245
   }
 }

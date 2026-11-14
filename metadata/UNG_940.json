@@ -1,0 +1,117 @@
+{
+  "schema": "hscard-date-metadata-1",
+  "id": "UNG_940",
+  "timezone": "Asia/Seoul",
+  "release": {
+    "date": "2017-04-07",
+    "status": "unverified"
+  },
+  "baselineStatus": "partially-verified",
+  "normalization": {
+    "datedExcludedFields": {
+      "2017-04-07": {
+        "nativeTags": [
+          {
+            "id": 48,
+            "name": "마나 비용",
+            "value": 1
+          },
+          {
+            "id": 114,
+            "name": "전설 속성",
+            "value": 1
+          },
+          {
+            "id": 199,
+            "name": "직업",
+            "value": 6
+          },
+          {
+            "id": 202,
+            "name": "카드 유형",
+            "value": 5
+          },
+          {
+            "id": 203,
+            "name": "희귀도",
+            "value": 5
+          },
+          {
+            "id": 321,
+            "name": "수집 가능",
+            "value": 1
+          },
+          {
+            "id": 462,
+            "name": "퀘스트",
+            "value": 1
+          },
+          {
+            "id": 535,
+            "name": "퀘스트 완료 조건",
+            "value": 7
+          },
+          {
+            "id": 676,
+            "name": "무작위 선택 제외",
+            "value": 1
+          }
+        ],
+        "nativeRawText": "<b>퀘스트:</b>\n<b>죽음의 메아리</b> 하수인을 7회 소환해야 합니다.<b>\n보상:</b> 희망의 감시자 아마라",
+        "nativeSetId": 27,
+        "flavor": "계속 '5분 더'를 누를 거면 왜 알람을 켜 두는 걸까요?",
+        "set": "UNGORO",
+        "art": "art/UNG_940.png"
+      },
+      "2023-10-18": {
+        "nativeRawText": "<b>퀘스트:</b>\n<b>죽음의 메아리</b> 하수인을 6회 소환해야 합니다.\n<b>보상:</b> 희망의 감시자 아마라",
+        "nativeTags": [
+          {
+            "id": 48,
+            "name": "마나 비용",
+            "value": 1
+          },
+          {
+            "id": 114,
+            "name": "전설 속성",
+            "value": 1
+          },
+          {
+            "id": 199,
+            "name": "직업",
+            "value": 6
+          },
+          {
+            "id": 202,
+            "name": "카드 유형",
+            "value": 5
+          },
+          {
+            "id": 203,
+            "name": "희귀도",
+            "value": 5
+          },
+          {
+            "id": 321,
+            "name": "수집 가능",
+            "value": 1
+          },
+          {
+            "id": 462,
+            "name": "퀘스트",
+            "value": 1
+          },
+          {
+            "id": 535,
+            "value": 6
+          },
+          {
+            "id": 676,
+            "name": "무작위 선택 제외",
+            "value": 1
+          }
+        ]
+      }
+    }
+  }
+}

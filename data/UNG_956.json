@@ -7,109 +7,13 @@
     "collectible": true,
     "cost": 3,
     "text": "내 하수인들에게 \"<b>죽음의 메아리:</b> 이 하수인을 내 손으로 다시 가져옴\" 능력을 부여합니다.",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 3
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 8
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 4
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "내 하수인들에게 \"<b>죽음의 메아리:</b> 이 하수인을 내 손으로 다시 가져옴\" 능력을 부여합니다.",
-    "nativeSetId": 27,
-    "flavor": "이 시간부로 우린 모두 해골 기사다.",
     "id": "UNG_956",
-    "dbfId": 41879,
-    "set": "UNGORO",
-    "art": "art/UNG_956.png"
+    "dbfId": 41879
   },
   "2021-03-26": {
-    "spellSchool": "NATURE",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 3
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 8
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 4
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      },
-      {
-        "id": 1635,
-        "name": "주문 속성",
-        "value": 4
-      }
-    ]
+    "spellSchool": "NATURE"
   },
   "2023-10-18": {
-    "cost": 2,
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 2
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 8
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 4
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      },
-      {
-        "id": 1635,
-        "name": "주문 속성",
-        "value": 4
-      }
-    ]
+    "cost": 2
   }
 }

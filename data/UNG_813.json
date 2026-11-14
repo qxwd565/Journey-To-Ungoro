@@ -13,59 +13,7 @@
     ],
     "race": "정령",
     "text": "<b>질풍</b>",
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 8
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 4
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 7
-      },
-      {
-        "id": 189,
-        "name": "질풍",
-        "value": 1
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 12
-      },
-      {
-        "id": 200,
-        "name": "종족",
-        "value": 18
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 1
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "<b>질풍</b>",
-    "nativeSetId": 27,
-    "flavor": "매우 뛰어난 기상학자입니다!",
     "id": "UNG_813",
-    "dbfId": 41327,
-    "set": "UNGORO",
-    "art": "art/UNG_813.png"
+    "dbfId": 41327
   }
 }

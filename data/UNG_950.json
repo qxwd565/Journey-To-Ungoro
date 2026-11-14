@@ -9,99 +9,10 @@
     "attack": 4,
     "durability": 3,
     "text": "내 영웅이 공격한 후에<br></br>1/1 은빛 성기사단 신병을<br></br>둘 소환합니다.",
-    "nativeTags": [
-      {
-        "id": 32,
-        "name": "발동 효과 표시",
-        "value": 1
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 4
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 7
-      },
-      {
-        "id": 187,
-        "name": "내구도",
-        "value": 3
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 5
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 7
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 3
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "[x]내 영웅이 공격한 후에\n1/1 은빛 성기사단 신병을\n둘 소환합니다.",
-    "nativeSetId": 27,
-    "flavor": "조지! 칼! 살아 있었군요!",
     "id": "UNG_950",
-    "dbfId": 41859,
-    "set": "UNGORO",
-    "art": "art/UNG_950.png"
+    "dbfId": 41859
   },
   "2023-10-18": {
-    "cost": 6,
-    "nativeTags": [
-      {
-        "id": 32,
-        "name": "발동 효과 표시",
-        "value": 1
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 4
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 6
-      },
-      {
-        "id": 187,
-        "name": "내구도",
-        "value": 3
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 5
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 7
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 3
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      }
-    ]
+    "cost": 6
   }
 }

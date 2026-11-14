@@ -7,78 +7,13 @@
     "collectible": true,
     "cost": 2,
     "text": "피해를 1 주는<br></br>칼날꽃잎 카드 2장을<br></br>내 손으로 가져옵니다.",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 2
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 7
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 1
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "피해를 1 주는\n칼날꽃잎 카드 2장을\n내 손으로 가져옵니다.",
-    "nativeSetId": 27,
-    "flavor": "옛말에 꽃으로도 때리지 말라고 했거늘...",
     "id": "UNG_057",
-    "dbfId": 41207,
-    "set": "UNGORO",
-    "art": "art/UNG_057.png"
+    "dbfId": 41207
   },
   "2021-03-26": {
-    "spellSchool": "NATURE",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 2
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 7
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 1
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      },
-      {
-        "id": 1635,
-        "name": "주문 속성",
-        "value": 4
-      }
-    ]
+    "spellSchool": "NATURE"
   },
   "2023-10-18": {
-    "text": "피해를 2 주는 칼날꽃잎 둘을 내 손으로 가져옵니다.",
-    "nativeRawText": "피해를 2 주는 칼날꽃잎 둘을 내 손으로 가져옵니다."
+    "text": "피해를 2 주는 칼날꽃잎 둘을 내 손으로 가져옵니다."
   }
 }

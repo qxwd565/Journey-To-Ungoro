@@ -4,23 +4,7 @@
     "type": "SPELL",
     "cardClass": "NEUTRAL",
     "text": "+1/+1",
-    "nativeTags": [
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 12
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      }
-    ],
-    "nativeRawText": "+1/+1",
-    "nativeSetId": 27,
     "id": "UNG_999t14",
-    "dbfId": 41691,
-    "set": "UNGORO",
-    "art": "art/UNG_999t14.png"
+    "dbfId": 41691
   }
 }

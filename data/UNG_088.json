@@ -9,98 +9,10 @@
     "attack": 5,
     "health": 4,
     "text": "<b>전투의 함성:</b><br></br>주문을 하나 <b>발견</b>하여 무작위 대상에게 시전합니다.",
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 4
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 5
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 8
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 12
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 4
-      },
-      {
-        "id": 218,
-        "name": "전투의 함성",
-        "value": 1
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "<b>전투의 함성:</b>\n주문을 하나 <b>발견</b>하여 무작위 대상에게 시전합니다.",
-    "nativeSetId": 27,
-    "flavor": "내 미래에 피자가 보인다.",
     "id": "UNG_088",
-    "dbfId": 41264,
-    "set": "UNGORO",
-    "art": "art/UNG_088.png"
+    "dbfId": 41264
   },
   "2023-10-18": {
-    "health": 5,
-    "nativeTags": [
-      {
-        "id": 45,
-        "value": 5
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 5
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 8
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 12
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 4
-      },
-      {
-        "id": 218,
-        "name": "전투의 함성",
-        "value": 1
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      }
-    ]
+    "health": 5
   }
 }

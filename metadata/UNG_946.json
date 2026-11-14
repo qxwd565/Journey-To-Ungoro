@@ -1,0 +1,63 @@
+{
+  "schema": "hscard-date-metadata-1",
+  "id": "UNG_946",
+  "timezone": "Asia/Seoul",
+  "release": {
+    "date": "2017-04-07",
+    "status": "unverified"
+  },
+  "baselineStatus": "partially-verified",
+  "normalization": {
+    "datedExcludedFields": {
+      "2017-04-07": {
+        "nativeTags": [
+          {
+            "id": 45,
+            "name": "생명력",
+            "value": 3
+          },
+          {
+            "id": 47,
+            "name": "공격력",
+            "value": 3
+          },
+          {
+            "id": 48,
+            "name": "마나 비용",
+            "value": 3
+          },
+          {
+            "id": 199,
+            "name": "직업",
+            "value": 12
+          },
+          {
+            "id": 202,
+            "name": "카드 유형",
+            "value": 4
+          },
+          {
+            "id": 203,
+            "name": "희귀도",
+            "value": 4
+          },
+          {
+            "id": 218,
+            "name": "전투의 함성",
+            "value": 1
+          },
+          {
+            "id": 321,
+            "name": "수집 가능",
+            "value": 1
+          }
+        ],
+        "nativeRawText": "<b>전투의 함성:</b> 상대편의 무기를 파괴하고, 그 무기의 공격력만큼 방어도를 얻습니다.",
+        "nativeSetId": 27,
+        "flavor": "운고로 무기 먹기 대회에서 3번 연속 우승했습니다.",
+        "set": "UNGORO",
+        "art": "art/UNG_946.png"
+      }
+    }
+  }
+}

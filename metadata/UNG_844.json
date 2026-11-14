@@ -1,0 +1,73 @@
+{
+  "schema": "hscard-date-metadata-1",
+  "id": "UNG_844",
+  "timezone": "Asia/Seoul",
+  "release": {
+    "date": "2017-04-07",
+    "status": "unverified"
+  },
+  "baselineStatus": "partially-verified",
+  "normalization": {
+    "datedExcludedFields": {
+      "2017-04-07": {
+        "nativeTags": [
+          {
+            "id": 45,
+            "name": "생명력",
+            "value": 8
+          },
+          {
+            "id": 47,
+            "name": "공격력",
+            "value": 4
+          },
+          {
+            "id": 48,
+            "name": "마나 비용",
+            "value": 3
+          },
+          {
+            "id": 199,
+            "name": "직업",
+            "value": 12
+          },
+          {
+            "id": 201,
+            "name": "진영",
+            "value": 2
+          },
+          {
+            "id": 202,
+            "name": "카드 유형",
+            "value": 4
+          },
+          {
+            "id": 203,
+            "name": "희귀도",
+            "value": 3
+          },
+          {
+            "id": 227,
+            "name": "CANT_ATTACK",
+            "value": 1
+          },
+          {
+            "id": 251,
+            "name": "게임 태그 251",
+            "value": 6
+          },
+          {
+            "id": 321,
+            "name": "수집 가능",
+            "value": 1
+          }
+        ],
+        "nativeRawText": "이 하수인은 적을\n공격할 수 없습니다.",
+        "nativeSetId": 27,
+        "flavor": "고블린들을 좋아합니다. 크림 소스에 찍어 먹을 때에 말이죠.",
+        "set": "UNGORO",
+        "art": "art/UNG_844.png"
+      }
+    }
+  }
+}

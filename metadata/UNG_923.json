@@ -1,0 +1,53 @@
+{
+  "schema": "hscard-date-metadata-1",
+  "id": "UNG_923",
+  "timezone": "Asia/Seoul",
+  "release": {
+    "date": "2017-04-07",
+    "status": "unverified"
+  },
+  "baselineStatus": "partially-verified",
+  "normalization": {
+    "datedExcludedFields": {
+      "2017-04-07": {
+        "nativeTags": [
+          {
+            "id": 48,
+            "name": "마나 비용",
+            "value": 1
+          },
+          {
+            "id": 199,
+            "name": "직업",
+            "value": 10
+          },
+          {
+            "id": 201,
+            "name": "진영",
+            "value": 3
+          },
+          {
+            "id": 202,
+            "name": "카드 유형",
+            "value": 5
+          },
+          {
+            "id": 203,
+            "name": "희귀도",
+            "value": 1
+          },
+          {
+            "id": 321,
+            "name": "수집 가능",
+            "value": 1
+          }
+        ],
+        "nativeRawText": "방어도를 +5 얻습니다.",
+        "nativeSetId": 27,
+        "flavor": "6주째. 계속해서 머리에서 발끝까지 비늘로 위장하고 있다. 놈들은 내가 공룡이 아니란 걸 아직 모르는 것 같다.",
+        "set": "UNGORO",
+        "art": "art/UNG_923.png"
+      }
+    }
+  }
+}

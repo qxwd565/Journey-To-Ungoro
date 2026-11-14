@@ -1,0 +1,81 @@
+{
+  "schema": "hscard-date-metadata-1",
+  "id": "UNG_034",
+  "timezone": "Asia/Seoul",
+  "release": {
+    "date": "2017-04-07",
+    "status": "unverified"
+  },
+  "baselineStatus": "partially-verified",
+  "normalization": {
+    "datedExcludedFields": {
+      "2017-04-07": {
+        "nativeTags": [
+          {
+            "id": 45,
+            "name": "생명력",
+            "value": 3
+          },
+          {
+            "id": 47,
+            "name": "공격력",
+            "value": 2
+          },
+          {
+            "id": 48,
+            "name": "마나 비용",
+            "value": 2
+          },
+          {
+            "id": 199,
+            "name": "직업",
+            "value": 6
+          },
+          {
+            "id": 200,
+            "name": "종족",
+            "value": 18
+          },
+          {
+            "id": 201,
+            "name": "진영",
+            "value": 3
+          },
+          {
+            "id": 202,
+            "name": "카드 유형",
+            "value": 4
+          },
+          {
+            "id": 203,
+            "name": "희귀도",
+            "value": 1
+          },
+          {
+            "id": 251,
+            "name": "게임 태그 251",
+            "value": 1
+          },
+          {
+            "id": 321,
+            "name": "수집 가능",
+            "value": 1
+          },
+          {
+            "id": 362,
+            "name": "지속 효과",
+            "value": 1
+          }
+        ],
+        "nativeRawText": "내 주문의 비용이\n(1) 감소합니다.",
+        "nativeSetId": 27,
+        "flavor": "정령 등불로 만들면 불티나게 팔리겠군요!",
+        "set": "UNGORO",
+        "art": "art/UNG_034.png"
+      },
+      "2024-10-18": {
+        "nativeRawText": "내 주문들의 비용이\n(1) 감소합니다.\n<i>(단, 1보다 낮아지진 않습니다.)</i>"
+      }
+    }
+  }
+}

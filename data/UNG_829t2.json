@@ -7,58 +7,7 @@
     "cost": 11,
     "health": 1,
     "text": "내 턴이 끝날 때, 3/2 임프를 둘 소환합니다.",
-    "nativeTags": [
-      {
-        "id": 32,
-        "name": "발동 효과 표시",
-        "value": 1
-      },
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 1
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 11
-      },
-      {
-        "id": 114,
-        "name": "전설 속성",
-        "value": 1
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 9
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 5
-      },
-      {
-        "id": 402,
-        "name": "능력치 숨김",
-        "value": 1
-      },
-      {
-        "id": 448,
-        "name": "대상 지정 불가",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "내 턴이 끝날 때, 3/2 임프를 둘 소환합니다.",
-    "nativeSetId": 27,
     "id": "UNG_829t2",
-    "dbfId": 42224,
-    "set": "UNGORO",
-    "art": "art/UNG_829t2.png"
+    "dbfId": 42224
   }
 }

@@ -1,0 +1,32 @@
+{
+  "schema": "hscard-date-metadata-1",
+  "id": "UNG_999t10",
+  "timezone": "Asia/Seoul",
+  "release": {
+    "date": "2017-04-05",
+    "status": "unverified"
+  },
+  "baselineStatus": "partially-verified",
+  "normalization": {
+    "datedExcludedFields": {
+      "2017-04-05": {
+        "nativeTags": [
+          {
+            "id": 199,
+            "name": "직업",
+            "value": 12
+          },
+          {
+            "id": 202,
+            "name": "카드 유형",
+            "value": 5
+          }
+        ],
+        "nativeRawText": "내 다음 턴까지 <b>은신</b>합니다.",
+        "nativeSetId": 27,
+        "set": "UNGORO",
+        "art": "art/UNG_999t10.png"
+      }
+    }
+  }
+}

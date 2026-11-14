@@ -5,28 +5,7 @@
     "cardClass": "NEUTRAL",
     "cost": 2,
     "text": "<b>영웅 능력</b><br></br>무작위 적 하나에게 피해를 8 줍니다.",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 2
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 12
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 10
-      }
-    ],
-    "nativeRawText": "<b>영웅 능력</b>\n무작위 적 하나에게 피해를 8 줍니다.",
-    "nativeSetId": 27,
     "id": "UNG_934t2",
-    "dbfId": 41940,
-    "set": "UNGORO",
-    "art": "art/UNG_934t2.png"
+    "dbfId": 41940
   }
 }

@@ -1,0 +1,42 @@
+{
+  "schema": "hscard-date-metadata-1",
+  "id": "UNG_999t5",
+  "timezone": "Asia/Seoul",
+  "release": {
+    "date": "2017-04-05",
+    "status": "unverified"
+  },
+  "baselineStatus": "partially-verified",
+  "normalization": {
+    "datedExcludedFields": {
+      "2017-04-05": {
+        "nativeTags": [
+          {
+            "id": 199,
+            "name": "직업",
+            "value": 12
+          },
+          {
+            "id": 202,
+            "name": "카드 유형",
+            "value": 5
+          },
+          {
+            "id": 311,
+            "name": "CANT_BE_TARGETED_BY_SPELLS",
+            "value": 1
+          },
+          {
+            "id": 332,
+            "name": "CANT_BE_TARGETED_BY_HERO_POWERS",
+            "value": 1
+          }
+        ],
+        "nativeRawText": "주문이나 영웅 능력의 대상으로 지정되지 않습니다.",
+        "nativeSetId": 27,
+        "set": "UNGORO",
+        "art": "art/UNG_999t5.png"
+      }
+    }
+  }
+}

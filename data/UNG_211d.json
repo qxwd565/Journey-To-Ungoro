@@ -4,28 +4,7 @@
     "type": "SPELL",
     "cardClass": "SHAMAN",
     "text": "모든 적 하수인에게<br></br>피해를 3 줍니다.",
-    "nativeTags": [
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 8
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 349,
-        "name": "게임 태그 349",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "[x]모든 적 하수인에게\n피해를 3 줍니다.",
-    "nativeSetId": 27,
     "id": "UNG_211d",
-    "dbfId": 41336,
-    "set": "UNGORO",
-    "art": "art/UNG_211d.png"
+    "dbfId": 41336
   }
 }

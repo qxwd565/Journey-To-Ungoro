@@ -12,53 +12,7 @@
     ],
     "race": "야수",
     "text": "<b>도발</b>",
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 5
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 3
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 4
-      },
-      {
-        "id": 190,
-        "name": "도발",
-        "value": 1
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 2
-      },
-      {
-        "id": 200,
-        "name": "종족",
-        "value": 20
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 3
-      }
-    ],
-    "nativeRawText": "<b>도발</b>",
-    "nativeSetId": 27,
     "id": "UNG_101t2",
-    "dbfId": 40975,
-    "set": "UNGORO",
-    "art": "art/UNG_101t2.png"
+    "dbfId": 40975
   }
 }

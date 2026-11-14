@@ -4,23 +4,7 @@
     "type": "SPELL",
     "cardClass": "NEUTRAL",
     "text": "<b>질풍</b>",
-    "nativeTags": [
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 12
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      }
-    ],
-    "nativeRawText": "<b>질풍</b>",
-    "nativeSetId": 27,
     "id": "UNG_999t7",
-    "dbfId": 41062,
-    "set": "UNGORO",
-    "art": "art/UNG_999t7.png"
+    "dbfId": 41062
   }
 }

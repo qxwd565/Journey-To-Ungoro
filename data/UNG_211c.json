@@ -4,28 +4,7 @@
     "type": "SPELL",
     "cardClass": "SHAMAN",
     "text": "적 영웅에게 피해를 6 줍니다.",
-    "nativeTags": [
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 8
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 349,
-        "name": "게임 태그 349",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "적 영웅에게 피해를 6 줍니다.",
-    "nativeSetId": 27,
     "id": "UNG_211c",
-    "dbfId": 41335,
-    "set": "UNGORO",
-    "art": "art/UNG_211c.png"
+    "dbfId": 41335
   }
 }

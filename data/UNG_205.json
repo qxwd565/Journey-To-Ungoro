@@ -13,59 +13,7 @@
     ],
     "race": "정령",
     "text": "<b>전투의 함성:</b> 적 하나를 <b>빙결</b> 상태로 만듭니다.",
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 1
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 2
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 1
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 12
-      },
-      {
-        "id": 200,
-        "name": "종족",
-        "value": 18
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 1
-      },
-      {
-        "id": 218,
-        "name": "전투의 함성",
-        "value": 1
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "<b>전투의 함성:</b> 적 하나를 <b>빙결</b> 상태로 만듭니다.",
-    "nativeSetId": 27,
-    "flavor": "이제, 너 뼛속까지, 얼어붙는다!",
     "id": "UNG_205",
-    "dbfId": 41111,
-    "set": "UNGORO",
-    "art": "art/UNG_205.png"
+    "dbfId": 41111
   }
 }

@@ -9,54 +9,7 @@
     "attack": 2,
     "health": 2,
     "text": "<b>전투의 함성:</b><br></br>공격력이 5 이상인<br></br>무작위 하수인 카드 1장을<br></br>내 손으로 가져옵니다.",
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 2
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 2
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 2
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 2
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 1
-      },
-      {
-        "id": 218,
-        "name": "전투의 함성",
-        "value": 1
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "[x]<b>전투의 함성:</b>\n공격력이 5 이상인\n무작위 하수인 카드 1장을\n내 손으로 가져옵니다.",
-    "nativeSetId": 27,
-    "flavor": "토르톨라어로 운고로는 \"고대의 분실물 취급소\"입니다.",
     "id": "UNG_078",
-    "dbfId": 41252,
-    "set": "UNGORO",
-    "art": "art/UNG_078.png"
+    "dbfId": 41252
   }
 }

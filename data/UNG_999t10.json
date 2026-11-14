@@ -4,23 +4,7 @@
     "type": "SPELL",
     "cardClass": "NEUTRAL",
     "text": "내 다음 턴까지 <b>은신</b>합니다.",
-    "nativeTags": [
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 12
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      }
-    ],
-    "nativeRawText": "내 다음 턴까지 <b>은신</b>합니다.",
-    "nativeSetId": 27,
     "id": "UNG_999t10",
-    "dbfId": 41054,
-    "set": "UNGORO",
-    "art": "art/UNG_999t10.png"
+    "dbfId": 41054
   }
 }

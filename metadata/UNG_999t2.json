@@ -1,0 +1,32 @@
+{
+  "schema": "hscard-date-metadata-1",
+  "id": "UNG_999t2",
+  "timezone": "Asia/Seoul",
+  "release": {
+    "date": "2017-04-05",
+    "status": "unverified"
+  },
+  "baselineStatus": "partially-verified",
+  "normalization": {
+    "datedExcludedFields": {
+      "2017-04-05": {
+        "nativeTags": [
+          {
+            "id": 199,
+            "name": "직업",
+            "value": 12
+          },
+          {
+            "id": 202,
+            "name": "카드 유형",
+            "value": 5
+          }
+        ],
+        "nativeRawText": "<b>죽음의 메아리:</b>\n1/1 식물을\n둘 소환합니다.",
+        "nativeSetId": 27,
+        "set": "UNGORO",
+        "art": "art/UNG_999t2.png"
+      }
+    }
+  }
+}

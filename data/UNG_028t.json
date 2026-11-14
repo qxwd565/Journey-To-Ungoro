@@ -6,77 +6,13 @@
     "rarity": "LEGENDARY",
     "cost": 5,
     "text": "내 턴이 한 번 더 진행됩니다.",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 5
-      },
-      {
-        "id": 114,
-        "name": "전설 속성",
-        "value": 1
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 4
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 5
-      }
-    ],
-    "nativeRawText": "내 턴이 한 번 더 진행됩니다.",
-    "nativeSetId": 27,
     "id": "UNG_028t",
-    "dbfId": 41167,
-    "set": "UNGORO",
-    "art": "art/UNG_028t.png"
+    "dbfId": 41167
   },
   "2021-03-26": {
-    "spellSchool": "ARCANE",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 5
-      },
-      {
-        "id": 114,
-        "name": "전설 속성",
-        "value": 1
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 4
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 5
-      },
-      {
-        "id": 1635,
-        "name": "주문 속성",
-        "value": 1
-      }
-    ]
+    "spellSchool": "ARCANE"
   },
   "2024-04-26": {
-    "text": "내 턴이 한 번 더 진행됩니다.<br></br><i>(게임당 1번만 발동)</i>",
-    "nativeRawText": "내 턴이 한 번 더 진행됩니다.\n<i>(게임당 1번만 발동)</i>"
+    "text": "내 턴이 한 번 더 진행됩니다.<br></br><i>(게임당 1번만 발동)</i>"
   }
 }

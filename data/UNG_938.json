@@ -13,64 +13,7 @@
     ],
     "race": "정령",
     "text": "<b>도발</b>, <b>전투의 함성:</b><br></br>생명력을 3 회복시킵니다.",
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 4
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 2
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 3
-      },
-      {
-        "id": 190,
-        "name": "도발",
-        "value": 1
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 8
-      },
-      {
-        "id": 200,
-        "name": "종족",
-        "value": 18
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 1
-      },
-      {
-        "id": 218,
-        "name": "전투의 함성",
-        "value": 1
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "[x]<b>도발</b>, <b>전투의 함성:</b>\n생명력을 3 회복시킵니다.",
-    "nativeSetId": 27,
-    "flavor": "넌 못 지나간다! 식후 1시간까지는.",
     "id": "UNG_938",
-    "dbfId": 41479,
-    "set": "UNGORO",
-    "art": "art/UNG_938.png"
+    "dbfId": 41479
   }
 }

@@ -7,104 +7,10 @@
     "collectible": true,
     "cost": 2,
     "text": "<b>모든</b> 하수인에게 부패를 시전합니다.<br></br>내 턴이 시작될 때, 그 하수인들을 처치합니다.",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 2
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 9
-      },
-      {
-        "id": 201,
-        "name": "진영",
-        "value": 3
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 3
-      },
-      {
-        "id": 251,
-        "name": "게임 태그 251",
-        "value": 3
-      },
-      {
-        "id": 268,
-        "name": "게임 태그 268",
-        "value": 2
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      }
-    ],
-    "nativeRawText": "<b>모든</b> 하수인에게 부패를 시전합니다.\n내 턴이 시작될 때, 그 하수인들을 처치합니다.",
-    "nativeSetId": 27,
-    "flavor": "운고로에서 가장 무서운 공포는... 고요하면서 치명적입니다.",
     "id": "UNG_831",
-    "dbfId": 41871,
-    "set": "UNGORO",
-    "art": "art/UNG_831.png"
+    "dbfId": 41871
   },
   "2021-03-26": {
-    "spellSchool": "SHADOW",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 2
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 9
-      },
-      {
-        "id": 201,
-        "name": "진영",
-        "value": 3
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 3
-      },
-      {
-        "id": 251,
-        "name": "게임 태그 251",
-        "value": 3
-      },
-      {
-        "id": 268,
-        "name": "게임 태그 268",
-        "value": 2
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      },
-      {
-        "id": 1635,
-        "name": "주문 속성",
-        "value": 6
-      }
-    ]
+    "spellSchool": "SHADOW"
   }
 }

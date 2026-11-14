@@ -1,0 +1,51 @@
+{
+  "schema": "hscard-date-metadata-1",
+  "id": "UNG_910",
+  "timezone": "Asia/Seoul",
+  "release": {
+    "date": "2017-04-07",
+    "status": "unverified"
+  },
+  "baselineStatus": "partially-verified",
+  "normalization": {
+    "datedExcludedFields": {
+      "2017-04-07": {
+        "nativeTags": [
+          {
+            "id": 48,
+            "name": "마나 비용",
+            "value": 2
+          },
+          {
+            "id": 199,
+            "name": "직업",
+            "value": 3
+          },
+          {
+            "id": 202,
+            "name": "카드 유형",
+            "value": 5
+          },
+          {
+            "id": 203,
+            "name": "희귀도",
+            "value": 1
+          },
+          {
+            "id": 321,
+            "name": "수집 가능",
+            "value": 1
+          }
+        ],
+        "nativeRawText": "[x]하수인 하나에게\n피해를 $2 주고\n그 양옆의 하수인들에게\n 피해를 $1 줍니다.",
+        "nativeSetId": 27,
+        "flavor": "앞발을 휘두르는 것보다 약한 것 같은데... 기분 탓이겠죠.",
+        "set": "UNGORO",
+        "art": "art/UNG_910.png"
+      },
+      "2023-10-18": {
+        "nativeRawText": "하수인에게 피해를 $3 주고\n그 양옆의 하수인들에게 피해를 $1 줍니다."
+      }
+    }
+  }
+}

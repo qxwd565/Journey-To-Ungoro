@@ -12,156 +12,17 @@
     ],
     "race": "정령",
     "text": "",
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 10
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 10
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 10
-      },
-      {
-        "id": 114,
-        "name": "전설 속성",
-        "value": 1
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 4
-      },
-      {
-        "id": 200,
-        "name": "종족",
-        "value": 18
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 5
-      }
-    ],
-    "nativeSetId": 27,
     "id": "UNG_027t4",
-    "dbfId": 41166,
-    "set": "UNGORO",
-    "art": "art/UNG_027t4.png"
+    "dbfId": 41166
   },
   "2022-11-30": {
-    "race": "정령, 야수",
     "races": [
       "ELEMENTAL",
       "BEAST"
     ],
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 10
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 10
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 10
-      },
-      {
-        "id": 114,
-        "name": "전설 속성",
-        "value": 1
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 4
-      },
-      {
-        "id": 200,
-        "name": "종족",
-        "value": 18
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 5
-      },
-      {
-        "id": 2542,
-        "name": "게임 태그 2542",
-        "value": 1
-      }
-    ]
+    "race": "정령, 야수"
   },
   "2023-10-18": {
-    "cost": 8,
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 10
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 10
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 8
-      },
-      {
-        "id": 114,
-        "name": "전설 속성",
-        "value": 1
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 4
-      },
-      {
-        "id": 200,
-        "name": "종족",
-        "value": 18
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 5
-      },
-      {
-        "id": 2542,
-        "name": "게임 태그 2542",
-        "value": 1
-      }
-    ]
+    "cost": 8
   }
 }
