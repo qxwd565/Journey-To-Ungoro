@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_830",
-  "dbfId": 41869,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
   "2017-04-07": {
     "name": "잔혹한 공룡술사",
     "type": "MINION",
@@ -74,46 +62,15 @@
       }
     ],
     "nativeRawText": "<b>죽음의 메아리:</b> 이번 게임에서 내가 버린 하수인 하나를 무작위로 소환합니다.",
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-0f0d-40a0-ac11-9bb356c4db3d"
-      ],
-      "triggeredPowerHistory": [
-        "effectIndex=\"0\" showInHistory=\"False\""
-      ]
-    },
     "nativeSetId": 27,
-    "flavor": "딱히 사교적이지는 않은 직업이죠."
+    "flavor": "딱히 사교적이지는 않은 직업이죠.",
+    "id": "UNG_830",
+    "dbfId": 41869,
+    "set": "UNGORO",
+    "art": "art/UNG_830.png"
   },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-0f0d-40a0-ac11-9bb356c4db3d"
-      ],
-      "triggeredPowerHistory": [
-        "effectIndex=\"0\" showInHistory=\"False\""
-      ]
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "잔혹한 공룡술사",
-    "type": "MINION",
-    "cardClass": "WARLOCK",
-    "classes": [],
-    "rarity": "RARE",
-    "collectible": true,
+  "2023-10-18": {
     "cost": 5,
-    "attack": 5,
-    "health": 5,
-    "durability": 0,
-    "armor": 0,
-    "text": "<b>죽음의 메아리:</b><br></br>이번 게임에서 내가 버린 무작위 하수인을 소환합니다.",
-    "races": [],
-    "race": "",
-    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -127,7 +84,6 @@
       },
       {
         "id": 48,
-        "name": "마나 비용",
         "value": 5
       },
       {
@@ -165,71 +121,6 @@
         "name": "수집 가능",
         "value": 1
       }
-    ],
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
-    "nativeRawText": "<b>죽음의 메아리:</b>\n이번 게임에서 내가 버린 무작위 하수인을 소환합니다.",
-    "nativeTextBuilder": 0
-  },
-  "2023-10-18": {
-    "cost": 5,
-    "nativeTagUpdates": [
-      {
-        "id": 48,
-        "value": 5
-      }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-    "confidence": "high",
-    "note": "27.6 한국 적용일. 비용 6→5 및 TAG48 동기화."
-  },
-  "sourceEvidence": {
-    "2023-10-18": {
-      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
-      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
-    }
-  },
-  "nativeTagsTimelineStatus": "complete",
-  "historyIncompleteFields": [
-    "text",
-    "nativeTextBuilder"
-  ],
-  "historyKnownFields": [],
-  "unresolvedSourceFields": [
-    {
-      "field": "text",
-      "reason": "differences between source snapshot and current display text not tied to a confirmed dated change remain undated."
-    }
-  ],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "root": true,
-  "relatedIds": [],
-  "englishName": "Cruel Dinomancer",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    ]
+  }
 }

@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_831",
-  "dbfId": 41871,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
   "2017-04-07": {
     "name": "부패의 안개",
     "type": "SPELL",
@@ -63,7 +51,11 @@
     ],
     "nativeRawText": "<b>모든</b> 하수인에게 부패를 시전합니다.\n내 턴이 시작될 때, 그 하수인들을 처치합니다.",
     "nativeSetId": 27,
-    "flavor": "운고로에서 가장 무서운 공포는... 고요하면서 치명적입니다."
+    "flavor": "운고로에서 가장 무서운 공포는... 고요하면서 치명적입니다.",
+    "id": "UNG_831",
+    "dbfId": 41871,
+    "set": "UNGORO",
+    "art": "art/UNG_831.png"
   },
   "2021-03-26": {
     "spellSchool": "SHADOW",
@@ -113,135 +105,6 @@
         "name": "주문 속성",
         "value": 6
       }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23642550",
-    "confidence": "high",
-    "note": "공식 주문 속성 도입일. spellSchool과 자체 TAG 1635를 같은 경계에서 추가."
-  },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-cd72-4632-abef-3ac572bf408c"
-      ],
-      "triggeredPowerHistory": []
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "부패의 안개",
-    "type": "SPELL",
-    "cardClass": "WARLOCK",
-    "classes": [],
-    "rarity": "RARE",
-    "collectible": true,
-    "cost": 2,
-    "attack": 0,
-    "health": 0,
-    "durability": 0,
-    "armor": 0,
-    "text": "<b>모든</b> 하수인을 저주합니다.<br></br>내 턴이 시작될 때, 그 하수인들을 처치합니다.",
-    "races": [],
-    "race": "",
-    "spellSchool": "SHADOW",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 2
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 9
-      },
-      {
-        "id": 201,
-        "name": "진영",
-        "value": 3
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 3
-      },
-      {
-        "id": 251,
-        "name": "게임 태그 251",
-        "value": 3
-      },
-      {
-        "id": 268,
-        "name": "게임 태그 268",
-        "value": 2
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      },
-      {
-        "id": 1635,
-        "name": "주문 속성",
-        "value": 6
-      }
-    ],
-    "nativeRawText": "<b>모든</b> 하수인을 저주합니다.\n내 턴이 시작될 때, 그 하수인들을 처치합니다.",
-    "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified"
-  },
-  "nativeTagsTimelineStatus": "complete",
-  "historyIncompleteFields": [
-    "text"
-  ],
-  "unresolvedSourceFields": [
-    {
-      "field": "nativeTextBuilder",
-      "reason": "현재 클라이언트 캐시에는 nativeTextBuilder=0이 있으나 CardDefs 18336 기준 스냅샷에는 없다. 도입·변경일을 입증할 자료가 없어 currentCache에만 보존."
-    },
-    {
-      "field": "text",
-      "reason": "CardDefs 18336 text와 현재 캐시 text가 다르지만 차이를 확정할 한국 적용일과 변경 출처가 확인되지 않았다. 최초 스냅샷은 원문대로 보존하고 현재 값은 currentCache에만 둔다."
-    },
-    {
-      "field": "nativeRawText",
-      "reason": "기준 스냅샷 nativeRawText와 현재 클라이언트 캐시가 다르지만 중간 변경일이 확인되지 않았다. 최초 원문을 보존하고 최신 원문은 currentCache에만 둔다."
-    }
-  ],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "root": true,
-  "relatedIds": [],
-  "englishName": "Corrupting Mist",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    ]
+  }
 }

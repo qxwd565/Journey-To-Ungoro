@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_088",
-  "dbfId": 41264,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
   "2017-04-07": {
     "name": "토르톨란 원시술사",
     "type": "MINION",
@@ -64,46 +52,18 @@
       }
     ],
     "nativeRawText": "<b>전투의 함성:</b>\n주문을 하나 <b>발견</b>하여 무작위 대상에게 시전합니다.",
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "e54b4d67-e5ce-4a24-9bbf-81ad87fd995d"
-      ],
-      "triggeredPowerHistory": []
-    },
     "nativeSetId": 27,
-    "flavor": "내 미래에 피자가 보인다."
+    "flavor": "내 미래에 피자가 보인다.",
+    "id": "UNG_088",
+    "dbfId": 41264,
+    "set": "UNGORO",
+    "art": "art/UNG_088.png"
   },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "e54b4d67-e5ce-4a24-9bbf-81ad87fd995d"
-      ],
-      "triggeredPowerHistory": []
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "토르톨란 원시술사",
-    "type": "MINION",
-    "cardClass": "NEUTRAL",
-    "classes": [],
-    "rarity": "EPIC",
-    "collectible": true,
-    "cost": 8,
-    "attack": 5,
+  "2023-10-18": {
     "health": 5,
-    "durability": 0,
-    "armor": 0,
-    "text": "<b>전투의 함성:</b><br></br>주문을 <b>발견</b>하여 무작위<br></br>대상에게 시전합니다.",
-    "races": [],
-    "race": "",
-    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
-        "name": "생명력",
         "value": 5
       },
       {
@@ -140,87 +100,7 @@
         "id": 321,
         "name": "수집 가능",
         "value": 1
-      },
-      {
-        "id": 415,
-        "name": "발견",
-        "value": 1
-      },
-      {
-        "id": 1342,
-        "name": "발견 시각 효과",
-        "value": 1
       }
-    ],
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
-    "nativeRawText": "[x]<b>전투의 함성:</b>\n주문을 <b>발견</b>하여 무작위\n대상에게 시전합니다.",
-    "nativeTextBuilder": 0
-  },
-  "2023-10-18": {
-    "health": 5,
-    "nativeTagUpdates": [
-      {
-        "id": 45,
-        "value": 5
-      }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-    "confidence": "high",
-    "note": "27.6 한국 적용일. 생명력 4→5 및 TAG45 동기화. 현재 발견 태그의 도입일은 소급하지 않음."
-  },
-  "sourceEvidence": {
-    "2023-10-18": {
-      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
-      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
-    }
-  },
-  "nativeTagsTimelineStatus": "partial",
-  "historyIncompleteFields": [
-    "nativeTags",
-    "text",
-    "nativeTextBuilder"
-  ],
-  "historyKnownFields": [],
-  "unresolvedSourceFields": [
-    {
-      "field": "nativeTags",
-      "reason": "현재 캐시의 일부 태그는 최초 도입일 또는 정확한 변경일이 미확정이므로 확인된 TAG 업데이트만 날짜 이벤트에 기록하고 나머지는 current cache에 분리 보존."
-    },
-    {
-      "field": "text",
-      "reason": "2017 CardDefs 원문과 현재 표시 문구의 차이 중 확정 패치로 확인되지 않은 변경일은 임의로 소급하지 않음."
-    }
-  ],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "root": true,
-  "relatedIds": [],
-  "englishName": "Tortollan Primalist",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    ]
+  }
 }

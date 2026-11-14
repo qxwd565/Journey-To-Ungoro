@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_961",
-  "dbfId": 41944,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
   "2017-04-07": {
     "name": "적응",
     "type": "SPELL",
@@ -47,143 +35,17 @@
       }
     ],
     "nativeRawText": "[x]내 하수인 하나를\n<b>적응</b>시킵니다.",
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [],
-      "triggeredPowerHistory": []
-    },
     "nativeSetId": 27,
-    "flavor": "구원받을 수 있도록 기도하세요. 그게 잘 안되면 뿔을 한 쌍 더 달거나 이빨이 더 커지도록 기도하세요."
-  },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [],
-      "triggeredPowerHistory": []
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "적응",
-    "type": "SPELL",
-    "cardClass": "PALADIN",
-    "classes": [],
-    "rarity": "COMMON",
-    "collectible": true,
-    "cost": 0,
-    "attack": 0,
-    "health": 0,
-    "durability": 0,
-    "armor": 0,
-    "text": "아군 하수인을 <b>적응</b>시킵니다.",
-    "races": [],
-    "race": "",
-    "spellSchool": "",
-    "nativeTags": [
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 5
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 1
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      },
-      {
-        "id": 546,
-        "name": "적응",
-        "value": 1
-      }
-    ],
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
-    "nativeRawText": "아군 하수인을 <b>적응</b>시킵니다.",
-    "nativeTextBuilder": 0
+    "flavor": "구원받을 수 있도록 기도하세요. 그게 잘 안되면 뿔을 한 쌍 더 달거나 이빨이 더 커지도록 기도하세요.",
+    "id": "UNG_961",
+    "dbfId": 41944,
+    "set": "UNGORO",
+    "art": "art/UNG_961.png"
   },
   "2023-10-18": {
     "cost": 0,
     "nativeTagRemovals": [
       48
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-    "confidence": "high",
-    "note": "27.6 한국 적용일. 확정된 능력치·효과 변경과 의미가 확인된 자체 태그만 반영."
-  },
-  "sourceEvidence": {
-    "2023-10-18": {
-      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
-      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
-    }
-  },
-  "nativeTagsTimelineStatus": "partial",
-  "historyIncompleteFields": [
-    "nativeTags",
-    "text",
-    "nativeTextBuilder"
-  ],
-  "historyKnownFields": [],
-  "unresolvedSourceFields": [
-    {
-      "field": "nativeTags",
-      "reason": "current cache contains tags whose introduction dates are not confirmed; no unsupported tag conversion is placed on the 27.6 boundary."
-    },
-    {
-      "field": "text",
-      "reason": "undated differences between snapshot raw text and current display text remain separate from confirmed stat changes."
-    }
-  ],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "root": true,
-  "relatedIds": [
-    41058,
-    41059,
-    41691,
-    41061,
-    41063,
-    41062,
-    41211,
-    41060,
-    41054,
-    41057,
-    41067
-  ],
-  "englishName": "Adaptation",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    ]
+  }
 }

@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_061",
-  "dbfId": 41213,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
   "2017-04-07": {
     "name": "흑요석 파편",
     "type": "WEAPON",
@@ -59,142 +47,15 @@
       }
     ],
     "nativeRawText": "[x]내가 낸 다른 직업의\n카드 하나당 비용이\n(1)씩 감소합니다.",
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-92c9-478c-9532-6b6a2d2604fd"
-      ],
-      "triggeredPowerHistory": []
-    },
     "nativeSetId": 27,
-    "flavor": "뾰족한 돌을 보고 '오오! 단검이다!'라는 생각이 든다면 당신은 진정한 도적입니다."
-  },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-92c9-478c-9532-6b6a2d2604fd"
-      ],
-      "triggeredPowerHistory": []
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "흑요석 파편",
-    "type": "WEAPON",
-    "cardClass": "ROGUE",
-    "classes": [],
-    "rarity": "RARE",
-    "collectible": true,
-    "cost": 4,
-    "attack": 3,
-    "health": 3,
-    "durability": 3,
-    "armor": 0,
-    "text": "이번 게임에서 내 손으로 가져온 도적이 아닌 직업 카드 하나당 비용이 (1)씩 감소합니다.",
-    "races": [],
-    "race": "",
-    "spellSchool": "",
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 3
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 3
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 4
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 7
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 7
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 3
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      }
-    ],
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
-    "nativeRawText": "이번 게임에서 내 손으로 가져온 도적이 아닌 직업 카드 하나당 비용이 (1)씩 감소합니다.",
-    "nativeTextBuilder": 0
+    "flavor": "뾰족한 돌을 보고 '오오! 단검이다!'라는 생각이 든다면 당신은 진정한 도적입니다.",
+    "id": "UNG_061",
+    "dbfId": 41213,
+    "set": "UNGORO",
+    "art": "art/UNG_061.png"
   },
   "2023-10-18": {
     "text": "이번 게임에서 내 손으로 가져온 도적이 아닌 직업 카드 하나당 비용이 (1)씩 감소합니다.",
-    "nativeRawText": "이번 게임에서 내 손으로 가져온 도적이 아닌 직업 카드 하나당 비용이 (1)씩 감소합니다.",
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-    "confidence": "high",
-    "note": "확정된 한국 적용일의 카드 설명 변경. 최초 스냅샷의 원문과 current cache를 분리 보존."
-  },
-  "sourceEvidence": {
-    "2023-10-18": {
-      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
-      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
-    }
-  },
-  "nativeTagsTimelineStatus": "partial",
-  "historyIncompleteFields": [
-    "nativeTags",
-    "nativeTextBuilder"
-  ],
-  "historyKnownFields": [],
-  "unresolvedSourceFields": [
-    {
-      "field": "nativeTags",
-      "reason": "현재 캐시의 태그 도입일이 미확정인 항목은 날짜 경계에 소급하지 않음."
-    },
-    {
-      "field": "nativeTextBuilder",
-      "reason": "현재 nativeTextBuilder의 도입일 미확정."
-    }
-  ],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "root": true,
-  "relatedIds": [],
-  "englishName": "Obsidian Shard",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    "nativeRawText": "이번 게임에서 내 손으로 가져온 도적이 아닌 직업 카드 하나당 비용이 (1)씩 감소합니다."
+  }
 }

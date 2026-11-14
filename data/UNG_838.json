@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_838",
-  "dbfId": 41881,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
   "2017-04-07": {
     "name": "잿멍울 군주",
     "type": "MINION",
@@ -73,56 +61,15 @@
       }
     ],
     "nativeRawText": "<b>도발</b>\n상대편의 턴 동안 공격력을 +4 얻습니다.",
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-25aa-451b-89c7-f00063b20377",
-        "00000012-03c2-42c0-9b71-8d336a75c673",
-        "07cac146-b9fe-41bb-8451-c2509d0a4d63",
-        "ed62bfb8-c620-49ff-9127-ebb5481074f3"
-      ],
-      "triggeredPowerHistory": [
-        "effectIndex=\"0\" showInHistory=\"False\"",
-        "effectIndex=\"1\" showInHistory=\"False\""
-      ]
-    },
     "nativeSetId": 27,
-    "flavor": "잿멍울 군주 몰라요? 전설적인 괴물? 아, 실망이야."
+    "flavor": "잿멍울 군주 몰라요? 전설적인 괴물? 아, 실망이야.",
+    "id": "UNG_838",
+    "dbfId": 41881,
+    "set": "UNGORO",
+    "art": "art/UNG_838.png"
   },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-25aa-451b-89c7-f00063b20377",
-        "00000012-03c2-42c0-9b71-8d336a75c673",
-        "07cac146-b9fe-41bb-8451-c2509d0a4d63",
-        "ed62bfb8-c620-49ff-9127-ebb5481074f3"
-      ],
-      "triggeredPowerHistory": [
-        "effectIndex=\"0\" showInHistory=\"False\"",
-        "effectIndex=\"1\" showInHistory=\"False\""
-      ]
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "잿멍울 군주",
-    "type": "MINION",
-    "cardClass": "WARRIOR",
-    "classes": [],
-    "rarity": "COMMON",
-    "collectible": true,
+  "2023-10-18": {
     "cost": 6,
-    "attack": 1,
-    "health": 11,
-    "durability": 0,
-    "armor": 0,
-    "text": "<b>도발</b>, 상대편의 턴 동안 공격력을 +4 얻습니다.",
-    "races": [
-      "ELEMENTAL"
-    ],
-    "race": "정령",
-    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -136,7 +83,6 @@
       },
       {
         "id": 48,
-        "name": "마나 비용",
         "value": 6
       },
       {
@@ -169,71 +115,6 @@
         "name": "수집 가능",
         "value": 1
       }
-    ],
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
-    "nativeRawText": "<b>도발</b>, 상대편의 턴 동안 공격력을 +4 얻습니다.",
-    "nativeTextBuilder": 0
-  },
-  "2023-10-18": {
-    "cost": 6,
-    "nativeTagUpdates": [
-      {
-        "id": 48,
-        "value": 6
-      }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-    "confidence": "high",
-    "note": "27.6 한국 적용일. 비용 7→6 및 TAG48 동기화."
-  },
-  "sourceEvidence": {
-    "2023-10-18": {
-      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
-      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
-    }
-  },
-  "nativeTagsTimelineStatus": "complete",
-  "historyIncompleteFields": [
-    "text",
-    "nativeTextBuilder"
-  ],
-  "historyKnownFields": [],
-  "unresolvedSourceFields": [
-    {
-      "field": "text",
-      "reason": "differences between source snapshot and current display text not tied to a confirmed dated change remain undated."
-    }
-  ],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "root": true,
-  "relatedIds": [],
-  "englishName": "Tar Lord",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    ]
+  }
 }

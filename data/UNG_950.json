@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_950",
-  "dbfId": 41859,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
   "2017-04-07": {
     "name": "탐험용 넓적칼",
     "type": "WEAPON",
@@ -64,103 +52,12 @@
       }
     ],
     "nativeRawText": "[x]내 영웅이 공격한 후에\n1/1 은빛 성기사단 신병을\n둘 소환합니다.",
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-c734-4ed0-899a-0561ea088196"
-      ],
-      "triggeredPowerHistory": [
-        "effectIndex=\"0\" showInHistory=\"False\""
-      ]
-    },
     "nativeSetId": 27,
-    "flavor": "조지! 칼! 살아 있었군요!"
-  },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-c734-4ed0-899a-0561ea088196"
-      ],
-      "triggeredPowerHistory": [
-        "effectIndex=\"0\" showInHistory=\"False\""
-      ]
-    }
-  },
-  "currentReferenceTags": [
-    {
-      "id": 1452,
-      "name": "수집품 관련 카드 데이터베이스 ID",
-      "value": 1652
-    }
-  ],
-  "current": {
-    "name": "탐험용 넓적칼",
-    "type": "WEAPON",
-    "cardClass": "PALADIN",
-    "classes": [],
-    "rarity": "RARE",
-    "collectible": true,
-    "cost": 6,
-    "attack": 4,
-    "health": 3,
-    "durability": 3,
-    "armor": 0,
-    "text": "내 영웅이 공격한 후에 1/1 은빛 성기사단 신병을 2명 소환합니다.",
-    "races": [],
-    "race": "",
-    "spellSchool": "",
-    "nativeTags": [
-      {
-        "id": 32,
-        "name": "발동 효과 표시",
-        "value": 1
-      },
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 3
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 4
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 6
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 5
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 7
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 3
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      },
-      {
-        "id": 1452,
-        "name": "수집품 관련 카드 데이터베이스 ID",
-        "value": 1652
-      }
-    ],
-    "nativeRawText": "내 영웅이 공격한 후에 {0} 은빛 성기사단 신병을 2명 소환합니다.",
-    "nativeTextBuilder": 46,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified"
+    "flavor": "조지! 칼! 살아 있었군요!",
+    "id": "UNG_950",
+    "dbfId": 41859,
+    "set": "UNGORO",
+    "art": "art/UNG_950.png"
   },
   "2023-10-18": {
     "cost": 6,
@@ -205,54 +102,6 @@
         "name": "수집 가능",
         "value": 1
       }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-    "confidence": "high",
-    "note": "27.6 한국 적용일. 비용 7→6 변경 및 자체 TAG 48 동기화."
-  },
-  "nativeTagsTimelineStatus": "partial",
-  "historyIncompleteFields": [
-    "text"
-  ],
-  "unresolvedSourceFields": [
-    {
-      "field": "nativeTags[1452]",
-      "reason": "현재 카드의 연관 DB 태그는 currentReferenceTags에 보존. 최초 도입일을 확인할 자료가 없어 과거 상태에 소급하지 않음."
-    }
-  ],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "historyKnownFields": [
-    "nativeTags"
-  ],
-  "root": true,
-  "relatedIds": [
-    1652
-  ],
-  "englishName": "Vinecleaver",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    ]
+  }
 }

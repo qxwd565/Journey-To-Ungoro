@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_834",
-  "dbfId": 41874,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
   "2017-04-07": {
     "name": "포식",
     "type": "SPELL",
@@ -47,48 +35,20 @@
       }
     ],
     "nativeRawText": "하수인 하나에게 피해를 $3 줍니다.\n1/1 테러닥스를\n셋 소환합니다.",
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [],
-      "triggeredPowerHistory": []
-    },
     "nativeSetId": 27,
-    "flavor": "겉보기엔 1/1이지만 먹성은 4/4입니다!"
+    "flavor": "겉보기엔 1/1이지만 먹성은 4/4입니다!",
+    "id": "UNG_834",
+    "dbfId": 41874,
+    "set": "UNGORO",
+    "art": "art/UNG_834.png"
   },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [],
-      "triggeredPowerHistory": []
-    }
-  },
-  "currentReferenceTags": [
-    {
-      "id": 1452,
-      "name": "수집품 관련 카드 데이터베이스 ID",
-      "value": 41943
-    }
-  ],
-  "current": {
-    "name": "포식",
-    "type": "SPELL",
-    "cardClass": "WARLOCK",
-    "classes": [],
-    "rarity": "RARE",
-    "collectible": true,
+  "2023-10-18": {
     "cost": 4,
-    "attack": 0,
-    "health": 0,
-    "durability": 0,
-    "armor": 0,
     "text": "하수인에게 피해를 $3 줍니다. 1/1 테러닥스를 셋 소환하고 <b>적응</b>시킵니다.",
-    "races": [],
-    "race": "",
-    "spellSchool": "",
+    "nativeRawText": "하수인에게 피해를 $3 줍니다. 1/1 테러닥스를 셋 소환하고 <b>적응</b>시킵니다.",
     "nativeTags": [
       {
         "id": 48,
-        "name": "마나 비용",
         "value": 4
       },
       {
@@ -110,86 +70,7 @@
         "id": 321,
         "name": "수집 가능",
         "value": 1
-      },
-      {
-        "id": 546,
-        "name": "적응",
-        "value": 1
-      },
-      {
-        "id": 1452,
-        "name": "수집품 관련 카드 데이터베이스 ID",
-        "value": 41943
       }
-    ],
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
-    "nativeRawText": "하수인에게 피해를 $3 줍니다. 1/1 테러닥스를 셋 소환하고 <b>적응</b>시킵니다.",
-    "nativeTextBuilder": 0
-  },
-  "2023-10-18": {
-    "cost": 4,
-    "text": "하수인에게 피해를 $3 줍니다. 1/1 테러닥스를 셋 소환하고 <b>적응</b>시킵니다.",
-    "nativeRawText": "하수인에게 피해를 $3 줍니다. 1/1 테러닥스를 셋 소환하고 <b>적응</b>시킵니다.",
-    "nativeTagUpdates": [
-      {
-        "id": 48,
-        "value": 4
-      }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-    "confidence": "high",
-    "note": "27.6 한국 적용일. 비용 5→4 및 피해·소환·적응 효과 설명 변경."
-  },
-  "sourceEvidence": {
-    "2023-10-18": {
-      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
-      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
-    }
-  },
-  "nativeTagsTimelineStatus": "partial",
-  "historyIncompleteFields": [
-    "nativeTags",
-    "nativeTextBuilder"
-  ],
-  "historyKnownFields": [],
-  "unresolvedSourceFields": [
-    {
-      "field": "nativeTags",
-      "reason": "current cache contains tag additions or representation changes whose exact dates are not established; only the confirmed tag updates/removals are dated."
-    }
-  ],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "root": true,
-  "relatedIds": [
-    41943
-  ],
-  "englishName": "Feeding Time",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    ]
+  }
 }

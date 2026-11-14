@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_111t1",
-  "dbfId": 41432,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "2017-04-04 is a source snapshot date, not a playable date; first playable date remains pending.",
   "2017-04-04": {
     "name": "마나 나무정령",
     "type": "MINION",
@@ -52,44 +40,14 @@
       }
     ],
     "nativeRawText": "<b>죽음의 메아리:</b> 빈 마나 수정을 1개 획득합니다.",
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-ee34-41b0-a8ee-f995eb2a37dd"
-      ],
-      "triggeredPowerHistory": [
-        "effectIndex=\"0\" showInHistory=\"False\""
-      ]
-    },
-    "nativeSetId": 27
+    "nativeSetId": 27,
+    "id": "UNG_111t1",
+    "dbfId": 41432,
+    "set": "UNGORO",
+    "art": "art/UNG_111t1.png"
   },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-ee34-41b0-a8ee-f995eb2a37dd"
-      ],
-      "triggeredPowerHistory": [
-        "effectIndex=\"0\" showInHistory=\"False\""
-      ]
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "마나 나무정령",
-    "type": "MINION",
-    "cardClass": "DRUID",
-    "classes": [],
-    "collectible": false,
+  "2023-04-05": {
     "cost": 1,
-    "attack": 2,
-    "health": 2,
-    "durability": 0,
-    "armor": 0,
-    "text": "<b>죽음의 메아리:</b> 빈 마나 수정을 얻습니다.",
-    "races": [],
-    "race": "",
-    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -103,7 +61,6 @@
       },
       {
         "id": 48,
-        "name": "마나 비용",
         "value": 1
       },
       {
@@ -120,69 +77,7 @@
         "id": 217,
         "name": "죽음의 메아리",
         "value": 1
-      },
-      {
-        "id": 2831,
-        "name": "게임 태그 2831",
-        "value": 1
       }
-    ],
-    "releasedAt": null,
-    "releaseStatus": "pending",
-    "nativeRawText": "<b>죽음의 메아리:</b> 빈 마나 수정을 얻습니다.",
-    "nativeTextBuilder": 0
-  },
-  "2023-04-05": {
-    "cost": 1,
-    "nativeTagUpdates": [
-      {
-        "id": 48,
-        "value": 1
-      }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23934449",
-    "confidence": "medium-high",
-    "note": "26.0 한국 적용일. 비용 2→1 및 TAG48 동기화. 원래 조사 확신도 중상; 최초 플레이 가능일은 pending 유지."
-  },
-  "nativeTagsTimelineStatus": "partial",
-  "historyIncompleteFields": [
-    "nativeTags"
-  ],
-  "historyKnownFields": [],
-  "unresolvedSourceFields": [
-    {
-      "field": "nativeTags",
-      "reason": "current에 존재하는 보조 TREANT Int 태그(TAG2831)는 플레이 종족이 아니며 도입일이 미확정. 출시 CARDRACE 부재와 current races=[]를 유지."
-    }
-  ],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "root": false,
-  "relatedIds": [],
-  "englishName": "Mana Treant",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    ]
+  }
 }

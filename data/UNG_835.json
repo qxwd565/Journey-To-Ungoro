@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_835",
-  "dbfId": 41875,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
   "2017-04-07": {
     "name": "딸깍거리는 실리시드",
     "type": "MINION",
@@ -73,58 +61,28 @@
       }
     ],
     "nativeRawText": "<b>전투의 함성:</b> 주문을 하나 <b>발견</b>합니다. 그 카드의 비용만큼 내 영웅에게 피해를 줍니다.",
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-6fce-4832-b1ac-026db6756366"
-      ],
-      "triggeredPowerHistory": []
-    },
     "nativeSetId": 27,
-    "flavor": "땅에 귀를 댄 그는 딸깍거리는 소리를 해석하기 시작했습니다. \"주문이 필요해? 나도 필요해...!\""
+    "flavor": "땅에 귀를 댄 그는 딸깍거리는 소리를 해석하기 시작했습니다. \"주문이 필요해? 나도 필요해...!\"",
+    "id": "UNG_835",
+    "dbfId": 41875,
+    "set": "UNGORO",
+    "art": "art/UNG_835.png"
   },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-6fce-4832-b1ac-026db6756366"
-      ],
-      "triggeredPowerHistory": []
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "딸깍거리는 실리시드",
-    "type": "MINION",
-    "cardClass": "WARLOCK",
-    "classes": [],
-    "rarity": "EPIC",
-    "collectible": true,
+  "2023-10-18": {
     "cost": 2,
     "attack": 2,
     "health": 2,
-    "durability": 0,
-    "armor": 0,
-    "text": "<b>전투의 함성:</b> 주문을 <b>발견</b>합니다. 그 카드의 비용만큼 내 영웅에게 피해를 줍니다.",
-    "races": [
-      "BEAST"
-    ],
-    "race": "야수",
-    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
-        "name": "생명력",
         "value": 2
       },
       {
         "id": 47,
-        "name": "공격력",
         "value": 2
       },
       {
         "id": 48,
-        "name": "마나 비용",
         "value": 2
       },
       {
@@ -156,97 +114,7 @@
         "id": 321,
         "name": "수집 가능",
         "value": 1
-      },
-      {
-        "id": 415,
-        "name": "발견",
-        "value": 1
-      },
-      {
-        "id": 1342,
-        "name": "발견 시각 효과",
-        "value": 1
       }
-    ],
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
-    "nativeRawText": "<b>전투의 함성:</b> 주문을 <b>발견</b>합니다. 그 카드의 비용만큼 내 영웅에게 피해를 줍니다.",
-    "nativeTextBuilder": 0
-  },
-  "2023-10-18": {
-    "cost": 2,
-    "attack": 2,
-    "health": 2,
-    "nativeTagUpdates": [
-      {
-        "id": 48,
-        "value": 2
-      },
-      {
-        "id": 47,
-        "value": 2
-      },
-      {
-        "id": 45,
-        "value": 2
-      }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-    "confidence": "high",
-    "note": "27.6 한국 적용일. 비용·공격력·생명력 3→2 및 TAG48·47·45 동기화."
-  },
-  "sourceEvidence": {
-    "2023-10-18": {
-      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
-      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
-    }
-  },
-  "nativeTagsTimelineStatus": "partial",
-  "historyIncompleteFields": [
-    "nativeTags",
-    "text",
-    "nativeTextBuilder"
-  ],
-  "historyKnownFields": [],
-  "unresolvedSourceFields": [
-    {
-      "field": "nativeTags",
-      "reason": "current cache includes tags whose exact introduction dates are not established; only individually confirmed tag updates/removals are recorded."
-    },
-    {
-      "field": "text",
-      "reason": "differences between source snapshot and current display text not tied to a confirmed dated change remain undated."
-    }
-  ],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "root": true,
-  "relatedIds": [],
-  "englishName": "Chittering Tunneler",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    ]
+  }
 }

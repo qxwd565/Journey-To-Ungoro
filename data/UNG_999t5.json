@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_999t5",
-  "dbfId": 41060,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "The 2017-04-04 sourceBaseline is an archived CardDefs snapshot, not a release date. The first playable Korean date is 2017-04-05, by the immediately playable Volcanosaur (UNG_002), which explicitly generates this adaptation or plant token. Source: April 5 2017 Korean first-playable: Volcanosaur UNG_002 immediate login reward; its explicit relatedIds includes this token dbfId; Blizzard https://hearthstone.blizzard.com/ko-kr/news/20567513; https://hearthstone.wiki.gg/wiki/Volcanosaur",
   "2017-04-05": {
     "name": "액체성 세포막",
     "type": "SPELL",
@@ -39,118 +27,10 @@
       }
     ],
     "nativeRawText": "주문이나 영웅 능력의 대상으로 지정되지 않습니다.",
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [],
-      "triggeredPowerHistory": []
-    },
-    "nativeSetId": 27
-  },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [],
-      "triggeredPowerHistory": []
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "액체성 세포막",
-    "type": "SPELL",
-    "cardClass": "NEUTRAL",
-    "classes": [],
-    "collectible": false,
-    "cost": 0,
-    "attack": 0,
-    "health": 0,
-    "durability": 0,
-    "armor": 0,
-    "text": "<b>모면</b>",
-    "races": [],
-    "race": "",
-    "spellSchool": "",
-    "nativeTags": [
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 12
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 684,
-        "name": "비용 숨김",
-        "value": 1
-      },
-      {
-        "id": 1200,
-        "name": "게임 태그 1200",
-        "value": 1
-      },
-      {
-        "id": 1211,
-        "name": "모면",
-        "value": 1
-      }
-    ],
-    "releasedAt": "2017-04-05",
-    "releaseStatus": "verified",
-    "nativeRawText": "<b>모면</b>",
-    "nativeTextBuilder": 0
-  },
-  "nativeTagsTimelineStatus": "partial",
-  "historyIncompleteFields": [
-    "nativeTags",
-    "text",
-    "nativeTextBuilder",
-    "collectible"
-  ],
-  "historyKnownFields": [],
-  "unresolvedSourceFields": [
-    {
-      "field": "nativeTags",
-      "reason": "current cache contains tags whose introduction dates are not confirmed; no unsupported tag conversion is placed on the 27.6 boundary."
-    },
-    {
-      "field": "text",
-      "reason": "undated differences between snapshot raw text and current display text remain separate from confirmed stat changes."
-    },
-    {
-      "field": "nativeTags[311,332,1211]",
-      "reason": "2017 snapshot contains protection tags 311/332 while current cache contains 1211. Exact conversion date is unknown; no gameplay protection loss is inferred and current tags are not backdated."
-    }
-  ],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "root": false,
-  "relatedIds": [],
-  "englishName": "Liquid Membrane",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    "nativeSetId": 27,
+    "id": "UNG_999t5",
+    "dbfId": 41060,
+    "set": "UNGORO",
+    "art": "art/UNG_999t5.png"
+  }
 }

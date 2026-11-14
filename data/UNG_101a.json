@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_101a",
-  "dbfId": 40977,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "2017-04-04 is the CardDefs source snapshot date, not a confirmed first-playable date. release-policy.json intentionally remains pending.",
   "2017-04-04": {
     "name": "랩터 형상",
     "type": "SPELL",
@@ -40,14 +28,11 @@
       }
     ],
     "nativeRawText": "공격력 +2, <b>은신</b>",
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "6da10ea3-80f0-4df4-aaad-2c69f17c4f0d"
-      ],
-      "triggeredPowerHistory": []
-    },
-    "nativeSetId": 27
+    "nativeSetId": 27,
+    "id": "UNG_101a",
+    "dbfId": 40977,
+    "set": "UNGORO",
+    "art": "art/UNG_101a.png"
   },
   "2018-11-30": {
     "type": "MINION",
@@ -107,99 +92,6 @@
         "name": "희귀도",
         "value": 3
       }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/22788307",
-    "confidence": "high",
-    "note": "선택지 결과 표현 전환: SPELL에서 MINION으로 변경. SPELL 상태에 없던 cost/attack/health/race/races와 대응 자체 태그가 이 날짜에 추가됨."
-  },
-  "current": {
-    "name": "랩터 형상",
-    "type": "MINION",
-    "cardClass": "DRUID",
-    "rarity": "RARE",
-    "collectible": false,
-    "cost": 4,
-    "attack": 5,
-    "health": 3,
-    "durability": 0,
-    "armor": 0,
-    "text": "<b>은신</b>",
-    "races": [
-      "BEAST"
-    ],
-    "race": "야수",
-    "spellSchool": "",
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 3
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 5
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 4
-      },
-      {
-        "id": 191,
-        "name": "은신",
-        "value": 1
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 2
-      },
-      {
-        "id": 200,
-        "name": "종족",
-        "value": 20
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 3
-      }
-    ],
-    "nativeRawText": "<b>은신</b>",
-    "nativeTextBuilder": 0,
-    "releasedAt": null,
-    "releaseStatus": "pending"
-  },
-  "nativeTagsTimelineStatus": "complete",
-  "historyIncompleteFields": [
-    "collectible",
-    "nativeTags"
-  ],
-  "root": false,
-  "relatedIds": [],
-  "englishName": "Raptor Form",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    ]
+  }
 }

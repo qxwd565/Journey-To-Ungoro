@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_914t1",
-  "dbfId": 41356,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "2017-04-04 is a source snapshot date, not a playable date; first playable date remains pending.",
   "2017-04-04": {
     "name": "우두머리 랩터",
     "type": "MINION",
@@ -55,42 +43,17 @@
         "value": 4
       }
     ],
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [],
-      "triggeredPowerHistory": []
-    },
-    "nativeSetId": 27
+    "nativeSetId": 27,
+    "id": "UNG_914t1",
+    "dbfId": 41356,
+    "set": "UNGORO",
+    "art": "art/UNG_914t1.png"
   },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [],
-      "triggeredPowerHistory": []
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "우두머리 랩터",
-    "type": "MINION",
-    "cardClass": "HUNTER",
-    "classes": [],
-    "collectible": false,
-    "cost": 1,
-    "attack": 4,
+  "2023-10-18": {
     "health": 5,
-    "durability": 0,
-    "armor": 0,
-    "text": "",
-    "races": [
-      "BEAST"
-    ],
-    "race": "야수",
-    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
-        "name": "생명력",
         "value": 5
       },
       {
@@ -118,65 +81,6 @@
         "name": "카드 유형",
         "value": 4
       }
-    ],
-    "releasedAt": null,
-    "releaseStatus": "pending",
-    "nativeRawText": "",
-    "nativeTextBuilder": 0
-  },
-  "2023-10-18": {
-    "health": 5,
-    "nativeTagUpdates": [
-      {
-        "id": 45,
-        "value": 5
-      }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-    "confidence": "high",
-    "note": "27.6 한국 적용일. 생명력 3→5 및 TAG45 동기화. 최초 플레이 가능일은 pending 유지."
-  },
-  "sourceEvidence": {
-    "2023-10-18": {
-      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
-      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
-    }
-  },
-  "nativeTagsTimelineStatus": "complete",
-  "historyIncompleteFields": [
-    "nativeTextBuilder"
-  ],
-  "historyKnownFields": [],
-  "unresolvedSourceFields": [],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "root": false,
-  "relatedIds": [],
-  "englishName": "Raptor Patriarch",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    ]
+  }
 }

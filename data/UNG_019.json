@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_019",
-  "dbfId": 41152,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
   "2017-04-07": {
     "name": "바람 정령",
     "type": "MINION",
@@ -93,44 +81,15 @@
       }
     ],
     "nativeRawText": "이 하수인은 주문이나 영웅 능력의 대상으로 지정되지 않습니다.",
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-c451-4d65-9727-d495e8b1dfeb"
-      ],
-      "triggeredPowerHistory": []
-    },
     "nativeSetId": 27,
-    "flavor": "화를 내면 몸을 부풀립니다. 귀엽습니다."
+    "flavor": "화를 내면 몸을 부풀립니다. 귀엽습니다.",
+    "id": "UNG_019",
+    "dbfId": 41152,
+    "set": "UNGORO",
+    "art": "art/UNG_019.png"
   },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-c451-4d65-9727-d495e8b1dfeb"
-      ],
-      "triggeredPowerHistory": []
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "바람 정령",
-    "type": "MINION",
-    "cardClass": "SHAMAN",
-    "classes": [],
-    "rarity": "COMMON",
-    "collectible": true,
-    "cost": 1,
+  "2024-03-29": {
     "attack": 3,
-    "health": 1,
-    "durability": 0,
-    "armor": 0,
-    "text": "<b>모면</b>",
-    "races": [
-      "ELEMENTAL"
-    ],
-    "race": "정령",
-    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -139,7 +98,6 @@
       },
       {
         "id": 47,
-        "name": "공격력",
         "value": 3
       },
       {
@@ -183,84 +141,20 @@
         "value": 2
       },
       {
+        "id": 311,
+        "name": "CANT_BE_TARGETED_BY_SPELLS",
+        "value": 1
+      },
+      {
         "id": 321,
         "name": "수집 가능",
         "value": 1
       },
       {
-        "id": 1211,
-        "name": "모면",
+        "id": 332,
+        "name": "CANT_BE_TARGETED_BY_HERO_POWERS",
         "value": 1
       }
-    ],
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
-    "nativeRawText": "<b>모면</b>",
-    "nativeTextBuilder": 0
-  },
-  "2024-03-29": {
-    "attack": 3,
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/24064739",
-    "confidence": "high",
-    "note": "29.0.3 한국 적용일. 공격력 2→3 및 확정된 자체 TAG 47만 2→3으로 동기화. TAG311/332와 TAG1211 사이의 표현 전환일은 미확정이며 이 경계에 포함하지 않음.",
-    "nativeTagUpdates": [
-      {
-        "id": 47,
-        "value": 3
-      }
     ]
-  },
-  "nativeTagsTimelineStatus": "partial",
-  "historyIncompleteFields": [
-    "nativeTags",
-    "text"
-  ],
-  "historyKnownFields": [],
-  "unresolvedSourceFields": [
-    {
-      "field": "text",
-      "reason": "현재 모면 문구의 도입일은 미확정. 최초 대상 지정 방지 원문을 유지."
-    },
-    {
-      "field": "nativeTags[311,332,1211]",
-      "reason": "2017 baseline에는 TAG311/332가 있고 current cache에는 TAG1211이 존재한다. 29.0.3 CardDefs는 단일 시점 스냅샷이므로 전환의 정확한 최초 적용일은 확정하지 않으며, 공격력 변경 경계에 태그 전환을 소급하지 않는다."
-    }
-  ],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "sourceEvidence": {
-    "2024-03-29": {
-      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/24064739",
-      "cardDefsCommit": "e73eeb8d2c284af5fcddc2db5fce692c77434cd8",
-      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/e73eeb8d2c284af5fcddc2db5fce692c77434cd8/CardDefs.xml"
-    }
-  },
-  "root": true,
-  "relatedIds": [],
-  "englishName": "Air Elemental",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+  }
 }

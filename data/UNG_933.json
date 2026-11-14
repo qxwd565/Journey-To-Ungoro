@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_933",
-  "dbfId": 41425,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
   "2017-04-07": {
     "name": "폭군 모쉬",
     "type": "MINION",
@@ -88,44 +76,15 @@
       }
     ],
     "nativeRawText": "<b>전투의 함성:</b>\n피해를 입은 <b>모든</b> 하수인을 처치합니다.",
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-6699-4922-b549-405235d680ab"
-      ],
-      "triggeredPowerHistory": []
-    },
     "nativeSetId": 27,
-    "flavor": "콘서트장에서 아주 공포스러운 존재입니다."
+    "flavor": "콘서트장에서 아주 공포스러운 존재입니다.",
+    "id": "UNG_933",
+    "dbfId": 41425,
+    "set": "UNGORO",
+    "art": "art/UNG_933.png"
   },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-6699-4922-b549-405235d680ab"
-      ],
-      "triggeredPowerHistory": []
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "폭군 모쉬",
-    "type": "MINION",
-    "cardClass": "WARRIOR",
-    "classes": [],
-    "rarity": "LEGENDARY",
-    "collectible": true,
+  "2023-10-18": {
     "cost": 7,
-    "attack": 9,
-    "health": 7,
-    "durability": 0,
-    "armor": 0,
-    "text": "<b>전투의 함성:</b><br></br>피해를 받은 <b>모든</b> 하수인을 처치합니다.",
-    "races": [
-      "BEAST"
-    ],
-    "race": "야수",
-    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -139,7 +98,6 @@
       },
       {
         "id": 48,
-        "name": "마나 비용",
         "value": 7
       },
       {
@@ -187,75 +145,6 @@
         "name": "수집 가능",
         "value": 1
       }
-    ],
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
-    "nativeRawText": "<b>전투의 함성:</b>\n피해를 받은 <b>모든</b> 하수인을 처치합니다.",
-    "nativeTextBuilder": 0
-  },
-  "2023-10-18": {
-    "cost": 7,
-    "nativeTagUpdates": [
-      {
-        "id": 48,
-        "value": 7
-      }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-    "confidence": "high",
-    "note": "27.6 한국 적용일. 비용 9→7. 현재 죽음의 메아리 참조 관련 표시를 카드 자체 능력 사건으로 소급하지 않음."
-  },
-  "sourceEvidence": {
-    "2023-10-18": {
-      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
-      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
-    }
-  },
-  "nativeTagsTimelineStatus": "complete",
-  "historyIncompleteFields": [
-    "text",
-    "nativeTextBuilder"
-  ],
-  "historyKnownFields": [],
-  "unresolvedSourceFields": [
-    {
-      "field": "text",
-      "reason": "current text differs from the reconstructed dated state; undated display or builder changes remain separate from confirmed patch fields."
-    },
-    {
-      "field": "nativeTags[217]",
-      "reason": "A Deathrattle reference in related effects is not evidence of this card's own Deathrattle tag."
-    }
-  ],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "root": true,
-  "relatedIds": [],
-  "englishName": "King Mosh",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    ]
+  }
 }

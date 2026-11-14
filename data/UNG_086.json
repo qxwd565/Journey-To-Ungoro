@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_086",
-  "dbfId": 41262,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
   "2017-04-07": {
     "name": "거대한 아나콘다",
     "type": "MINION",
@@ -73,48 +61,16 @@
       }
     ],
     "nativeRawText": "<b>죽음의 메아리:</b> 내 손에 있는 공격력이 5 이상인 하수인 하나를 소환합니다.",
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "2dd7c72f-f280-42bc-9d6c-11779f892fae"
-      ],
-      "triggeredPowerHistory": [
-        "effectIndex=\"0\" showInHistory=\"False\""
-      ]
-    },
     "nativeSetId": 27,
-    "flavor": "먹방 한 편 거하게 찍으셨나보군요."
+    "flavor": "먹방 한 편 거하게 찍으셨나보군요.",
+    "id": "UNG_086",
+    "dbfId": 41262,
+    "set": "UNGORO",
+    "art": "art/UNG_086.png"
   },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "2dd7c72f-f280-42bc-9d6c-11779f892fae"
-      ],
-      "triggeredPowerHistory": [
-        "effectIndex=\"0\" showInHistory=\"False\""
-      ]
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "거대한 아나콘다",
-    "type": "MINION",
-    "cardClass": "DRUID",
-    "classes": [],
-    "rarity": "EPIC",
-    "collectible": true,
-    "cost": 7,
-    "attack": 5,
-    "health": 3,
-    "durability": 0,
-    "armor": 0,
+  "2023-10-18": {
     "text": "<b>도발</b>, <b>죽음의 메아리:</b><br></br>내 손에 있는 공격력이<br></br>5 이상인 하수인을 소환합니다.",
-    "races": [
-      "BEAST"
-    ],
-    "race": "야수",
-    "spellSchool": "",
+    "nativeRawText": "<b>도발</b>, <b>죽음의 메아리:</b>\n내 손에 있는 공격력이\n5 이상인 하수인을 소환합니다.",
     "nativeTags": [
       {
         "id": 45,
@@ -130,11 +86,6 @@
         "id": 48,
         "name": "마나 비용",
         "value": 7
-      },
-      {
-        "id": 190,
-        "name": "도발",
-        "value": 1
       },
       {
         "id": 199,
@@ -165,75 +116,11 @@
         "id": 321,
         "name": "수집 가능",
         "value": 1
-      }
-    ],
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
-    "nativeRawText": "<b>도발</b>, <b>죽음의 메아리:</b>\n내 손에 있는 공격력이\n5 이상인 하수인을 소환합니다.",
-    "nativeTextBuilder": 0
-  },
-  "2023-10-18": {
-    "text": "<b>도발</b>, <b>죽음의 메아리:</b><br></br>내 손에 있는 공격력이<br></br>5 이상인 하수인을 소환합니다.",
-    "nativeRawText": "<b>도발</b>, <b>죽음의 메아리:</b>\n내 손에 있는 공격력이\n5 이상인 하수인을 소환합니다.",
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-    "confidence": "high",
-    "note": "27.6 한국 적용일. 거대한 아나콘다는 이 날짜에 실제 무조건부 도발을 얻음. 설명 변경과 TAG190=1을 함께 반영.",
-    "nativeTagUpdates": [
+      },
       {
         "id": 190,
-        "value": 1,
-        "name": "도발"
+        "value": 1
       }
     ]
-  },
-  "sourceEvidence": {
-    "2023-10-18": {
-      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
-      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
-    }
-  },
-  "nativeTagsTimelineStatus": "complete",
-  "historyIncompleteFields": [
-    "nativeTextBuilder"
-  ],
-  "historyKnownFields": [
-    "nativeTags"
-  ],
-  "unresolvedSourceFields": [
-    {
-      "field": "nativeTags",
-      "reason": "현재 캐시의 일부 태그는 최초 도입일 또는 정확한 변경일이 미확정이므로 확인된 TAG 업데이트만 날짜 이벤트에 기록하고 나머지는 current cache에 분리 보존."
-    }
-  ],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "root": true,
-  "relatedIds": [],
-  "englishName": "Giant Anaconda",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+  }
 }

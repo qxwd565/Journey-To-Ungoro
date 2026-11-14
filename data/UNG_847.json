@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_847",
-  "dbfId": 41928,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
   "2017-04-07": {
     "name": "불길소환사",
     "type": "MINION",
@@ -73,44 +61,15 @@
       }
     ],
     "nativeRawText": "<b>전투의 함성:</b> 내가 이전 턴에 정령을 냈다면, 피해를 5 줍니다.",
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "60a0b240-e268-4c17-9520-36a4feb2bb9a"
-      ],
-      "triggeredPowerHistory": []
-    },
     "nativeSetId": 27,
-    "flavor": "불꽃소환사로는 부족할 때 영입합니다."
+    "flavor": "불꽃소환사로는 부족할 때 영입합니다.",
+    "id": "UNG_847",
+    "dbfId": 41928,
+    "set": "UNGORO",
+    "art": "art/UNG_847.png"
   },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "60a0b240-e268-4c17-9520-36a4feb2bb9a"
-      ],
-      "triggeredPowerHistory": []
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "불길소환사",
-    "type": "MINION",
-    "cardClass": "NEUTRAL",
-    "classes": [],
-    "rarity": "EPIC",
-    "collectible": true,
+  "2023-10-18": {
     "cost": 6,
-    "attack": 6,
-    "health": 6,
-    "durability": 0,
-    "armor": 0,
-    "text": "<b>전투의 함성:</b> 내가 이전 턴에 정령을 냈다면, 피해를 5 줍니다.",
-    "races": [
-      "ELEMENTAL"
-    ],
-    "race": "정령",
-    "spellSchool": "",
     "nativeTags": [
       {
         "id": 45,
@@ -124,7 +83,6 @@
       },
       {
         "id": 48,
-        "name": "마나 비용",
         "value": 6
       },
       {
@@ -157,65 +115,6 @@
         "name": "수집 가능",
         "value": 1
       }
-    ],
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
-    "nativeRawText": "<b>전투의 함성:</b> 내가 이전 턴에 정령을 냈다면, 피해를 5 줍니다.",
-    "nativeTextBuilder": 0
-  },
-  "2023-10-18": {
-    "cost": 6,
-    "nativeTagUpdates": [
-      {
-        "id": 48,
-        "value": 6
-      }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-    "confidence": "high",
-    "note": "27.6 한국 적용일. 비용 7→6 및 TAG48 동기화."
-  },
-  "sourceEvidence": {
-    "2023-10-18": {
-      "patchNotes": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-      "cardDefsCommit": "b0fbaba63b00c585aa58210accad20152ddcbd20",
-      "cardDefsUrl": "https://github.com/HearthSim/hsdata/blob/b0fbaba63b00c585aa58210accad20152ddcbd20/CardDefs.xml"
-    }
-  },
-  "nativeTagsTimelineStatus": "complete",
-  "historyIncompleteFields": [
-    "nativeTextBuilder"
-  ],
-  "historyKnownFields": [],
-  "unresolvedSourceFields": [],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "root": true,
-  "relatedIds": [],
-  "englishName": "Blazecaller",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    ]
+  }
 }

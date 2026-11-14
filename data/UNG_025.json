@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_025",
-  "dbfId": 41159,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "Date-keyed entries are the Korean-local playable card state/event for verified cards. 2017-04-04 is only the CardDefs source snapshot date for cards whose first-playable date remains pending; it is never treated as a playable date.",
   "2017-04-07": {
     "name": "화산",
     "type": "SPELL",
@@ -63,95 +51,12 @@
     ],
     "nativeRawText": "<b>모든</b> 하수인에게 $15의 피해를 무작위로 나누어 입힙니다.\n<b>과부하:</b> (2)",
     "nativeSetId": 27,
-    "flavor": "많은 수습 주술사들은 첫 번째 과제로 화산을 소환합니다."
+    "flavor": "많은 수습 주술사들은 첫 번째 과제로 화산을 소환합니다.",
+    "id": "UNG_025",
+    "dbfId": 41159,
+    "set": "UNGORO",
+    "art": "art/UNG_025.png"
   },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "be1a74c0-a313-4ab2-9388-c3b3416bf362"
-      ],
-      "triggeredPowerHistory": []
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "화산",
-    "type": "SPELL",
-    "cardClass": "SHAMAN",
-    "classes": [],
-    "rarity": "RARE",
-    "collectible": true,
-    "cost": 5,
-    "attack": 0,
-    "health": 0,
-    "durability": 0,
-    "armor": 0,
-    "text": "<b>모든</b> 하수인에게 $15의 피해를 무작위로 나누어 입힙니다.<br></br><b>과부하:</b> (1)",
-    "races": [],
-    "race": "",
-    "spellSchool": "FIRE",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 5
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 8
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 3
-      },
-      {
-        "id": 215,
-        "name": "과부하",
-        "value": 1
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      },
-      {
-        "id": 349,
-        "name": "게임 태그 349",
-        "value": 1
-      },
-      {
-        "id": 1635,
-        "name": "주문 속성",
-        "value": 2
-      }
-    ],
-    "nativeRawText": "<b>모든</b> 하수인에게 $15의 피해를 무작위로 나누어 입힙니다.\n<b>과부하:</b> (1)",
-    "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified"
-  },
-  "nativeTagsTimelineStatus": "partial",
-  "historyIncompleteFields": [
-    "nativeTags"
-  ],
-  "unresolvedSourceFields": [
-    {
-      "field": "nativeTags[296]",
-      "reason": "CardDefs baseline has OVERLOAD_OWED=2 but current cache omits this tag; removal date is not established."
-    },
-    {
-      "field": "nativeTextBuilder",
-      "reason": "The current client cache contains nativeTextBuilder=0, but the CardDefs 18336 baseline does not expose this field; no dated introduction/change evidence is available."
-    }
-  ],
   "2021-03-26": {
     "spellSchool": "FIRE",
     "nativeTags": [
@@ -200,10 +105,7 @@
         "name": "주문 속성",
         "value": 2
       }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23642550",
-    "confidence": "high",
-    "note": "공식 주문 속성 도입일. spellSchool과 자체 TAG 1635를 동일 경계에서 추가."
+    ]
   },
   "2023-10-18": {
     "text": "<b>모든</b> 하수인에게 $15의 피해를 무작위로 나누어 입힙니다.<br></br><b>과부하:</b> (1)",
@@ -254,39 +156,6 @@
         "name": "주문 속성",
         "value": 2
       }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-    "confidence": "high",
-    "note": "과부하 (2)→(1) 텍스트 변경. 자체 TAG 215도 2→1로 동기화."
-  },
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "root": true,
-  "relatedIds": [],
-  "englishName": "Volcano",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    ]
+  }
 }

@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_030",
-  "dbfId": 41170,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "Date-keyed entries are the Korean-local playable card state/event for verified cards. 2017-04-04 is only the CardDefs source snapshot date for cards whose first-playable date remains pending; it is never treated as a playable date.",
   "2017-04-07": {
     "name": "결속의 치유",
     "type": "SPELL",
@@ -48,81 +36,12 @@
     ],
     "nativeRawText": "하수인 하나와 내 영웅의 생명력을 #5 회복시킵니다.",
     "nativeSetId": 27,
-    "flavor": "이 치유를 수락함으로써 다음 약관에 동의하고..."
+    "flavor": "이 치유를 수락함으로써 다음 약관에 동의하고...",
+    "id": "UNG_030",
+    "dbfId": 41170,
+    "set": "UNGORO",
+    "art": "art/UNG_030.png"
   },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [],
-      "triggeredPowerHistory": []
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "결속의 치유",
-    "type": "SPELL",
-    "cardClass": "PRIEST",
-    "classes": [],
-    "rarity": "COMMON",
-    "collectible": true,
-    "cost": 1,
-    "attack": 0,
-    "health": 0,
-    "durability": 0,
-    "armor": 0,
-    "text": "하수인과 내 영웅의 생명력을<br></br>#5 회복시킵니다.",
-    "races": [],
-    "race": "",
-    "spellSchool": "HOLY",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 1
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 6
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 1
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      },
-      {
-        "id": 1635,
-        "name": "주문 속성",
-        "value": 5
-      }
-    ],
-    "nativeRawText": "하수인과 내 영웅의 생명력을\n#5 회복시킵니다.",
-    "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified"
-  },
-  "nativeTagsTimelineStatus": "complete",
-  "historyIncompleteFields": [],
-  "unresolvedSourceFields": [
-    {
-      "field": "text/nativeRawText",
-      "reason": "CardDefs baseline wording differs from current client wording; no dated wording-change source is present."
-    },
-    {
-      "field": "nativeTextBuilder",
-      "reason": "The current client cache contains nativeTextBuilder=0, but the CardDefs 18336 baseline does not expose this field; no dated introduction/change evidence is available."
-    }
-  ],
   "2021-03-26": {
     "spellSchool": "HOLY",
     "nativeTags": [
@@ -156,39 +75,6 @@
         "name": "주문 속성",
         "value": 5
       }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23642550",
-    "confidence": "high",
-    "note": "공식 주문 속성 도입일. spellSchool과 자체 TAG 1635를 동일 경계에서 추가."
-  },
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "root": true,
-  "relatedIds": [],
-  "englishName": "Binding Heal",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    ]
+  }
 }

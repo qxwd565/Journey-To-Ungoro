@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_927",
-  "dbfId": 41407,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
   "2017-04-07": {
     "name": "갑작스러운 기원",
     "type": "SPELL",
@@ -47,78 +35,12 @@
       }
     ],
     "nativeRawText": "피해를 입은 아군 하수인들을 복사하여 소환합니다.",
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-9b41-43a9-8586-4875a255eb9a"
-      ],
-      "triggeredPowerHistory": []
-    },
     "nativeSetId": 27,
-    "flavor": "아픈만큼 소환하는 법입니다."
-  },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "00000012-9b41-43a9-8586-4875a255eb9a"
-      ],
-      "triggeredPowerHistory": []
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "갑작스러운 기원",
-    "type": "SPELL",
-    "cardClass": "WARRIOR",
-    "classes": [],
-    "rarity": "EPIC",
-    "collectible": true,
-    "cost": 4,
-    "attack": 0,
-    "health": 0,
-    "durability": 0,
-    "armor": 0,
-    "text": "피해를 받은 아군 하수인들을 복사하여 소환합니다.",
-    "races": [],
-    "race": "",
-    "nativeTags": [
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 4
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 10
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 5
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 4
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      },
-      {
-        "id": 1635,
-        "name": "주문 속성",
-        "value": 4
-      }
-    ],
-    "nativeRawText": "피해를 받은 아군 하수인들을 복사하여 소환합니다.",
-    "nativeTextBuilder": 0,
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
-    "spellSchool": "NATURE"
+    "flavor": "아픈만큼 소환하는 법입니다.",
+    "id": "UNG_927",
+    "dbfId": 41407,
+    "set": "UNGORO",
+    "art": "art/UNG_927.png"
   },
   "2021-03-26": {
     "spellSchool": "NATURE",
@@ -153,10 +75,7 @@
         "name": "주문 속성",
         "value": 4
       }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23642550",
-    "confidence": "high",
-    "note": "20.0 패치 한국 적용일. 주문 속성 도입 경계에서 spellSchool과 자체 TAG 1635를 함께 추가. 이전 상태에는 두 필드가 존재하지 않음."
+    ]
   },
   "2023-10-18": {
     "cost": 4,
@@ -191,52 +110,6 @@
         "name": "주문 속성",
         "value": 4
       }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-    "confidence": "high",
-    "note": "27.6 한국 적용일. 비용 5→4 변경 및 자체 TAG 48 동기화."
-  },
-  "nativeTagsTimelineStatus": "partial",
-  "historyIncompleteFields": [
-    "text"
-  ],
-  "unresolvedSourceFields": [
-    {
-      "field": "text",
-      "reason": "CardDefs 18336 원문과 현재 캐시의 문구 차이는 있으나 2023-10-18 패치에서 변경된 텍스트라는 근거가 없어 최초 원문을 보존하고 현재 캐시에만 유지."
-    }
-  ],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "historyKnownFields": [
-    "nativeTags"
-  ],
-  "root": true,
-  "relatedIds": [],
-  "englishName": "Sudden Genesis",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    ]
+  }
 }

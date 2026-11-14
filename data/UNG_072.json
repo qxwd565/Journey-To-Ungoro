@@ -1,16 +1,4 @@
 {
-  "schemaVersion": 2,
-  "id": "UNG_072",
-  "dbfId": 41243,
-  "sourceBaseline": {
-    "repository": "HearthSim/hsdata",
-    "commit": "085f915af6c4374ac2a7088862390ebea44eb6c9",
-    "commitDate": "2017-04-04",
-    "build": 18336,
-    "path": "CardDefs.xml",
-    "url": "https://github.com/HearthSim/hsdata/blob/085f915af6c4374ac2a7088862390ebea44eb6c9/CardDefs.xml"
-  },
-  "dateMeaning": "Date keys are Korean-local playable card states/events. 2017-04-04 is the CardDefs source snapshot date, not a playable date.",
   "2017-04-07": {
     "name": "바위언덕 수호병",
     "type": "MINION",
@@ -69,105 +57,12 @@
       }
     ],
     "nativeRawText": "[x]<b>도발</b>, <b>전투의 함성:</b>\n<b>도발</b> 능력이 있는 하수인을\n하나 <b>발견</b>합니다.",
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "fff21bca-f61e-4765-ba19-49cee80f857e",
-        "00000012-080d-4f99-807b-021eeab6ead0"
-      ],
-      "triggeredPowerHistory": []
-    },
     "nativeSetId": 27,
-    "flavor": "무한! 도발!"
-  },
-  "references": {
-    "nativeReferences": {
-      "entourageCardIds": [],
-      "powerDefinitions": [
-        "fff21bca-f61e-4765-ba19-49cee80f857e",
-        "00000012-080d-4f99-807b-021eeab6ead0"
-      ],
-      "triggeredPowerHistory": []
-    }
-  },
-  "currentReferenceTags": [],
-  "current": {
-    "name": "바위언덕 수호병",
-    "type": "MINION",
-    "cardClass": "NEUTRAL",
-    "classes": [],
-    "rarity": "RARE",
-    "collectible": true,
-    "cost": 3,
-    "attack": 1,
-    "health": 5,
-    "durability": 0,
-    "armor": 0,
-    "text": "<b>도발</b>, <b>전투의 함성:</b><br></br><b>도발</b> 하수인을 <b>발견</b>합니다.",
-    "races": [],
-    "race": "",
-    "spellSchool": "",
-    "nativeTags": [
-      {
-        "id": 45,
-        "name": "생명력",
-        "value": 5
-      },
-      {
-        "id": 47,
-        "name": "공격력",
-        "value": 1
-      },
-      {
-        "id": 48,
-        "name": "마나 비용",
-        "value": 3
-      },
-      {
-        "id": 190,
-        "name": "도발",
-        "value": 1
-      },
-      {
-        "id": 199,
-        "name": "직업",
-        "value": 12
-      },
-      {
-        "id": 202,
-        "name": "카드 유형",
-        "value": 4
-      },
-      {
-        "id": 203,
-        "name": "희귀도",
-        "value": 3
-      },
-      {
-        "id": 218,
-        "name": "전투의 함성",
-        "value": 1
-      },
-      {
-        "id": 321,
-        "name": "수집 가능",
-        "value": 1
-      },
-      {
-        "id": 415,
-        "name": "발견",
-        "value": 1
-      },
-      {
-        "id": 1342,
-        "name": "발견 시각 효과",
-        "value": 1
-      }
-    ],
-    "releasedAt": "2017-04-07",
-    "releaseStatus": "verified",
-    "nativeRawText": "<b>도발</b>, <b>전투의 함성:</b>\n<b>도발</b> 하수인을 <b>발견</b>합니다.",
-    "nativeTextBuilder": 0
+    "flavor": "무한! 도발!",
+    "id": "UNG_072",
+    "dbfId": 41243,
+    "set": "UNGORO",
+    "art": "art/UNG_072.png"
   },
   "2023-10-18": {
     "health": 5,
@@ -217,57 +112,6 @@
         "name": "수집 가능",
         "value": 1
       }
-    ],
-    "source": "https://hearthstone.blizzard.com/ko-kr/news/23989479",
-    "confidence": "high",
-    "note": "27.6 한국 적용일. 생명력 4→5 및 자체 TAG 45 동기화. 현재 표시 문구와 발견 태그의 도입일은 별도 미확정."
-  },
-  "nativeTagsTimelineStatus": "partial",
-  "historyIncompleteFields": [
-    "nativeTags",
-    "text"
-  ],
-  "unresolvedSourceFields": [
-    {
-      "field": "nativeTags[415,1342]",
-      "reason": "현재 발견 및 발견 시각 효과 태그의 도입일은 미확정."
-    },
-    {
-      "field": "text",
-      "reason": "2017 CardDefs 원문과 현재 표시 문구의 축약 변경일은 미확정."
-    }
-  ],
-  "historyKnownFields": [
-    "nativeTags"
-  ],
-  "referenceTags": [
-    {
-      "id": 183,
-      "name": "CARD_SET",
-      "value": 27,
-      "sourceSnapshot": "2017-04-04",
-      "sourceCommit": "085f915af6c4374ac2a7088862390ebea44eb6c9"
-    }
-  ],
-  "root": true,
-  "relatedIds": [],
-  "englishName": "Stonehill Defender",
-  "expansion": {
-    "id": 27,
-    "slug": "journey-to-ungoro",
-    "name": "운고로를 향한 여정",
-    "type": "expansion",
-    "englishName": "Journey To Ungoro"
-  },
-  "setOrder": 34,
-  "formats": [
-    "wild"
-  ],
-  "provenance": {
-    "source": "Installed Hearthstone dbf.unity3d",
-    "gameVersion": "6000.3.11.3145967",
-    "dbfSha256": "40d9a232262d33eb670848ce3f87e58f5b4fd084632d9876216478a8b21e9456",
-    "locale": "koKR"
-  },
-  "mode": "constructed"
+    ]
+  }
 }
